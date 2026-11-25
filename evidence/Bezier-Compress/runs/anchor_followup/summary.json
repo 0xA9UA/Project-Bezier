@@ -1,0 +1,522 @@
+{
+  "scope": "Exploratory follow-up after primary results; unused questions and text positions from the same datasets",
+  "rows": [
+    {
+      "method": "fp16",
+      "artifact_mib": 3267.522485733032,
+      "compression_ratio": 1.0,
+      "eligible_relative_mse": 0.0,
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.3720748210877134,
+          "perplexity": 10.719610500647201
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 759,
+          "accuracy": 0.7412109375,
+          "sum_scoring_accuracy": 0.7666015625
+        },
+        "perplexity_ratio": 1.0,
+        "accuracy_difference_pp": 0.0,
+        "reference_correct_retention": 1.0,
+        "reference_correct_count": 759,
+        "lost_correct_answers": 0,
+        "gained_correct_answers": 0,
+        "prediction_agreement": 1.0,
+        "paired_accuracy_difference_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.0,
+          1.0
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      },
+      "encoding_seconds": 4.539030999876559,
+      "decoding_seconds": 2.18767930008471,
+      "benchmark": {
+        "prefill_tokens": 512,
+        "batch": 1,
+        "median_prefill_ms": 16.193669941276312,
+        "repeat_prefill_ms": [
+          16.179340053349733,
+          16.193669941276312,
+          16.951860021799803
+        ],
+        "model_parameter_bytes": 3422752768,
+        "allocated_before_bytes": 3431277056,
+        "peak_allocated_bytes": 3483705856,
+        "forward_increment_bytes": 52428800,
+        "scope": "Dense reconstructed FP16 model, GPU-resident inputs, SDPA, no KV cache. Excludes tokenizer, transfer, loading and decompression; this is not a compressed inference kernel."
+      }
+    },
+    {
+      "method": "int8",
+      "artifact_mib": 1779.556453704834,
+      "compression_ratio": 1.8361443262619863,
+      "eligible_relative_mse": 3.693308364260996e-05,
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.372108296647701,
+          "perplexity": 10.719969351617895
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 758,
+          "accuracy": 0.740234375,
+          "sum_scoring_accuracy": 0.765625
+        },
+        "perplexity_ratio": 1.0000334761203005,
+        "accuracy_difference_pp": -0.09765625,
+        "reference_correct_retention": 0.9960474308300395,
+        "reference_correct_count": 759,
+        "lost_correct_answers": 3,
+        "gained_correct_answers": 2,
+        "prediction_agreement": 0.994140625,
+        "paired_accuracy_difference_95ci_pp": [
+          -0.5859375,
+          0.390625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          0.9996109947562217,
+          1.0004843711853026
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      },
+      "encoding_seconds": 39.945021900348365,
+      "decoding_seconds": 17.194380800239742,
+      "benchmark": {
+        "prefill_tokens": 512,
+        "batch": 1,
+        "median_prefill_ms": 18.722760025411844,
+        "repeat_prefill_ms": [
+          17.990879993885756,
+          18.894570041447878,
+          18.722760025411844
+        ],
+        "model_parameter_bytes": 3422752768,
+        "allocated_before_bytes": 3431277056,
+        "peak_allocated_bytes": 3483705856,
+        "forward_increment_bytes": 52428800,
+        "scope": "Dense reconstructed FP16 model, GPU-resident inputs, SDPA, no KV cache. Excludes tokenizer, transfer, loading and decompression; this is not a compressed inference kernel."
+      }
+    },
+    {
+      "method": "int4",
+      "artifact_mib": 1011.5562324523926,
+      "compression_ratio": 3.2301936174238475,
+      "eligible_relative_mse": 0.01211889284356876,
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.547795191073661,
+          "perplexity": 12.778897671891125
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 720,
+          "accuracy": 0.703125,
+          "sum_scoring_accuracy": 0.734375
+        },
+        "perplexity_ratio": 1.192104663795349,
+        "accuracy_difference_pp": -3.80859375,
+        "reference_correct_retention": 0.9064558629776021,
+        "reference_correct_count": 759,
+        "lost_correct_answers": 71,
+        "gained_correct_answers": 32,
+        "prediction_agreement": 0.875,
+        "paired_accuracy_difference_95ci_pp": [
+          -5.76171875,
+          -1.953125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.1833405494689941,
+          1.2013906568288804
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "encoding_seconds": 30.606578799895942,
+      "decoding_seconds": 12.842517400160432,
+      "benchmark": {
+        "prefill_tokens": 512,
+        "batch": 1,
+        "median_prefill_ms": 18.662040028721094,
+        "repeat_prefill_ms": [
+          18.941769935190678,
+          17.720110062509775,
+          18.662040028721094
+        ],
+        "model_parameter_bytes": 3422752768,
+        "allocated_before_bytes": 3431277056,
+        "peak_allocated_bytes": 3483705856,
+        "forward_increment_bytes": 52428800,
+        "scope": "Dense reconstructed FP16 model, GPU-resident inputs, SDPA, no KV cache. Excludes tokenizer, transfer, loading and decompression; this is not a compressed inference kernel."
+      }
+    },
+    {
+      "method": "bezier_codebook4",
+      "artifact_mib": 1011.58909034729,
+      "compression_ratio": 3.230088696005267,
+      "eligible_relative_mse": 0.008215993335190958,
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.806431595278531,
+          "perplexity": 16.550752933814497
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 638,
+          "accuracy": 0.623046875,
+          "sum_scoring_accuracy": 0.6552734375
+        },
+        "perplexity_ratio": 1.5439696183751488,
+        "accuracy_difference_pp": -11.81640625,
+        "reference_correct_retention": 0.8168642951251647,
+        "reference_correct_count": 759,
+        "lost_correct_answers": 139,
+        "gained_correct_answers": 18,
+        "prediction_agreement": 0.8125,
+        "paired_accuracy_difference_95ci_pp": [
+          -14.16015625,
+          -9.66796875
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.5081966996192933,
+          1.5839446693658827
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "encoding_seconds": 36.96252750046551,
+      "decoding_seconds": 12.933231299743056,
+      "benchmark": {
+        "prefill_tokens": 512,
+        "batch": 1,
+        "median_prefill_ms": 17.89450002834201,
+        "repeat_prefill_ms": [
+          17.89450002834201,
+          18.430189974606037,
+          16.360479965806007
+        ],
+        "model_parameter_bytes": 3422752768,
+        "allocated_before_bytes": 3431277056,
+        "peak_allocated_bytes": 3483705856,
+        "forward_increment_bytes": 52428800,
+        "scope": "Dense reconstructed FP16 model, GPU-resident inputs, SDPA, no KV cache. Excludes tokenizer, transfer, loading and decompression; this is not a compressed inference kernel."
+      }
+    },
+    {
+      "method": "scalar_codebook4",
+      "artifact_mib": 1011.593095779419,
+      "compression_ratio": 3.230075906375626,
+      "eligible_relative_mse": 0.008095662687578047,
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.8815425332962827,
+          "perplexity": 17.84177349376307
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 620,
+          "accuracy": 0.60546875,
+          "sum_scoring_accuracy": 0.6435546875
+        },
+        "perplexity_ratio": 1.6644050166455084,
+        "accuracy_difference_pp": -13.57421875,
+        "reference_correct_retention": 0.7905138339920948,
+        "reference_correct_count": 759,
+        "lost_correct_answers": 159,
+        "gained_correct_answers": 20,
+        "prediction_agreement": 0.78515625,
+        "paired_accuracy_difference_95ci_pp": [
+          -16.015625,
+          -11.1328125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.6191410273313522,
+          1.7140136748552321
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "encoding_seconds": 34.646204800345004,
+      "decoding_seconds": 12.865936600603163,
+      "benchmark": {
+        "prefill_tokens": 512,
+        "batch": 1,
+        "median_prefill_ms": 16.754900012165308,
+        "repeat_prefill_ms": [
+          17.69041996449232,
+          16.754900012165308,
+          16.1438699811697
+        ],
+        "model_parameter_bytes": 3422752768,
+        "allocated_before_bytes": 3431277056,
+        "peak_allocated_bytes": 3483705856,
+        "forward_increment_bytes": 52428800,
+        "scope": "Dense reconstructed FP16 model, GPU-resident inputs, SDPA, no KV cache. Excludes tokenizer, transfer, loading and decompression; this is not a compressed inference kernel."
+      }
+    },
+    {
+      "method": "bezier_zero_anchor4",
+      "artifact_mib": 1011.6111707687378,
+      "compression_ratio": 3.2300181929090357,
+      "eligible_relative_mse": 0.008341461877921804,
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.5072521172379747,
+          "perplexity": 12.271163969186269
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 720,
+          "accuracy": 0.703125,
+          "sum_scoring_accuracy": 0.748046875
+        },
+        "perplexity_ratio": 1.1447397243067172,
+        "accuracy_difference_pp": -3.80859375,
+        "reference_correct_retention": 0.9209486166007905,
+        "reference_correct_count": 759,
+        "lost_correct_answers": 60,
+        "gained_correct_answers": 21,
+        "prediction_agreement": 0.900390625,
+        "paired_accuracy_difference_95ci_pp": [
+          -5.56640625,
+          -2.1484375
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.1382045924663544,
+          1.1515372276306153
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "encoding_seconds": 25.702184200286865,
+      "decoding_seconds": 14.49052090011537,
+      "benchmark": {
+        "prefill_tokens": 512,
+        "batch": 1,
+        "median_prefill_ms": 16.14320995286107,
+        "repeat_prefill_ms": [
+          16.10572999343276,
+          16.272709984332323,
+          16.14320995286107
+        ],
+        "model_parameter_bytes": 3422752768,
+        "allocated_before_bytes": 3431277056,
+        "peak_allocated_bytes": 3483705856,
+        "forward_increment_bytes": 52428800,
+        "scope": "Dense reconstructed FP16 model, GPU-resident inputs, SDPA, no KV cache. Excludes tokenizer, transfer, loading and decompression; this is not a compressed inference kernel."
+      }
+    },
+    {
+      "method": "scalar_zero_anchor4",
+      "artifact_mib": 1011.6152458190918,
+      "compression_ratio": 3.2300051815523614,
+      "eligible_relative_mse": 0.008230623883462266,
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.5106640486524334,
+          "perplexity": 12.313103846330751
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 727,
+          "accuracy": 0.7099609375,
+          "sum_scoring_accuracy": 0.7568359375
+        },
+        "perplexity_ratio": 1.1486521684334838,
+        "accuracy_difference_pp": -3.125,
+        "reference_correct_retention": 0.9341238471673254,
+        "reference_correct_count": 759,
+        "lost_correct_answers": 50,
+        "gained_correct_answers": 18,
+        "prediction_agreement": 0.9169921875,
+        "paired_accuracy_difference_95ci_pp": [
+          -4.78515625,
+          -1.66015625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.1430131196975708,
+          1.1545075476169586
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "encoding_seconds": 27.279031599871814,
+      "decoding_seconds": 14.129831399768591,
+      "benchmark": {
+        "prefill_tokens": 512,
+        "batch": 1,
+        "median_prefill_ms": 16.199500020593405,
+        "repeat_prefill_ms": [
+          16.199500020593405,
+          16.007990017533302,
+          16.829250007867813
+        ],
+        "model_parameter_bytes": 3422752768,
+        "allocated_before_bytes": 3431277056,
+        "peak_allocated_bytes": 3483705856,
+        "forward_increment_bytes": 52428800,
+        "scope": "Dense reconstructed FP16 model, GPU-resident inputs, SDPA, no KV cache. Excludes tokenizer, transfer, loading and decompression; this is not a compressed inference kernel."
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "method": "bezier_zero_anchor4",
+      "control": "bezier_codebook4",
+      "perplexity_ratio": 0.7414263277482265,
+      "accuracy_difference_pp": 8.0078125,
+      "reference_correct_retention": 0.9467084639498433,
+      "reference_correct_count": 638,
+      "lost_correct_answers": 34,
+      "gained_correct_answers": 116,
+      "prediction_agreement": 0.8017578125,
+      "paired_accuracy_difference_95ci_pp": [
+        5.76171875,
+        10.25390625
+      ],
+      "paired_perplexity_ratio_95ci": [
+        0.7239294141530991,
+        0.7581473872065544
+      ],
+      "thresholds_passed": {
+        "perplexity": true,
+        "qa_accuracy": true,
+        "reference_correct_retention": false
+      },
+      "all_thresholds_passed": false
+    },
+    {
+      "method": "bezier_zero_anchor4",
+      "control": "int4",
+      "perplexity_ratio": 0.9602678012030972,
+      "accuracy_difference_pp": 0.0,
+      "reference_correct_retention": 0.9208333333333333,
+      "reference_correct_count": 720,
+      "lost_correct_answers": 57,
+      "gained_correct_answers": 57,
+      "prediction_agreement": 0.8603515625,
+      "paired_accuracy_difference_95ci_pp": [
+        -2.05078125,
+        1.953125
+      ],
+      "paired_perplexity_ratio_95ci": [
+        0.952864122390747,
+        0.9677443042397499
+      ],
+      "thresholds_passed": {
+        "perplexity": true,
+        "qa_accuracy": true,
+        "reference_correct_retention": false
+      },
+      "all_thresholds_passed": false
+    },
+    {
+      "method": "scalar_zero_anchor4",
+      "control": "scalar_codebook4",
+      "perplexity_ratio": 0.6901277975889016,
+      "accuracy_difference_pp": 10.44921875,
+      "reference_correct_retention": 0.9370967741935484,
+      "reference_correct_count": 620,
+      "lost_correct_answers": 39,
+      "gained_correct_answers": 146,
+      "prediction_agreement": 0.775390625,
+      "paired_accuracy_difference_95ci_pp": [
+        8.0078125,
+        12.890625
+      ],
+      "paired_perplexity_ratio_95ci": [
+        0.6705789297819138,
+        0.7084349721670151
+      ],
+      "thresholds_passed": {
+        "perplexity": true,
+        "qa_accuracy": true,
+        "reference_correct_retention": false
+      },
+      "all_thresholds_passed": false
+    },
+    {
+      "method": "scalar_zero_anchor4",
+      "control": "int4",
+      "perplexity_ratio": 0.9635497648138346,
+      "accuracy_difference_pp": 0.68359375,
+      "reference_correct_retention": 0.9236111111111112,
+      "reference_correct_count": 720,
+      "lost_correct_answers": 55,
+      "gained_correct_answers": 62,
+      "prediction_agreement": 0.8603515625,
+      "paired_accuracy_difference_95ci_pp": [
+        -1.3671875,
+        2.734375
+      ],
+      "paired_perplexity_ratio_95ci": [
+        0.9566564932465553,
+        0.9707414925098419
+      ],
+      "thresholds_passed": {
+        "perplexity": true,
+        "qa_accuracy": true,
+        "reference_correct_retention": false
+      },
+      "all_thresholds_passed": false
+    }
+  ],
+  "anchors": {
+    "bezier_zero_anchor4": {
+      "matrices": 168,
+      "max_normalized_zero_residual": 1.4901161193847656e-08
+    },
+    "scalar_zero_anchor4": {
+      "matrices": 168,
+      "max_normalized_zero_residual": 0.0
+    }
+  },
+  "thresholds": {
+    "max_relative_perplexity_increase": 0.1,
+    "max_absolute_qa_accuracy_loss": 0.02,
+    "min_retention_of_reference_correct_answers": 0.95
+  },
+  "interval_scope": "Paired bootstrap over this fixed fresh subset, 2,000 draws. Exploratory; same corpus, no multiple-comparison correction or checkpoint/fit-seed uncertainty."
+}

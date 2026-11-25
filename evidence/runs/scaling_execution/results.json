@@ -1,0 +1,920 @@
+{
+  "scope": "Untrained random-weight execution only. These timings do not demonstrate matched accuracy, knowledge capacity or reliability. All stored experts count toward parameter bytes.",
+  "runs": [
+    {
+      "model": "bezier",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 256,
+        "bottleneck": 128,
+        "experts": 32,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 9326844,
+      "parameters": 2331707,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 745600,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9672420099377632,
+          "min_batch_ms": 0.9563159942626953,
+          "max_batch_ms": 1.0038039833307266,
+          "examples_per_second": 1033.8674186249877,
+          "repeat_batch_ms": [
+            0.9607259929180145,
+            0.9672420099377632,
+            0.9563159942626953,
+            0.9912679903209209,
+            1.0038039833307266
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 18921472,
+          "forward_increment_bytes": 270336,
+          "accounted_inference_bytes": 9600316
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 1.0239139944314957,
+          "min_batch_ms": 1.015750002115965,
+          "max_batch_ms": 1.0493860021233559,
+          "examples_per_second": 125010.49960848421,
+          "repeat_batch_ms": [
+            1.0493860021233559,
+            1.036863997578621,
+            1.0173359885811806,
+            1.0239139944314957,
+            1.015750002115965
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 54253568,
+          "forward_increment_bytes": 34553856,
+          "accounted_inference_bytes": 44282108
+        }
+      ]
+    },
+    {
+      "model": "straight",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 256,
+        "bottleneck": 128,
+        "experts": 32,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 9326052,
+      "parameters": 2331509,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 745408,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.4306079968810081,
+          "min_batch_ms": 1.150129996240139,
+          "max_batch_ms": 1.4730380102992058,
+          "examples_per_second": 699.0035021334888,
+          "repeat_batch_ms": [
+            1.150129996240139,
+            1.4730380102992058,
+            1.4405359886586666,
+            1.4306079968810081,
+            1.4271280169487
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 19969536,
+          "forward_increment_bytes": 270336,
+          "accounted_inference_bytes": 9599524
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 0.9914800152182579,
+          "min_batch_ms": 0.9739859960973263,
+          "max_batch_ms": 1.2109040096402168,
+          "examples_per_second": 129099.92943410254,
+          "repeat_batch_ms": [
+            1.2109040096402168,
+            0.9839219972491264,
+            0.9739859960973263,
+            0.9914800152182579,
+            0.995544008910656
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 54253056,
+          "forward_increment_bytes": 34553856,
+          "accounted_inference_bytes": 44281316
+        }
+      ]
+    },
+    {
+      "model": "moe",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 256,
+        "bottleneck": 128,
+        "experts": 32,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 9324876,
+      "parameters": 2331215,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 769792,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9769999980926514,
+          "min_batch_ms": 0.965999998152256,
+          "max_batch_ms": 1.000606007874012,
+          "examples_per_second": 1023.5414554270731,
+          "repeat_batch_ms": [
+            1.000606007874012,
+            0.9769999980926514,
+            0.965999998152256,
+            0.9740500152111053,
+            0.9834640100598335
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 19966464,
+          "forward_increment_bytes": 269312,
+          "accounted_inference_bytes": 9597324
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 0.7116280123591423,
+          "min_batch_ms": 0.6342099979519844,
+          "max_batch_ms": 1.1456359922885895,
+          "examples_per_second": 179869.2544095655,
+          "repeat_batch_ms": [
+            0.6482239998877048,
+            0.6342099979519844,
+            0.7116280123591423,
+            1.1456359922885895,
+            1.1039679870009422
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 54189568,
+          "forward_increment_bytes": 34492416,
+          "accounted_inference_bytes": 44218700
+        }
+      ]
+    },
+    {
+      "model": "residual",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 256,
+        "bottleneck": 128,
+        "experts": 32,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 9291964,
+      "parameters": 2322991,
+      "expert_evaluations_per_example": 32,
+      "linear_macs_per_example": 2309888,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.706250011920929,
+          "min_batch_ms": 1.6146259941160679,
+          "max_batch_ms": 1.9229679927229881,
+          "examples_per_second": 586.0805819858608,
+          "repeat_batch_ms": [
+            1.7072940059006214,
+            1.9229679927229881,
+            1.6291559860110283,
+            1.6146259941160679,
+            1.706250011920929
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 19666944,
+          "forward_increment_bytes": 3584,
+          "accounted_inference_bytes": 9298684
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 1.7274020053446293,
+          "min_batch_ms": 1.7168700136244297,
+          "max_batch_ms": 2.6287519931793213,
+          "examples_per_second": 74099.71714978012,
+          "repeat_batch_ms": [
+            1.7228079959750175,
+            1.7168700136244297,
+            1.7274020053446293,
+            1.7291299998760223,
+            2.6287519931793213
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 20122112,
+          "forward_increment_bytes": 458752,
+          "accounted_inference_bytes": 10152124
+        }
+      ]
+    },
+    {
+      "model": "residual_compact",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 256,
+        "bottleneck": 128,
+        "experts": 8,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 2963644,
+      "parameters": 740911,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 737024,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.7186000049114227,
+          "min_batch_ms": 0.6388380005955696,
+          "max_batch_ms": 0.7240200042724609,
+          "examples_per_second": 1391.594758092527,
+          "repeat_batch_ms": [
+            0.7240200042724609,
+            0.7191780023276806,
+            0.7186000049114227,
+            0.7182599976658821,
+            0.6388380005955696
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 13338624,
+          "forward_increment_bytes": 3584,
+          "accounted_inference_bytes": 2970364
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 0.47499800100922585,
+          "min_batch_ms": 0.46783799305558205,
+          "max_batch_ms": 0.4840420000255108,
+          "examples_per_second": 269474.8182687907,
+          "repeat_batch_ms": [
+            0.47811198979616165,
+            0.47499800100922585,
+            0.47424599528312683,
+            0.4840420000255108,
+            0.46783799305558205
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 13793792,
+          "forward_increment_bytes": 458752,
+          "accounted_inference_bytes": 3823804
+        }
+      ]
+    },
+    {
+      "model": "bezier",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 512,
+        "bottleneck": 256,
+        "experts": 64,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 69081724,
+      "parameters": 17270427,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 2539392,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9721039980649948,
+          "min_batch_ms": 0.9547320008277893,
+          "max_batch_ms": 0.9906340017914772,
+          "examples_per_second": 1028.6965201156802,
+          "repeat_batch_ms": [
+            0.9906340017914772,
+            0.9695659950375557,
+            0.9721039980649948,
+            0.9547320008277893,
+            0.9753140062093735
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 80517120,
+          "forward_increment_bytes": 1062400,
+          "accounted_inference_bytes": 70147260
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 1.606689989566803,
+          "min_batch_ms": 1.5997240133583546,
+          "max_batch_ms": 1.8257900141179562,
+          "examples_per_second": 79666.89332178603,
+          "repeat_batch_ms": [
+            1.5997240133583546,
+            1.604193989187479,
+            1.606689989566803,
+            1.8257900141179562,
+            1.7715460062026978
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 215654912,
+          "forward_increment_bytes": 136200192,
+          "accounted_inference_bytes": 205683324
+        }
+      ]
+    },
+    {
+      "model": "straight",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 512,
+        "bottleneck": 256,
+        "experts": 64,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 69080932,
+      "parameters": 17270229,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 2539200,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9058479964733124,
+          "min_batch_ms": 0.887197982519865,
+          "max_batch_ms": 1.317922007292509,
+          "examples_per_second": 1103.9379718156295,
+          "repeat_batch_ms": [
+            1.317922007292509,
+            0.887197982519865,
+            0.9058479964733124,
+            0.8977380022406578,
+            0.9100720100104809
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 80516608,
+          "forward_increment_bytes": 1062400,
+          "accounted_inference_bytes": 70146468
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 1.591791994869709,
+          "min_batch_ms": 1.583258006721735,
+          "max_batch_ms": 1.766004003584385,
+          "examples_per_second": 80412.51646731458,
+          "repeat_batch_ms": [
+            1.5898479893803596,
+            1.583258006721735,
+            1.591791994869709,
+            1.766004003584385,
+            1.680816002190113
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 215654400,
+          "forward_increment_bytes": 136200192,
+          "accounted_inference_bytes": 205682532
+        }
+      ]
+    },
+    {
+      "model": "moe",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 512,
+        "bottleneck": 256,
+        "experts": 64,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 69145036,
+      "parameters": 17286255,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 2653696,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.6080400012433529,
+          "min_batch_ms": 0.5921739898622036,
+          "max_batch_ms": 0.9194000065326691,
+          "examples_per_second": 1644.628639489419,
+          "repeat_batch_ms": [
+            0.9194000065326691,
+            0.614611990749836,
+            0.5921739898622036,
+            0.601257998496294,
+            0.6080400012433529
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 80578048,
+          "forward_increment_bytes": 1060864,
+          "accounted_inference_bytes": 70209036
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 1.677249986678362,
+          "min_batch_ms": 1.6692839935421944,
+          "max_batch_ms": 1.698829997330904,
+          "examples_per_second": 76315.3978337434,
+          "repeat_batch_ms": [
+            1.677249986678362,
+            1.6692839935421944,
+            1.698829997330904,
+            1.6888180002570152,
+            1.6754279844462872
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 215606784,
+          "forward_increment_bytes": 136089600,
+          "accounted_inference_bytes": 205636044
+        }
+      ]
+    },
+    {
+      "model": "residual",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 512,
+        "bottleneck": 256,
+        "experts": 64,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 69013692,
+      "parameters": 17253423,
+      "expert_evaluations_per_example": 64,
+      "linear_macs_per_example": 17202688,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 3.217804003506899,
+          "min_batch_ms": 3.1924820132553577,
+          "max_batch_ms": 4.09119201824069,
+          "examples_per_second": 310.77094779860977,
+          "repeat_batch_ms": [
+            4.09119201824069,
+            3.1976299919188023,
+            3.217804003506899,
+            3.1924820132553577,
+            3.2498260028660297
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 79392256,
+          "forward_increment_bytes": 7168,
+          "accounted_inference_bytes": 69023996
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 3.415766004472971,
+          "min_batch_ms": 3.3549180068075657,
+          "max_batch_ms": 6.096390001475811,
+          "examples_per_second": 37473.29291069208,
+          "repeat_batch_ms": [
+            6.096390001475811,
+            4.482028000056744,
+            3.3549180068075657,
+            3.415766004472971,
+            3.3865220099687576
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 80302592,
+          "forward_increment_bytes": 917504,
+          "accounted_inference_bytes": 70332604
+        }
+      ]
+    },
+    {
+      "model": "residual_compact",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 512,
+        "bottleneck": 256,
+        "experts": 8,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 10121404,
+      "parameters": 2530351,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 2522624,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.45205799862742424,
+          "min_batch_ms": 0.44629599899053574,
+          "max_batch_ms": 0.46706199645996094,
+          "examples_per_second": 2212.105532998603,
+          "repeat_batch_ms": [
+            0.46706199645996094,
+            0.44629599899053574,
+            0.45107198879122734,
+            0.45205799862742424,
+            0.45407598838210106
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 20499968,
+          "forward_increment_bytes": 7168,
+          "accounted_inference_bytes": 10131708
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 0.4743319936096668,
+          "min_batch_ms": 0.469845999032259,
+          "max_batch_ms": 0.4986479878425598,
+          "examples_per_second": 269853.18663816014,
+          "repeat_batch_ms": [
+            0.4741379991173744,
+            0.4743319936096668,
+            0.4986479878425598,
+            0.48371801152825356,
+            0.469845999032259
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 21410304,
+          "forward_increment_bytes": 917504,
+          "accounted_inference_bytes": 11440316
+        }
+      ]
+    },
+    {
+      "model": "bezier",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 1024,
+        "bottleneck": 512,
+        "experts": 64,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 272378492,
+      "parameters": 68094619,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 9272704,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9685580059885979,
+          "min_batch_ms": 0.9473699890077114,
+          "max_batch_ms": 0.9767339937388897,
+          "examples_per_second": 1032.4626855769052,
+          "repeat_batch_ms": [
+            0.9714800119400024,
+            0.9685580059885979,
+            0.9589839912950993,
+            0.9767339937388897,
+            0.9473699890077114
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 287821824,
+          "forward_increment_bytes": 4218368,
+          "accounted_inference_bytes": 276599996
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 5.766740012913942,
+          "min_batch_ms": 5.750024002045393,
+          "max_batch_ms": 5.7922400161623955,
+          "examples_per_second": 22196.24947775674,
+          "repeat_batch_ms": [
+            5.7711660116910934,
+            5.762586016207933,
+            5.750024002045393,
+            5.7922400161623955,
+            5.766740012913942
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 824291840,
+          "forward_increment_bytes": 540688384,
+          "accounted_inference_bytes": 813468284
+        }
+      ]
+    },
+    {
+      "model": "straight",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 1024,
+        "bottleneck": 512,
+        "experts": 64,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 272377700,
+      "parameters": 68094421,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 9272512,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.474687997251749,
+          "min_batch_ms": 1.4179879985749722,
+          "max_batch_ms": 1.491289995610714,
+          "examples_per_second": 678.1095403662437,
+          "repeat_batch_ms": [
+            1.491289995610714,
+            1.475323997437954,
+            1.474687997251749,
+            1.4461060054600239,
+            1.4179879985749722
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 287821312,
+          "forward_increment_bytes": 4218368,
+          "accounted_inference_bytes": 276599204
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 5.775182005017996,
+          "min_batch_ms": 5.765551999211311,
+          "max_batch_ms": 5.804237984120846,
+          "examples_per_second": 22163.80364961349,
+          "repeat_batch_ms": [
+            5.776553992182016,
+            5.775182005017996,
+            5.804237984120846,
+            5.765551999211311,
+            5.772766005247831
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 824291328,
+          "forward_increment_bytes": 540688384,
+          "accounted_inference_bytes": 813467492
+        }
+      ]
+    },
+    {
+      "model": "moe",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 1024,
+        "bottleneck": 512,
+        "experts": 64,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 272507340,
+      "parameters": 68126831,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 9501696,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.979372002184391,
+          "min_batch_ms": 0.6255839951336384,
+          "max_batch_ms": 1.0496940091252327,
+          "examples_per_second": 1021.0624744934512,
+          "repeat_batch_ms": [
+            1.0496940091252327,
+            0.979372002184391,
+            0.9898040071129799,
+            0.6255839951336384,
+            0.6257880106568336
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 287948288,
+          "forward_increment_bytes": 4216832,
+          "accounted_inference_bytes": 276727308
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 6.48479200899601,
+          "min_batch_ms": 6.474753990769386,
+          "max_batch_ms": 6.503417994827032,
+          "examples_per_second": 19738.48965740649,
+          "repeat_batch_ms": [
+            6.481767985969782,
+            6.503417994827032,
+            6.48479200899601,
+            6.474753990769386,
+            6.486290004104376
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 824309248,
+          "forward_increment_bytes": 540577792,
+          "accounted_inference_bytes": 813486540
+        }
+      ]
+    },
+    {
+      "model": "residual",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 1024,
+        "bottleneck": 512,
+        "experts": 64,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 272244924,
+      "parameters": 68061231,
+      "expert_evaluations_per_example": 64,
+      "linear_macs_per_example": 67959808,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 3.0121299996972084,
+          "min_batch_ms": 2.9784500040113926,
+          "max_batch_ms": 4.735444001853466,
+          "examples_per_second": 331.99098315827143,
+          "repeat_batch_ms": [
+            3.590104002505541,
+            4.735444001853466,
+            2.9784500040113926,
+            2.999683991074562,
+            3.0121299996972084
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 283482624,
+          "forward_increment_bytes": 14336,
+          "accounted_inference_bytes": 272262396
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 3.578130006790161,
+          "min_batch_ms": 3.55724198743701,
+          "max_batch_ms": 5.675271991640329,
+          "examples_per_second": 35772.87570800849,
+          "repeat_batch_ms": [
+            3.5874180123209953,
+            5.675271991640329,
+            3.55724198743701,
+            3.570440001785755,
+            3.578130006790161
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 285303296,
+          "forward_increment_bytes": 1835008,
+          "accounted_inference_bytes": 274481340
+        }
+      ]
+    },
+    {
+      "model": "residual_compact",
+      "untrained": true,
+      "config": {
+        "input_dim": 784,
+        "classes": 47,
+        "width": 1024,
+        "bottleneck": 512,
+        "experts": 8,
+        "top_k": 2,
+        "steps": 4,
+        "router_width": 32,
+        "bandwidth": 0.6,
+        "activation": "silu"
+      },
+      "stored_state_tensor_bytes": 37019836,
+      "parameters": 9254959,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 9239552,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.7270820066332817,
+          "min_batch_ms": 0.7171539962291718,
+          "max_batch_ms": 0.7396719977259636,
+          "examples_per_second": 1375.3606757928887,
+          "repeat_batch_ms": [
+            0.7396719977259636,
+            0.7270820066332817,
+            0.7171539962291718,
+            0.7294920086860657,
+            0.7180720008909702
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 48257536,
+          "forward_increment_bytes": 14336,
+          "accounted_inference_bytes": 37037308
+        },
+        {
+          "batch_size": 128,
+          "median_batch_ms": 0.48841800540685654,
+          "min_batch_ms": 0.4824160039424896,
+          "max_batch_ms": 0.8302219957113266,
+          "examples_per_second": 262070.60055735428,
+          "repeat_batch_ms": [
+            0.8302219957113266,
+            0.4824160039424896,
+            0.48841800540685654,
+            0.48770200461149216,
+            0.4936400055885315
+          ],
+          "iterations_per_repeat": 50,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 50078208,
+          "forward_increment_bytes": 1835008,
+          "accounted_inference_bytes": 39256252
+        }
+      ]
+    }
+  ]
+}

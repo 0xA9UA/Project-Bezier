@@ -1,0 +1,117 @@
+{
+  "models_verified": 15,
+  "learned_candidate_sets_rescored": 102,
+  "total_candidates_rescored_including_random": 4955648,
+  "primary_sample_sets_regenerated": 15,
+  "function_disjoint_splits": "passed",
+  "reference_program_semantics": "passed",
+  "source_and_dataset_hashes": "passed",
+  "report_links": "passed",
+  "runs": [
+    {
+      "architecture": "bezier",
+      "seed": 7,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "straight",
+      "seed": 7,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "moe",
+      "seed": 7,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "fixed",
+      "seed": 7,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "plain",
+      "seed": 7,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "straight",
+      "seed": 19,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "moe",
+      "seed": 19,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "fixed",
+      "seed": 19,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "plain",
+      "seed": 19,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "bezier",
+      "seed": 19,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "moe",
+      "seed": 42,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "fixed",
+      "seed": 42,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "plain",
+      "seed": 42,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "bezier",
+      "seed": 42,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    },
+    {
+      "architecture": "straight",
+      "seed": 42,
+      "checkpoint": "passed",
+      "metrics": "passed",
+      "primary_regeneration": "passed"
+    }
+  ]
+}

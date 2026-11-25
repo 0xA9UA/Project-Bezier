@@ -1,0 +1,237 @@
+{
+  "passed": true,
+  "checkpoints": [
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\cpu_activation_s19\\model.pt",
+      "sha256": "2dc79c1815a20570faf8a1aaa451f40ef1bfbaec8a5b840e69c5bc90be0851f2",
+      "max_abs_error": 5.7220458984375e-06,
+      "accuracy": 0.9694444537162781,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\cpu_activation_s42\\model.pt",
+      "sha256": "89c08828937c40718faf57d43c9e1c1f52d460ea9a564702d0faa314467d3afa",
+      "max_abs_error": 3.814697265625e-06,
+      "accuracy": 0.9555555582046509,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\cpu_activation_s7\\model.pt",
+      "sha256": "267b473bd224eb1fa1b589b0df28eceadb4b226192c114426d6bd7a8d600f1bb",
+      "max_abs_error": 4.76837158203125e-06,
+      "accuracy": 0.9583333134651184,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\cpu_s19\\model.pt",
+      "sha256": "8595f5b734648bf83da4cbc8309243f741a3e9201b7d5967e97a00c660780546",
+      "max_abs_error": 0.0,
+      "accuracy": 0.9666666388511658,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\cpu_s42\\model.pt",
+      "sha256": "e6d8f3cda564f38dcd0f9680bb891c61f33075fbe6d9af4e114eec6e5baef14c",
+      "max_abs_error": 0.0,
+      "accuracy": 0.9555555582046509,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\cpu_s7\\model.pt",
+      "sha256": "819cc53064c9d64fa9d4eb3dbcf9f56599e619dbe1f722bca6c4719f900bf27e",
+      "max_abs_error": 0.0,
+      "accuracy": 0.9583333134651184,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\gpu_routing_s19\\model.pt",
+      "sha256": "192a99381d2675f738d4d811dd0999f556c4000899cff9eabadf408ec5ef9707",
+      "max_abs_error": 2.86102294921875e-06,
+      "accuracy": 0.9666666388511658,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\gpu_routing_s42\\model.pt",
+      "sha256": "9e19f74692755d2de2896fefc2e61605babf7edcaed0d156fe227885b67b9136",
+      "max_abs_error": 1.9073486328125e-06,
+      "accuracy": 0.9555555582046509,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\gpu_routing_s7\\model.pt",
+      "sha256": "6eaceaee4824bc6db18189f2096d3c2eff4633cd688c3767f42f16be7dd559bd",
+      "max_abs_error": 2.86102294921875e-06,
+      "accuracy": 0.9583333134651184,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\gpu_s19\\model.pt",
+      "sha256": "c62acda6a8da316f3f76574c13034cd81b4e11ce079ea51579165b7a2f84f85c",
+      "max_abs_error": 5.7220458984375e-06,
+      "accuracy": 0.9694444537162781,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\gpu_s42\\model.pt",
+      "sha256": "690b33739845eb6b71702b47e8711ebc1abda656f116e0fabcb81987662be6d1",
+      "max_abs_error": 4.76837158203125e-06,
+      "accuracy": 0.9555555582046509,
+      "passed": true
+    },
+    {
+      "type": "supervised",
+      "checkpoint": "supervised\\gpu_s7\\model.pt",
+      "sha256": "33cdaabc292cc05fc34037ef4bbf9d0f84dd13f22abc5deae4c8635076783f0e",
+      "max_abs_error": 4.76837158203125e-06,
+      "accuracy": 0.9583333134651184,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_activation_s19\\model.pt",
+      "sha256": "0d9dd48546be7d8efe40a5432539004d590897539702ee7b6ca6a87611463d3a",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_activation_s42\\model.pt",
+      "sha256": "8c710aa8d94bf31b885925d4ac2d7e6e98ba02133b90a731fd81e1f27756f4be",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_activation_s7\\model.pt",
+      "sha256": "7235e4965612a56fab5887fb5b2d3b19fbf74fd7c886a578dc2803e720faf3cc",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_actor_gpu_learner_s19\\model.pt",
+      "sha256": "27290d6d305a2b6c0151c5a3fdcd0fb7372a3f1d72b277dc72034cb1caeb0d8b",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_actor_gpu_learner_s42\\model.pt",
+      "sha256": "2fd08b4cc68fe1f783e228003f195abfbd2fb3d639037551370f6bec29e84c4e",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_actor_gpu_learner_s7\\model.pt",
+      "sha256": "8496139caa251e33d4b72835bbaaa15ba1a39f24a4182118d0cbc055ca2c3129",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_s19\\model.pt",
+      "sha256": "64bc8456818b1c67cb6de3c52552dcafbeae7fe08c0b064786d986c863bf9a36",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_s42\\model.pt",
+      "sha256": "db58c881c93cd945e142d3d92ee990391b270852a007208eddd125ced118c1cc",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\cpu_s7\\model.pt",
+      "sha256": "1bef3ab4716d698e888333192b8046366721fbc7d9b2227320dbd95a6b6554ec",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\gpu_routing_s19\\model.pt",
+      "sha256": "feabfd5abd77eb98ccc6da395f5c588304c6a83817436acf350d320b38f514be",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\gpu_routing_s42\\model.pt",
+      "sha256": "a0a606d0a9d3949ffff6c89e239971f72aa078eab3e25093cb05e568e6ee2d72",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\gpu_routing_s7\\model.pt",
+      "sha256": "cc45853503a1188d44276922d63c8eb2f91fd80c04837e4cf747413cb17c5f4a",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\gpu_s19\\model.pt",
+      "sha256": "15ae495808d27911772f7fbb85a04e104a33bca448ddcdd01eb7220129a2c28c",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\gpu_s42\\model.pt",
+      "sha256": "3fc6240cac73fed28851c46f627142c2c1846062580d49eee6fb204e97f8fe71",
+      "success_rate": 1.0,
+      "passed": true
+    },
+    {
+      "type": "reinforcement_learning",
+      "checkpoint": "rl\\gpu_s7\\model.pt",
+      "sha256": "d2de96ae1e9e1754cee156a4a27846bed40003a84e9576c3aa7afbe31507b1c1",
+      "success_rate": 1.0,
+      "passed": true
+    }
+  ],
+  "checkpoint_count": 27,
+  "source_snapshots_verified": [
+    "benchmark",
+    "rl",
+    "train"
+  ],
+  "inference_cases": 54,
+  "original_digits_reference": [
+    {
+      "mode": "cpu",
+      "accuracy": 0.9666666388511658,
+      "max_abs_error": 0.0
+    },
+    {
+      "mode": "gpu",
+      "accuracy": 0.9666666388511658,
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "mode": "cpu_activation",
+      "accuracy": 0.9666666388511658,
+      "max_abs_error": 4.76837158203125e-06
+    },
+    {
+      "mode": "gpu_routing",
+      "accuracy": 0.9666666388511658,
+      "max_abs_error": 2.86102294921875e-06
+    }
+  ],
+  "assets_verified": true,
+  "isolated_memory_cases": 4
+}

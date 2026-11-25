@@ -1,0 +1,53 @@
+{
+  "revision": 3,
+  "design": "bounded seven-run scaling study with approximately 5% shared core",
+  "groups": [
+    {
+      "name": "tier2_seed7",
+      "tier": 2,
+      "seed": 7,
+      "arms": [
+        "clean-outer",
+        "unshared-core",
+        "nested-core-concurrent"
+      ],
+      "runtime": true
+    },
+    {
+      "name": "tier1_seed7",
+      "tier": 1,
+      "seed": 7,
+      "arms": [
+        "clean-outer",
+        "nested-core-concurrent"
+      ],
+      "runtime": false
+    },
+    {
+      "name": "tier2_seed19",
+      "tier": 2,
+      "seed": 19,
+      "arms": [
+        "clean-outer",
+        "nested-core-concurrent"
+      ],
+      "runtime": false
+    }
+  ],
+  "completed": [
+    "tier2_seed7",
+    "tier1_seed7",
+    "tier2_seed19"
+  ],
+  "status": "complete",
+  "selection": "Joint checkpoint minimizes validation outer NLL plus direct-core NLL; test never selects",
+  "heldout_evaluation": "Complete preserved validation/test/OOD splits, 512 examples each",
+  "limitations": [
+    "Two seeds at large scale; one at small scale",
+    "Only clean/shared/private controls; remaining ablations not executed",
+    "Reused benchmark holdouts, not a new sequestered confirmation set",
+    "No claim of the full original research protocol"
+  ],
+  "active_group": null,
+  "elapsed_seconds": 840.3176638996229
+}

@@ -1,0 +1,200 @@
+{
+  "completed_checkpoints": 24,
+  "source_hashes": "passed",
+  "data_hash": "passed",
+  "report_links": "passed",
+  "runs": [
+    {
+      "variant": "neurons_frozen",
+      "seed": 7,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "neurons_frozen",
+      "seed": 19,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "neurons_frozen",
+      "seed": 42,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "neurons_feedback",
+      "seed": 7,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "neurons_feedback",
+      "seed": 19,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "neurons_feedback",
+      "seed": 42,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "groups_frozen",
+      "seed": 7,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "groups_frozen",
+      "seed": 19,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "groups_frozen",
+      "seed": 42,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "groups_feedback",
+      "seed": 7,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "groups_feedback",
+      "seed": 19,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "groups_feedback",
+      "seed": 42,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_frozen",
+      "seed": 7,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_frozen",
+      "seed": 19,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_frozen",
+      "seed": 42,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_feedback",
+      "seed": 7,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_feedback",
+      "seed": 19,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_feedback",
+      "seed": 42,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_straight",
+      "seed": 7,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_straight",
+      "seed": 19,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "hierarchical_straight",
+      "seed": 42,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "direct_feedback",
+      "seed": 7,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "direct_feedback",
+      "seed": 19,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    },
+    {
+      "variant": "direct_feedback",
+      "seed": 42,
+      "predictions": "passed",
+      "surface_exit": "passed",
+      "intervention": "passed",
+      "trace_batch_predictions": "passed"
+    }
+  ]
+}

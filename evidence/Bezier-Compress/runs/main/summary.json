@@ -1,0 +1,1660 @@
+{
+  "completed_cases": 20,
+  "rows": [
+    {
+      "model": "SmolLM2-135M",
+      "method": "fp16",
+      "artifact_mib": 259.91795539855957,
+      "compression_ratio": 1.0,
+      "eligible_bits_per_weight": 16.0,
+      "eligible_relative_mse": 0.0,
+      "encoding_seconds": 0.6612900998443365,
+      "decoding_seconds": 0.29163539968430996,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 29.861229937523603,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 3.1048056461548597,
+          "perplexity": 22.304883514106326
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 72,
+          "accuracy": 0.5625,
+          "sum_scoring_accuracy": 0.640625
+        },
+        "perplexity_ratio": 1.0,
+        "accuracy_difference_pp": 0.0,
+        "reference_correct_retention": 1.0,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 0,
+        "gained_correct_answers": 0,
+        "prediction_agreement": 1.0,
+        "paired_accuracy_difference_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.0,
+          1.0
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 3.0373177936136035,
+          "perplexity": 20.849246189566287
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 609,
+          "accuracy": 0.5947265625,
+          "sum_scoring_accuracy": 0.646484375
+        },
+        "perplexity_ratio": 1.0,
+        "accuracy_difference_pp": 0.0,
+        "reference_correct_retention": 1.0,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 0,
+        "gained_correct_answers": 0,
+        "prediction_agreement": 1.0,
+        "paired_accuracy_difference_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.0,
+          1.0
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "int8",
+      "artifact_mib": 161.87395477294922,
+      "compression_ratio": 1.6056811348257398,
+      "eligible_bits_per_weight": 8.25,
+      "eligible_relative_mse": 3.879457953599447e-05,
+      "encoding_seconds": 1.1582780005410314,
+      "decoding_seconds": 0.6186371995136142,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 25.89824004098773,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 3.109222845981898,
+          "perplexity": 22.403626565047407
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 72,
+          "accuracy": 0.5625,
+          "sum_scoring_accuracy": 0.6484375
+        },
+        "perplexity_ratio": 1.0044269700345503,
+        "accuracy_difference_pp": 0.0,
+        "reference_correct_retention": 1.0,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 0,
+        "gained_correct_answers": 0,
+        "prediction_agreement": 1.0,
+        "paired_accuracy_difference_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.0032479554414748,
+          1.005580198764801
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 3.0412931426922825,
+          "perplexity": 20.9322941842116
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 604,
+          "accuracy": 0.58984375,
+          "sum_scoring_accuracy": 0.646484375
+        },
+        "perplexity_ratio": 1.0039832612599142,
+        "accuracy_difference_pp": -0.48828125,
+        "reference_correct_retention": 0.9885057471264368,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 7,
+        "gained_correct_answers": 2,
+        "prediction_agreement": 0.9892578125,
+        "paired_accuracy_difference_95ci_pp": [
+          -1.07421875,
+          0.0
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.003411528468132,
+          1.0045213758945466
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "int4",
+      "artifact_mib": 111.24874877929688,
+      "compression_ratio": 2.3363674490775908,
+      "eligible_bits_per_weight": 4.25,
+      "eligible_relative_mse": 0.012719459948615551,
+      "encoding_seconds": 0.9500164994969964,
+      "decoding_seconds": 0.3856391003355384,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 31.314320024102926,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 3.465521123095991,
+          "perplexity": 31.993127787512762
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 69,
+          "accuracy": 0.5390625,
+          "sum_scoring_accuracy": 0.5546875
+        },
+        "perplexity_ratio": 1.4343552956588757,
+        "accuracy_difference_pp": -2.34375,
+        "reference_correct_retention": 0.8333333333333334,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 12,
+        "gained_correct_answers": 9,
+        "prediction_agreement": 0.8203125,
+        "paired_accuracy_difference_95ci_pp": [
+          -9.375,
+          4.6875
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.4086561352014542,
+          1.4591346770524978
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 3.401205793748982,
+          "perplexity": 30.000252363666252
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 536,
+          "accuracy": 0.5234375,
+          "sum_scoring_accuracy": 0.5791015625
+        },
+        "perplexity_ratio": 1.4389130470663951,
+        "accuracy_difference_pp": -7.12890625,
+        "reference_correct_retention": 0.8243021346469622,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 107,
+        "gained_correct_answers": 34,
+        "prediction_agreement": 0.80859375,
+        "paired_accuracy_difference_95ci_pp": [
+          -9.47265625,
+          -4.8828125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.423219507932663,
+          1.4548961222171783
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "bezier_direct8",
+      "artifact_mib": 158.6808795928955,
+      "compression_ratio": 1.6379916475469087,
+      "eligible_bits_per_weight": 8.0,
+      "eligible_relative_mse": 0.4998603752602868,
+      "encoding_seconds": 0.9531775005161762,
+      "decoding_seconds": 0.17589899990707636,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 24.776369985193014,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 16.90962014734214,
+          "perplexity": 22067580.57886455
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 31,
+          "accuracy": 0.2421875,
+          "sum_scoring_accuracy": 0.265625
+        },
+        "perplexity_ratio": 989360.9426343025,
+        "accuracy_difference_pp": -32.03125,
+        "reference_correct_retention": 0.2638888888888889,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 53,
+        "gained_correct_answers": 12,
+        "prediction_agreement": 0.3046875,
+        "paired_accuracy_difference_95ci_pp": [
+          -43.75,
+          -21.855468750000107
+        ],
+        "paired_perplexity_ratio_95ci": [
+          620236.609375,
+          1572164.275
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 16.827794303894905,
+          "perplexity": 20333784.13698096
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 282,
+          "accuracy": 0.275390625,
+          "sum_scoring_accuracy": 0.265625
+        },
+        "perplexity_ratio": 975276.7055509525,
+        "accuracy_difference_pp": -31.93359375,
+        "reference_correct_retention": 0.32348111658456485,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 412,
+        "gained_correct_answers": 85,
+        "prediction_agreement": 0.3408203125,
+        "paired_accuracy_difference_95ci_pp": [
+          -35.64697265625,
+          -28.22265625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          762491.803125,
+          1237326.265625
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "bezier_direct16",
+      "artifact_mib": 108.05593013763428,
+      "compression_ratio": 2.4054020456581493,
+      "eligible_bits_per_weight": 4.0,
+      "eligible_relative_mse": 0.7498208261944402,
+      "encoding_seconds": 0.7346839997917414,
+      "decoding_seconds": 0.21951219998300076,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 37.10230998694897,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 14.784132957567408,
+          "perplexity": 2634312.9279938787
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 30,
+          "accuracy": 0.234375,
+          "sum_scoring_accuracy": 0.3203125
+        },
+        "perplexity_ratio": 118104.76061566762,
+        "accuracy_difference_pp": -32.8125,
+        "reference_correct_retention": 0.2222222222222222,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 56,
+        "gained_correct_answers": 14,
+        "prediction_agreement": 0.2421875,
+        "paired_accuracy_difference_95ci_pp": [
+          -44.53125,
+          -21.09375
+        ],
+        "paired_perplexity_ratio_95ci": [
+          85938.890625,
+          161663.02734374997
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 14.754024703753544,
+          "perplexity": 2556180.483676132
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 282,
+          "accuracy": 0.275390625,
+          "sum_scoring_accuracy": 0.267578125
+        },
+        "perplexity_ratio": 122603.01693570756,
+        "accuracy_difference_pp": -31.93359375,
+        "reference_correct_retention": 0.3021346469622332,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 425,
+        "gained_correct_answers": 98,
+        "prediction_agreement": 0.3193359375,
+        "paired_accuracy_difference_95ci_pp": [
+          -35.83984375,
+          -28.122558593750014
+        ],
+        "paired_perplexity_ratio_95ci": [
+          101651.8748046875,
+          149474.89882812498
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "bezier_sorted32",
+      "artifact_mib": 146.06411457061768,
+      "compression_ratio": 1.779478526691078,
+      "eligible_bits_per_weight": 7.0,
+      "eligible_relative_mse": 0.022880159005301385,
+      "encoding_seconds": 1.7587395003065467,
+      "decoding_seconds": 0.48895750008523464,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 39.612280018627644,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 5.956589165265035,
+          "perplexity": 386.2903022892264
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 54,
+          "accuracy": 0.421875,
+          "sum_scoring_accuracy": 0.40625
+        },
+        "perplexity_ratio": 17.318642441908473,
+        "accuracy_difference_pp": -14.0625,
+        "reference_correct_retention": 0.5555555555555556,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 32,
+        "gained_correct_answers": 14,
+        "prediction_agreement": 0.5078125,
+        "paired_accuracy_difference_95ci_pp": [
+          -24.21875,
+          -3.90625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          14.83992931842804,
+          20.43195090293883
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 5.887883819505074,
+          "perplexity": 360.6412942143791
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 441,
+          "accuracy": 0.4306640625,
+          "sum_scoring_accuracy": 0.427734375
+        },
+        "perplexity_ratio": 17.29756994259375,
+        "accuracy_difference_pp": -16.40625,
+        "reference_correct_retention": 0.555008210180624,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 271,
+        "gained_correct_answers": 103,
+        "prediction_agreement": 0.5224609375,
+        "paired_accuracy_difference_95ci_pp": [
+          -19.82421875,
+          -12.98828125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          16.20558371543884,
+          18.518415689468384
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "bezier_codebook4",
+      "artifact_mib": 111.28944969177246,
+      "compression_ratio": 2.3355129899413556,
+      "eligible_bits_per_weight": 4.250126591435185,
+      "eligible_relative_mse": 0.00840642142029124,
+      "encoding_seconds": 11.66921260021627,
+      "decoding_seconds": 0.6377242002636194,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 35.174489952623844,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 3.4290258669769305,
+          "perplexity": 30.84657943754297
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 69,
+          "accuracy": 0.5390625,
+          "sum_scoring_accuracy": 0.609375
+        },
+        "perplexity_ratio": 1.3829518283758175,
+        "accuracy_difference_pp": -2.34375,
+        "reference_correct_retention": 0.8888888888888888,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 8,
+        "gained_correct_answers": 5,
+        "prediction_agreement": 0.8515625,
+        "paired_accuracy_difference_95ci_pp": [
+          -7.8125,
+          3.125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.3589292734861373,
+          1.4087339639663696
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 3.351314363779926,
+          "perplexity": 28.540221235266944
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 567,
+          "accuracy": 0.5537109375,
+          "sum_scoring_accuracy": 0.615234375
+        },
+        "perplexity_ratio": 1.368885041491308,
+        "accuracy_difference_pp": -4.1015625,
+        "reference_correct_retention": 0.8719211822660099,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 78,
+        "gained_correct_answers": 36,
+        "prediction_agreement": 0.8466796875,
+        "paired_accuracy_difference_95ci_pp": [
+          -6.25,
+          -2.1484375
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.357057797908783,
+          1.3817216068506242
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "scalar_codebook4",
+      "artifact_mib": 111.29445457458496,
+      "compression_ratio": 2.3354079625267694,
+      "eligible_bits_per_weight": 4.2505063657407405,
+      "eligible_relative_mse": 0.008291046044623211,
+      "encoding_seconds": 9.731173999607563,
+      "decoding_seconds": 0.47832849994301796,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 37.109760008752346,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 3.448027180367038,
+          "perplexity": 31.438308976099773
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 66,
+          "accuracy": 0.515625,
+          "sum_scoring_accuracy": 0.578125
+        },
+        "perplexity_ratio": 1.4094809755996787,
+        "accuracy_difference_pp": -4.6875,
+        "reference_correct_retention": 0.8472222222222222,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 11,
+        "gained_correct_answers": 5,
+        "prediction_agreement": 0.8359375,
+        "paired_accuracy_difference_95ci_pp": [
+          -10.957031249999998,
+          0.78125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.3837615370750427,
+          1.4346408188343047
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 3.3726854351383575,
+          "perplexity": 29.15672050084814
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 565,
+          "accuracy": 0.5517578125,
+          "sum_scoring_accuracy": 0.5966796875
+        },
+        "perplexity_ratio": 1.3984544206417981,
+        "accuracy_difference_pp": -4.296875,
+        "reference_correct_retention": 0.8686371100164204,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 80,
+        "gained_correct_answers": 36,
+        "prediction_agreement": 0.8369140625,
+        "paired_accuracy_difference_95ci_pp": [
+          -6.4453125,
+          -2.34375
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.3848780065774917,
+          1.4127997696399688
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "svd8",
+      "artifact_mib": 158.55743217468262,
+      "compression_ratio": 1.6392669320742286,
+      "eligible_bits_per_weight": 7.986979166666667,
+      "eligible_relative_mse": 0.32006600751796216,
+      "encoding_seconds": 7.449852500110865,
+      "decoding_seconds": 0.2595696998760104,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 32.98304006457329,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 18.86352308493224,
+          "perplexity": 155712681.98998678
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 29,
+          "accuracy": 0.2265625,
+          "sum_scoring_accuracy": 0.2421875
+        },
+        "perplexity_ratio": 6981102.676080288,
+        "accuracy_difference_pp": -33.59375,
+        "reference_correct_retention": 0.2361111111111111,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 55,
+        "gained_correct_answers": 12,
+        "prediction_agreement": 0.28125,
+        "paired_accuracy_difference_95ci_pp": [
+          -45.3125,
+          -22.65625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          4407294.7,
+          11235216.524999999
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 18.59545705374694,
+          "perplexity": 119097977.63026075
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 259,
+          "accuracy": 0.2529296875,
+          "sum_scoring_accuracy": 0.2265625
+        },
+        "perplexity_ratio": 5712339.743480111,
+        "accuracy_difference_pp": -34.1796875,
+        "reference_correct_retention": 0.2561576354679803,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 453,
+        "gained_correct_answers": 103,
+        "prediction_agreement": 0.2529296875,
+        "paired_accuracy_difference_95ci_pp": [
+          -37.98828125,
+          -30.17578125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          4468377.95,
+          7236111.175
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-135M",
+      "method": "svd4",
+      "artifact_mib": 107.83301734924316,
+      "compression_ratio": 2.410374501130324,
+      "eligible_bits_per_weight": 3.9791666666666665,
+      "eligible_relative_mse": 0.5646232082956142,
+      "encoding_seconds": 5.105558699928224,
+      "decoding_seconds": 0.21718489937484264,
+      "parameters": 134515008,
+      "decoded_parameter_mib": 256.5670166015625,
+      "peak_allocated_mib": 313.28125,
+      "prefill_ms": 37.255730014294386,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 19.326384952846638,
+          "perplexity": 247367329.25757128
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 24,
+          "accuracy": 0.1875,
+          "sum_scoring_accuracy": 0.25
+        },
+        "perplexity_ratio": 11090276.669731462,
+        "accuracy_difference_pp": -37.5,
+        "reference_correct_retention": 0.20833333333333334,
+        "reference_correct_count": 72,
+        "lost_correct_answers": 57,
+        "gained_correct_answers": 9,
+        "prediction_agreement": 0.21875,
+        "paired_accuracy_difference_95ci_pp": [
+          -47.65625,
+          -27.34375
+        ],
+        "paired_perplexity_ratio_95ci": [
+          3265901.25625,
+          45056433.699999996
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 17.966453861458376,
+          "perplexity": 63493866.043593705
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 266,
+          "accuracy": 0.259765625,
+          "sum_scoring_accuracy": 0.2470703125
+        },
+        "perplexity_ratio": 3045379.4571895995,
+        "accuracy_difference_pp": -33.49609375,
+        "reference_correct_retention": 0.26108374384236455,
+        "reference_correct_count": 609,
+        "lost_correct_answers": 450,
+        "gained_correct_answers": 107,
+        "prediction_agreement": 0.2666015625,
+        "paired_accuracy_difference_95ci_pp": [
+          -37.40234375,
+          -29.4921875
+        ],
+        "paired_perplexity_ratio_95ci": [
+          2005546.1875,
+          4714282.637499999
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "fp16",
+      "artifact_mib": 3267.522485733032,
+      "compression_ratio": 1.0,
+      "eligible_bits_per_weight": 16.0,
+      "eligible_relative_mse": 0.0,
+      "encoding_seconds": 4.539030999876559,
+      "decoding_seconds": 1.4045861000195146,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 64.47291998192668,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 2.444297225788656,
+          "perplexity": 11.522449072691998
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 96,
+          "accuracy": 0.75,
+          "sum_scoring_accuracy": 0.8203125
+        },
+        "perplexity_ratio": 1.0,
+        "accuracy_difference_pp": 0.0,
+        "reference_correct_retention": 1.0,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 0,
+        "gained_correct_answers": 0,
+        "prediction_agreement": 1.0,
+        "paired_accuracy_difference_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.0,
+          1.0
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.3708355340236325,
+          "perplexity": 10.706334054385017
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 747,
+          "accuracy": 0.7294921875,
+          "sum_scoring_accuracy": 0.7822265625
+        },
+        "perplexity_ratio": 1.0,
+        "accuracy_difference_pp": 0.0,
+        "reference_correct_retention": 1.0,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 0,
+        "gained_correct_answers": 0,
+        "prediction_agreement": 1.0,
+        "paired_accuracy_difference_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.0,
+          1.0
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "int8",
+      "artifact_mib": 1779.556453704834,
+      "compression_ratio": 1.8361443262619863,
+      "eligible_bits_per_weight": 8.25,
+      "eligible_relative_mse": 3.693308364260996e-05,
+      "encoding_seconds": 39.945021900348365,
+      "decoding_seconds": 19.142986400052905,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 63.74853001907468,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 2.4445701699646936,
+          "perplexity": 11.525594487301852
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 96,
+          "accuracy": 0.75,
+          "sum_scoring_accuracy": 0.828125
+        },
+        "perplexity_ratio": 1.0002729814286886,
+        "accuracy_difference_pp": 0.0,
+        "reference_correct_retention": 1.0,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 0,
+        "gained_correct_answers": 0,
+        "prediction_agreement": 0.9921875,
+        "paired_accuracy_difference_95ci_pp": [
+          0.0,
+          0.0
+        ],
+        "paired_perplexity_ratio_95ci": [
+          0.9993290439248085,
+          1.0011966675519943
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.3708186429981937,
+          "perplexity": 10.706153214951435
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 748,
+          "accuracy": 0.73046875,
+          "sum_scoring_accuracy": 0.7822265625
+        },
+        "perplexity_ratio": 0.9999831091172138,
+        "accuracy_difference_pp": 0.09765625,
+        "reference_correct_retention": 0.9946452476572959,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 4,
+        "gained_correct_answers": 5,
+        "prediction_agreement": 0.990234375,
+        "paired_accuracy_difference_95ci_pp": [
+          -0.48828125,
+          0.68359375
+        ],
+        "paired_perplexity_ratio_95ci": [
+          0.999527607858181,
+          1.00045265853405
+        ],
+        "thresholds_passed": {
+          "perplexity": true,
+          "qa_accuracy": true,
+          "reference_correct_retention": true
+        },
+        "all_thresholds_passed": true
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "int4",
+      "artifact_mib": 1011.5562324523926,
+      "compression_ratio": 3.2301936174238475,
+      "eligible_bits_per_weight": 4.25,
+      "eligible_relative_mse": 0.01211889284356876,
+      "encoding_seconds": 30.606578799895942,
+      "decoding_seconds": 14.220818900503218,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 62.57672002539039,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 2.6284854955790418,
+          "perplexity": 13.852773919545244
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 87,
+          "accuracy": 0.6796875,
+          "sum_scoring_accuracy": 0.7421875
+        },
+        "perplexity_ratio": 1.2022421476677276,
+        "accuracy_difference_pp": -7.03125,
+        "reference_correct_retention": 0.8645833333333334,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 13,
+        "gained_correct_answers": 4,
+        "prediction_agreement": 0.84375,
+        "paired_accuracy_difference_95ci_pp": [
+          -13.28125,
+          -0.78125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.185138076543808,
+          1.2200602054595948
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.545750650986248,
+          "perplexity": 12.752797393952171
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 732,
+          "accuracy": 0.71484375,
+          "sum_scoring_accuracy": 0.751953125
+        },
+        "perplexity_ratio": 1.19114510430664,
+        "accuracy_difference_pp": -1.46484375,
+        "reference_correct_retention": 0.9263721552878179,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 55,
+        "gained_correct_answers": 40,
+        "prediction_agreement": 0.884765625,
+        "paired_accuracy_difference_95ci_pp": [
+          -3.3203125,
+          0.390625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.1827284902334214,
+          1.2006313413381577
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": true,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "bezier_direct8",
+      "artifact_mib": 1731.5327110290527,
+      "compression_ratio": 1.8870694529305994,
+      "eligible_bits_per_weight": 8.0,
+      "eligible_relative_mse": 0.5000288894185717,
+      "encoding_seconds": 3.178784199990332,
+      "decoding_seconds": 0.9754165997728705,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 63.17555997520685,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 17.46225904696621,
+          "perplexity": 38349768.41228478
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 28,
+          "accuracy": 0.21875,
+          "sum_scoring_accuracy": 0.25
+        },
+        "perplexity_ratio": 3328265.3861472085,
+        "accuracy_difference_pp": -53.125,
+        "reference_correct_retention": 0.20833333333333334,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 76,
+        "gained_correct_answers": 8,
+        "prediction_agreement": 0.2265625,
+        "paired_accuracy_difference_95ci_pp": [
+          -63.28125,
+          -42.1875
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1958251.5625,
+          6180911.2875
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 17.41108184598488,
+          "perplexity": 36436509.784672
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 249,
+          "accuracy": 0.2431640625,
+          "sum_scoring_accuracy": 0.232421875
+        },
+        "perplexity_ratio": 3403266.6643489064,
+        "accuracy_difference_pp": -48.6328125,
+        "reference_correct_retention": 0.23962516733601072,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 568,
+        "gained_correct_answers": 70,
+        "prediction_agreement": 0.2392578125,
+        "paired_accuracy_difference_95ci_pp": [
+          -52.15087890625,
+          -44.62890625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          2352664.9875,
+          5039826.599999999
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "bezier_direct16",
+      "artifact_mib": 963.5328340530396,
+      "compression_ratio": 3.3911895581060865,
+      "eligible_bits_per_weight": 4.0,
+      "eligible_relative_mse": 0.749977697116041,
+      "encoding_seconds": 2.152401899918914,
+      "decoding_seconds": 0.5689615998417139,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 64.34228997677565,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 19.98230918191257,
+          "perplexity": 476657700.34710014
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 34,
+          "accuracy": 0.265625,
+          "sum_scoring_accuracy": 0.234375
+        },
+        "perplexity_ratio": 41367741.99130726,
+        "accuracy_difference_pp": -48.4375,
+        "reference_correct_retention": 0.2916666666666667,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 68,
+        "gained_correct_answers": 6,
+        "prediction_agreement": 0.2890625,
+        "paired_accuracy_difference_95ci_pp": [
+          -57.8125,
+          -38.28125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          15189959.5,
+          114869633.79999997
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 20.6038596462422,
+          "perplexity": 887447254.7163371
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 249,
+          "accuracy": 0.2431640625,
+          "sum_scoring_accuracy": 0.25390625
+        },
+        "perplexity_ratio": 82889927.60812122,
+        "accuracy_difference_pp": -48.6328125,
+        "reference_correct_retention": 0.24364123159303883,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 565,
+        "gained_correct_answers": 67,
+        "prediction_agreement": 0.244140625,
+        "paired_accuracy_difference_95ci_pp": [
+          -52.44140625,
+          -44.7265625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          49581768.3,
+          144449458.0
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "bezier_sorted32",
+      "artifact_mib": 1539.5649099349976,
+      "compression_ratio": 2.122367471905417,
+      "eligible_bits_per_weight": 7.0,
+      "eligible_relative_mse": 0.02126761995913629,
+      "encoding_seconds": 31.446008400060236,
+      "decoding_seconds": 14.823447200469673,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 65.51435999572277,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 8.3522097390519,
+          "perplexity": 4239.538674200499
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 35,
+          "accuracy": 0.2734375,
+          "sum_scoring_accuracy": 0.296875
+        },
+        "perplexity_ratio": 367.9372889786193,
+        "accuracy_difference_pp": -47.65625,
+        "reference_correct_retention": 0.3020833333333333,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 67,
+        "gained_correct_answers": 6,
+        "prediction_agreement": 0.3515625,
+        "paired_accuracy_difference_95ci_pp": [
+          -57.03125,
+          -37.5
+        ],
+        "paired_perplexity_ratio_95ci": [
+          297.9106109619141,
+          456.12050781249997
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 8.453422192624004,
+          "perplexity": 4691.099142028049
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 259,
+          "accuracy": 0.2529296875,
+          "sum_scoring_accuracy": 0.2529296875
+        },
+        "perplexity_ratio": 438.16110334299765,
+        "accuracy_difference_pp": -47.65625,
+        "reference_correct_retention": 0.2998661311914324,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 523,
+        "gained_correct_answers": 35,
+        "prediction_agreement": 0.3544921875,
+        "paired_accuracy_difference_95ci_pp": [
+          -50.97900390625,
+          -44.3359375
+        ],
+        "paired_perplexity_ratio_95ci": [
+          382.981192779541,
+          504.5095138549804
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "bezier_codebook4",
+      "artifact_mib": 1011.58909034729,
+      "compression_ratio": 3.230088696005267,
+      "eligible_bits_per_weight": 4.250006675720215,
+      "eligible_relative_mse": 0.008215993335190958,
+      "encoding_seconds": 36.96252750046551,
+      "decoding_seconds": 13.875200000591576,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 63.21257995441556,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 2.8524818028603853,
+          "perplexity": 17.33073999177104
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 73,
+          "accuracy": 0.5703125,
+          "sum_scoring_accuracy": 0.6796875
+        },
+        "perplexity_ratio": 1.5040847551103167,
+        "accuracy_difference_pp": -17.96875,
+        "reference_correct_retention": 0.71875,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 27,
+        "gained_correct_answers": 4,
+        "prediction_agreement": 0.7265625,
+        "paired_accuracy_difference_95ci_pp": [
+          -25.78125,
+          -10.15625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.432451218366623,
+          1.5901776492595672
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.7850028684465737,
+          "perplexity": 16.199864345141386
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 647,
+          "accuracy": 0.6318359375,
+          "sum_scoring_accuracy": 0.693359375
+        },
+        "perplexity_ratio": 1.5131103011405076,
+        "accuracy_difference_pp": -9.765625,
+        "reference_correct_retention": 0.8192771084337349,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 135,
+        "gained_correct_answers": 35,
+        "prediction_agreement": 0.8046875,
+        "paired_accuracy_difference_95ci_pp": [
+          -12.109375,
+          -7.51953125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.4776367396116257,
+          1.5502550154924393
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "scalar_codebook4",
+      "artifact_mib": 1011.593095779419,
+      "compression_ratio": 3.230075906375626,
+      "eligible_bits_per_weight": 4.250026702880859,
+      "eligible_relative_mse": 0.008095662687578047,
+      "encoding_seconds": 34.646204800345004,
+      "decoding_seconds": 13.546310200355947,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 65.89132994413376,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 2.9218429209856693,
+          "perplexity": 18.575489093281778
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 76,
+          "accuracy": 0.59375,
+          "sum_scoring_accuracy": 0.6875
+        },
+        "perplexity_ratio": 1.6121129263487362,
+        "accuracy_difference_pp": -15.625,
+        "reference_correct_retention": 0.75,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 24,
+        "gained_correct_answers": 4,
+        "prediction_agreement": 0.7421875,
+        "paired_accuracy_difference_95ci_pp": [
+          -23.4375,
+          -7.8125
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.5227792680263519,
+          1.7193469643592834
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 2.8603874902610933,
+          "perplexity": 17.468294419293876
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 640,
+          "accuracy": 0.625,
+          "sum_scoring_accuracy": 0.6845703125
+        },
+        "perplexity_ratio": 1.6315850346682716,
+        "accuracy_difference_pp": -10.44921875,
+        "reference_correct_retention": 0.8072289156626506,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 144,
+        "gained_correct_answers": 37,
+        "prediction_agreement": 0.7958984375,
+        "paired_accuracy_difference_95ci_pp": [
+          -12.98828125,
+          -8.103027343750014
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1.5849953502416612,
+          1.6800794512033461
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "svd8",
+      "artifact_mib": 1731.2850379943848,
+      "compression_ratio": 1.887339412069493,
+      "eligible_bits_per_weight": 7.99853515625,
+      "eligible_relative_mse": 0.3421605526109201,
+      "encoding_seconds": 39.42012199945748,
+      "decoding_seconds": 0.906576500274241,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 64.84118001535535,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 23.896250573918223,
+          "perplexity": 23878649587.108505
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 24,
+          "accuracy": 0.1875,
+          "sum_scoring_accuracy": 0.1875
+        },
+        "perplexity_ratio": 2072358874.0956542,
+        "accuracy_difference_pp": -56.25,
+        "reference_correct_retention": 0.16666666666666666,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 80,
+        "gained_correct_answers": 8,
+        "prediction_agreement": 0.1875,
+        "paired_accuracy_difference_95ci_pp": [
+          -66.40625,
+          -46.09375
+        ],
+        "paired_perplexity_ratio_95ci": [
+          216438140.0,
+          17244209663.99999
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 23.243616093437595,
+          "perplexity": 12432950622.691975
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 237,
+          "accuracy": 0.2314453125,
+          "sum_scoring_accuracy": 0.2294921875
+        },
+        "perplexity_ratio": 1161270567.4543924,
+        "accuracy_difference_pp": -49.8046875,
+        "reference_correct_retention": 0.2182061579651941,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 584,
+        "gained_correct_answers": 74,
+        "prediction_agreement": 0.21875,
+        "paired_accuracy_difference_95ci_pp": [
+          -53.61328125,
+          -45.895996093750014
+        ],
+        "paired_perplexity_ratio_95ci": [
+          344318848.8,
+          4066184223.999999
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "method": "svd4",
+      "artifact_mib": 962.7221794128418,
+      "compression_ratio": 3.39404508964972,
+      "eligible_bits_per_weight": 3.99560546875,
+      "eligible_relative_mse": 0.5828059563071477,
+      "encoding_seconds": 17.94065670017153,
+      "decoding_seconds": 0.602819100022316,
+      "parameters": 1711376384,
+      "decoded_parameter_mib": 3264.19140625,
+      "peak_allocated_mib": 3322.32080078125,
+      "prefill_ms": 68.39332999661565,
+      "validation": {
+        "language": {
+          "tokens": 16384,
+          "nll": 30.732020021881908,
+          "perplexity": 22220136025520.84
+        },
+        "qa": {
+          "examples": 128,
+          "correct": 27,
+          "accuracy": 0.2109375,
+          "sum_scoring_accuracy": 0.1953125
+        },
+        "perplexity_ratio": 1928421283126.5334,
+        "accuracy_difference_pp": -53.90625,
+        "reference_correct_retention": 0.21875,
+        "reference_correct_count": 96,
+        "lost_correct_answers": 75,
+        "gained_correct_answers": 6,
+        "prediction_agreement": 0.234375,
+        "paired_accuracy_difference_95ci_pp": [
+          -64.0625,
+          -43.75
+        ],
+        "paired_perplexity_ratio_95ci": [
+          341391157657.6,
+          8636323489382.398
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      },
+      "test": {
+        "language": {
+          "tokens": 65536,
+          "nll": 31.209808922976663,
+          "perplexity": 35830081539543.55
+        },
+        "qa": {
+          "examples": 1024,
+          "correct": 267,
+          "accuracy": 0.2607421875,
+          "sum_scoring_accuracy": 0.2509765625
+        },
+        "perplexity_ratio": 3346624657659.4106,
+        "accuracy_difference_pp": -46.875,
+        "reference_correct_retention": 0.250334672021419,
+        "reference_correct_count": 747,
+        "lost_correct_answers": 560,
+        "gained_correct_answers": 80,
+        "prediction_agreement": 0.236328125,
+        "paired_accuracy_difference_95ci_pp": [
+          -50.78125,
+          -43.06640625
+        ],
+        "paired_perplexity_ratio_95ci": [
+          1851917012172.8,
+          5712699536179.197
+        ],
+        "thresholds_passed": {
+          "perplexity": false,
+          "qa_accuracy": false,
+          "reference_correct_retention": false
+        },
+        "all_thresholds_passed": false
+      }
+    }
+  ],
+  "validation_selected": [
+    {
+      "model": "SmolLM2-135M",
+      "selected_using": "validation metrics only",
+      "method": "int8",
+      "test_passed": true
+    },
+    {
+      "model": "SmolLM2-1.7B",
+      "selected_using": "validation metrics only",
+      "method": "int8",
+      "test_passed": true
+    }
+  ],
+  "interval_scope": "Paired bootstrap over fixed questions or text blocks, 2,000 draws. No checkpoint/fit-seed or training-data uncertainty; no multiple-comparison adjustment."
+}

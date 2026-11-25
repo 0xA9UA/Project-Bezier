@@ -1,0 +1,83 @@
+{
+  "checkpoint_reloads": [
+    {
+      "checkpoint": "bezier_seed7.pt",
+      "correct": 348,
+      "total": 360
+    },
+    {
+      "checkpoint": "straight_seed7.pt",
+      "correct": 347,
+      "total": 360
+    },
+    {
+      "checkpoint": "moe_seed7.pt",
+      "correct": 351,
+      "total": 360
+    },
+    {
+      "checkpoint": "residual_seed7.pt",
+      "correct": 349,
+      "total": 360
+    },
+    {
+      "checkpoint": "bezier_transfer_seed7.pt",
+      "correct": 348,
+      "total": 360
+    },
+    {
+      "checkpoint": "straight_seed19.pt",
+      "correct": 349,
+      "total": 360
+    },
+    {
+      "checkpoint": "moe_seed19.pt",
+      "correct": 349,
+      "total": 360
+    },
+    {
+      "checkpoint": "residual_seed19.pt",
+      "correct": 346,
+      "total": 360
+    },
+    {
+      "checkpoint": "bezier_transfer_seed19.pt",
+      "correct": 350,
+      "total": 360
+    },
+    {
+      "checkpoint": "bezier_seed19.pt",
+      "correct": 347,
+      "total": 360
+    },
+    {
+      "checkpoint": "moe_seed42.pt",
+      "correct": 347,
+      "total": 360
+    },
+    {
+      "checkpoint": "residual_seed42.pt",
+      "correct": 349,
+      "total": 360
+    },
+    {
+      "checkpoint": "bezier_transfer_seed42.pt",
+      "correct": 348,
+      "total": 360
+    },
+    {
+      "checkpoint": "bezier_seed42.pt",
+      "correct": 350,
+      "total": 360
+    },
+    {
+      "checkpoint": "straight_seed42.pt",
+      "correct": 353,
+      "total": 360
+    }
+  ],
+  "source_snapshot_hashes": "passed",
+  "dataset_fingerprint": "passed",
+  "report_links_and_placeholders": "passed",
+  "cpu_cuda_max_logit_difference": 4.76837158203125e-06
+}

@@ -1,0 +1,166 @@
+{
+  "repositories": [
+    {
+      "repo": "HuggingFaceTB/SmolLM2-135M",
+      "type": "model",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "path": "models/SmolLM2-135M",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 6340,
+          "sha256": "d1ba68cae64a89b6b434b11526e6e2271ee5ffd2c914ec35ed515f9d84c6085c"
+        },
+        {
+          "path": "config.json",
+          "bytes": 704,
+          "sha256": "1d556eab73b69c7f11f64c557a2f9c6f440bd4c6b89bb2584a6b498c92603843"
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 111,
+          "sha256": "2056c988e990b0d13670f63f2f3b87b3b6d07edaf7a3416998ba27dab2d8a059"
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 466391,
+          "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510"
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 269060552,
+          "sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "bytes": 831,
+          "sha256": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 2104556,
+          "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 3658,
+          "sha256": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424"
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 800662,
+          "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+        }
+      ]
+    },
+    {
+      "repo": "HuggingFaceTB/SmolLM2-1.7B",
+      "type": "model",
+      "revision": "effd688a12921b4cc83e3312b6feb579f70f9c71",
+      "path": "models/SmolLM2-1.7B",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 7201,
+          "sha256": "83c5404c1162e01c59e08fec9e8233b357ecf0ca3249e78f4b1ee13c5b3c320c"
+        },
+        {
+          "path": "config.json",
+          "bytes": 635,
+          "sha256": "33397f6af8090f7290f27ce6fb1cd23a95fd0915a5c648dfd10b6002aaf7fc48"
+        },
+        {
+          "path": "generation_config.json",
+          "bytes": 111,
+          "sha256": "2056c988e990b0d13670f63f2f3b87b3b6d07edaf7a3416998ba27dab2d8a059"
+        },
+        {
+          "path": "merges.txt",
+          "bytes": 466391,
+          "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510"
+        },
+        {
+          "path": "model.safetensors",
+          "bytes": 3422777952,
+          "sha256": "1193528982f4ac0c0b707ce36fd7dc03a0ef6f3e1a432deb886dce2e90c300c0"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "bytes": 831,
+          "sha256": "e786b595b9a23148bf1630df78d9037a048ea671e48bfd3549a1e3c233742bb3"
+        },
+        {
+          "path": "tokenizer.json",
+          "bytes": 2104556,
+          "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "bytes": 3658,
+          "sha256": "4bb9af56a342753d39374f4016a16574cab299fe088e896f425ce3c433f61424"
+        },
+        {
+          "path": "vocab.json",
+          "bytes": 800662,
+          "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79"
+        }
+      ]
+    },
+    {
+      "repo": "Salesforce/wikitext",
+      "type": "dataset",
+      "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+      "path": "data/wikitext",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 10464,
+          "sha256": "d5aabf145d341366745ac703b5844c442c143943b6c77929481395c822b1c28c"
+        },
+        {
+          "path": "wikitext-2-raw-v1/test-00000-of-00001.parquet",
+          "bytes": 732610,
+          "sha256": "5f1bea067869d04849c0f975a2b29c4ff47d867f484f5010ea5e861eab246d91"
+        },
+        {
+          "path": "wikitext-2-raw-v1/train-00000-of-00001.parquet",
+          "bytes": 6357543,
+          "sha256": "e83889baabc497075506f91975be5fac0d45c5290b6b20582c8cd1e853d0c9f7"
+        },
+        {
+          "path": "wikitext-2-raw-v1/validation-00000-of-00001.parquet",
+          "bytes": 657209,
+          "sha256": "204929b7ff9d6184953f867dedb860e40aa69c078fc1e54b3baaa8fb28511c4c"
+        }
+      ]
+    },
+    {
+      "repo": "allenai/ai2_arc",
+      "type": "dataset",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "path": "data/arc",
+      "files": [
+        {
+          "path": "ARC-Easy/test-00000-of-00001.parquet",
+          "bytes": 346257,
+          "sha256": "4160597d618ae851c7eb04e281574f3f654776216ac6b6641588d64527b47177"
+        },
+        {
+          "path": "ARC-Easy/train-00000-of-00001.parquet",
+          "bytes": 330598,
+          "sha256": "b315db8a4be597dc7daa50a4e70d48dd7c990c32085629e6ccd8c926beaa80b5"
+        },
+        {
+          "path": "ARC-Easy/validation-00000-of-00001.parquet",
+          "bytes": 86080,
+          "sha256": "ed890ff1e4cef7a7140d3a30dcea3ed2c9d467c6458f447ad9ef0176d8dcbb74"
+        },
+        {
+          "path": "README.md",
+          "bytes": 9001,
+          "sha256": "4a293e352253d771604725c978adcea71ee6504e89ed40e1cb0024ecafa9b37e"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>GPU/CPU Bézier engine: measured findings</title><style>body{font:16px/1.65 system-ui,sans-serif;color:#1c2940;background:#f4f6f9;max-width:1160px;margin:36px auto;padding:0 28px 60px}h1{font-size:34px;line-height:1.2}h2{margin-top:42px;font-size:23px}table{border-collapse:collapse;background:white;min-width:650px;width:100%;font-size:14px}th,td{text-align:left;border-bottom:1px solid #d7dfe9;padding:10px}th{background:#e5edf6}a{color:#12618c}img{max-width:100%;height:auto;background:white;border-radius:12px}.scroll{overflow-x:auto}</style><body><h1>GPU/CPU Bézier engine: measured findings</h1>
+<p>Both requested execution splits work and preserve the network&#x27;s outputs and gradients. Across the nine primary model/batch settings, a split beat the faster CPU-only/GPU-only baseline in 0 cases. These are execution comparisons of the same model, not an architecture or knowledge-compression study.</p>
+<p>The coarse CPU actor / GPU learner used 13.8% less training time than GPU acting/learning on the small RL task, with the same final success rate. GPU routing with CPU neurons also substantially reduced GPU parameter storage by keeping the expert bank in system RAM. These are separate benefits with different timing and capacity tradeoffs.</p>
+<img alt="Inference and learning timings" src="comparison.png">
+<h2>Inference: CPU input to CPU logits</h2>
+<p>Values are median milliseconds per whole batch over five interleaved rounds. Four warmup requests precede each repeat; the two trained model sizes use 20 requests per repeat and the untrained stress model uses five. CUDA synchronization encloses the wall-clock measurement. Transfer, allocation, routing, normalization, nonlinear functions and matrix products are included. Startup and model loading are excluded. Every row&#x27;s input/output agrees with the original CPU network within the saved tolerances.</p>
+<div class="scroll"><table>
+<tr><th>Workload</th><th>Batch</th><th>CPU</th><th>GPU</th><th>GPU matrices / CPU activations</th><th>GPU route / CPU neurons</th></tr>
+<tr><td>digits64</td><td>1</td><td>0.475</td><td>1.061</td><td>1.619</td><td>0.891</td></tr>
+<tr><td>digits64</td><td>16</td><td>0.619</td><td>1.184</td><td>1.701</td><td>1.031</td></tr>
+<tr><td>digits64</td><td>128</td><td>1.242</td><td>1.173</td><td>2.041</td><td>1.549</td></tr>
+<tr><td>emnist256</td><td>1</td><td>1.045</td><td>1.128</td><td>1.998</td><td>1.586</td></tr>
+<tr><td>emnist256</td><td>16</td><td>1.747</td><td>1.213</td><td>2.105</td><td>2.218</td></tr>
+<tr><td>emnist256</td><td>128</td><td>2.781</td><td>1.230</td><td>2.525</td><td>2.968</td></tr>
+<tr><td>stress1024</td><td>1</td><td>1.738</td><td>1.080</td><td>1.676</td><td>2.284</td></tr>
+<tr><td>stress1024</td><td>16</td><td>3.490</td><td>1.418</td><td>2.345</td><td>4.252</td></tr>
+<tr><td>stress1024</td><td>128</td><td>7.500</td><td>6.207</td><td>7.960</td><td>7.505</td></tr>
+</table></div>
+<p>digits64 is the trained digit model using real held-out inputs. emnist256 uses the trained EMNIST checkpoint with synthetic timing inputs. stress1024 uses random weights and synthetic inputs; it provides no quality or large-model learning evidence. CPU thread counts and CPU expert dispatch were selected on a separate timing pilot by the geometric mean of batch-one and batch-128 latency. All raw repeats and selection data are retained. GPU matrix dispatch gathers selected matrices; CPU grouped dispatch reuses each selected expert matrix. Both implement the same sparse computation.</p>
+<h2>Supervised training</h2>
+<p>Twelve runs: four schedules and seeds 7, 19, 42. Forty epochs, 128-example minibatches, identical initialization and shuffled example orders, AdamW, and one CPU thread. Validation every five epochs selects the saved checkpoint. Wall time includes minibatch preparation, copies, forward/backward, optimizer steps, validation and best-state copies; it excludes model construction, final test evaluation and disk output. The existing split contains 1,078 training, 359 validation and 360 test digits. Means ± sample SD describe three training seeds, not independent dataset uncertainty.</p>
+<div class="scroll"><table>
+<tr><th>Schedule</th><th>Training seconds</th><th>Test accuracy</th><th>Test loss</th></tr>
+<tr><td>CPU only</td><td>2.65 ± 0.05</td><td>96.02%</td><td>0.1733</td></tr>
+<tr><td>GPU only</td><td>2.24 ± 0.13</td><td>96.11%</td><td>0.1730</td></tr>
+<tr><td>GPU matrices / CPU activations</td><td>2.82 ± 0.02</td><td>96.11%</td><td>0.1730</td></tr>
+<tr><td>GPU routing / CPU neurons</td><td>3.41 ± 0.06</td><td>96.02%</td><td>0.1733</td></tr>
+</table></div>
+<p>Device copies remain differentiable. CPU-activation forward work produces CPU backward work and gradient transfers; GPU matrices retain their parameters and optimizer state on GPU. Moving parameter-free activation functions to CPU does not shrink the GPU weight bank.</p>
+<h2>Reinforcement learning</h2>
+<p>Fifteen runs: the four schedules plus a CPU actor/GPU learner, with three seeds each. PPO-Clip uses 32 CPU environments, 16-step rollouts, 40 updates and 20,480 environment transitions per run. All schedules receive identical algorithmic budgets. CPU actor/GPU learner synchronizes its whole policy after each update and is synchronous/on-policy; it does not overlap independent actors with learning. Timing includes simulation, sampling, rollout buffers, advantage estimation, PPO updates and policy copying, excluding final evaluation and disk output.</p>
+<div class="scroll"><table>
+<tr><th>Schedule</th><th>Total seconds</th><th>Final success</th><th>Initial success</th><th>Rollout seconds</th><th>Learning seconds</th></tr>
+<tr><td>CPU only</td><td>3.49 ± 0.23</td><td>100.0%</td><td>30.0%</td><td>0.81</td><td>2.68</td></tr>
+<tr><td>GPU only</td><td>3.43 ± 0.07</td><td>100.0%</td><td>30.0%</td><td>1.22</td><td>2.21</td></tr>
+<tr><td>GPU matrices / CPU activations</td><td>4.33 ± 0.13</td><td>100.0%</td><td>30.0%</td><td>1.58</td><td>2.75</td></tr>
+<tr><td>GPU routing / CPU neurons</td><td>4.72 ± 0.14</td><td>100.0%</td><td>30.0%</td><td>1.24</td><td>3.47</td></tr>
+<tr><td>CPU actor / GPU learner</td><td>2.96 ± 0.07</td><td>100.0%</td><td>30.0%</td><td>0.81</td><td>2.12</td></tr>
+</table></div>
+<p>The custom corridor has seven cells, a randomly selected left/right goal, terminal +1/-1 rewards, and an observed twelve-step deadline. Evaluation exhausts ten starting-position/goal combinations using greedy actions, including positions other than the training start. This finite synthetic task is deliberately easy and is not evidence about games, expensive simulators, robotics, or RLHF. All final policies and learning curves are saved. Differences in float32 arithmetic can change sampled trajectories, so these are paired seed/budget comparisons rather than identical trajectories.</p>
+<h2>GPU parameter storage and memory</h2>
+<p>The stress model is shown below. Each memory measurement runs in a fresh process, preventing persistent CUDA workspaces from a previous schedule contaminating the CPU-only result. CPU/GPU columns count stored parameters, not full process RAM/VRAM. Peak CUDA allocation includes this engine&#x27;s active tensors, backend workspaces and selected-matrix workspace, not the driver/context or other applications. All source weights also remain on CPU during this benchmark; that reference copy is not counted in the engine parameter columns. The original timing-run peaks remain in the raw inference file and include persistent process allocations; use these isolated measurements for the memory comparison.</p>
+<div class="scroll"><table>
+<tr><th>Schedule</th><th>CPU parameters MiB</th><th>GPU parameters MiB</th><th>Peak CUDA allocated MiB</th></tr>
+<tr><td>CPU only</td><td>260.698</td><td>0.000</td><td>0.00</td></tr>
+<tr><td>GPU only</td><td>0.000</td><td>260.698</td><td>785.84</td></tr>
+<tr><td>GPU matrices / CPU activations</td><td>0.000</td><td>260.698</td><td>785.84</td></tr>
+<tr><td>GPU routing / CPU neurons</td><td>260.570</td><td>0.127</td><td>10.02</td></tr>
+</table></div>
+<p>GPU routing can leave almost all model weights in system RAM. That is a GPU-capacity tradeoff; it does not reduce total model storage. The routes here are fixed at entry, so selections for all steps transfer together. Replanning after each activation would require additional dependent communication unless separately optimized.</p>
+<h2>Transfer boundaries and reusable pinned buffers</h2>
+<p>Logical forward-copy counts for one digit input are below. They count tensor payloads, not PCIe transactions. Training also transfers gradients and targets, which are not included in this forward-only ledger.</p>
+<div class="scroll"><table>
+<tr><th>Schedule</th><th>CPU → GPU copies</th><th>GPU → CPU copies</th><th>Total payload bytes</th></tr>
+<tr><td>CPU only</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>GPU only</td><td>1</td><td>1</td><td>296</td></tr>
+<tr><td>GPU matrices / CPU activations</td><td>7</td><td>7</td><td>3112</td></tr>
+<tr><td>GPU routing / CPU neurons</td><td>1</td><td>2</td><td>352</td></tr>
+</table></div>
+<p>The CPU-activation split must wait for a GPU preactivation before applying the CPU nonlinearity, then return its result for the next GPU product. Reusable pinned buffers remove some allocation work but cannot remove this dependency. The table gives blocking-time / pinned-time: above 1 means pinned was faster. Buffer lifetimes and CPU-read synchronization are checked. No cross-request pipeline is implemented.</p>
+<div class="scroll"><table>
+<tr><th>Workload</th><th>Split</th><th>Batch 1</th><th>Batch 16</th><th>Batch 128</th></tr>
+<tr><td>digits64</td><td>GPU matrices / CPU activations</td><td>0.895×</td><td>0.907×</td><td>1.036×</td></tr>
+<tr><td>digits64</td><td>GPU routing / CPU neurons</td><td>0.974×</td><td>0.960×</td><td>0.974×</td></tr>
+<tr><td>emnist256</td><td>GPU matrices / CPU activations</td><td>0.931×</td><td>0.923×</td><td>0.859×</td></tr>
+<tr><td>emnist256</td><td>GPU routing / CPU neurons</td><td>1.003×</td><td>0.961×</td><td>0.976×</td></tr>
+<tr><td>stress1024</td><td>GPU matrices / CPU activations</td><td>0.899×</td><td>0.914×</td><td>1.029×</td></tr>
+<tr><td>stress1024</td><td>GPU routing / CPU neurons</td><td>0.950×</td><td>0.993×</td><td>0.975×</td></tr>
+</table></div>
+<h2>Boundaries of the finding</h2>
+<p>This is a custom scheduler built on eager PyTorch kernels, not a compiler, fused CUDA implementation or production serving engine. It tests one Intel Core Ultra 7 265KF and RTX 5090, FP32 with TF32 disabled, modest batches and a fixed four-step network. Single-host dependent execution was measured; independent-request pipelining, NUMA placement, shared-memory accelerators and larger RL actors are untested. Windows desktop scheduling introduces noise; raw repeats and GPU process snapshots are retained. Small timing differences should not be treated as established speedups.</p>
+<p>Numerical agreement establishes correct execution. It does not establish improved accuracy from device placement. A coarse actor/learner split and a fine-grained matrix/nonlinearity split have different communication costs and should be evaluated separately.</p>
+<h2>Reproduction and evidence</h2>
+<p><a href="../../docs/protocol.md">Protocol and research sources</a> · <a href="inference.json">Raw inference</a> · <a href="transfers.json">Transfer-only measurements</a> · <a href="supervised/results.json">Classifier results</a> · <a href="rl/results.json">RL results</a> · <a href="verification.json">Independent verification</a></p>
+<p>The implementation follows <a href="https://docs.pytorch.org/tutorials/intermediate/pinmem_nonblock.html">PyTorch&#x27;s guidance on pinned transfers</a> and <a href="https://spinningup.openai.com/en/latest/algorithms/ppo.html">PPO-Clip equations</a>. <a href="https://proceedings.mlr.press/v80/espeholt18a.html">IMPALA</a> is related work on separating acting and learning, not the algorithm or distributed execution system used here.</p></body></html>

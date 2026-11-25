@@ -1,0 +1,10 @@
+{
+  "selection_sha256": "c90b2ff3355953de961cf249004f5f3bed25574ef6a992d9d20723e2b5c0d969",
+  "language_sha256": "e8a2c256018f2fbcd13598882d8079d04f617b0cebd59bc8f6da578bcca6f4cf",
+  "questions_sha256": "8be89c2b50d3f50d57b63624a50ad58a0d80bfc845a2922eab71ce8d72b05917",
+  "artifact_manifests": {
+    "rl": "523c791bf375feb1c52ce3e4ed4c5f8003565afbd1a6ceef1795928cebdc1150",
+    "random": "225aeb3141a95925c96c69650af6a1c199518262872dc2a3d3328edfc3550c7e"
+  },
+  "utc": "2026-11-23T16:49:40.063394+00:00"
+}

@@ -1,0 +1,353 @@
+{
+  "total_parameters": 7248023552,
+  "core_parameters": 1087201280,
+  "core_fraction": 0.14999968918423293,
+  "core_dimensions": {
+    "layers": 4,
+    "last_ffn_width": 9967
+  },
+  "members": [
+    {
+      "name": "model.embed_tokens.weight",
+      "shape": [
+        32768,
+        4096
+      ],
+      "core_parameters": 134217728,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.input_layernorm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.mlp.down_proj.weight",
+      "shape": [
+        4096,
+        14336
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.mlp.gate_proj.weight",
+      "shape": [
+        14336,
+        4096
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.mlp.up_proj.weight",
+      "shape": [
+        14336,
+        4096
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.post_attention_layernorm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.self_attn.k_proj.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "core_parameters": 4194304,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.self_attn.o_proj.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "core_parameters": 16777216,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.self_attn.q_proj.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "core_parameters": 16777216,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.0.self_attn.v_proj.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "core_parameters": 4194304,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.input_layernorm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.mlp.down_proj.weight",
+      "shape": [
+        4096,
+        14336
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.mlp.gate_proj.weight",
+      "shape": [
+        14336,
+        4096
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.mlp.up_proj.weight",
+      "shape": [
+        14336,
+        4096
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.post_attention_layernorm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.self_attn.k_proj.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "core_parameters": 4194304,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.self_attn.o_proj.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "core_parameters": 16777216,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.self_attn.q_proj.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "core_parameters": 16777216,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.1.self_attn.v_proj.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "core_parameters": 4194304,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.input_layernorm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.mlp.down_proj.weight",
+      "shape": [
+        4096,
+        14336
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.mlp.gate_proj.weight",
+      "shape": [
+        14336,
+        4096
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.mlp.up_proj.weight",
+      "shape": [
+        14336,
+        4096
+      ],
+      "core_parameters": 58720256,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.post_attention_layernorm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.self_attn.k_proj.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "core_parameters": 4194304,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.self_attn.o_proj.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "core_parameters": 16777216,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.self_attn.q_proj.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "core_parameters": 16777216,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.2.self_attn.v_proj.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "core_parameters": 4194304,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.3.input_layernorm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.3.mlp.down_proj.weight",
+      "shape": [
+        4096,
+        14336
+      ],
+      "core_parameters": 40824832,
+      "selection": "columns [0:9967]"
+    },
+    {
+      "name": "model.layers.3.mlp.gate_proj.weight",
+      "shape": [
+        14336,
+        4096
+      ],
+      "core_parameters": 40824832,
+      "selection": "rows [0:9967]"
+    },
+    {
+      "name": "model.layers.3.mlp.up_proj.weight",
+      "shape": [
+        14336,
+        4096
+      ],
+      "core_parameters": 40824832,
+      "selection": "rows [0:9967]"
+    },
+    {
+      "name": "model.layers.3.post_attention_layernorm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.3.self_attn.k_proj.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "core_parameters": 4194304,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.3.self_attn.o_proj.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "core_parameters": 16777216,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.3.self_attn.q_proj.weight",
+      "shape": [
+        4096,
+        4096
+      ],
+      "core_parameters": 16777216,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.layers.3.self_attn.v_proj.weight",
+      "shape": [
+        1024,
+        4096
+      ],
+      "core_parameters": 4194304,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "lm_head.weight",
+      "shape": [
+        32768,
+        4096
+      ],
+      "core_parameters": 134217728,
+      "selection": "whole tensor"
+    },
+    {
+      "name": "model.norm.weight",
+      "shape": [
+        4096
+      ],
+      "core_parameters": 4096,
+      "selection": "whole tensor"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "completed_runs": 24,
+  "aggregate": [
+    {
+      "variant": "neurons_frozen",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "parameters": 16110,
+      "neuron_calls": 24,
+      "accuracy": 0.9453703761100769,
+      "accuracy_std": 0.016743663617062397,
+      "nll": 0.20359581212202707,
+      "nll_std": 0.02423949085495274,
+      "feedback_disabled_accuracy": 0.9453703761100769,
+      "feedback_disabled_accuracy_std": 0.016743663617062397,
+      "bypass_accuracy": 0.4120370348294576,
+      "bypass_accuracy_std": 0.09396665495883234,
+      "intervention_neuron_change": 0.0,
+      "intervention_neuron_change_std": 0.0,
+      "intervention_group_change": 0.0,
+      "intervention_group_change_std": 0.0,
+      "group_switches": 0.15370370944341025,
+      "group_switches_std": 0.038651390195679765,
+      "checkpoint_kib": 68.064453125,
+      "checkpoint_kib_std": 0.0
+    },
+    {
+      "variant": "neurons_feedback",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "parameters": 16110,
+      "neuron_calls": 24,
+      "accuracy": 0.9537037014961243,
+      "accuracy_std": 0.004243117261377545,
+      "nll": 0.1750729779402415,
+      "nll_std": 0.02202291038554664,
+      "feedback_disabled_accuracy": 0.9361111124356588,
+      "feedback_disabled_accuracy_std": 0.007349317207524493,
+      "bypass_accuracy": 0.5749999831120173,
+      "bypass_accuracy_std": 0.3134830110076737,
+      "intervention_neuron_change": 0.5927778085072836,
+      "intervention_neuron_change_std": 0.1621508635980432,
+      "intervention_group_change": 0.34203705191612244,
+      "intervention_group_change_std": 0.16420623515082008,
+      "group_switches": 0.29000001152356464,
+      "group_switches_std": 0.09586351977144107,
+      "checkpoint_kib": 68.064453125,
+      "checkpoint_kib_std": 0.0
+    },
+    {
+      "variant": "groups_frozen",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "parameters": 16110,
+      "neuron_calls": 96,
+      "accuracy": 0.9592592517534891,
+      "accuracy_std": 0.006990562352069703,
+      "nll": 0.13913490126530328,
+      "nll_std": 0.01438826650271777,
+      "feedback_disabled_accuracy": 0.9592592517534891,
+      "feedback_disabled_accuracy_std": 0.006990562352069703,
+      "bypass_accuracy": 0.4805555542310079,
+      "bypass_accuracy_std": 0.18640110509839627,
+      "intervention_neuron_change": 0.0,
+      "intervention_neuron_change_std": 0.0,
+      "intervention_group_change": 0.0,
+      "intervention_group_change_std": 0.0,
+      "group_switches": 0.04537037014961243,
+      "group_switches_std": 0.02389749954331603,
+      "checkpoint_kib": 68.001953125,
+      "checkpoint_kib_std": 0.0
+    },
+    {
+      "variant": "groups_feedback",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "parameters": 16110,
+      "neuron_calls": 96,
+      "accuracy": 0.9685185154279073,
+      "accuracy_std": 0.001603772160131533,
+      "nll": 0.12395879377921422,
+      "nll_std": 0.014960528641432312,
+      "feedback_disabled_accuracy": 0.9564814766248068,
+      "feedback_disabled_accuracy_std": 0.005782415946867434,
+      "bypass_accuracy": 0.5379629631837209,
+      "bypass_accuracy_std": 0.1289898160860735,
+      "intervention_neuron_change": 0.21592592696348825,
+      "intervention_neuron_change_std": 0.12284855957819593,
+      "intervention_group_change": 0.21592592696348825,
+      "intervention_group_change_std": 0.12284855957819593,
+      "group_switches": 0.14037037392457327,
+      "group_switches_std": 0.013724955622786337,
+      "checkpoint_kib": 68.001953125,
+      "checkpoint_kib_std": 0.0
+    },
+    {
+      "variant": "hierarchical_frozen",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "parameters": 16110,
+      "neuron_calls": 24,
+      "accuracy": 0.9518518646558126,
+      "accuracy_std": 0.004243123764732606,
+      "nll": 0.19799272219340006,
+      "nll_std": 0.044178054627973536,
+      "feedback_disabled_accuracy": 0.9518518646558126,
+      "feedback_disabled_accuracy_std": 0.004243123764732606,
+      "bypass_accuracy": 0.4601851900418599,
+      "bypass_accuracy_std": 0.2100362543532854,
+      "intervention_neuron_change": 0.0,
+      "intervention_neuron_change_std": 0.0,
+      "intervention_group_change": 0.0,
+      "intervention_group_change_std": 0.0,
+      "group_switches": 0.08629629760980606,
+      "group_switches_std": 0.00032074840979370807,
+      "checkpoint_kib": 68.064453125,
+      "checkpoint_kib_std": 0.0
+    },
+    {
+      "variant": "hierarchical_feedback",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "parameters": 16110,
+      "neuron_calls": 24,
+      "accuracy": 0.9435184995333353,
+      "accuracy_std": 0.0069905899839578945,
+      "nll": 0.2084308018287023,
+      "nll_std": 0.0052433915873618345,
+      "feedback_disabled_accuracy": 0.895370364189148,
+      "feedback_disabled_accuracy_std": 0.021576266332762085,
+      "bypass_accuracy": 0.5018518368403116,
+      "bypass_accuracy_std": 0.18071218151152896,
+      "intervention_neuron_change": 0.4479629695415497,
+      "intervention_neuron_change_std": 0.10565248011303893,
+      "intervention_group_change": 0.16351852814356485,
+      "intervention_group_change_std": 0.07891301889470732,
+      "group_switches": 0.16981481512387595,
+      "group_switches_std": 0.0065812438224775675,
+      "checkpoint_kib": 68.064453125,
+      "checkpoint_kib_std": 0.0
+    },
+    {
+      "variant": "hierarchical_straight",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "parameters": 16110,
+      "neuron_calls": 24,
+      "accuracy": 0.9453703761100769,
+      "accuracy_std": 0.01051650090176013,
+      "nll": 0.20706336200237274,
+      "nll_std": 0.024279170715179446,
+      "feedback_disabled_accuracy": 0.924999992052714,
+      "feedback_disabled_accuracy_std": 0.007349317207524493,
+      "bypass_accuracy": 0.43518518408139545,
+      "bypass_accuracy_std": 0.06884930766466812,
+      "intervention_neuron_change": 0.39407408237457275,
+      "intervention_neuron_change_std": 0.08171829426683762,
+      "intervention_group_change": 0.12851851930220923,
+      "intervention_group_change_std": 0.009563515531603815,
+      "group_switches": 0.17907407879829407,
+      "group_switches_std": 0.033065283532948575,
+      "checkpoint_kib": 68.064453125,
+      "checkpoint_kib_std": 0.0
+    },
+    {
+      "variant": "direct_feedback",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "parameters": 20270,
+      "neuron_calls": 24,
+      "accuracy": 0.9574073950449625,
+      "accuracy_std": 0.0069905899839578945,
+      "nll": 0.17378702759742737,
+      "nll_std": 0.0549485847809908,
+      "feedback_disabled_accuracy": 0.9277777870496114,
+      "feedback_disabled_accuracy_std": 0.017347200118622782,
+      "bypass_accuracy": 0.4472222328186035,
+      "bypass_accuracy_std": 0.05099322538985283,
+      "intervention_neuron_change": 0.6531481742858887,
+      "intervention_neuron_change_std": 0.06884929704349246,
+      "intervention_group_change": 0.5816666881243387,
+      "intervention_group_change_std": 0.06437974752957826,
+      "group_switches": 0.4699999988079071,
+      "group_switches_std": 0.02656810583191332,
+      "checkpoint_kib": 84.6796875,
+      "checkpoint_kib_std": 0.0
+    }
+  ],
+  "paired_feedback_comparisons": [
+    {
+      "mode": "neurons",
+      "seed": 7,
+      "accuracy_difference_pp": -0.8333325386047363,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    },
+    {
+      "mode": "neurons",
+      "seed": 19,
+      "accuracy_difference_pp": 3.0555546283721924,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    },
+    {
+      "mode": "neurons",
+      "seed": 42,
+      "accuracy_difference_pp": 0.27777552604675293,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    },
+    {
+      "mode": "groups",
+      "seed": 7,
+      "accuracy_difference_pp": 1.3888835906982422,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    },
+    {
+      "mode": "groups",
+      "seed": 19,
+      "accuracy_difference_pp": 1.1111140251159668,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    },
+    {
+      "mode": "groups",
+      "seed": 42,
+      "accuracy_difference_pp": 0.27778148651123047,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    },
+    {
+      "mode": "hierarchical",
+      "seed": 7,
+      "accuracy_difference_pp": -0.8333384990692139,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    },
+    {
+      "mode": "hierarchical",
+      "seed": 19,
+      "accuracy_difference_pp": 0.27777552604675293,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    },
+    {
+      "mode": "hierarchical",
+      "seed": 42,
+      "accuracy_difference_pp": -1.9444465637207031,
+      "parameters_equal": true,
+      "neuron_calls_equal": true
+    }
+  ],
+  "paired_example_bootstrap": [
+    {
+      "mode": "neurons",
+      "mean_difference_pp": 0.8333333333333334,
+      "low95_pp": -0.5555555555555554,
+      "high95_pp": 2.2222222222222223,
+      "scope": "Exploratory paired bootstrap over test images, conditional on these three trained pairs; excludes training-seed uncertainty."
+    },
+    {
+      "mode": "groups",
+      "mean_difference_pp": 0.925925925925926,
+      "low95_pp": -0.18518518518518526,
+      "high95_pp": 2.0370370370370368,
+      "scope": "Exploratory paired bootstrap over test images, conditional on these three trained pairs; excludes training-seed uncertainty."
+    },
+    {
+      "mode": "hierarchical",
+      "mean_difference_pp": -0.8333333333333334,
+      "low95_pp": -2.224537037037035,
+      "high95_pp": 0.5555555555555556,
+      "scope": "Exploratory paired bootstrap over test images, conditional on these three trained pairs; excludes training-seed uncertainty."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "frozen_utc": "2026-11-23T23:29:47.730996+00:00",
+  "seeds": [
+    7,
+    19
+  ],
+  "modes": [
+    "bezier",
+    "straight",
+    "direct"
+  ],
+  "updates": 3000,
+  "batch_size": 16,
+  "budgets": [
+    2,
+    4,
+    8,
+    16,
+    32,
+    "adaptive"
+  ],
+  "data_manifest": "885d975ea349f06489a9059372886773d091654323616ec0cbe51c689747a95c",
+  "source_hashes": {
+    "sphere_memory/data.py": "b9df7ddf9e93f290952cbcb0b2de36c94bf8e5eff70ae6d56af70206b360f00c",
+    "sphere_memory/dev.py": "b273c44ebac089b13cb4d154e26359a9b468c501842faa4ae77b33c46e00813b",
+    "sphere_memory/evaluate.py": "e40e559038ff04966ee92fa0fd9ab3e921940d710e0221d1df16724ea74a90c5",
+    "sphere_memory/external.py": "be62ec1768aae8c12e69ff0caf158c53fbeee039a4317211f6eed6a041dc849a",
+    "sphere_memory/freeze.py": "f09b1ac92e0eefde153775953559e33650cdba45cd4227c2107689bdbfae6b38",
+    "sphere_memory/grader.py": "1d29e0c386bc9d3fe3ddb07f942f35b4bc6a7d580ecc436c119dbd152541ec30",
+    "sphere_memory/model.py": "f5aca22e31d3a755aa603a3b52fe6183faaa23010cc25109ca66369a932eea21",
+    "sphere_memory/pipeline.py": "7171c66308ca1d836aeb0f37ac6ad86841c06399e1914a5ce5f44541c199f63d",
+    "sphere_memory/runtime.py": "577979d6d2c889f189d262b53f6d1a169a8be9a75b5968771c89678a029be1bb",
+    "sphere_memory/train.py": "6d997a0cc2b201bae346d4b971b2b1fc819c318cea9fd9c60d2dfe1c8b6caf98",
+    "sphere_memory/verify.py": "ddd89a595a46f7adf61b76c3ddbfd2cd02ae5c86e1fcebc7346d3683b3062ee2",
+    "sphere_memory/__init__.py": "c7b1d439d318dd68a0d013f3a8293f0101af679f3dec99f7f0835e5e591f4d5b",
+    "docs/protocol.md": "f27a675a6389ef834902c0bbc9189de6c71468715e7ea38e257d18f3c4a8eb10"
+  },
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "system": "Windows-10-10.0.19045-SP0",
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "torch": "2.10.0+cu128",
+    "cuda": "12.8",
+    "tokenizers": "0.22.1"
+  },
+  "reference_test_tasks_passed": 60,
+  "reference_total_checks": 468,
+  "amendments": [
+    {
+      "utc": "2026-11-23T23:38:18.756704+00:00",
+      "file": "sphere_memory/external.py",
+      "old_sha256": "85c01a778ed8f0f3f3fd40ee3585580b995b8184c7b907049285d3f04d302ce2",
+      "new_sha256": "be62ec1768aae8c12e69ff0caf158c53fbeee039a4317211f6eed6a041dc849a",
+      "reason": "Before any final test evaluation: explicitly give external reference models the exact JSON tool schema already learned by the sphere models from their training examples. No task, training, primary routing, grading or answer-selection changes."
+    },
+    {
+      "utc": "2026-11-23T23:54:20.548939+00:00",
+      "file": "sphere_memory/evaluate.py",
+      "old_sha256": "de263d43a1c426ede3cdc151f514706d31f9707c51c46df61ece8cafa327eb23",
+      "new_sha256": "e40e559038ff04966ee92fa0fd9ab3e921940d710e0221d1df16724ea74a90c5",
+      "reason": "Engineering acceleration of independent sphere-model quality evaluation from batches of 8 to batches of 48. Weights, data, per-task caps, decoding, stopping and grading unchanged. Single-row latency/memory probes unchanged. Replay all initial Bezier seed-7 quality conditions at the new batch size before final analysis; retain original batch-8 traces separately and audit batch-vs-single decoding."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "status": "complete",
+  "model": "WORKSPACE\\bezier_nested_llm_7b\\runs\\pilot_shared\\checkpoint_u000512",
+  "source_hashes": {
+    "data.py": "3b062898961601235be46c5347a3ae49a2fd1421cc41a78423617e726baaced7",
+    "evaluation.py": "cb35caef98141d8cc6ad48dffdc0a0a6f0f46d2ce94ed74c0e8188671cb2dc02",
+    "geometry.py": "52f7dc6a43ae4d8af4b3eb0bdec2a93fe42979298abbd1830face2fc002e000c",
+    "model.py": "b834e8caf7452348f65cde5699f107409594a0b8a47265a9447a01d2ab5e3d7e",
+    "optim.py": "6339997548cf7b11a0c73aaebcb5c5170b357c5506159b10ca8b0e4dde654af0",
+    "training.py": "2e9686f8471f99dd22c7f8d8f2cc33948841523089ba1fb42aa0a7609baf7ed9"
+  },
+  "weights_updated": false,
+  "new_learned_parameters": 0,
+  "speedup_claim": false,
+  "parallel_graph_layout": "separate graph launches",
+  "capture_seconds": 13.514249400235713,
+  "parity": [
+    {
+      "execution": "serial_graph",
+      "changed_tokens": false,
+      "logits_max_abs": 0.0,
+      "scores_max_abs": 0.0,
+      "choices_equal": true,
+      "passed": true
+    },
+    {
+      "execution": "parallel_graph",
+      "changed_tokens": false,
+      "logits_max_abs": 0.0,
+      "scores_max_abs": 0.0,
+      "choices_equal": true,
+      "passed": true
+    },
+    {
+      "execution": "serial_graph",
+      "changed_tokens": true,
+      "logits_max_abs": 0.0,
+      "scores_max_abs": 0.0,
+      "choices_equal": true,
+      "passed": true
+    },
+    {
+      "execution": "parallel_graph",
+      "changed_tokens": true,
+      "logits_max_abs": 0.0,
+      "scores_max_abs": 0.0,
+      "choices_equal": true,
+      "passed": true
+    }
+  ],
+  "timing_median_ms": {
+    "serial_graph": 37.16137504577637,
+    "parallel_graph": 37.021793365478516
+  },
+  "profiles": {
+    "serial_graph": {
+      "trace": "WORKSPACE\\bezier_nested_llm_7b\\runs\\graph_overlap_check_v2\\serial_graph_trace.json",
+      "kernel_lanes": {
+        "7": 1644
+      },
+      "pair_overlap": [],
+      "overlap_observed": false,
+      "attribution": "Only graph checker/lookahead replay and preceding input preparation are profiled; no outer prefix/suffix kernels. Compare serial graph negative control."
+    },
+    "parallel_graph": {
+      "trace": "WORKSPACE\\bezier_nested_llm_7b\\runs\\graph_overlap_check_v2\\parallel_graph_trace.json",
+      "kernel_lanes": {
+        "7": 596,
+        "29": 1048
+      },
+      "pair_overlap": [
+        {
+          "streams": [
+            7,
+            29
+          ],
+          "overlap_microseconds": 72.21875
+        }
+      ],
+      "overlap_observed": true,
+      "attribution": "Only graph checker/lookahead replay and preceding input preparation are profiled; no outer prefix/suffix kernels. Compare serial graph negative control."
+    }
+  },
+  "overlap_observed": true,
+  "serial_control_overlap": false,
+  "peak_allocated_gib": 13.586216449737549,
+  "elapsed_seconds": 14.215902700088918
+}

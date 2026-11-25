@@ -1,0 +1,8 @@
+{
+  "outside_bitwise_unchanged": true,
+  "outside_elements": 6160822272,
+  "core_elements": 1087201280,
+  "changed_core_tensors": 1,
+  "gpu_weight_pointers_unchanged": true,
+  "all_weights_cuda": true
+}

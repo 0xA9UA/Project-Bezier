@@ -1,0 +1,2628 @@
+{
+  "status": "complete",
+  "controlled_core_goal_supported_in_this_run": false,
+  "scientific_claim": "reasoning_and_useful_conditional_control_not_established",
+  "evidence_checks": {
+    "fixed_budget_central_all_shared": true,
+    "selected_checkpoint_passed_validation_retention_guard": true,
+    "fresh_test_core_forced_accuracy_ci_above_50pct": false,
+    "fresh_test_core_raw_accuracy_improves_over_initial": false,
+    "free_running_core_constrained_state_accuracy_improves": false,
+    "same_checkpoint_steering_improves_full_nll": true,
+    "controller_makes_nonconstant_choices": true,
+    "controller_beats_same_candidate_always_turn": false,
+    "score_permutation_diagnostic_supports_alignment": false,
+    "zero_core_ablation_shows_relevance": true
+  },
+  "evidence_check_scope": "Conservative descriptive reporting checks, not a newly tuned training/selection rule or a confirmatory statistical protocol.",
+  "selected_checkpoint": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\distill_recovery\\best_u000512",
+  "initial_checkpoint": "WORKSPACE\\bezier_nested_llm_7b\\runs\\pilot_baseline\\checkpoint_u000512",
+  "budget": {
+    "total_params": 7248023552,
+    "core_params": 1087201280,
+    "core_fraction": 0.14999968918423293,
+    "added_params": 0,
+    "core_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "core_radius": 0.25,
+    "shared": true,
+    "core_passes": 4,
+    "control_passes": 4,
+    "core_executed_layers": 16
+  },
+  "training": {
+    "main": {
+      "status": "validation_guard_stopped",
+      "completed_updates": 384,
+      "configured_updates": 1024,
+      "seed": 7,
+      "selected_checkpoint": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\distill_main\\best_u000128",
+      "best_checkpoint": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\distill_main\\best_u000128",
+      "initial_checkpoint": "WORKSPACE\\bezier_nested_llm_7b\\runs\\pilot_baseline\\checkpoint_u000512",
+      "exposure": {
+        "examples": 1536,
+        "supervised_tokens": 3588,
+        "reasoning_examples": 1152,
+        "replay_examples": 384,
+        "control_examples": 224
+      },
+      "elapsed_seconds": 455.6058514006436,
+      "peak_allocated_gib": 24.046019077301025,
+      "all_core_leaves_have_gradient": true,
+      "training_control_diagnostic": {
+        "logged_batches": 56,
+        "examples_with_recorded_gain": 224,
+        "material_gain_tolerance": 0.005,
+        "positive": 28,
+        "negative": 38,
+        "neutral": 158,
+        "mean_full_nll_gain": 0.0009414853248606343,
+        "scope": "Training trajectories at changing weights; not held-out control evidence."
+      },
+      "validation_history": [
+        {
+          "step": 0,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 0.0020766630606720016,
+          "core_selection_composite": 0.375,
+          "core_selection_nll": 0.7028034667600878
+        },
+        {
+          "step": 128,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 1.4491294884066974e-06,
+          "core_selection_composite": 0.5,
+          "core_selection_nll": 0.7107217855227645
+        },
+        {
+          "step": 256,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 3.650783650943623e-07,
+          "core_selection_composite": 0.5,
+          "core_selection_nll": 0.8222025164286606
+        },
+        {
+          "step": 384,
+          "eligible": false,
+          "reasons": [
+            "replay_outer_accuracy_drop",
+            "replay_outer_nll_increase"
+          ],
+          "replay_outer_raw_accuracy": 0.9375,
+          "replay_outer_full_nll": 0.30519081877037024,
+          "core_selection_composite": 0.490234375,
+          "core_selection_nll": 0.697965941100847
+        }
+      ]
+    },
+    "recovery": {
+      "status": "training_complete",
+      "completed_updates": 768,
+      "configured_updates": 768,
+      "seed": 7,
+      "selected_checkpoint": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\distill_recovery\\best_u000512",
+      "best_checkpoint": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\distill_recovery\\best_u000512",
+      "initial_checkpoint": "runs\\distill_main\\best_u000128",
+      "exposure": {
+        "examples": 3072,
+        "supervised_tokens": 8024,
+        "reasoning_examples": 2304,
+        "replay_examples": 768,
+        "control_examples": 1120
+      },
+      "elapsed_seconds": 914.1310558998957,
+      "peak_allocated_gib": 25.223484992980957,
+      "all_core_leaves_have_gradient": true,
+      "training_control_diagnostic": {
+        "logged_batches": 280,
+        "examples_with_recorded_gain": 1120,
+        "material_gain_tolerance": 0.005,
+        "positive": 146,
+        "negative": 166,
+        "neutral": 808,
+        "mean_full_nll_gain": -0.001211814241106955,
+        "scope": "Training trajectories at changing weights; not held-out control evidence."
+      },
+      "validation_history": [
+        {
+          "step": 0,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 1.4491294884066974e-06,
+          "core_selection_composite": 0.5,
+          "core_selection_nll": 0.7107217855227645
+        },
+        {
+          "step": 128,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 9.071019899664634e-07,
+          "core_selection_composite": 0.4765625,
+          "core_selection_nll": 0.8439766940718982
+        },
+        {
+          "step": 256,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 3.7625423932041713e-07,
+          "core_selection_composite": 0.5,
+          "core_selection_nll": 0.7405348492320627
+        },
+        {
+          "step": 384,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 3.5576515822199895e-07,
+          "core_selection_composite": 0.5,
+          "core_selection_nll": 0.6982381369452924
+        },
+        {
+          "step": 512,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 3.557651554464414e-07,
+          "core_selection_composite": 0.525390625,
+          "core_selection_nll": 0.6971648754552007
+        },
+        {
+          "step": 640,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 6.817278723758591e-07,
+          "core_selection_composite": 0.4921875,
+          "core_selection_nll": 0.6984926072182134
+        },
+        {
+          "step": 768,
+          "eligible": true,
+          "reasons": [],
+          "replay_outer_raw_accuracy": 1.0,
+          "replay_outer_full_nll": 5.364416528763627e-07,
+          "core_selection_composite": 0.505859375,
+          "core_selection_nll": 0.6976744985440746
+        }
+      ]
+    },
+    "attempted_updates_total": 1152,
+    "recovery_started_from_main_update": 128,
+    "selected_checkpoint_local_step": 512
+  },
+  "protocol": {
+    "checkpoint_selection": "Validation composite: .25 replay direct raw accuracy +.50 reasoning direct raw accuracy +.25 free-running scaffolded trace final raw accuracy; direct NLL tie-break.",
+    "outer_guard": "Stop/select previous eligible checkpoint if old-validation raw accuracy falls>2percentage points or full-vocabulary NLL rises>.10nats.",
+    "recovery_changes": [
+      "Restart from eligible128 checkpoint with fresh optimizer; do not resume rejected384 weights.",
+      "Reduce both learning rates4x; double core gold CE weight; increase old outer KL preservation4x.",
+      "Train gain estimator from matched counterfactuals but use threshold1 during training, above its.1 gain bound; outer learning stays on Stay.",
+      "Reduce control loss5x and ramp it more slowly; inference threshold still selected on validation after training."
+    ],
+    "recovery_interpretation": "Adaptive recovery based on validation; this bundle does not isolate which change causes an effect."
+  },
+  "teacher": {
+    "split": "train",
+    "entries": 8704,
+    "entries_by_view": {
+      "replay_final": 512,
+      "reasoning_final": 4096,
+      "reasoning_trace": 4096
+    },
+    "group_membership_verified": true,
+    "cache_sha256": "392bf5e1b84d87bf166ed173fff7844711fcfcbb7846b90ba96b7960053afde1",
+    "teacher_anchors": [
+      4,
+      12,
+      20,
+      32
+    ],
+    "teacher_identity": {
+      "checkpoint": "WORKSPACE\\bezier_nested_llm_7b\\runs\\pilot_baseline\\checkpoint_u000512",
+      "complete_sha256": "23add99978f5d8d5aa21e32886aa572440257864c5473d263977cf4884d6116f",
+      "wrapper_config": {
+        "core_layers": 4,
+        "core_mlp_neurons": 9967,
+        "core_radius": 0.25,
+        "bend_strength": 0.25,
+        "control_gain_bound": 0.1,
+        "core_passes": 4,
+        "control_passes": 4,
+        "control_readout_mode": "answer_margin",
+        "answer_token_ids": [
+          1098,
+          1133
+        ],
+        "control_anchor_token_id": 7871
+      },
+      "tokenizer_sha256": "3e01771050ce4fba855c59ddb474c72ca1a3f2113a04727990155e3e47390764"
+    }
+  },
+  "data_splits": {
+    "train": {
+      "groups": 1024,
+      "examples": 4096,
+      "easy_groups": 128,
+      "depth_counts": {
+        "1": 3,
+        "2": 125,
+        "3": 356,
+        "4": 540,
+        "5": 0,
+        "6": 0
+      },
+      "labels_balanced_within_every_group": true,
+      "value_only_baseline_accuracy": 0.5,
+      "group_ids_sha256": "d7076fdf8682f35866d9629a9b35ec2032dcdf6d218b5aeb5661a751835c8587"
+    },
+    "validation": {
+      "groups": 64,
+      "examples": 256,
+      "easy_groups": 8,
+      "depth_counts": {
+        "1": 0,
+        "2": 8,
+        "3": 23,
+        "4": 33,
+        "5": 0,
+        "6": 0
+      },
+      "labels_balanced_within_every_group": true,
+      "value_only_baseline_accuracy": 0.5,
+      "group_ids_sha256": "1c83e79ec84da3486f5cae7e1f401ee7d0cb559c0b16630d290f2ae0c473f949"
+    },
+    "test": {
+      "groups": 128,
+      "examples": 512,
+      "easy_groups": 16,
+      "depth_counts": {
+        "1": 0,
+        "2": 16,
+        "3": 46,
+        "4": 66,
+        "5": 0,
+        "6": 0
+      },
+      "labels_balanced_within_every_group": true,
+      "value_only_baseline_accuracy": 0.5,
+      "group_ids_sha256": "b9d73b86471dbf06e3dbe82fe0628a8fcfc6932ecbeee5f3e1b724cf6b3a42fd"
+    },
+    "ood": {
+      "groups": 128,
+      "examples": 512,
+      "easy_groups": 0,
+      "depth_counts": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 70,
+        "6": 58
+      },
+      "labels_balanced_within_every_group": true,
+      "value_only_baseline_accuracy": 0.5,
+      "group_ids_sha256": "8d17623ed039292be447333c377575c9be9e4d8abfa16f0f72de223b4295d68e"
+    }
+  },
+  "semantic_guarantees": {
+    "all_final_functions_unique": true,
+    "final_functions_disjoint_across_splits": true,
+    "heldout_final_functions_excluded_from_all_training_trace_prefix_functions": true,
+    "new_final_functions_exclude_old_correct_and_foil_functions": true,
+    "shared_primitive_subfunctions_allowed": true,
+    "hard_and_ood_final_functions_exclude_all_one_and_two_stage_functions": true
+  },
+  "initial_scores": {
+    "reasoning_test_outer_disabled": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.517578125,
+      "raw_accuracy": 0.517578125,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.8261809882169473,
+      "full_nll": 0.8437612796042231,
+      "all_variants_correct_fraction": 0.015625,
+      "mean_turns": 0.0
+    },
+    "reasoning_test_core": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.5,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.7033164841122925,
+      "full_nll": 0.704667467623949,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0,
+      "core_passes": 4
+    },
+    "reasoning_ood_outer_disabled": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.5,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.8770001699085697,
+      "full_nll": 0.8919280354857619,
+      "all_variants_correct_fraction": 0.0390625,
+      "mean_turns": 0.0
+    },
+    "reasoning_ood_core": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.5,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.7072255690582097,
+      "full_nll": 0.7085818932391703,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0,
+      "core_passes": 4
+    },
+    "replay_test_outer_disabled": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 1.0,
+      "raw_accuracy": 1.0,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 4.069875256251798e-07,
+      "full_nll": 6.593756119999128e-07,
+      "all_variants_correct_fraction": 1.0,
+      "mean_turns": 0.0
+    },
+    "replay_test_core": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.5,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.6953564225696027,
+      "full_nll": 0.6969402111135423,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0,
+      "core_passes": 4
+    },
+    "reasoning_test_core_transformer_zero": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.0,
+      "raw_answer_validity": 0.0,
+      "conditional_nll": 0.6978913063649088,
+      "full_nll": 11.264736089855433,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0
+    },
+    "replay_test_core_transformer_zero": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.0,
+      "raw_answer_validity": 0.0,
+      "conditional_nll": 0.6967794573865831,
+      "full_nll": 11.705209217965603,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0
+    },
+    "reasoning_test_core_passes1": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.5,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.696189301321283,
+      "full_nll": 0.6974040993954986,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0,
+      "core_passes": 1
+    },
+    "reasoning_test_core_passes4": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.5,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.7033164841122925,
+      "full_nll": 0.704667467623949,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0,
+      "core_passes": 4
+    }
+  },
+  "selected_scores": {
+    "reasoning_test_outer_disabled": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.537109375,
+      "raw_accuracy": 0.537109375,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.7387345469171578,
+      "full_nll": 0.7390502253181239,
+      "all_variants_correct_fraction": 0.046875,
+      "mean_turns": 0.0
+    },
+    "reasoning_test_core": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.509765625,
+      "raw_accuracy": 0.509765625,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.6942777772201225,
+      "full_nll": 0.6981243408517912,
+      "all_variants_correct_fraction": 0.0078125,
+      "mean_turns": 0.0,
+      "core_passes": 4
+    },
+    "reasoning_test_steered": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.533203125,
+      "raw_accuracy": 0.533203125,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.693081280564229,
+      "full_nll": 0.6934782727209949,
+      "all_variants_correct_fraction": 0.0546875,
+      "mean_turns": 0.904296875
+    },
+    "reasoning_ood_outer_disabled": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.54296875,
+      "raw_accuracy": 0.54296875,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.7473452006734078,
+      "full_nll": 0.747647636073907,
+      "all_variants_correct_fraction": 0.09375,
+      "mean_turns": 0.0
+    },
+    "reasoning_ood_core": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.490234375,
+      "raw_accuracy": 0.490234375,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.6954194315476343,
+      "full_nll": 0.6991712241433561,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0,
+      "core_passes": 4
+    },
+    "reasoning_ood_steered": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.541015625,
+      "raw_accuracy": 0.541015625,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.7010613778174957,
+      "full_nll": 0.7014608115359806,
+      "all_variants_correct_fraction": 0.09375,
+      "mean_turns": 0.9375
+    },
+    "replay_test_outer_disabled": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 1.0,
+      "raw_accuracy": 1.0,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 2.7660263296480636e-07,
+      "full_nll": 4.2375154535312376e-07,
+      "all_variants_correct_fraction": 1.0,
+      "mean_turns": 0.0
+    },
+    "replay_test_core": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 0.4453125,
+      "raw_accuracy": 0.4453125,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.6979832658544183,
+      "full_nll": 0.6980130430310965,
+      "all_variants_correct_fraction": 0.0625,
+      "mean_turns": 0.0,
+      "core_passes": 4
+    },
+    "replay_test_steered": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 1.0,
+      "raw_accuracy": 1.0,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 1.5338761606420448e-06,
+      "full_nll": 1.7452859701894141e-06,
+      "all_variants_correct_fraction": 1.0,
+      "mean_turns": 0.640625
+    },
+    "reasoning_test_core_transformer_zero": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.5,
+      "raw_accuracy": 0.0,
+      "raw_answer_validity": 0.0,
+      "conditional_nll": 0.7078149013104849,
+      "full_nll": 11.217983361333609,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0
+    },
+    "replay_test_core_transformer_zero": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 0.4765625,
+      "raw_accuracy": 0.0,
+      "raw_answer_validity": 0.0,
+      "conditional_nll": 0.6941810282878578,
+      "full_nll": 11.464878357946873,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0
+    },
+    "reasoning_test_core_passes1": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.498046875,
+      "raw_accuracy": 0.498046875,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.6936391938943416,
+      "full_nll": 0.6939349562162533,
+      "all_variants_correct_fraction": 0.0,
+      "mean_turns": 0.0,
+      "core_passes": 1
+    },
+    "reasoning_test_core_passes4": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.509765625,
+      "raw_accuracy": 0.509765625,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.6942777772201225,
+      "full_nll": 0.6981243408517912,
+      "all_variants_correct_fraction": 0.0078125,
+      "mean_turns": 0.0,
+      "core_passes": 4
+    }
+  },
+  "selected_policy": {
+    "decision_layer": 16,
+    "alternative_layer": 17,
+    "threshold": 0.0,
+    "selection_split": "validation",
+    "selection_metric": "full-vocabulary gold next-token NLL",
+    "tie_break": "fewer turns, then larger threshold, then smaller layer/alternative indices",
+    "validation_score": {
+      "groups": 64,
+      "examples": 256,
+      "conditional_nll": 0.7082737191803972,
+      "full_nll": 0.7086632453519996,
+      "accuracy": 0.54296875,
+      "raw_answer_validity": 1.0,
+      "raw_accuracy": 0.54296875,
+      "mean_turns": 0.9296875,
+      "all_variants_correct_fraction": 0.0625,
+      "group_sizes": [
+        4
+      ],
+      "decision_layer": 16,
+      "alternative_layer": 17,
+      "threshold": 0.0
+    },
+    "policies_compared": 72,
+    "conditional_AB_nll_is_separate": true,
+    "test_data_used_for_selection": false,
+    "validation_manifest_sha256": "37cecf3d3119329f7d29e1d37e19cc668ceefd861de9f66a9b02aa2292d822b3"
+  },
+  "paired_comparisons": {
+    "reasoning_test_outer_disabled_training_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": 0.01953125,
+        "ci95": [
+          -0.021484375,
+          0.064453125
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": 0.01953125,
+        "ci95": [
+          -0.021484375,
+          0.064453125
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 0.10471105428609917,
+        "ci95": [
+          0.04531835690078765,
+          0.1663572905830506
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 0.08744644129978951,
+        "ci95": [
+          0.027949568844456964,
+          0.14956398589531542
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "reasoning_test_core_training_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": 0.009765625,
+        "ci95": [
+          -0.009765625,
+          0.029296875
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": 0.009765625,
+        "ci95": [
+          -0.009765625,
+          0.029296875
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 0.006543126772157848,
+        "ci95": [
+          0.004792641187668778,
+          0.008320276069571262
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 0.009038706892170012,
+        "ci95": [
+          0.007290605545858852,
+          0.010821928229415788
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "reasoning_test_steering_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": -0.00390625,
+        "ci95": [
+          -0.015625,
+          0.005859375
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": -0.00390625,
+        "ci95": [
+          -0.015625,
+          0.005859375
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 0.045571952597128984,
+        "ci95": [
+          0.03564549503537364,
+          0.055899536068682205
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 0.04565326635292877,
+        "ci95": [
+          0.03573103031278606,
+          0.05597654750129095
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "reasoning_ood_outer_disabled_training_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": 0.04296875,
+        "ci95": [
+          -0.0078125,
+          0.095703125
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": 0.04296875,
+        "ci95": [
+          -0.0078125,
+          0.095703125
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 0.1442803994118549,
+        "ci95": [
+          0.05637441777813592,
+          0.2333036992913093
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 0.12965496923516184,
+        "ci95": [
+          0.041522618550118295,
+          0.21928427181310317
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "reasoning_ood_core_training_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": -0.009765625,
+        "ci95": [
+          -0.03125,
+          0.01171875
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": -0.009765625,
+        "ci95": [
+          -0.03125,
+          0.01171875
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 0.009410669095814228,
+        "ci95": [
+          0.007556154279154725,
+          0.01124079659639392
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 0.011806137510575354,
+        "ci95": [
+          0.009946566578582861,
+          0.013637942131026648
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "reasoning_ood_steering_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": -0.001953125,
+        "ci95": [
+          -0.01171875,
+          0.0078125
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": -0.001953125,
+        "ci95": [
+          -0.01171875,
+          0.0078125
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 0.04618682453792644,
+        "ci95": [
+          0.0346670903179529,
+          0.057913596365676764
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 0.04628382285591215,
+        "ci95": [
+          0.03476780391861212,
+          0.05801486773552824
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "replay_test_outer_disabled_training_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 2.3562406664678903e-07,
+        "ci95": [
+          7.07808240393848e-08,
+          4.600949872882173e-07
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 1.3038489266037345e-07,
+        "ci95": [
+          -1.1175622596781843e-08,
+          3.1292334933402665e-07
+        ],
+        "units": "nats per answer",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "replay_test_core_training_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": -0.0546875,
+        "ci95": [
+          -0.109375,
+          0.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": -0.0546875,
+        "ci95": [
+          -0.109375,
+          0.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": -0.00107283191755414,
+        "ci95": [
+          -0.005220452474895864,
+          0.0031269027269445354
+        ],
+        "units": "nats per answer",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": -0.00262684328481555,
+        "ci95": [
+          -0.006773183308541775,
+          0.0015730817453004419
+        ],
+        "units": "nats per answer",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "replay_test_steering_gain": {
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": -1.3215344248362904e-06,
+        "ci95": [
+          -2.190435995855222e-06,
+          -8.288760722272027e-07
+        ],
+        "units": "nats per answer",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": -1.2572735276772384e-06,
+        "ci95": [
+          -2.125236623201632e-06,
+          -7.664776495580616e-07
+        ],
+        "units": "nats per answer",
+        "strictly_positive": false,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    }
+  },
+  "core_accuracy_intervals": {
+    "reasoning_test": {
+      "accuracy": 0.509765625,
+      "ci95": [
+        0.490234375,
+        0.529296875
+      ],
+      "groups": 128,
+      "draws": 10000,
+      "seed": 20261125,
+      "unit": "complete program"
+    },
+    "reasoning_ood": {
+      "accuracy": 0.490234375,
+      "ci95": [
+        0.46875,
+        0.51171875
+      ],
+      "groups": 128,
+      "draws": 10000,
+      "seed": 20261125,
+      "unit": "complete program"
+    },
+    "replay_test": {
+      "accuracy": 0.4453125,
+      "ci95": [
+        0.3828125,
+        0.5
+      ],
+      "groups": 64,
+      "draws": 10000,
+      "seed": 20261125,
+      "unit": "complete program"
+    }
+  },
+  "trace_scores": {
+    "initial": {
+      "reasoning_test_outer_disabled": {
+        "split": "test",
+        "examples": 64,
+        "groups": 16,
+        "max_groups": 16,
+        "evaluation_scope": "capped_program_sample",
+        "protocol": "Scaffolded constrained free-running trace. Fixed format tokens; state argmax among ten digit tokens; final argmax among contextual A/B. Predicted digits, never gold past values, are fed back.",
+        "teacher_forced": false,
+        "unrestricted_text_generation": false,
+        "state_correct": 40,
+        "state_total": 220,
+        "raw_state_correct": 40,
+        "raw_state_total": 220,
+        "raw_state_valid_count": 216,
+        "whole_trace_correct": 1,
+        "answer_correct": 33,
+        "raw_answer_correct": 33,
+        "answer_total": 64,
+        "state_accuracy": 0.18181818181818182,
+        "all_states_correct_fraction": 0.015625,
+        "final_accuracy": 0.515625,
+        "whole_trace_accuracy": 0.015625,
+        "raw_state_validity": 0.9818181818181818,
+        "raw_state_accuracy": 0.18181818181818182,
+        "raw_final_validity": 1.0,
+        "raw_final_accuracy": 0.515625,
+        "all_four_whole_traces_correct_fraction": 0.0
+      },
+      "reasoning_test_core": {
+        "split": "test",
+        "examples": 64,
+        "groups": 16,
+        "max_groups": 16,
+        "evaluation_scope": "capped_program_sample",
+        "protocol": "Scaffolded constrained free-running trace. Fixed format tokens; state argmax among ten digit tokens; final argmax among contextual A/B. Predicted digits, never gold past values, are fed back.",
+        "teacher_forced": false,
+        "unrestricted_text_generation": false,
+        "state_correct": 22,
+        "state_total": 220,
+        "raw_state_correct": 0,
+        "raw_state_total": 220,
+        "raw_state_valid_count": 0,
+        "whole_trace_correct": 0,
+        "answer_correct": 32,
+        "raw_answer_correct": 0,
+        "answer_total": 64,
+        "state_accuracy": 0.1,
+        "all_states_correct_fraction": 0.0,
+        "final_accuracy": 0.5,
+        "whole_trace_accuracy": 0.0,
+        "raw_state_validity": 0.0,
+        "raw_state_accuracy": 0.0,
+        "raw_final_validity": 0.0,
+        "raw_final_accuracy": 0.0,
+        "all_four_whole_traces_correct_fraction": 0.0,
+        "core_passes": 4
+      }
+    },
+    "selected": {
+      "reasoning_test_outer_disabled": {
+        "split": "test",
+        "examples": 64,
+        "groups": 16,
+        "max_groups": 16,
+        "evaluation_scope": "capped_program_sample",
+        "protocol": "Scaffolded constrained free-running trace. Fixed format tokens; state argmax among ten digit tokens; final argmax among contextual A/B. Predicted digits, never gold past values, are fed back.",
+        "teacher_forced": false,
+        "unrestricted_text_generation": false,
+        "state_correct": 210,
+        "state_total": 220,
+        "raw_state_correct": 210,
+        "raw_state_total": 220,
+        "raw_state_valid_count": 220,
+        "whole_trace_correct": 58,
+        "answer_correct": 61,
+        "raw_answer_correct": 61,
+        "answer_total": 64,
+        "state_accuracy": 0.9545454545454546,
+        "all_states_correct_fraction": 0.90625,
+        "final_accuracy": 0.953125,
+        "whole_trace_accuracy": 0.90625,
+        "raw_state_validity": 1.0,
+        "raw_state_accuracy": 0.9545454545454546,
+        "raw_final_validity": 1.0,
+        "raw_final_accuracy": 0.953125,
+        "all_four_whole_traces_correct_fraction": 0.875
+      },
+      "reasoning_test_core": {
+        "split": "test",
+        "examples": 64,
+        "groups": 16,
+        "max_groups": 16,
+        "evaluation_scope": "capped_program_sample",
+        "protocol": "Scaffolded constrained free-running trace. Fixed format tokens; state argmax among ten digit tokens; final argmax among contextual A/B. Predicted digits, never gold past values, are fed back.",
+        "teacher_forced": false,
+        "unrestricted_text_generation": false,
+        "state_correct": 24,
+        "state_total": 220,
+        "raw_state_correct": 24,
+        "raw_state_total": 220,
+        "raw_state_valid_count": 220,
+        "whole_trace_correct": 0,
+        "answer_correct": 34,
+        "raw_answer_correct": 34,
+        "answer_total": 64,
+        "state_accuracy": 0.10909090909090909,
+        "all_states_correct_fraction": 0.0,
+        "final_accuracy": 0.53125,
+        "whole_trace_accuracy": 0.0,
+        "raw_state_validity": 1.0,
+        "raw_state_accuracy": 0.10909090909090909,
+        "raw_final_validity": 1.0,
+        "raw_final_accuracy": 0.53125,
+        "all_four_whole_traces_correct_fraction": 0.0,
+        "core_passes": 4
+      }
+    }
+  },
+  "trace_comparisons": {
+    "outer_disabled": {
+      "state_accuracy": {
+        "gain": 0.7727272727272727,
+        "ci95": [
+          0.65,
+          0.8679245283018868
+        ],
+        "strictly_positive": true,
+        "groups": 16,
+        "examples": 64,
+        "draws": 10000,
+        "seed": 20261125,
+        "unit": "paired complete program"
+      },
+      "raw_state_accuracy": {
+        "gain": 0.7727272727272727,
+        "ci95": [
+          0.65,
+          0.8679245283018868
+        ],
+        "strictly_positive": true,
+        "groups": 16,
+        "examples": 64,
+        "draws": 10000,
+        "seed": 20261125,
+        "unit": "paired complete program"
+      },
+      "whole_trace_accuracy": {
+        "gain": 0.890625,
+        "ci95": [
+          0.734375,
+          1.0
+        ],
+        "strictly_positive": true,
+        "groups": 16,
+        "examples": 64,
+        "draws": 10000,
+        "seed": 20261125,
+        "unit": "paired complete program"
+      },
+      "raw_final_accuracy": {
+        "gain": 0.4375,
+        "ci95": [
+          0.34375,
+          0.53125
+        ],
+        "strictly_positive": true,
+        "groups": 16,
+        "examples": 64,
+        "draws": 10000,
+        "seed": 20261125,
+        "unit": "paired complete program"
+      }
+    },
+    "core": {
+      "state_accuracy": {
+        "gain": 0.00909090909090909,
+        "ci95": [
+          -0.07692307692307693,
+          0.09
+        ],
+        "strictly_positive": false,
+        "groups": 16,
+        "examples": 64,
+        "draws": 10000,
+        "seed": 20261125,
+        "unit": "paired complete program"
+      },
+      "raw_state_accuracy": {
+        "gain": 0.10909090909090909,
+        "ci95": [
+          0.05660377358490566,
+          0.16666666666666666
+        ],
+        "strictly_positive": true,
+        "groups": 16,
+        "examples": 64,
+        "draws": 10000,
+        "seed": 20261125,
+        "unit": "paired complete program"
+      },
+      "whole_trace_accuracy": {
+        "gain": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "strictly_positive": false,
+        "groups": 16,
+        "examples": 64,
+        "draws": 10000,
+        "seed": 20261125,
+        "unit": "paired complete program"
+      },
+      "raw_final_accuracy": {
+        "gain": 0.53125,
+        "ci95": [
+          0.453125,
+          0.625
+        ],
+        "strictly_positive": true,
+        "groups": 16,
+        "examples": 64,
+        "draws": 10000,
+        "seed": 20261125,
+        "unit": "paired complete program"
+      }
+    }
+  },
+  "control_diagnostics": {
+    "scope": "post-selection diagnostic only; evaluates both branches with frozen weights and identical state/budget",
+    "decision_layer": 16,
+    "alternative_layer": 17,
+    "threshold": 0.0,
+    "examples": 512,
+    "turns": 463,
+    "positive_gain_examples": 235,
+    "negative_gain_examples": 277,
+    "tie_examples": 0,
+    "tie_tolerance_nats": 1e-06,
+    "oracle_headroom_nats": 0.09883617308514658,
+    "achieved_gain_nats": 0.04493330793320638,
+    "oracle_regret_nats": 0.053902865151940205,
+    "harmful_turns": 246,
+    "harmful_turn_fraction_of_turns": 0.531317494600432,
+    "decision_accuracy_on_nonties": 0.484375,
+    "score_unclipped_gain_mse": 0.032121296097034714,
+    "score_note": "Scores are bounded; oracle gains are not clipped. Gain means stay full-NLL minus turn full-NLL.",
+    "nonconstant_route_decisions": true,
+    "constant_policy_equivalence": null,
+    "activation_aware_interpretation": "Route choices vary, which is necessary but insufficient evidence of useful activation-aware control. Compare fixed-action and score-permutation diagnostics.",
+    "learned_vs_always_stay": {
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 0.04493330793320638,
+        "ci95": [
+          0.034889970670906226,
+          0.05527678929481681
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 0.04501453547254641,
+        "ci95": [
+          0.03496469288963908,
+          0.05535744653141137
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": -0.00390625,
+        "ci95": [
+          -0.015625,
+          0.005859375
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": -0.00390625,
+        "ci95": [
+          -0.015625,
+          0.005859375
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "learned_vs_always_turn": {
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": -0.002927013118778632,
+        "ci95": [
+          -0.006301790879717828,
+          -1.0233048976715582e-05
+        ],
+        "units": "nats per answer",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": -0.0029352339909110015,
+        "ci95": [
+          -0.006310675723341319,
+          -1.8846820557883524e-05
+        ],
+        "units": "nats per answer",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": -0.00390625,
+        "ci95": [
+          -0.009765625,
+          0.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": -0.00390625,
+        "ci95": [
+          -0.009765625,
+          0.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "score_permutation_diagnostic": {
+      "scope": "Exploratory CPU recombination of frozen held-out branch metrics; no additional inference or policy selection.",
+      "method": "Permute controller scores across individual examples; preserve the exact number of turns.",
+      "permutations": 256,
+      "seed": 20261125,
+      "learned_gain_nats": 0.04493330793320638,
+      "permuted_gain_mean_nats": 0.043182548643605045,
+      "permuted_gain_interval95_nats": [
+        0.038505878141165795,
+        0.047119725588942174
+      ],
+      "learned_minus_permuted_mean_nats": 0.0017507592896013335,
+      "permutation_p_one_sided_exploratory": 0.2490272373540856,
+      "inference_note": "The interval describes the permutation null, not a program-bootstrap confidence interval or a preregistered confirmation test."
+    }
+  },
+  "deployed_vs_cached_diagnostic": {
+    "deployed_full_nll": 0.6934782727209949,
+    "cached_diagnostic_full_nll": 0.6941169175595405,
+    "cached_minus_deployed_nll": 0.0006386448385455878,
+    "deployed_accuracy": 0.533203125,
+    "cached_diagnostic_accuracy": 0.533203125,
+    "deployed_turn_fraction": 0.904296875,
+    "cached_diagnostic_turn_fraction": 0.904296875,
+    "interpretation": "Deployment-style inference dispatches only the selected MLP per example; diagnostic branches execute homogeneous candidate batches and recombine scalar metrics. Grouped BF16 dispatch is a plausible numerical source, not isolated experimentally. Deployed metrics are primary; oracle/fixed-action/permutation metrics remain separately labelled diagnostics. No policy or weights were revised from this difference."
+  },
+  "fixed_action_baselines": {
+    "always_stay": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.537109375,
+      "raw_accuracy": 0.537109375,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.7387345469171578,
+      "full_nll": 0.7390502254927469,
+      "all_variants_correct_fraction": 0.046875,
+      "mean_turns": 0.0
+    },
+    "always_turn": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.537109375,
+      "raw_accuracy": 0.537109375,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.6907847774537004,
+      "full_nll": 0.6911899044407619,
+      "all_variants_correct_fraction": 0.0546875,
+      "mean_turns": 1.0
+    },
+    "learned": {
+      "groups": 128,
+      "examples": 512,
+      "accuracy": 0.533203125,
+      "raw_accuracy": 0.533203125,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 0.6937200114446114,
+      "full_nll": 0.6941169175595405,
+      "all_variants_correct_fraction": 0.0546875,
+      "mean_turns": 0.904296875
+    }
+  },
+  "core_pass_comparison": {
+    "full_nll": {
+      "metric": "full_nll",
+      "gain": -0.004189384635537863,
+      "ci95": [
+        -0.006017181693459861,
+        -0.00223987354838755
+      ],
+      "units": "nats per answer",
+      "strictly_positive": false,
+      "groups": 128,
+      "examples": 512,
+      "draws": 10000,
+      "seed": 2026,
+      "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+    },
+    "conditional_nll": {
+      "metric": "conditional_nll",
+      "gain": -0.0006385833257809281,
+      "ci95": [
+        -0.002463092509424314,
+        0.0013068652246147395
+      ],
+      "units": "nats per answer",
+      "strictly_positive": false,
+      "groups": 128,
+      "examples": 512,
+      "draws": 10000,
+      "seed": 2026,
+      "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+    },
+    "accuracy": {
+      "metric": "accuracy",
+      "gain": 0.01171875,
+      "ci95": [
+        -0.0078125,
+        0.033203125
+      ],
+      "units": "accuracy fraction",
+      "strictly_positive": false,
+      "groups": 128,
+      "examples": 512,
+      "draws": 10000,
+      "seed": 2026,
+      "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+    },
+    "raw_accuracy": {
+      "metric": "raw_accuracy",
+      "gain": 0.01171875,
+      "ci95": [
+        -0.0078125,
+        0.033203125
+      ],
+      "units": "accuracy fraction",
+      "strictly_positive": false,
+      "groups": 128,
+      "examples": 512,
+      "draws": 10000,
+      "seed": 2026,
+      "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+    }
+  },
+  "zero_ablation_comparisons": {
+    "reasoning_test_core_relevance": {
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 10.478933136015485,
+        "ci95": [
+          10.438149479182096,
+          10.521025235880847
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": -0.03091964560667293,
+        "ci95": [
+          -0.07102074382490287,
+          0.009727398650664996
+        ],
+        "units": "nats per answer",
+        "strictly_positive": false,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": 0.037109375,
+        "ci95": [
+          0.01171875,
+          0.064453125
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": 0.537109375,
+        "ci95": [
+          0.51171875,
+          0.564453125
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": true,
+        "groups": 128,
+        "examples": 512,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    },
+    "replay_test_core_relevance": {
+      "full_nll": {
+        "metric": "full_nll",
+        "gain": 11.464877934195329,
+        "ci95": [
+          11.448150714440592,
+          11.481165261753045
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "conditional_nll": {
+        "metric": "conditional_nll",
+        "gain": 0.6941807516852248,
+        "ci95": [
+          0.6936099541141061,
+          0.6947496004171494
+        ],
+        "units": "nats per answer",
+        "strictly_positive": true,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "accuracy": {
+        "metric": "accuracy",
+        "gain": 0.5234375,
+        "ci95": [
+          0.5,
+          0.5546875
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": true,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      },
+      "raw_accuracy": {
+        "metric": "raw_accuracy",
+        "gain": 1.0,
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "units": "accuracy fraction",
+        "strictly_positive": true,
+        "groups": 64,
+        "examples": 128,
+        "draws": 10000,
+        "seed": 2026,
+        "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+      }
+    }
+  },
+  "original_core_restore": {
+    "results": {
+      "reasoning_test_trained_core": {
+        "groups": 128,
+        "examples": 512,
+        "accuracy": 0.537109375,
+        "raw_accuracy": 0.537109375,
+        "raw_answer_validity": 1.0,
+        "conditional_nll": 0.7387345469171578,
+        "full_nll": 0.7390502253181239,
+        "all_variants_correct_fraction": 0.046875,
+        "mean_turns": 0.0
+      },
+      "reasoning_ood_trained_core": {
+        "groups": 128,
+        "examples": 512,
+        "accuracy": 0.54296875,
+        "raw_accuracy": 0.54296875,
+        "raw_answer_validity": 1.0,
+        "conditional_nll": 0.7473452006734078,
+        "full_nll": 0.747647636073907,
+        "all_variants_correct_fraction": 0.09375,
+        "mean_turns": 0.0
+      },
+      "replay_test_trained_core": {
+        "groups": 64,
+        "examples": 128,
+        "accuracy": 1.0,
+        "raw_accuracy": 1.0,
+        "raw_answer_validity": 1.0,
+        "conditional_nll": 2.7660263296480636e-07,
+        "full_nll": 4.2375154535312376e-07,
+        "all_variants_correct_fraction": 1.0,
+        "mean_turns": 0.0
+      },
+      "reasoning_test_original_core": {
+        "groups": 128,
+        "examples": 512,
+        "accuracy": 0.54296875,
+        "raw_accuracy": 0.54296875,
+        "raw_answer_validity": 1.0,
+        "conditional_nll": 0.7104208685204867,
+        "full_nll": 0.7106863873018483,
+        "all_variants_correct_fraction": 0.046875,
+        "mean_turns": 0.0
+      },
+      "reasoning_ood_original_core": {
+        "groups": 128,
+        "examples": 512,
+        "accuracy": 0.55078125,
+        "raw_accuracy": 0.55078125,
+        "raw_answer_validity": 1.0,
+        "conditional_nll": 0.7155240698484704,
+        "full_nll": 0.7157913211381128,
+        "all_variants_correct_fraction": 0.1015625,
+        "mean_turns": 0.0
+      },
+      "replay_test_original_core": {
+        "groups": 64,
+        "examples": 128,
+        "accuracy": 1.0,
+        "raw_accuracy": 1.0,
+        "raw_answer_validity": 1.0,
+        "conditional_nll": 2.2351740347481552e-08,
+        "full_nll": 2.7194615409564804e-07,
+        "all_variants_correct_fraction": 1.0,
+        "mean_turns": 0.0
+      }
+    },
+    "paired_program_deltas": {
+      "reasoning_test": {
+        "full_nll": {
+          "metric": "full_nll",
+          "gain": -0.028363838016275622,
+          "ci95": [
+            -0.04627626984171229,
+            -0.01226267991294777
+          ],
+          "units": "nats per answer",
+          "strictly_positive": false,
+          "groups": 128,
+          "examples": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "conditional_nll": {
+          "metric": "conditional_nll",
+          "gain": -0.028313678396671094,
+          "ci95": [
+            -0.0462278744133755,
+            -0.012214926909479128
+          ],
+          "units": "nats per answer",
+          "strictly_positive": false,
+          "groups": 128,
+          "examples": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "accuracy": {
+          "metric": "accuracy",
+          "gain": -0.005859375,
+          "ci95": [
+            -0.021484375,
+            0.009765625
+          ],
+          "units": "accuracy fraction",
+          "strictly_positive": false,
+          "groups": 128,
+          "examples": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "raw_accuracy": {
+          "metric": "raw_accuracy",
+          "gain": -0.005859375,
+          "ci95": [
+            -0.021484375,
+            0.009765625
+          ],
+          "units": "accuracy fraction",
+          "strictly_positive": false,
+          "groups": 128,
+          "examples": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        }
+      },
+      "reasoning_ood": {
+        "full_nll": {
+          "metric": "full_nll",
+          "gain": -0.03185631493579422,
+          "ci95": [
+            -0.05406790612358918,
+            -0.012206804198694955
+          ],
+          "units": "nats per answer",
+          "strictly_positive": false,
+          "groups": 128,
+          "examples": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "conditional_nll": {
+          "metric": "conditional_nll",
+          "gain": -0.03182113082493743,
+          "ci95": [
+            -0.05402719407167069,
+            -0.012180527008752055
+          ],
+          "units": "nats per answer",
+          "strictly_positive": false,
+          "groups": 128,
+          "examples": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "accuracy": {
+          "metric": "accuracy",
+          "gain": -0.0078125,
+          "ci95": [
+            -0.017578125,
+            0.0
+          ],
+          "units": "accuracy fraction",
+          "strictly_positive": false,
+          "groups": 128,
+          "examples": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "raw_accuracy": {
+          "metric": "raw_accuracy",
+          "gain": -0.0078125,
+          "ci95": [
+            -0.017578125,
+            0.0
+          ],
+          "units": "accuracy fraction",
+          "strictly_positive": false,
+          "groups": 128,
+          "examples": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        }
+      },
+      "replay_test": {
+        "full_nll": {
+          "metric": "full_nll",
+          "gain": -1.5180539125747572e-07,
+          "ci95": [
+            -2.5611323597185545e-07,
+            -8.3819003347807e-08
+          ],
+          "units": "nats per answer",
+          "strictly_positive": false,
+          "groups": 64,
+          "examples": 128,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "conditional_nll": {
+          "metric": "conditional_nll",
+          "gain": -2.542508926173248e-07,
+          "ci95": [
+            -3.557647935970021e-07,
+            -1.8905845888539384e-07
+          ],
+          "units": "nats per answer",
+          "strictly_positive": false,
+          "groups": 64,
+          "examples": 128,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "accuracy": {
+          "metric": "accuracy",
+          "gain": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "units": "accuracy fraction",
+          "strictly_positive": false,
+          "groups": 64,
+          "examples": 128,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        },
+        "raw_accuracy": {
+          "metric": "raw_accuracy",
+          "gain": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "units": "accuracy fraction",
+          "strictly_positive": false,
+          "groups": 64,
+          "examples": 128,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums bootstrap; positive gain favors candidate"
+        }
+      }
+    },
+    "restoration_check": {
+      "probe_examples": 4,
+      "probe_example_ids": [
+        "765a65d25f9ec3ea0340a7ca83d154731a7eaf8a9050fa46cafcea527375739d:input0-swap0",
+        "765a65d25f9ec3ea0340a7ca83d154731a7eaf8a9050fa46cafcea527375739d:input0-swap1",
+        "765a65d25f9ec3ea0340a7ca83d154731a7eaf8a9050fa46cafcea527375739d:input1-swap0",
+        "765a65d25f9ec3ea0340a7ca83d154731a7eaf8a9050fa46cafcea527375739d:input1-swap1"
+      ],
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "scope": "Fixed full-vocabulary output probe before and after the temporary restoration context."
+    },
+    "interpretation": "Positive paired gain means the trained outer model performs better with its newly trained core transformer than with the old core. This measures reliance/coadaptation under the current shell and interfaces, not standalone reasoning or causality attributable to any single loss."
+  },
+  "membership_screen": {
+    "scope": "Frozen adapted initial weights, validation only, no updates or architecture selection.",
+    "outer_probe_bitwise_unchanged": true,
+    "registered_parameters_unchanged": true,
+    "candidates": [
+      {
+        "name": "0_1_2_3_passes1",
+        "membership": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "passes": 1,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 4,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.5,
+          "raw_answer_validity": 1.0,
+          "conditional_nll": 0.6958793671801686,
+          "full_nll": 0.6970916143618524,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.5,
+          "raw_answer_validity": 1.0,
+          "conditional_nll": 0.6964628156274557,
+          "full_nll": 0.6981087783351541,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_1_2_3_passes2",
+        "membership": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "passes": 2,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 8,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.5,
+          "raw_answer_validity": 1.0,
+          "conditional_nll": 0.700046127429232,
+          "full_nll": 0.7006953707896173,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.5,
+          "raw_answer_validity": 1.0,
+          "conditional_nll": 0.6964170783758163,
+          "full_nll": 0.6972608137875795,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_1_2_3_passes4",
+        "membership": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "passes": 4,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 16,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.5,
+          "raw_answer_validity": 1.0,
+          "conditional_nll": 0.7030533978249878,
+          "full_nll": 0.7044011994730681,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.5,
+          "raw_answer_validity": 1.0,
+          "conditional_nll": 0.6964470390230417,
+          "full_nll": 0.6980102686211467,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_10_20_31_passes1",
+        "membership": [
+          0,
+          10,
+          20,
+          31
+        ],
+        "passes": 1,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 4,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.7654077471233904,
+          "full_nll": 5.63586001843214,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.9907462650444359,
+          "full_nll": 4.84047919139266,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_10_20_31_passes2",
+        "membership": [
+          0,
+          10,
+          20,
+          31
+        ],
+        "passes": 2,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 8,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.6946828868240118,
+          "full_nll": 11.367172066122293,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.697821612469852,
+          "full_nll": 10.634235069155693,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_10_20_31_passes4",
+        "membership": [
+          0,
+          10,
+          20,
+          31
+        ],
+        "passes": 4,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 16,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.8720236657536589,
+          "full_nll": 7.345494415611029,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 1.0775433925446123,
+          "full_nll": 6.2584913074970245,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_1_30_31_passes1",
+        "membership": [
+          0,
+          1,
+          30,
+          31
+        ],
+        "passes": 1,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 4,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 1.903423479576304,
+          "full_nll": 5.7627078564837575,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 1.8080121653038077,
+          "full_nll": 8.015480741858482,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_1_30_31_passes2",
+        "membership": [
+          0,
+          1,
+          30,
+          31
+        ],
+        "passes": 2,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 8,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.7034418227849528,
+          "full_nll": 10.879090923815966,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.484375,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.7455247407779098,
+          "full_nll": 8.843910500407219,
+          "all_variants_correct_fraction": 0.03125,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_1_30_31_passes4",
+        "membership": [
+          0,
+          1,
+          30,
+          31
+        ],
+        "passes": 4,
+        "execution": "repeated_stack",
+        "executed_attention_calls": 16,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.7582886005984619,
+          "full_nll": 7.134286984801292,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.8681968024466187,
+          "full_nll": 6.593030579388142,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_10_20_31_passes2_staged",
+        "membership": [
+          0,
+          10,
+          20,
+          31
+        ],
+        "passes": 2,
+        "execution": "input_middle_output",
+        "executed_attention_calls": 6,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.7282009863993153,
+          "full_nll": 9.990630947053432,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.7439659936353564,
+          "full_nll": 8.542089611291885,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      },
+      {
+        "name": "0_10_20_31_passes4_staged",
+        "membership": [
+          0,
+          10,
+          20,
+          31
+        ],
+        "passes": 4,
+        "execution": "input_middle_output",
+        "executed_attention_calls": 10,
+        "core_params": 1087201280,
+        "reasoning": {
+          "groups": 64,
+          "examples": 256,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.695769707672298,
+          "full_nll": 11.221470579504967,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "replay": {
+          "groups": 32,
+          "examples": 64,
+          "accuracy": 0.5,
+          "raw_accuracy": 0.0,
+          "raw_answer_validity": 0.0,
+          "conditional_nll": 0.7485852991230786,
+          "full_nll": 11.199302896857262,
+          "all_variants_correct_fraction": 0.0,
+          "mean_turns": 0.0
+        },
+        "trace_raw_state_accuracy": 0.0,
+        "trace_raw_final_accuracy": 0.0
+      }
+    ],
+    "limitations": [
+      "Diagnostic direct-core readouts only; no trained relocated controller or routing map.",
+      "Selected blocks skip pretrained transitions and have received no membership-specific adaptation.",
+      "One/two/four passes use different execution budgets; compare memberships within each pass count.",
+      "All layouts share fixed INITIAL weights; these validation observations are not held-out test claims.",
+      "Logical central membership does not imply contiguous VRAM placement.",
+      "Optional traces use predicted digits and fixed scaffolding, not unrestricted text generation."
+    ]
+  },
+  "historical_v1_old_test": {
+    "stock": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 0.671875,
+      "raw_accuracy": 0.671875,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 2.043742906764009,
+      "full_nll": 2.172329220800748,
+      "mean_turns": 0.0
+    },
+    "baseline": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 1.0,
+      "raw_accuracy": 1.0,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 4.069875256251798e-07,
+      "full_nll": 6.593756119999128e-07,
+      "mean_turns": 0.0
+    },
+    "shared": {
+      "groups": 64,
+      "examples": 128,
+      "accuracy": 1.0,
+      "raw_accuracy": 1.0,
+      "raw_answer_validity": 1.0,
+      "conditional_nll": 9.313225191043273e-09,
+      "full_nll": 1.3224779604747994e-07,
+      "mean_turns": 0.0
+    }
+  },
+  "limits": [
+    "Single training seed; adaptive validation-guided recovery.",
+    "Training changes are a bundle, not a causal ablation of distillation, recurrence, learning rates, or routing.",
+    "One delayed MLP substitution per prediction, not repeated unconstrained sphere traversal.",
+    "Four tied core passes reuse weights but increase computation; no latency improvement is established here.",
+    "Scaffolded traces restrict digit/answer outputs and feed back predicted values; not unrestricted text generation.",
+    "Old test was previously inspected; it is a retention check. New test/OOD were first scored after selection.",
+    "Zero/restoration ablations measure relevance and coadaptation, not independent reasoning ability."
+  ],
+  "sources": {
+    "protocol": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\protocol.json",
+      "sha256": "5600fa338a68cac638299f7b1dd4fc857d2d88fe1238c1868bd1076c7b96d27e"
+    },
+    "recovery_protocol": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\recovery_protocol.json",
+      "sha256": "0aa73049dcffc3a4a4ea358cd29169b5ef52b44b9c26488e25c4fc4fce2fdbb8"
+    },
+    "main_summary": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\distill_main\\training_summary.json",
+      "sha256": "81eca47097ac23219d728f39af66e5e1eb64ab41512b70acc665befac432a4d2"
+    },
+    "recovery_summary": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\distill_recovery\\training_summary.json",
+      "sha256": "1449b0a1038c7b93d247f4e7b52e5c41317ea629acd3a72daffe6e20fd8afb90"
+    },
+    "initial_evaluation": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\eval_initial\\evaluation.json",
+      "sha256": "d294d92ed29528227510fcc7749392980b52401e6a838b489a41da710b8a0af8"
+    },
+    "selected_evaluation": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\eval_selected\\evaluation.json",
+      "sha256": "def6a945d0d432c91d52cf4f521cfe452ea4a9f90613cc3f26e8f8d86f4df72a"
+    },
+    "reasoning_manifest": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\corpus_reasoning\\manifest.json",
+      "sha256": "37cecf3d3119329f7d29e1d37e19cc668ceefd861de9f66a9b02aa2292d822b3"
+    },
+    "replay_manifest": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b\\corpus\\manifest.json",
+      "sha256": "257969c1b134abccf0a890c92a67ae0e711087692842af10718c9610169038af"
+    },
+    "teacher_cache": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\teacher_cache\\manifest.json",
+      "sha256": "a70d08b64e135e0edd8fbb414cd8a640ff933ec5d32f14622a8ea7df5b9febae"
+    },
+    "membership_screen": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\core_membership_screen\\screen.json",
+      "sha256": "a204e1113441f54a2968b1b431d6385cc1f2c7a0c71d7701be788771c3ac737e"
+    },
+    "prior_report": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b\\runs\\pilot_report.json",
+      "sha256": "7ee2b74d91290f32635eb50a330e2ca5d5670b2adfaa3d2f984a16c9c5cc9ad8"
+    },
+    "core_restore": {
+      "path": "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\eval_core_restore\\core_restore.json",
+      "sha256": "2366e25c012ae419181a44029d3c59975f96e5e07dd057df8dc559d734a41670"
+    }
+  },
+  "report_script_sha256": "81f399b1e111026d2f323df9d5d4aa309b83f76f9f9179ffed933ed44fa979d6"
+}

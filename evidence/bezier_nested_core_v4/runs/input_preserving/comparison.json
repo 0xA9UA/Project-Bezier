@@ -1,0 +1,467 @@
+{
+  "created_utc": "2026-11-25T00:06:18.730712+00:00",
+  "status": "complete",
+  "design": "Adaptive exploratory input-preserving follow-up, seed 7, tier 2",
+  "motivation": "A training-only diagnostic identified loss of input-bit information through the outer GRU. The follow-up adds a parameter-free syntax/input skip.",
+  "protocol_checks": {
+    "reference_syntax_skip_scale": 0.0,
+    "candidate_syntax_skip_scale": 1.0,
+    "remaining_model_configuration_identical": true,
+    "training_configuration_identical": true,
+    "allowed_top_level_metadata_differences": [
+      "architecture_revision",
+      "scope",
+      "seeds"
+    ]
+  },
+  "visits": 16,
+  "runs": [
+    {
+      "arm": "clean-outer",
+      "seed": 7,
+      "provenance": {
+        "corpus_sha256": "5f65a6db6668d7f366f901ccf1c3bf8ceb360314c722c30acff1dfae5a30f26f",
+        "training_and_exposure_match": true,
+        "parameters": 4704970,
+        "core_parameters": 235210,
+        "changed_package_sources": [
+          "model.py",
+          "trainer.py"
+        ],
+        "v4": {
+          "directory": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\clean-outer",
+          "checkpoint": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\clean-outer\\best.pt",
+          "checkpoint_sha256": "2c9c3d48d77660c983952b2d4410edb2d4de7c064aa4924d7bd9967ec68ada7f",
+          "selected_step": 2256,
+          "validation_selection_score": 1.3597055599093437,
+          "source_hashes": {
+            "__init__.py": "523ca6358c1158c624d68a82897122329c5377c6fffbe7fb81c82de22caa8f7e",
+            "audits.py": "c473862f689b988fa7b02b82d1e4fb66f06bfdea966ba78d2fa4ec575d29201a",
+            "concurrent_engine.py": "e1fc374ba496b23f48cc20787e5bfccf0e355231c77d932607a331c86a67e326",
+            "data.py": "0c2ad4bfb239ef777b8bb3c3b464c11299ca937e5da132e02eb8b2797d45bc69",
+            "evaluation.py": "6d2d699fac0fa8ab3b0cbfe9bbc8ccd3c62ae452277f512cd26f30d1f2855bff",
+            "geometry.py": "2911f3468bee0abeaf1d077b26dd43db87e4b57cf52d9e29f464d4a9aaee36d1",
+            "model.py": "fb34cf6984e00e95f10119b5ce49a72f19c84a04d547c9216a4c15ac80bd0b96",
+            "reasoning_data.py": "8bc08b24c43c4408f203ee2a2347aac5131b6b871d5ad02b01f4270534b8e605",
+            "scaling_data.py": "7a558e1f9197223fc570d7856dbbb52af0d56b8d179e0dc786a42ff6337fe9c9",
+            "trainer.py": "983d20dba9f5b6e3f90a721a566a0942e9bc1dd8ea63e74d09278fb34699fcd1"
+          },
+          "full_threshold": 0.2
+        },
+        "v3": {
+          "directory": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\clean-outer",
+          "checkpoint": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\clean-outer\\best.pt",
+          "checkpoint_sha256": "29a50dab2befbc59081d941f84f6f445d490ad96227cbf3d8a23ffae99a3cac1",
+          "selected_step": 757,
+          "validation_selection_score": 1.3712929859757423,
+          "source_hashes": {
+            "__init__.py": "523ca6358c1158c624d68a82897122329c5377c6fffbe7fb81c82de22caa8f7e",
+            "audits.py": "c473862f689b988fa7b02b82d1e4fb66f06bfdea966ba78d2fa4ec575d29201a",
+            "concurrent_engine.py": "e1fc374ba496b23f48cc20787e5bfccf0e355231c77d932607a331c86a67e326",
+            "data.py": "0c2ad4bfb239ef777b8bb3c3b464c11299ca937e5da132e02eb8b2797d45bc69",
+            "evaluation.py": "6d2d699fac0fa8ab3b0cbfe9bbc8ccd3c62ae452277f512cd26f30d1f2855bff",
+            "geometry.py": "2911f3468bee0abeaf1d077b26dd43db87e4b57cf52d9e29f464d4a9aaee36d1",
+            "model.py": "f59a8f33454d3ced58867d6513689975e533f7b0401626d2827f5e4530145026",
+            "reasoning_data.py": "8bc08b24c43c4408f203ee2a2347aac5131b6b871d5ad02b01f4270534b8e605",
+            "scaling_data.py": "7a558e1f9197223fc570d7856dbbb52af0d56b8d179e0dc786a42ff6337fe9c9",
+            "trainer.py": "e64bc06aaa208268443a540034553a0e7214010025170957576c2ee4a1b94713"
+          },
+          "full_threshold": 0.2
+        }
+      },
+      "policies": {
+        "full": {
+          "v4": {
+            "programs": 32,
+            "prefixes": 512,
+            "nll": 0.6579491773518384,
+            "accuracy": 0.5703125,
+            "mean_turns": 0.0
+          },
+          "v3": {
+            "programs": 32,
+            "prefixes": 512,
+            "nll": 0.6947645817417651,
+            "accuracy": 0.5,
+            "mean_turns": 0.0
+          },
+          "nll_gain": {
+            "metric": "nll",
+            "gain": 0.0368154043899267,
+            "units": "nats per answer",
+            "ci95": [
+              0.02452893171575852,
+              0.048552300050414485
+            ],
+            "positive_favors": "v4",
+            "strictly_positive": true,
+            "programs": 32,
+            "prefixes": 512,
+            "draws": 10000,
+            "seed": 2026,
+            "estimator": "paired-program ratio-of-sums percentile bootstrap"
+          },
+          "accuracy_gain": {
+            "metric": "accuracy",
+            "gain": 0.0703125,
+            "units": "accuracy fraction",
+            "ci95": [
+              0.0390625,
+              0.103515625
+            ],
+            "positive_favors": "v4",
+            "strictly_positive": true,
+            "programs": 32,
+            "prefixes": 512,
+            "draws": 10000,
+            "seed": 2026,
+            "estimator": "paired-program ratio-of-sums percentile bootstrap"
+          },
+          "csvs": [
+            {
+              "path": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\clean-outer\\evaluation\\depth16_full.csv",
+              "sha256": "db55ecf8c028dbb32f504a192e7b21d2979b4446fdea61ee77bdee82d33fcd74"
+            },
+            {
+              "path": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\clean-outer\\evaluation\\depth16_full.csv",
+              "sha256": "280dac5795555426d6c76fac5bb1aff5a4bd5b12fffc7f7989cf619c556d00ba"
+            }
+          ]
+        },
+        "zero": {
+          "v4": {
+            "programs": 32,
+            "prefixes": 512,
+            "nll": 0.6579491773518384,
+            "accuracy": 0.5703125,
+            "mean_turns": 0.0
+          },
+          "v3": {
+            "programs": 32,
+            "prefixes": 512,
+            "nll": 0.6947645817417651,
+            "accuracy": 0.5,
+            "mean_turns": 0.0
+          },
+          "nll_gain": {
+            "metric": "nll",
+            "gain": 0.0368154043899267,
+            "units": "nats per answer",
+            "ci95": [
+              0.02452893171575852,
+              0.048552300050414485
+            ],
+            "positive_favors": "v4",
+            "strictly_positive": true,
+            "programs": 32,
+            "prefixes": 512,
+            "draws": 10000,
+            "seed": 2026,
+            "estimator": "paired-program ratio-of-sums percentile bootstrap"
+          },
+          "accuracy_gain": {
+            "metric": "accuracy",
+            "gain": 0.0703125,
+            "units": "accuracy fraction",
+            "ci95": [
+              0.0390625,
+              0.103515625
+            ],
+            "positive_favors": "v4",
+            "strictly_positive": true,
+            "programs": 32,
+            "prefixes": 512,
+            "draws": 10000,
+            "seed": 2026,
+            "estimator": "paired-program ratio-of-sums percentile bootstrap"
+          },
+          "csvs": [
+            {
+              "path": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\clean-outer\\evaluation\\depth16_zero.csv",
+              "sha256": "db55ecf8c028dbb32f504a192e7b21d2979b4446fdea61ee77bdee82d33fcd74"
+            },
+            {
+              "path": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\clean-outer\\evaluation\\depth16_zero.csv",
+              "sha256": "280dac5795555426d6c76fac5bb1aff5a4bd5b12fffc7f7989cf619c556d00ba"
+            }
+          ]
+        }
+      },
+      "core_reasoning": {
+        "v4": {
+          "accuracy": 0.625,
+          "nll": 0.6396124416237399
+        },
+        "v3": {
+          "accuracy": 0.59375,
+          "nll": 0.652213482643333
+        },
+        "nll_gain": {
+          "metric": "nll",
+          "gain": 0.01260104101959314,
+          "units": "nats per answer",
+          "ci95": [
+            0.0028882787578083935,
+            0.02239408581168049
+          ],
+          "positive_favors": "v4",
+          "strictly_positive": true,
+          "programs": 32,
+          "prefixes": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums percentile bootstrap"
+        },
+        "accuracy_gain": {
+          "metric": "accuracy",
+          "gain": 0.03125,
+          "units": "accuracy fraction",
+          "ci95": [
+            -0.01171875,
+            0.07421875
+          ],
+          "positive_favors": "v4",
+          "strictly_positive": false,
+          "programs": 32,
+          "prefixes": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums percentile bootstrap"
+        }
+      }
+    },
+    {
+      "arm": "nested-core-concurrent",
+      "seed": 7,
+      "provenance": {
+        "corpus_sha256": "5f65a6db6668d7f366f901ccf1c3bf8ceb360314c722c30acff1dfae5a30f26f",
+        "training_and_exposure_match": true,
+        "parameters": 4704970,
+        "core_parameters": 235210,
+        "changed_package_sources": [
+          "model.py",
+          "trainer.py"
+        ],
+        "v4": {
+          "directory": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\nested-core-concurrent",
+          "checkpoint": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\nested-core-concurrent\\best.pt",
+          "checkpoint_sha256": "89dddc514205aec7ba1a5b5179c3d1da826493ff950734df3ae31f031be3048c",
+          "selected_step": 1756,
+          "validation_selection_score": 1.3463905230164528,
+          "source_hashes": {
+            "__init__.py": "523ca6358c1158c624d68a82897122329c5377c6fffbe7fb81c82de22caa8f7e",
+            "audits.py": "c473862f689b988fa7b02b82d1e4fb66f06bfdea966ba78d2fa4ec575d29201a",
+            "concurrent_engine.py": "e1fc374ba496b23f48cc20787e5bfccf0e355231c77d932607a331c86a67e326",
+            "data.py": "0c2ad4bfb239ef777b8bb3c3b464c11299ca937e5da132e02eb8b2797d45bc69",
+            "evaluation.py": "6d2d699fac0fa8ab3b0cbfe9bbc8ccd3c62ae452277f512cd26f30d1f2855bff",
+            "geometry.py": "2911f3468bee0abeaf1d077b26dd43db87e4b57cf52d9e29f464d4a9aaee36d1",
+            "model.py": "fb34cf6984e00e95f10119b5ce49a72f19c84a04d547c9216a4c15ac80bd0b96",
+            "reasoning_data.py": "8bc08b24c43c4408f203ee2a2347aac5131b6b871d5ad02b01f4270534b8e605",
+            "scaling_data.py": "7a558e1f9197223fc570d7856dbbb52af0d56b8d179e0dc786a42ff6337fe9c9",
+            "trainer.py": "983d20dba9f5b6e3f90a721a566a0942e9bc1dd8ea63e74d09278fb34699fcd1"
+          },
+          "full_threshold": 0.005
+        },
+        "v3": {
+          "directory": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\nested-core-concurrent",
+          "checkpoint": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\nested-core-concurrent\\best.pt",
+          "checkpoint_sha256": "d0ad6d2ae9a118a3d4292654e59692417bb4475a38bb6d914f37051642160deb",
+          "selected_step": 2256,
+          "validation_selection_score": 1.3565437942743301,
+          "source_hashes": {
+            "__init__.py": "523ca6358c1158c624d68a82897122329c5377c6fffbe7fb81c82de22caa8f7e",
+            "audits.py": "c473862f689b988fa7b02b82d1e4fb66f06bfdea966ba78d2fa4ec575d29201a",
+            "concurrent_engine.py": "e1fc374ba496b23f48cc20787e5bfccf0e355231c77d932607a331c86a67e326",
+            "data.py": "0c2ad4bfb239ef777b8bb3c3b464c11299ca937e5da132e02eb8b2797d45bc69",
+            "evaluation.py": "6d2d699fac0fa8ab3b0cbfe9bbc8ccd3c62ae452277f512cd26f30d1f2855bff",
+            "geometry.py": "2911f3468bee0abeaf1d077b26dd43db87e4b57cf52d9e29f464d4a9aaee36d1",
+            "model.py": "f59a8f33454d3ced58867d6513689975e533f7b0401626d2827f5e4530145026",
+            "reasoning_data.py": "8bc08b24c43c4408f203ee2a2347aac5131b6b871d5ad02b01f4270534b8e605",
+            "scaling_data.py": "7a558e1f9197223fc570d7856dbbb52af0d56b8d179e0dc786a42ff6337fe9c9",
+            "trainer.py": "e64bc06aaa208268443a540034553a0e7214010025170957576c2ee4a1b94713"
+          },
+          "full_threshold": 0.2
+        }
+      },
+      "policies": {
+        "full": {
+          "v4": {
+            "programs": 32,
+            "prefixes": 512,
+            "nll": 0.6464704404152144,
+            "accuracy": 0.576171875,
+            "mean_turns": 6.0546875
+          },
+          "v3": {
+            "programs": 32,
+            "prefixes": 512,
+            "nll": 0.6704971616200055,
+            "accuracy": 0.53515625,
+            "mean_turns": 0.0
+          },
+          "nll_gain": {
+            "metric": "nll",
+            "gain": 0.0240267212047911,
+            "units": "nats per answer",
+            "ci95": [
+              0.016074974612922687,
+              0.03253888195803256
+            ],
+            "positive_favors": "v4",
+            "strictly_positive": true,
+            "programs": 32,
+            "prefixes": 512,
+            "draws": 10000,
+            "seed": 2026,
+            "estimator": "paired-program ratio-of-sums percentile bootstrap"
+          },
+          "accuracy_gain": {
+            "metric": "accuracy",
+            "gain": 0.041015625,
+            "units": "accuracy fraction",
+            "ci95": [
+              0.021484375,
+              0.0625
+            ],
+            "positive_favors": "v4",
+            "strictly_positive": true,
+            "programs": 32,
+            "prefixes": 512,
+            "draws": 10000,
+            "seed": 2026,
+            "estimator": "paired-program ratio-of-sums percentile bootstrap"
+          },
+          "csvs": [
+            {
+              "path": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\nested-core-concurrent\\evaluation\\depth16_full.csv",
+              "sha256": "e19ed7f40bfdecc639000906c5aa7b088437501ad0610b50576ad4e5f7676750"
+            },
+            {
+              "path": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\nested-core-concurrent\\evaluation\\depth16_full.csv",
+              "sha256": "efe72fa6105467ad50589472ed628a045f537c032679c5cce2d77348761ff7cd"
+            }
+          ]
+        },
+        "zero": {
+          "v4": {
+            "programs": 32,
+            "prefixes": 512,
+            "nll": 0.6570422077616058,
+            "accuracy": 0.52734375,
+            "mean_turns": 0.0
+          },
+          "v3": {
+            "programs": 32,
+            "prefixes": 512,
+            "nll": 0.6704971616200055,
+            "accuracy": 0.53515625,
+            "mean_turns": 0.0
+          },
+          "nll_gain": {
+            "metric": "nll",
+            "gain": 0.013454953858399676,
+            "units": "nats per answer",
+            "ci95": [
+              0.004156894023662972,
+              0.02302085457635029
+            ],
+            "positive_favors": "v4",
+            "strictly_positive": true,
+            "programs": 32,
+            "prefixes": 512,
+            "draws": 10000,
+            "seed": 2026,
+            "estimator": "paired-program ratio-of-sums percentile bootstrap"
+          },
+          "accuracy_gain": {
+            "metric": "accuracy",
+            "gain": -0.0078125,
+            "units": "accuracy fraction",
+            "ci95": [
+              -0.02734375,
+              0.01171875
+            ],
+            "positive_favors": "v4",
+            "strictly_positive": false,
+            "programs": 32,
+            "prefixes": 512,
+            "draws": 10000,
+            "seed": 2026,
+            "estimator": "paired-program ratio-of-sums percentile bootstrap"
+          },
+          "csvs": [
+            {
+              "path": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\nested-core-concurrent\\evaluation\\depth16_zero.csv",
+              "sha256": "02ee9bbdb9679d141ed072aebe87606400a5c63b998f7f721876454bdbe99379"
+            },
+            {
+              "path": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\nested-core-concurrent\\evaluation\\depth16_zero.csv",
+              "sha256": "efe72fa6105467ad50589472ed628a045f537c032679c5cce2d77348761ff7cd"
+            }
+          ]
+        }
+      },
+      "core_reasoning": {
+        "v4": {
+          "accuracy": 0.595703125,
+          "nll": 0.6452625799209386
+        },
+        "v3": {
+          "accuracy": 0.587890625,
+          "nll": 0.6445928534983523
+        },
+        "nll_gain": {
+          "metric": "nll",
+          "gain": -0.0006697264225863364,
+          "units": "nats per answer",
+          "ci95": [
+            -0.00512656579303723,
+            0.003691198884212095
+          ],
+          "positive_favors": "v4",
+          "strictly_positive": false,
+          "programs": 32,
+          "prefixes": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums percentile bootstrap"
+        },
+        "accuracy_gain": {
+          "metric": "accuracy",
+          "gain": 0.0078125,
+          "units": "accuracy fraction",
+          "ci95": [
+            -0.01953125,
+            0.037109375
+          ],
+          "positive_favors": "v4",
+          "strictly_positive": false,
+          "programs": 32,
+          "prefixes": 512,
+          "draws": 10000,
+          "seed": 2026,
+          "estimator": "paired-program ratio-of-sums percentile bootstrap"
+        }
+      }
+    }
+  ],
+  "suites": {
+    "v4": {
+      "path": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\suite.json",
+      "sha256": "a640b19bb3445a45c240267eee9db70392089a2eaa31c36a1f78012c1d1b85f0"
+    },
+    "v3": {
+      "path": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\suite.json",
+      "sha256": "d99a3fd06f5f3c6a9f979527f3e522db8d284d9e4b527fe562660fc067d284d0"
+    }
+  },
+  "limitations": [
+    "One shared training seed; confidence intervals resample programs, not training seeds.",
+    "Reused benchmark holdouts, not a new sequestered confirmation set.",
+    "This adaptive follow-up is exploratory and cannot establish a confirmatory success claim.",
+    "Both revisions select checkpoints and margins on validation; selected steps and margins can differ.",
+    "Multiple descriptive intervals are reported without a multiplicity-adjusted study-level success gate."
+  ],
+  "test_tuning_performed": false,
+  "confirmatory_claim": false
+}

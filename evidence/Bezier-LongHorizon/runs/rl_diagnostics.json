@@ -1,0 +1,38 @@
+{
+  "validation_tokens": 345,
+  "trace_tokens": 128,
+  "changed_tensor_names": [
+    "router.0.weight",
+    "router.0.bias",
+    "router.2.weight",
+    "router.2.bias"
+  ],
+  "non_controller_tensors_bitwise_unchanged": true,
+  "controller_l2_change": 0.01320536620914936,
+  "before_validation_relative_mse": 0.0902664282729677,
+  "after_validation_relative_mse": 0.09026879488166398,
+  "hops": [
+    {
+      "hop": 1,
+      "selected_set_changed_by_RL_fraction": 0.03125,
+      "control_coordinate_rms_change": 0.0006100060418248177,
+      "selected_set_changed_by_state_intervention_fraction": 0.0,
+      "max_control_radius": 1.0
+    },
+    {
+      "hop": 2,
+      "selected_set_changed_by_RL_fraction": 0.015625,
+      "control_coordinate_rms_change": 0.0009758148808032274,
+      "selected_set_changed_by_state_intervention_fraction": 0.28125,
+      "max_control_radius": 0.4873533546924591
+    },
+    {
+      "hop": 3,
+      "selected_set_changed_by_RL_fraction": 0.03125,
+      "control_coordinate_rms_change": 0.0010940436040982604,
+      "selected_set_changed_by_state_intervention_fraction": 0.3046875,
+      "max_control_radius": 0.492737352848053
+    }
+  ],
+  "scope": "Read-only diagnostics after training; not used for checkpoint selection or further fitting."
+}

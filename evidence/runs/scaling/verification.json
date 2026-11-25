@@ -1,0 +1,564 @@
+{
+  "completed_checkpoints": 92,
+  "device": "cuda",
+  "source_hashes": "passed",
+  "dataset_hashes": "passed",
+  "training_validation_partition": "passed",
+  "packed_lookup_recall": "passed",
+  "checkpoint_hashes_and_sizes": "passed",
+  "report_links": "passed",
+  "runs": [
+    {
+      "job": "emnist_n100000_small_bezier_s7",
+      "correct": 15721,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_small_straight_s7",
+      "correct": 15559,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_small_moe_s7",
+      "correct": 15608,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_small_residual_s7",
+      "correct": 15838,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_small_straight_s19",
+      "correct": 15694,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_small_moe_s19",
+      "correct": 15696,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_small_residual_s19",
+      "correct": 15819,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_small_bezier_s19",
+      "correct": 15707,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_bezier_s7",
+      "correct": 15775,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_straight_s7",
+      "correct": 15750,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_moe_s7",
+      "correct": 15647,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_residual_s7",
+      "correct": 15928,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_straight_s19",
+      "correct": 15735,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_moe_s19",
+      "correct": 15724,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_residual_s19",
+      "correct": 15781,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_bezier_s19",
+      "correct": 15737,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_bezier_s7",
+      "correct": 15840,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_straight_s7",
+      "correct": 15845,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_moe_s7",
+      "correct": 15780,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_residual_s7",
+      "correct": 15918,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_straight_s19",
+      "correct": 15787,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_moe_s19",
+      "correct": 15713,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_residual_s19",
+      "correct": 15859,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_bezier_s19",
+      "correct": 15588,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_residual_compact_s7",
+      "correct": 15857,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_residual_compact_s19",
+      "correct": 15817,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_residual_compact_s7",
+      "correct": 15807,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_large_residual_compact_s19",
+      "correct": 15793,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_bezier_transfer_s7",
+      "correct": 15751,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n100000_medium_bezier_transfer_s19",
+      "correct": 15654,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n10000_medium_bezier_s7",
+      "correct": 14238,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n10000_medium_residual_s7",
+      "correct": 14474,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n10000_medium_residual_s19",
+      "correct": 14462,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n10000_medium_bezier_s19",
+      "correct": 14359,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n40000_medium_bezier_s7",
+      "correct": 15282,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n40000_medium_residual_s7",
+      "correct": 15419,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n40000_medium_residual_s19",
+      "correct": 15256,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "emnist_n40000_medium_bezier_s19",
+      "correct": 15249,
+      "examples": 18800,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n1024_small_bezier_s7",
+      "correct": 1024,
+      "examples": 1024,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n1024_small_straight_s7",
+      "correct": 1024,
+      "examples": 1024,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n1024_small_moe_s7",
+      "correct": 1024,
+      "examples": 1024,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n1024_small_residual_s7",
+      "correct": 1024,
+      "examples": 1024,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n1024_small_straight_s19",
+      "correct": 1024,
+      "examples": 1024,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n1024_small_moe_s19",
+      "correct": 1024,
+      "examples": 1024,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n1024_small_residual_s19",
+      "correct": 1024,
+      "examples": 1024,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n1024_small_bezier_s19",
+      "correct": 1024,
+      "examples": 1024,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_small_bezier_s7",
+      "correct": 4095,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_small_straight_s7",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_small_moe_s7",
+      "correct": 4095,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_small_residual_s7",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_small_straight_s19",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_small_moe_s19",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_small_residual_s19",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_small_bezier_s19",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_medium_bezier_s7",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_medium_straight_s7",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_medium_moe_s7",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_medium_residual_s7",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_medium_straight_s19",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_medium_moe_s19",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_medium_residual_s19",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n4096_medium_bezier_s19",
+      "correct": 4096,
+      "examples": 4096,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_small_bezier_s7",
+      "correct": 5851,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_small_straight_s7",
+      "correct": 5448,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_small_moe_s7",
+      "correct": 5787,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_small_residual_s7",
+      "correct": 5029,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_small_straight_s19",
+      "correct": 5919,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_small_moe_s19",
+      "correct": 5729,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_small_residual_s19",
+      "correct": 5057,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_small_bezier_s19",
+      "correct": 5797,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_bezier_s7",
+      "correct": 16381,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_straight_s7",
+      "correct": 16382,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_moe_s7",
+      "correct": 16381,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_residual_s7",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_straight_s19",
+      "correct": 16381,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_moe_s19",
+      "correct": 16380,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_residual_s19",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_bezier_s19",
+      "correct": 16380,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_bezier_s7",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_straight_s7",
+      "correct": 16383,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_moe_s7",
+      "correct": 16383,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_residual_s7",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_straight_s19",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_moe_s19",
+      "correct": 16382,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_residual_s19",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_bezier_s19",
+      "correct": 16383,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_residual_compact_s7",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_residual_compact_s19",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_residual_compact_s7",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_large_residual_compact_s19",
+      "correct": 16384,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_bezier_transfer_s7",
+      "correct": 16374,
+      "examples": 16384,
+      "status": "passed"
+    },
+    {
+      "job": "facts_n16384_medium_bezier_transfer_s19",
+      "correct": 16377,
+      "examples": 16384,
+      "status": "passed"
+    }
+  ]
+}

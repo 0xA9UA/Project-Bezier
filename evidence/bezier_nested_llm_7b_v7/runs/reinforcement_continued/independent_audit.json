@@ -1,0 +1,1059 @@
+{
+  "passed": true,
+  "checks": {
+    "continuation_complete": true,
+    "complete_selection_matches_file": true,
+    "manifest_content_checksum": true,
+    "corpus_group_checksums_and_truth_tables": true,
+    "prior_corpus_sources_unchanged": true,
+    "final_functions_unique": true,
+    "final_functions_exclude_prior_functions": true,
+    "evaluation_group_ids_exclude_training": true,
+    "live_sources_match_frozen_protocol": true,
+    "source_snapshots_match_frozen_protocol": true,
+    "selection_artifact_checksums": true,
+    "parent_artifact_provenance": true,
+    "parent_update_count": true,
+    "declared_ancestor_training_exclusions": true,
+    "continuation_optimizer_resume_declaration": true,
+    "continuation_rng_resume_declaration": true,
+    "prior_recurrent_and_rl_holdouts_explicitly_excluded": true,
+    "rl_training_step_count": true,
+    "rl_training_groups_match_frozen_order": true,
+    "rl_saved_training_arithmetic": true,
+    "layout_only_eligible_success_paths": true,
+    "layout_event_gate_bounds_and_dispersion": true,
+    "layout_event_counters": true,
+    "continuation_global_step_sequence": true,
+    "exact_behavior_mixture_saved_diagnostics": true,
+    "independent_geometry_anchors_ownership_and_bounds": true,
+    "parent_layout_counters_restored": true,
+    "final_layout_checkpoint_counters": true,
+    "parent_layout_moved_count": true,
+    "final_layout_moved_count": true,
+    "core_and_mandatory_geometry_unchanged": true,
+    "fixed_core_center_radius": true,
+    "exact_15percent_parameter_budget": true,
+    "initial_core_weights_equal_parent_checkpoint": true,
+    "final_core_checkpoint_changed_tensor_count": true,
+    "initial_outside_weight_hashes_equal_parent": true,
+    "periodic_checkpoint_schedule": true,
+    "optimizer_rng_periodic_checkpoint_provenance": true,
+    "recorded_weight_storage_preserved": true,
+    "recorded_core_alias_preserved": true,
+    "recorded_parent_layout_restored_exactly": true,
+    "recorded_layout_frozen_during_inference": true,
+    "recorded_selected_path_replay_equal": true,
+    "recorded_unchosen_inference_continuations_zero": true,
+    "test_learned_trace_consistency": true,
+    "test_fixed_exact_per_prompt_budgets": true,
+    "test_fixed_trace_consistency": true,
+    "test_shuffled_exact_per_prompt_budgets": true,
+    "test_shuffled_trace_consistency": true,
+    "test_independent_metric_recomputation": true,
+    "ood_learned_trace_consistency": true,
+    "ood_fixed_exact_per_prompt_budgets": true,
+    "ood_fixed_trace_consistency": true,
+    "ood_shuffled_exact_per_prompt_budgets": true,
+    "ood_shuffled_trace_consistency": true,
+    "ood_independent_metric_recomputation": true,
+    "clean_runtime_saved_evidence": true
+  },
+  "corpus": {
+    "groups": 64,
+    "examples": 256,
+    "unique_final_functions": 64,
+    "excluded_prior_functions": 5963,
+    "final_overlap_with_previous": [],
+    "training_group_id_overlap": [],
+    "source_hash_failures": [],
+    "group_verification_failures": [],
+    "all_100_inputs_recomputed_per_program": true,
+    "split_counts": {
+      "ood": 16,
+      "test": 32,
+      "validation": 16
+    }
+  },
+  "sources": {
+    "source_files": 33,
+    "live_failures": [],
+    "snapshot_failures": [],
+    "selection_checksum_checks": {
+      "selected_core.pt": true,
+      "selected_layout.pt": true,
+      "protocol.json": true,
+      "optimizer.pt": true,
+      "rng.pt": true,
+      "training_groups.json": true,
+      "manifest": true,
+      "inspection_selection": true
+    }
+  },
+  "lineage": {
+    "parent": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_pilot",
+    "parent_links": {
+      "selected_core.pt": true,
+      "selected_layout.pt": true,
+      "protocol.json": true,
+      "checkpoint_sha256": true,
+      "layout_sha256": true,
+      "protocol_sha256": true
+    },
+    "ancestry": [
+      {
+        "path": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_pilot",
+        "groups": 256
+      }
+    ],
+    "ancestor_unique_training_groups": 256,
+    "training_group_overlap": [],
+    "optimizer_restored": false,
+    "rng_restored": false
+  },
+  "reinforcement": {
+    "updates": 256,
+    "arithmetic_failures": {},
+    "populations": {
+      "episodes": {
+        "records": 2048,
+        "correct": 825,
+        "positive_rewards": 825,
+        "eligible": 825,
+        "correct_by_row": {
+          "0": 207,
+          "1": 198,
+          "2": 209,
+          "3": 211
+        },
+        "eligible_by_row": {
+          "0": 207,
+          "1": 198,
+          "2": 209,
+          "3": 211
+        },
+        "action_counts": {
+          "continue": 4014,
+          "redirect": 543,
+          "revisit": 652,
+          "stop": 1942
+        },
+        "stop_counts": {
+          "sampled_stop": 1942,
+          "max_budget": 106
+        },
+        "turns": {
+          "1": 129,
+          "2": 1462,
+          "3": 225,
+          "4": 60,
+          "5": 25,
+          "6": 19,
+          "7": 22,
+          "8": 106
+        }
+      },
+      "matched_probes": {
+        "records": 2048,
+        "correct": 831,
+        "positive_rewards": 831,
+        "eligible": 831,
+        "correct_by_row": {
+          "0": 199,
+          "1": 213,
+          "2": 190,
+          "3": 229
+        },
+        "eligible_by_row": {
+          "0": 199,
+          "1": 213,
+          "2": 190,
+          "3": 229
+        },
+        "action_counts": {
+          "continue": 2203,
+          "redirect": 540,
+          "revisit": 1335,
+          "stop": 0
+        },
+        "stop_counts": {
+          "matched_horizon": 2048
+        },
+        "turns": {
+          "1": 18,
+          "2": 2030
+        }
+      }
+    },
+    "parameter_uses_per_node_turn": 35659776,
+    "controller_parameter_uses_per_call": 1087201280,
+    "final_readout_parameter_uses": 134221824,
+    "reward_min": -2.2301278133937443,
+    "reward_max": 0.9949204838722685,
+    "reward_mean": 0.21560340232225816,
+    "maximum_replayed_log_probability_error": 0.0,
+    "nonzero_sampled_score_gradient_coefficients": 2186,
+    "total_sampled_score_gradient_coefficients": 4096,
+    "gradient_tensor_count_histogram": {
+      "48": 256
+    },
+    "first8_vs_last8_unpaired_exploratory": {
+      "reinforce_loss": {
+        "first8": -0.35871837567538023,
+        "last8": -0.8946526926010847
+      },
+      "terminal_task_nll": {
+        "first8": 3.01318921148777,
+        "last8": 3.6643068864941597
+      },
+      "dense_nll": {
+        "first8": 0.5937207080423832,
+        "last8": 0.580575130879879
+      },
+      "mean_episode_reward": {
+        "first8": 0.24066305839991467,
+        "last8": 0.24035216447196403
+      }
+    },
+    "evidence_limit": "Saved reward correctness is a runtime argmax-verifier result. No training logits are persisted for a new forward verification in this read-only audit. Replay errors and nonzero score coefficients establish the recorded RL signal; final parameter gradients combine RL, entropy and task objectives.",
+    "previous_model_updates": 256,
+    "total_model_updates": 512,
+    "optimizer_initial_steps": 0,
+    "optimizer_final_steps": 256
+  },
+  "exploration_mixture": {
+    "exploration": 0.15,
+    "scored_decisions": 4096,
+    "illegal_stops_checked": 601,
+    "minimum_legal_probability": 0.03750002384185791,
+    "maximum_probability_sum_error": 2.0116567611694336e-07,
+    "mean_entropy": 0.6098287758851316,
+    "selected_actions_near_exploration_floor": 62,
+    "failures": {},
+    "evidence_limit": "Saved probabilities independently establish normalization, legal support, exploration floors, entropy, and replay log probabilities. The underlying raw logits are not saved; analytic mixture-gradient and epsilon-zero parity tests cover the helper."
+  },
+  "layout_events": {
+    "successful_paths": 1656,
+    "expected_correct_positive_paths": 1656,
+    "eligible_paths_all_applied_exactly_once": true,
+    "update_calls_with_movement": 1656,
+    "accepted_contractions": 4417,
+    "rejected_contractions": 0,
+    "summed_node_movements_across_calls": 6385192,
+    "final_unique_moved_nodes_recorded": 130376,
+    "failures": {},
+    "accepted_dispersion_fractional_decrease": {
+      "minimum": 4.3921569390059096e-06,
+      "median": 0.003010390381282231,
+      "mean": 0.0035779810580816463,
+      "maximum": 0.03957551775930018
+    },
+    "config": {
+      "lr": 0.02,
+      "max_step": 0.005,
+      "max_displacement": 0.05,
+      "origin_regularization": 0.001,
+      "shell_epsilon": 0.0001
+    },
+    "evidence_limit": "Strict decrease is checked against saved independently measured before/after dispersion values. Per-event coordinate snapshots are not saved; final checkpoint coordinates and exact original anchors are independently checked below.",
+    "initial_counters": {
+      "update_calls": 1905,
+      "gated_rows": 1905,
+      "accepted_events": 5513
+    },
+    "final_cumulative_counters": {
+      "update_calls": 3561,
+      "gated_rows": 3561,
+      "accepted_events": 9930
+    },
+    "counter_increments": {
+      "update_calls": 1656,
+      "gated_rows": 1656,
+      "accepted_events": 4417
+    }
+  },
+  "geometry": {
+    "cpu_only": true,
+    "nodes": 987136,
+    "counts": {
+      "moved_since_parent": 66118,
+      "final_moved_from_original": 130376,
+      "parent_moved_from_original": 115295,
+      "newly_moved_from_original": 15081,
+      "reverted_to_original": 0,
+      "locked_nodes_changed": 0,
+      "core_nodes_changed": 0,
+      "parent_nodes_near_anchor_cap": 26781,
+      "final_nodes_near_anchor_cap": 30584,
+      "total_parameters": 7248023552,
+      "core_parameters": 1087201280
+    },
+    "by_family": {
+      "embedding": {
+        "moved_since_parent": 0,
+        "final_moved_from_original": 0,
+        "parent_moved_from_original": 0,
+        "newly_moved_from_original": 0,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      },
+      "q": {
+        "moved_since_parent": 23373,
+        "final_moved_from_original": 51809,
+        "parent_moved_from_original": 45316,
+        "newly_moved_from_original": 6493,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      },
+      "k": {
+        "moved_since_parent": 5841,
+        "final_moved_from_original": 12942,
+        "parent_moved_from_original": 11321,
+        "newly_moved_from_original": 1621,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      },
+      "v": {
+        "moved_since_parent": 5842,
+        "final_moved_from_original": 12955,
+        "parent_moved_from_original": 11334,
+        "newly_moved_from_original": 1621,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      },
+      "input_norm": {
+        "moved_since_parent": 0,
+        "final_moved_from_original": 0,
+        "parent_moved_from_original": 0,
+        "newly_moved_from_original": 0,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      },
+      "post_norm": {
+        "moved_since_parent": 0,
+        "final_moved_from_original": 0,
+        "parent_moved_from_original": 0,
+        "newly_moved_from_original": 0,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      },
+      "mlp": {
+        "moved_since_parent": 31062,
+        "final_moved_from_original": 52670,
+        "parent_moved_from_original": 47324,
+        "newly_moved_from_original": 5346,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      },
+      "final_norm": {
+        "moved_since_parent": 0,
+        "final_moved_from_original": 0,
+        "parent_moved_from_original": 0,
+        "newly_moved_from_original": 0,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      },
+      "head": {
+        "moved_since_parent": 0,
+        "final_moved_from_original": 0,
+        "parent_moved_from_original": 0,
+        "newly_moved_from_original": 0,
+        "reverted_to_original": 0,
+        "locked_nodes_changed": 0,
+        "core_nodes_changed": 0
+      }
+    },
+    "maximum_original_anchor_drift": 0.05000003054738045,
+    "parent_maximum_original_anchor_drift": 0.050000034272670746,
+    "maximum_displacement_since_parent": 0.06506481766700745,
+    "maximum_radius": 0.9699997305870056,
+    "minimum_shell_radius": 0.3121204376220703,
+    "failures": {},
+    "movement_reference": "Drift cap remains relative to the original deterministic atlas. Movement since parent and newly moved relative to original anchors are separate quantities."
+  },
+  "resume_artifacts": {
+    "initial_core_tensor_hash_failures": [],
+    "initial_core_tensors_verified": 48,
+    "final_core_tensors_changed_from_parent": 48,
+    "checkpoints": [
+      {
+        "path": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_continued\\checkpoints\\step_000320",
+        "local_updates": 64,
+        "total_model_updates": 320,
+        "optimizer_steps": 64,
+        "optimizer_slices": 48,
+        "completed_training_groups": 64,
+        "layout_counters": {
+          "update_calls": 2303,
+          "accepted_events": 6511,
+          "gated_rows": 2303
+        },
+        "checksum_links": {
+          "selected_core.pt": true,
+          "selected_layout.pt": true,
+          "protocol.json": true,
+          "optimizer.pt": true,
+          "rng.pt": true,
+          "training_groups.json": true
+        },
+        "rng_schema_valid": true,
+        "finite_optimizer_statistics": true,
+        "optimizer_state_steps_valid": true,
+        "metadata_step_valid": true,
+        "valid": true
+      },
+      {
+        "path": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_continued\\checkpoints\\step_000384",
+        "local_updates": 128,
+        "total_model_updates": 384,
+        "optimizer_steps": 128,
+        "optimizer_slices": 48,
+        "completed_training_groups": 128,
+        "layout_counters": {
+          "update_calls": 2696,
+          "accepted_events": 7615,
+          "gated_rows": 2696
+        },
+        "checksum_links": {
+          "selected_core.pt": true,
+          "selected_layout.pt": true,
+          "protocol.json": true,
+          "optimizer.pt": true,
+          "rng.pt": true,
+          "training_groups.json": true
+        },
+        "rng_schema_valid": true,
+        "finite_optimizer_statistics": true,
+        "optimizer_state_steps_valid": true,
+        "metadata_step_valid": true,
+        "valid": true
+      },
+      {
+        "path": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_continued\\checkpoints\\step_000448",
+        "local_updates": 192,
+        "total_model_updates": 448,
+        "optimizer_steps": 192,
+        "optimizer_slices": 48,
+        "completed_training_groups": 192,
+        "layout_counters": {
+          "update_calls": 3116,
+          "accepted_events": 8762,
+          "gated_rows": 3116
+        },
+        "checksum_links": {
+          "selected_core.pt": true,
+          "selected_layout.pt": true,
+          "protocol.json": true,
+          "optimizer.pt": true,
+          "rng.pt": true,
+          "training_groups.json": true
+        },
+        "rng_schema_valid": true,
+        "finite_optimizer_statistics": true,
+        "optimizer_state_steps_valid": true,
+        "metadata_step_valid": true,
+        "valid": true
+      },
+      {
+        "path": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_continued\\checkpoints\\step_000512",
+        "local_updates": 256,
+        "total_model_updates": 512,
+        "optimizer_steps": 256,
+        "optimizer_slices": 48,
+        "completed_training_groups": 256,
+        "layout_counters": {
+          "update_calls": 3561,
+          "accepted_events": 9930,
+          "gated_rows": 3561
+        },
+        "checksum_links": {
+          "selected_core.pt": true,
+          "selected_layout.pt": true,
+          "protocol.json": true,
+          "optimizer.pt": true,
+          "rng.pt": true,
+          "training_groups.json": true
+        },
+        "rng_schema_valid": true,
+        "finite_optimizer_statistics": true,
+        "optimizer_state_steps_valid": true,
+        "metadata_step_valid": true,
+        "valid": true
+      },
+      {
+        "path": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_continued",
+        "local_updates": 256,
+        "total_model_updates": 512,
+        "optimizer_steps": 256,
+        "optimizer_slices": 48,
+        "completed_training_groups": 256,
+        "layout_counters": {
+          "update_calls": 3561,
+          "accepted_events": 9930,
+          "gated_rows": 3561
+        },
+        "checksum_links": {
+          "selected_core.pt": true,
+          "selected_layout.pt": true,
+          "protocol.json": true,
+          "optimizer.pt": true,
+          "rng.pt": true,
+          "training_groups.json": true
+        },
+        "rng_schema_valid": true,
+        "finite_optimizer_statistics": true,
+        "optimizer_state_steps_valid": true,
+        "metadata_step_valid": true,
+        "valid": true
+      }
+    ],
+    "failures": [],
+    "scope": "Restores weights, layout, optimizer and RNG. Completed training IDs are checksum-bound for exclusion in a future run; no exact original batch-cursor replay is claimed."
+  },
+  "storage": {
+    "outside_bitwise_unchanged": true,
+    "core_elements": 1087201280,
+    "outside_elements": 6160822272,
+    "changed_core_tensors": 48,
+    "same_parameter_storage": true,
+    "all_weights_cuda": true,
+    "core_view": {
+      "separate_execution_context": true,
+      "additional_registered_parameters": 0,
+      "additional_parameter_bytes": 0,
+      "core_parameters": 1087201280,
+      "same_underlying_storage": true
+    }
+  },
+  "evaluations": {
+    "test": {
+      "policies": {
+        "learned": {
+          "examples": 128,
+          "correct": 64,
+          "accuracy": 0.5,
+          "nll": 0.743391647702083,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1133": 128
+          },
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 256,
+            "turns_histogram": {
+              "2": 128
+            },
+            "stop_reason_histogram": {
+              "learned_stop": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 256,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 128,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 256,
+            "attention_region_histogram": {
+              "4": 128,
+              "21": 128
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 128
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "fixed": {
+          "examples": 128,
+          "correct": 64,
+          "accuracy": 0.5,
+          "nll": 0.743391647702083,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1133": 128
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 256,
+            "turns_histogram": {
+              "2": 128
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 256,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 256,
+            "attention_region_histogram": {
+              "4": 128,
+              "21": 128
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 128
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "shuffled": {
+          "examples": 128,
+          "correct": 64,
+          "accuracy": 0.5,
+          "nll": 0.743391647702083,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1133": 128
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 256,
+            "turns_histogram": {
+              "2": 128
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 256,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 256,
+            "attention_region_histogram": {
+              "4": 128,
+              "21": 128
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 128
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "dense": {
+          "examples": 128,
+          "correct": 69,
+          "accuracy": 0.5390625,
+          "nll": 0.9614076102971012,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1098": 53,
+            "1133": 75
+          }
+        }
+      },
+      "learned_minus_baseline": {
+        "fixed": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.0
+        },
+        "shuffled": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.0
+        },
+        "dense": {
+          "accuracy_delta": -0.0390625,
+          "nll_delta": -0.2180159625950182
+        }
+      },
+      "metric_mismatch_modes": []
+    },
+    "ood": {
+      "policies": {
+        "learned": {
+          "examples": 64,
+          "correct": 32,
+          "accuracy": 0.5,
+          "nll": 0.7434788066893816,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1133": 64
+          },
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 128,
+            "turns_histogram": {
+              "2": 64
+            },
+            "stop_reason_histogram": {
+              "learned_stop": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 128,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 64,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 128,
+            "attention_region_histogram": {
+              "4": 64,
+              "21": 64
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 64
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "fixed": {
+          "examples": 64,
+          "correct": 32,
+          "accuracy": 0.5,
+          "nll": 0.7434788066893816,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1133": 64
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 128,
+            "turns_histogram": {
+              "2": 64
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 128,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 128,
+            "attention_region_histogram": {
+              "4": 64,
+              "21": 64
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 64
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "shuffled": {
+          "examples": 64,
+          "correct": 32,
+          "accuracy": 0.5,
+          "nll": 0.7434788066893816,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1133": 64
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 128,
+            "turns_histogram": {
+              "2": 64
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 128,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 128,
+            "attention_region_histogram": {
+              "4": 64,
+              "21": 64
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 64
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "dense": {
+          "examples": 64,
+          "correct": 36,
+          "accuracy": 0.5625,
+          "nll": 1.007063776251016,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1098": 22,
+            "1133": 42
+          }
+        }
+      },
+      "learned_minus_baseline": {
+        "fixed": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.0
+        },
+        "shuffled": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.0
+        },
+        "dense": {
+          "accuracy_delta": -0.0625,
+          "nll_delta": -0.26358496956163435
+        }
+      },
+      "metric_mismatch_modes": []
+    }
+  },
+  "clean_runtime": {
+    "available": true,
+    "failures": [],
+    "measurements": {
+      "learned": {
+        "median_call_ms": 143.53729970753193,
+        "median_per_prompt_ms": 35.88432492688298,
+        "mean_call_ms": 144.36319975980692,
+        "minimum_call_ms": 141.5133997797966,
+        "samples_call_ms": [
+          147.117399610579,
+          141.5133997797966,
+          143.53729970753193,
+          143.2082997635007,
+          144.68850009143353,
+          148.2194997370243,
+          142.25799962878227
+        ],
+        "allocated_before_gib": 13.567265510559082,
+        "reserved_before_gib": 13.595703125,
+        "peak_allocated_gib": 13.672747611999512,
+        "peak_reserved_gib": 13.705078125
+      },
+      "fixed": {
+        "median_call_ms": 123.6389996483922,
+        "median_per_prompt_ms": 30.90974991209805,
+        "mean_call_ms": 128.81664293152946,
+        "minimum_call_ms": 114.66439999639988,
+        "samples_call_ms": [
+          146.64500020444393,
+          142.0071003958583,
+          143.1501004844904,
+          123.6389996483922,
+          115.41180033236742,
+          116.19909945875406,
+          114.66439999639988
+        ],
+        "allocated_before_gib": 13.567265510559082,
+        "reserved_before_gib": 13.595703125,
+        "peak_allocated_gib": 13.672747611999512,
+        "peak_reserved_gib": 13.705078125
+      },
+      "shuffled": {
+        "median_call_ms": 137.1892001479864,
+        "median_per_prompt_ms": 34.2973000369966,
+        "mean_call_ms": 133.4151571084346,
+        "minimum_call_ms": 114.04749937355518,
+        "samples_call_ms": [
+          136.20890025049448,
+          141.90240018069744,
+          141.38650055974722,
+          142.7472997456789,
+          120.42429950088263,
+          114.04749937355518,
+          137.1892001479864
+        ],
+        "allocated_before_gib": 13.567265510559082,
+        "reserved_before_gib": 13.595703125,
+        "peak_allocated_gib": 13.672747611999512,
+        "peak_reserved_gib": 13.705078125
+      },
+      "dense": {
+        "median_call_ms": 70.0898002833128,
+        "median_per_prompt_ms": 17.5224500708282,
+        "mean_call_ms": 69.77122862424169,
+        "minimum_call_ms": 68.87080054730177,
+        "samples_call_ms": [
+          70.68859972059727,
+          68.87080054730177,
+          68.9904997125268,
+          69.11840010434389,
+          70.0898002833128,
+          70.35209983587265,
+          70.28840016573668
+        ],
+        "allocated_before_gib": 13.567265510559082,
+        "reserved_before_gib": 13.595703125,
+        "peak_allocated_gib": 13.65445852279663,
+        "peak_reserved_gib": 13.673828125
+      }
+    },
+    "learned_turns": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "learned_stop_reasons": [
+      "learned_stop",
+      "learned_stop",
+      "learned_stop",
+      "learned_stop"
+    ],
+    "selected_only_outer_executions": 8,
+    "actual_core_executions": 12,
+    "shuffled_changes_any_action": false,
+    "timing": "Synchronized wall time with return_details=False; diagnostics, tokenization and scoring outside timings.",
+    "per_prompt_definition": "Four-prompt API call divided by four; recurrent prompts execute serially.",
+    "fixture_group_id": "1485121ab05262c3f3a702aaddc488a490cdc19e2cd86c2ec8ae16b183fb7121",
+    "artifact_sha256": "80387e8f25a225114dd07622a3b9f1641fcf5bd223dc241db31494ce201f0ec5"
+  },
+  "audit_script_sha256": "02178a93bb8f9a89bb9acdffb6cd78dcc89b0e8c01a68bfa3e5d17419f76e980",
+  "imported_audit_sha256": {
+    "recurrent_audit.py": "85a05e7d7d92ff417f3510b229844b0d50c3573d5aba82f3b3267ef0fa1917a8",
+    "reinforcement_audit.py": "8cf0f25c91fd8cf8fcb26618149c461335b5e5aa9cc9d3a659a5ff74e2730eb7"
+  },
+  "caveats": [
+    "Policy gradients use detached recurrent states and are a truncated surrogate.",
+    "GPU pointers and sharing are saved runtime evidence; this independent audit uses CPU only.",
+    "Saved reward correctness is runtime verification; training logits are not persisted for recomputation.",
+    "Mixture exploration guarantees legal probability floors, not useful or conditional learned routing.",
+    "Inference stop counts come from stop_reason; action arrays contain executed node turns only.",
+    "Reuse includes mandatory norms; explicit revisits and exact node-set repetition are separate evidence.",
+    "Fixed/shuffled routes match learned per-prompt budgets; native dense computation is unmatched.",
+    "Evaluation timings include trace summaries. Use the clean benchmark for ordinary forward latency.",
+    "First/last training windows and differences from the parent evaluation use different programs and are unpaired."
+  ]
+}

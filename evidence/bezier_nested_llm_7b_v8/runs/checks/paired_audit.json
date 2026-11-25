@@ -1,0 +1,83 @@
+{
+  "selection_sha256": "6afbf25ba8f88cdbe31cc1596398377172b8e2aebaaf40859d874717a67d9750",
+  "splits": {
+    "test": {
+      "evaluation_sha256": "c41b0edf6fafd31668018793d86fee6529be8555a311593619a009c599188bc8",
+      "programs": 192,
+      "examples": 768,
+      "answer_position": {
+        "A": {
+          "examples": 384,
+          "rescues": 5,
+          "spoils": 9
+        },
+        "B": {
+          "examples": 384,
+          "rescues": 12,
+          "spoils": 3
+        }
+      },
+      "same_input_across_display_swaps": {
+        "learned": {
+          "correct_on_both": 161,
+          "correct_on_one": 168,
+          "correct_on_neither": 55
+        },
+        "fixed": {
+          "correct_on_both": 156,
+          "correct_on_one": 173,
+          "correct_on_neither": 55
+        }
+      },
+      "learned_route_counts": {
+        "0,0": 4,
+        "0,1": 2,
+        "0,2": 78,
+        "1,0": 10,
+        "1,1": 10,
+        "1,2": 25,
+        "2,0": 1,
+        "2,1": 1,
+        "2,2": 637
+      }
+    },
+    "ood": {
+      "evaluation_sha256": "8d6a632c42a7c25bbb7687672dec30b116cfd76e90b1da2388e537a407d3979c",
+      "programs": 96,
+      "examples": 384,
+      "answer_position": {
+        "A": {
+          "examples": 192,
+          "rescues": 23,
+          "spoils": 3
+        },
+        "B": {
+          "examples": 192,
+          "rescues": 12,
+          "spoils": 19
+        }
+      },
+      "same_input_across_display_swaps": {
+        "learned": {
+          "correct_on_both": 72,
+          "correct_on_one": 93,
+          "correct_on_neither": 27
+        },
+        "fixed": {
+          "correct_on_both": 64,
+          "correct_on_one": 96,
+          "correct_on_neither": 32
+        }
+      },
+      "learned_route_counts": {
+        "0,0": 4,
+        "0,1": 1,
+        "0,2": 64,
+        "1,0": 21,
+        "1,1": 17,
+        "1,2": 84,
+        "2,2": 193
+      }
+    }
+  }
+}

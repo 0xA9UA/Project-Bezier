@@ -1,0 +1,130 @@
+{
+  "checked_utc": "2026-11-24T21:46:26.721179+00:00",
+  "training_completed": true,
+  "finished_utc": "2026-11-24T11:52:48.440881+00:00",
+  "updates": 22042,
+  "target_tokens_processed": 4774503,
+  "baseline_validation": {
+    "code": {
+      "nll": 9.717102880245262,
+      "token_accuracy": 0.004220477758082215,
+      "tokens": 11847,
+      "decision_token_accuracy": 0.0,
+      "groups": {
+        "code": {
+          "nll": 9.717102880245262,
+          "tokens": 11847
+        }
+      }
+    },
+    "agent": {
+      "nll": 9.73950001021563,
+      "token_accuracy": 0.0,
+      "tokens": 1180,
+      "decision_token_accuracy": 0.0,
+      "groups": {
+        "inspect": {
+          "nll": 9.748529252551851,
+          "tokens": 168
+        },
+        "construct": {
+          "nll": 9.739445848385271,
+          "tokens": 359
+        },
+        "test": {
+          "nll": 9.736072257713035,
+          "tokens": 108
+        },
+        "repair": {
+          "nll": 9.742123252467104,
+          "tokens": 437
+        },
+        "test_failure": {
+          "nll": 9.733254568917411,
+          "tokens": 84
+        },
+        "finish": {
+          "nll": 9.666624546051025,
+          "tokens": 24
+        }
+      }
+    }
+  },
+  "final_validation": {
+    "code": {
+      "nll": 5.973306735256025,
+      "token_accuracy": 0.11724487211952393,
+      "tokens": 11847,
+      "decision_token_accuracy": 0.0,
+      "groups": {
+        "code": {
+          "nll": 5.973306735256025,
+          "tokens": 11847
+        }
+      }
+    },
+    "agent": {
+      "nll": 2.4167751954773724,
+      "token_accuracy": 0.47203389830508474,
+      "tokens": 1180,
+      "decision_token_accuracy": 0.5945945945945946,
+      "groups": {
+        "inspect": {
+          "nll": 0.7907122260048276,
+          "tokens": 168
+        },
+        "construct": {
+          "nll": 3.0383438705401833,
+          "tokens": 359
+        },
+        "test": {
+          "nll": 0.9057858520083957,
+          "tokens": 108
+        },
+        "repair": {
+          "nll": 3.3144934542937463,
+          "tokens": 437
+        },
+        "test_failure": {
+          "nll": 0.852706375576201,
+          "tokens": 84
+        },
+        "finish": {
+          "nll": 0.4293241699536641,
+          "tokens": 24
+        }
+      }
+    }
+  },
+  "agent_results": [
+    {
+      "condition": "steps_8",
+      "requested_tasks": 96,
+      "recorded_tasks": 60,
+      "successes": 0,
+      "passing_code": 0,
+      "evaluation_timed_out": true,
+      "actions": 180,
+      "invalid_actions": 180,
+      "successful_edits": 0
+    },
+    {
+      "condition": "adaptive",
+      "requested_tasks": 96,
+      "recorded_tasks": 40,
+      "successes": 0,
+      "passing_code": 0,
+      "evaluation_timed_out": true,
+      "actions": 116,
+      "invalid_actions": 116,
+      "successful_edits": 0
+    }
+  ],
+  "checkpoint_integrity": {
+    "all_27_file_sha256_checks_passed": true,
+    "source_files_match_frozen_protocol": true
+  },
+  "generation_diagnostic": "Full context recomputation also produced malformed/repetitive tool output; cached and full outputs were not token-identical. See generation_diagnostic.json.",
+  "interpretation": "Token prediction improved, but no working agentic coding capability was demonstrated. Final panels were incomplete due to the fixed time budget.",
+  "training_restarted": false
+}

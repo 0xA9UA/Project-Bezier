@@ -1,0 +1,339 @@
+{
+  "setup_status": "verified",
+  "architecture_revision": 4,
+  "completed_runs": 2,
+  "study": "matched input-preserving clean/shared comparison",
+  "seeds": [
+    7
+  ],
+  "core_fraction_target": 0.05,
+  "full_heldout_evaluation": true,
+  "corpus_identical_to_v3": true,
+  "corpus": {
+    "manifest": "WORKSPACE\\bezier_nested_core_v3\\corpus\\manifest.json",
+    "file_sha256": "5f65a6db6668d7f366f901ccf1c3bf8ceb360314c722c30acff1dfae5a30f26f",
+    "corpus_sha256": "0bd2af8c2ad72e9a813799d33b1acd274e2acefb91df6071b1248d5ec737ef86",
+    "splits": {
+      "train": {
+        "examples": 16384,
+        "programs": 1024,
+        "unique_semantics": 256
+      },
+      "validation": {
+        "examples": 512,
+        "programs": 32,
+        "unique_semantics": 32
+      },
+      "test": {
+        "examples": 512,
+        "programs": 32,
+        "unique_semantics": 32
+      },
+      "ood": {
+        "examples": 512,
+        "programs": 32,
+        "unique_semantics": 32
+      }
+    },
+    "all_split_semantics_disjoint": true,
+    "all_split_programs_disjoint": true,
+    "content_hashes_and_answers_verified": true
+  },
+  "training_test_semantics_disjoint": true,
+  "validation_only_checkpoint_selection": true,
+  "source_snapshots_exact": true,
+  "cuda_eager_overlap": true,
+  "cuda_graph_overlap": true,
+  "cuda_graph_no_checker_overlap": true,
+  "runtime_measurements": {
+    "profile": {
+      "execution": "eager",
+      "turn_cap": null,
+      "kernel_overlap_proven": true,
+      "identified_streams": {
+        "nested_core_checker": [
+          45
+        ],
+        "nested_outer_update": [
+          7
+        ]
+      },
+      "stream_pair_measurements": [
+        {
+          "outer_stream": 7,
+          "core_stream": 45,
+          "outer_kernel_events": 1124,
+          "core_kernel_events": 777,
+          "overlap_microseconds": 5.6630859375,
+          "kernel_overlap_proven": true,
+          "trace": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\runtime_audits\\concurrency_trace.json"
+        }
+      ],
+      "trace": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\runtime_audits\\concurrency_trace.json",
+      "note": "Failure to identify CUDA kernels is not evidence of overlap; inspect profiler availability and raw trace."
+    },
+    "profile_graph": {
+      "execution": "captured_graph",
+      "turn_cap": null,
+      "kernel_overlap_proven": true,
+      "kernel_streams": [
+        7,
+        174
+      ],
+      "stream_pair_measurements": [
+        {
+          "outer_stream": 7,
+          "core_stream": 174,
+          "outer_kernel_events": 1721,
+          "core_kernel_events": 373,
+          "overlap_microseconds": 529.6220703125,
+          "kernel_overlap_proven": true,
+          "trace": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\runtime_audits\\concurrency_graph_trace.json"
+        }
+      ],
+      "trace": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\runtime_audits\\concurrency_graph_trace.json",
+      "attribution": "CUDA graph replay may remap logical streams. These are overlapping kernel lanes in the captured graph; compare turn_cap=0 to exclude overlap already present without checker work."
+    },
+    "profile_graph_no_checker": {
+      "execution": "captured_graph",
+      "turn_cap": 0,
+      "kernel_overlap_proven": true,
+      "kernel_streams": [
+        7,
+        176
+      ],
+      "stream_pair_measurements": [
+        {
+          "outer_stream": 7,
+          "core_stream": 176,
+          "outer_kernel_events": 1161,
+          "core_kernel_events": 2,
+          "overlap_microseconds": 3.1044921875,
+          "kernel_overlap_proven": true,
+          "trace": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\runtime_audits\\concurrency_graph_zero_trace.json"
+        }
+      ],
+      "trace": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\runtime_audits\\concurrency_graph_zero_trace.json",
+      "attribution": "CUDA graph replay may remap logical streams. These are overlapping kernel lanes in the captured graph; compare turn_cap=0 to exclude overlap already present without checker work."
+    }
+  },
+  "runtime_audit": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\runtime_audits\\audits.json",
+  "runs": [
+    {
+      "arm": "clean-outer",
+      "seed": 7,
+      "completed_updates": 2256,
+      "phase_updates": {
+        "core_warmup": 500,
+        "outer_warmup": 256,
+        "joint": 1500
+      },
+      "selected_update": 2256,
+      "total_parameters": 4704970,
+      "core_parameters": 235210,
+      "core_fraction": 0.04999181716355258,
+      "added_parameters": 0,
+      "syntax_skip_scale": 1.0,
+      "source_provenance": {
+        "recorded_equals_snapshot": true,
+        "recorded_equals_current_package": true,
+        "files": 10,
+        "sha256_by_file": {
+          "__init__.py": "523ca6358c1158c624d68a82897122329c5377c6fffbe7fb81c82de22caa8f7e",
+          "audits.py": "c473862f689b988fa7b02b82d1e4fb66f06bfdea966ba78d2fa4ec575d29201a",
+          "concurrent_engine.py": "e1fc374ba496b23f48cc20787e5bfccf0e355231c77d932607a331c86a67e326",
+          "data.py": "0c2ad4bfb239ef777b8bb3c3b464c11299ca937e5da132e02eb8b2797d45bc69",
+          "evaluation.py": "6d2d699fac0fa8ab3b0cbfe9bbc8ccd3c62ae452277f512cd26f30d1f2855bff",
+          "geometry.py": "2911f3468bee0abeaf1d077b26dd43db87e4b57cf52d9e29f464d4a9aaee36d1",
+          "model.py": "fb34cf6984e00e95f10119b5ce49a72f19c84a04d547c9216a4c15ac80bd0b96",
+          "reasoning_data.py": "8bc08b24c43c4408f203ee2a2347aac5131b6b871d5ad02b01f4270534b8e605",
+          "scaling_data.py": "7a558e1f9197223fc570d7856dbbb52af0d56b8d179e0dc786a42ff6337fe9c9",
+          "trainer.py": "983d20dba9f5b6e3f90a721a566a0942e9bc1dd8ea63e74d09278fb34699fcd1"
+        }
+      },
+      "checkpoint_selection": {
+        "split": "validation",
+        "examples_per_check": 512,
+        "eligible_joint_checkpoints": 7,
+        "selected_step": 2256,
+        "minimum_joint_score": 1.3597055599093437,
+        "first_minimum_tie_break": true,
+        "warmup_checkpoints_ineligible": true
+      },
+      "heldout_evaluation": {
+        "validation_examples": 512,
+        "test_examples": 512,
+        "ood_examples": 512,
+        "core_examples": 512,
+        "controller_calibration_examples": 512,
+        "depths": [
+          8,
+          16
+        ]
+      },
+      "warmup_comparison_to_v3": {
+        "v3_checkpoint": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\clean-outer\\core_warmup_complete.pt",
+        "v4_checkpoint": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\clean-outer\\core_warmup_complete.pt",
+        "same_seed_recipe_and_corpus": true,
+        "step": 500,
+        "rtol": 1e-05,
+        "atol": 1e-06,
+        "all_tensors_identical": true,
+        "all_tensors_close": true,
+        "tensors": {
+          "core.b1": {
+            "identical": true,
+            "allclose": true,
+            "max_absolute_difference": 0.0
+          },
+          "core.b2": {
+            "identical": true,
+            "allclose": true,
+            "max_absolute_difference": 0.0
+          },
+          "core.w1": {
+            "identical": true,
+            "allclose": true,
+            "max_absolute_difference": 0.0
+          },
+          "core.w2": {
+            "identical": true,
+            "allclose": true,
+            "max_absolute_difference": 0.0
+          }
+        },
+        "interpretation": "Numerical comparison is reported, not a pass/fail condition; CUDA training need not be bit-identical."
+      },
+      "core_test_accuracy": 0.625,
+      "outer_test_accuracy": 0.5703125,
+      "primary_quality_criteria": {
+        "visits": 16,
+        "complete": true,
+        "passed": false,
+        "competence_checks": {
+          "core_nll_better_than_uniform": true,
+          "core_accuracy_better_than_constant": true,
+          "controller_better_than_stay": false,
+          "whole_core_budget_and_identity": true,
+          "all_core_tensors_used_in_all_roles": false,
+          "outer_representation_trained_for_control": false,
+          "direct_reasoning_uses_no_outer_encoder": true
+        },
+        "missing_comparisons": [],
+        "rule": "At 16 visits, positive paired lower bounds against zero/one/clean; direct core reasoning beats fixed baselines; selected control beats Stay; exact whole-core budget and all-role participation hold.",
+        "interpretation": "This is a per-checkpoint, per-seed heldout criterion. Program-paired confidence intervals do not measure variation across training seeds or establish general reasoning ability.",
+        "reason": "Primary success requires the concurrent arm."
+      },
+      "quality_criteria_passed": false
+    },
+    {
+      "arm": "nested-core-concurrent",
+      "seed": 7,
+      "completed_updates": 2256,
+      "phase_updates": {
+        "core_warmup": 500,
+        "outer_warmup": 256,
+        "joint": 1500
+      },
+      "selected_update": 1756,
+      "total_parameters": 4704970,
+      "core_parameters": 235210,
+      "core_fraction": 0.04999181716355258,
+      "added_parameters": 0,
+      "syntax_skip_scale": 1.0,
+      "source_provenance": {
+        "recorded_equals_snapshot": true,
+        "recorded_equals_current_package": true,
+        "files": 10,
+        "sha256_by_file": {
+          "__init__.py": "523ca6358c1158c624d68a82897122329c5377c6fffbe7fb81c82de22caa8f7e",
+          "audits.py": "c473862f689b988fa7b02b82d1e4fb66f06bfdea966ba78d2fa4ec575d29201a",
+          "concurrent_engine.py": "e1fc374ba496b23f48cc20787e5bfccf0e355231c77d932607a331c86a67e326",
+          "data.py": "0c2ad4bfb239ef777b8bb3c3b464c11299ca937e5da132e02eb8b2797d45bc69",
+          "evaluation.py": "6d2d699fac0fa8ab3b0cbfe9bbc8ccd3c62ae452277f512cd26f30d1f2855bff",
+          "geometry.py": "2911f3468bee0abeaf1d077b26dd43db87e4b57cf52d9e29f464d4a9aaee36d1",
+          "model.py": "fb34cf6984e00e95f10119b5ce49a72f19c84a04d547c9216a4c15ac80bd0b96",
+          "reasoning_data.py": "8bc08b24c43c4408f203ee2a2347aac5131b6b871d5ad02b01f4270534b8e605",
+          "scaling_data.py": "7a558e1f9197223fc570d7856dbbb52af0d56b8d179e0dc786a42ff6337fe9c9",
+          "trainer.py": "983d20dba9f5b6e3f90a721a566a0942e9bc1dd8ea63e74d09278fb34699fcd1"
+        }
+      },
+      "checkpoint_selection": {
+        "split": "validation",
+        "examples_per_check": 512,
+        "eligible_joint_checkpoints": 7,
+        "selected_step": 1756,
+        "minimum_joint_score": 1.3463905230164528,
+        "first_minimum_tie_break": true,
+        "warmup_checkpoints_ineligible": true
+      },
+      "heldout_evaluation": {
+        "validation_examples": 512,
+        "test_examples": 512,
+        "ood_examples": 512,
+        "core_examples": 512,
+        "controller_calibration_examples": 512,
+        "depths": [
+          8,
+          16
+        ]
+      },
+      "warmup_comparison_to_v3": {
+        "v3_checkpoint": "WORKSPACE\\bezier_nested_core_v3\\runs\\scaleup\\tier2_seed7\\seed7\\nested-core-concurrent\\core_warmup_complete.pt",
+        "v4_checkpoint": "WORKSPACE\\bezier_nested_core_v4\\runs\\input_preserving\\seed7\\nested-core-concurrent\\core_warmup_complete.pt",
+        "same_seed_recipe_and_corpus": true,
+        "step": 500,
+        "rtol": 1e-05,
+        "atol": 1e-06,
+        "all_tensors_identical": true,
+        "all_tensors_close": true,
+        "tensors": {
+          "core.b1": {
+            "identical": true,
+            "allclose": true,
+            "max_absolute_difference": 0.0
+          },
+          "core.b2": {
+            "identical": true,
+            "allclose": true,
+            "max_absolute_difference": 0.0
+          },
+          "core.w1": {
+            "identical": true,
+            "allclose": true,
+            "max_absolute_difference": 0.0
+          },
+          "core.w2": {
+            "identical": true,
+            "allclose": true,
+            "max_absolute_difference": 0.0
+          }
+        },
+        "interpretation": "Numerical comparison is reported, not a pass/fail condition; CUDA training need not be bit-identical."
+      },
+      "core_test_accuracy": 0.595703125,
+      "outer_test_accuracy": 0.576171875,
+      "primary_quality_criteria": {
+        "visits": 16,
+        "complete": true,
+        "passed": true,
+        "competence_checks": {
+          "core_nll_better_than_uniform": true,
+          "core_accuracy_better_than_constant": true,
+          "controller_better_than_stay": true,
+          "whole_core_budget_and_identity": true,
+          "all_core_tensors_used_in_all_roles": true,
+          "outer_representation_trained_for_control": true,
+          "direct_reasoning_uses_no_outer_encoder": true
+        },
+        "missing_comparisons": [],
+        "rule": "At 16 visits, positive paired lower bounds against zero/one/clean; direct core reasoning beats fixed baselines; selected control beats Stay; exact whole-core budget and all-role participation hold.",
+        "interpretation": "This is a per-checkpoint, per-seed heldout criterion. Program-paired confidence intervals do not measure variation across training seeds or establish general reasoning ability."
+      },
+      "quality_criteria_passed": true
+    }
+  ],
+  "quality_is_a_verification_requirement": false,
+  "full_original_protocol_executed": false,
+  "interpretation": "Two-arm, single-seed input-representation follow-up; quality and overlap are observed outcomes, not forced passes."
+}

@@ -1,0 +1,53 @@
+[
+  {
+    "seed": 7,
+    "task": "mbpp_501",
+    "returns_allowed": {
+      "success": true,
+      "final_code": "def num_comm_div(x, y):\n    comm_div = 0\n    for i in range(1, min(x, y) + 1):\n        if (x % i == 0 and y % i == 0):\n            comm_div += 1\n    return comm_div",
+      "public": {
+        "valid": true,
+        "results": [
+          {
+            "passed": true
+          }
+        ],
+        "passed": 1,
+        "total": 1
+      },
+      "hidden": {
+        "valid": true,
+        "results": [
+          {
+            "passed": true
+          },
+          {
+            "passed": true
+          }
+        ],
+        "passed": 2,
+        "total": 2
+      },
+      "invalid_actions": 0
+    },
+    "returns_blocked": {
+      "success": false,
+      "final_code": "complete Python source",
+      "public": {
+        "valid": false,
+        "passed": 0,
+        "total": 1,
+        "results": [],
+        "error": "SyntaxError: invalid syntax (<unknown>, line 1)"
+      },
+      "hidden": {
+        "valid": false,
+        "passed": 0,
+        "total": 2,
+        "results": [],
+        "error": "SyntaxError: invalid syntax (<unknown>, line 1)"
+      },
+      "invalid_actions": 0
+    }
+  }
+]

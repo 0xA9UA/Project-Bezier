@@ -1,0 +1,1101 @@
+{
+  "completed": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "run": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_continued",
+  "loading": {
+    "saved_layout_coordinates_bitwise_equal": true,
+    "layout_audit": {
+      "schema": "bezier-reward-layout-v1",
+      "gate": "correct AND finite reward > 0",
+      "config": {
+        "lr": 0.02,
+        "max_step": 0.005,
+        "max_displacement": 0.05,
+        "origin_regularization": 0.001,
+        "shell_epsilon": 0.0001
+      },
+      "core_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "core_radius": 0.25,
+      "core_coordinates_bitwise_equal": true,
+      "mandatory_coordinates_bitwise_equal": true,
+      "original_anchors_preserved": true,
+      "core_membership_unchanged": true,
+      "all_outer_nodes_in_bounded_shell": true,
+      "all_nodes_inside_sphere": true,
+      "minimum_shell_radius": 0.3121204376220703,
+      "maximum_node_radius": 0.9699996709823608,
+      "total_parameters": 7248023552,
+      "core_parameters": 1087201280,
+      "core_fraction": 0.14999968918423293,
+      "parameter_objects_and_storage_unchanged": true,
+      "additional_parameter_bytes": 0,
+      "moved_nodes": 130376,
+      "maximum_anchor_displacement": 0.05000003054738045,
+      "update_calls": 3561,
+      "accepted_events": 9930,
+      "gated_rows": 3561,
+      "movable_families": [
+        "k",
+        "mlp",
+        "q",
+        "v"
+      ]
+    },
+    "layout_coordinates_sha256": {
+      "embedding": "90b247a4f3873ce13ac27ce26deda204555e46823a4128fe803f0d5405aa6777",
+      "layer.0.q": "0b16bbcee7ee2a86761678a15bf7613185b09f02f5bc38ce3aa9971a360c1812",
+      "layer.0.k": "cb6998ef7cdfeb20ad3b4eb5b67ddd95d0e9afd1d2cef18928640c18720ba51c",
+      "layer.0.v": "9452778c3493592e43c97f61bd22239b46864384ac96329a87fb5b90de4e3885",
+      "layer.0.input_norm": "bab7d217acb10f452610febf562ba2a248dccfd48bdb40e5661cde41208fcad2",
+      "layer.0.post_norm": "f775c6214a5c14530c3345488fcb00d0e8f80618d349cf16a761f260dbc1f43d",
+      "layer.0.mlp": "b74f784d5289b044fab2556149d300c5c27e08a494c1b1921425eee0f04d64a3",
+      "layer.1.q": "062e43d96457b775dad784e0499952a7f7b74211b8df5cd410cb750f4531a9d8",
+      "layer.1.k": "f7b79c7d57ce96f304e62fd484616fad48cef6156bfa40e4d9f905c05f089cc8",
+      "layer.1.v": "aaaea353e8f149e7b81c7a78375391f08b7b64893ee39c8764539dab2968ae2c",
+      "layer.1.input_norm": "f9dea2df54e6ca78d1fc1c01d7e53c8b5f1db4f97323982839d8a694c6bfb785",
+      "layer.1.post_norm": "21109d64fd5ae5f6bcb0a1c73cca05d5bd3d298835200dc06809ccc25289dad2",
+      "layer.1.mlp": "366d3ee2fa18c8281c44d132e66ccc9bade659586d3069e278bdef25958a7e71",
+      "layer.2.q": "cf5ac271ec35c152b1f505a938c9e5015b0632d8c8335852ba66870b883f93a7",
+      "layer.2.k": "a20763e95ac225b03a7279ad0e81598ef88f7bc02628fffe0b3da7f5ca2b15b7",
+      "layer.2.v": "801c82444eb7855bd31ea63bca7c0defeab37c2d610fe105040591c2d2679601",
+      "layer.2.input_norm": "ad8931885f7fd4ea22ddb2458d825ff6237933b56c3014a381cad6b3fa86f1f3",
+      "layer.2.post_norm": "238214a195f9657e8745152ddd7c09625e1d2d39273d4e5e93a5c1a8f6f74c8b",
+      "layer.2.mlp": "77bbed65cd5db4c56f007b5fcbf1e1577a484c8184447c93378b2708eee1ca2a",
+      "layer.3.q": "f95963d3e25ec36fa68c74c538dd7629b26668e6dcfddeb7f7aa962b4e2dbea7",
+      "layer.3.k": "4a0b97c341e619ec69da4eb1a88c653cce81a08a192cbd9fa330c900f85d14fb",
+      "layer.3.v": "5501dd7f8964a1860322f420259721f80c5ba21ccc0986ff99d16518fa98beb7",
+      "layer.3.input_norm": "bf11047e378b53f6d597298957443182b84719c5b85f545629bf55e1669ec824",
+      "layer.3.post_norm": "025d6623a83eebcf4553f30a24448a9ddaad799135951327ac8d86508aab7646",
+      "layer.3.mlp": "b3a5d66e3f119e0436151d429d33dafcefcf49df64c8feb1cde0d6b013759d52",
+      "layer.4.q": "cbd786962983b6144049ab173c2e6b2c00df685079496c22f3007d3ed79fa9ce",
+      "layer.4.k": "5cf8ee93de0926ba1dad4a69666b44fb5b2363ccdb8d5505198cbe5fb12b7e29",
+      "layer.4.v": "c63bc3615acc3fe659f356f4117f1e0a52922952e8b543c2147c72b9a0f907df",
+      "layer.4.input_norm": "e53ac590d6661abe210a33c25e91f9204419df06a411b64c362fabbb0ecca04b",
+      "layer.4.post_norm": "f9029539952edddc1556f1216a5cc711d8fa86ad6a04c998eb7767519445fa1d",
+      "layer.4.mlp": "c83982fea1fb84f37f22c8e86d93785c41c4b5e88e7351f22baa738490de332c",
+      "layer.5.q": "c0d402355cc8f797356a6ee9992a5d0525a04b7f2adc6963f894749290cd9a49",
+      "layer.5.k": "4319090eba8b4ca49d80e08c75b2e9d34f3fc5ebd333729ef3cdb3fad7ae8c90",
+      "layer.5.v": "e29a46117455bf6bbc1b389d7d6bf1e6fc33010fe70b0ab27a2831d3ecb8b8b0",
+      "layer.5.input_norm": "5cf906cead23a6db4d58524a802e274b129217bd12461c4db4009381ed29d1fc",
+      "layer.5.post_norm": "ae0d1ae68e421b2af3a1f9d156358f78b7665bf88fcb10ed40c80e25df68fa0f",
+      "layer.5.mlp": "3395ff4b70b8ed9110c206e7df94780e328b68dc5faea76dc8dcb2267e889eb2",
+      "layer.6.q": "0a8caeeaf3288e170c3b4ce62a88df4f23e1bd52afcb6366cbe5326363ce045d",
+      "layer.6.k": "10d9d5d5daeb3a55acb477e17764a2ea2e4bf1de33a49f4a9b39cd17f99f11c4",
+      "layer.6.v": "5eb378448ea6fa8b424dd247fd8165e117dc20a90ef570b44a349f1598cd4a77",
+      "layer.6.input_norm": "763987d42684726b4320161ca3d3c4a16632f0a3af47cbdbd27a5f57322d932d",
+      "layer.6.post_norm": "6c323fe40dbf787eb1d010c8fd51a6ce7b0ff6ae8884ebaae7ce29ebc6698dfb",
+      "layer.6.mlp": "cd1ecbfd34ab8bd60f5421b5c5a89db91927a547474d8fba1fb5144af499b0d1",
+      "layer.7.q": "34cec41e0c73b556926849ac2ef5855a0543675d97c53defd38bf9e67b19227c",
+      "layer.7.k": "84afbf1ccbd0ab7c8d4dec840da14ea3a548896a8144633ac04f63daa5369d89",
+      "layer.7.v": "d179e7cf8b5ed3534ce963e7ad5b39202b5fe6b7e3c5b1483cfd4ee5c1e06160",
+      "layer.7.input_norm": "c56860f7ac9b78cd0c7af3e55e0a1cdcf4057ea5ce4e9c5b6cf58997fdcbaab2",
+      "layer.7.post_norm": "71f34dbf840534ebbe088fa9be3e0aa413116224d2f35b1f150d8ee703f10b18",
+      "layer.7.mlp": "4b4003758ac6c95bb76e54554a083405966ba3085ad8e8bc168c0e56b5883f29",
+      "layer.8.q": "a923f4ef8a6c48877e074505ee86799ff88295112d0779d9cc579650b805aad2",
+      "layer.8.k": "ba00c68052a0c1085908de1e638df771d0d3286a14ea21e9a93c3aede318de1e",
+      "layer.8.v": "f20f1820f431f5b6819cdb8c9afe46460dcc19150ee2d76b6d128d82d804a360",
+      "layer.8.input_norm": "a7d588d1362cfa02ee6d93dd5d1bf3b0ed3753499ded2f68b8854a43cee3d9b1",
+      "layer.8.post_norm": "7e6e6960301c8895aec0caf14e5f22385f5939e595c2431f304c0731cd69d143",
+      "layer.8.mlp": "786cd78c7b3415318f5f3e1873db0ccf7a0930d04e28a1595aad07dbe103db48",
+      "layer.9.q": "9962ca2c2b6fe4df6ebd9d9cd6aa11c34c49fbce173d072fb50d9ee7235d8670",
+      "layer.9.k": "7cd134f6f806ca77755c878e57204020b4ccc993d1e4c59166e09f8ca3df6e8a",
+      "layer.9.v": "f8b80a1d7b1cae28cde3c0ab6824e496c4b16f9211017f2cff6b61094778e688",
+      "layer.9.input_norm": "a4040fc883f30f552f90ca2f8453412e9bcdc18833b51c571fef9092907811eb",
+      "layer.9.post_norm": "a8ae8cafec8965756e5ce693adc5fbe95bb7886ae5e9fcb20348c8a70826c842",
+      "layer.9.mlp": "62d46f8080de3384406509f9453e2adf4ffb4ed3e640ef7b3ee20df7f70200d3",
+      "layer.10.q": "7ede071ff6a876f8dbc5aa8ac45672751d37f34e0f5806c500fe8b9a9f2d23bc",
+      "layer.10.k": "6ce772afd75ec2c9daa8400037177d74d3a593b9e8c42c484b63e3c2e1b9054c",
+      "layer.10.v": "ae0e2928a41fbd803f8ed542fbd1a82663af6ceb14aeddecdd9fd46f962c50bf",
+      "layer.10.input_norm": "aabfc6e960b0cc2443e5f4586be413fc59605c366f4be200fdd137a87f9c837d",
+      "layer.10.post_norm": "762284eed7b4f22ba3e02236d7befb72dd6e542a34178e6f5883e3620f4fda0f",
+      "layer.10.mlp": "5d4cad6a35efc097a45958b8b0900eb26ecd3e506d98e9a540db4f1b0bd41018",
+      "layer.11.q": "a4afaeb643f658c85b8c05b9e5143463bb8e77a6d73a44ecece603324e5172a2",
+      "layer.11.k": "4acd634a494e1f9ff3735c59ffdf0dcefa4c811a8bfdf5f1c3d1920c51b9cfd2",
+      "layer.11.v": "bea108132f63a074de7bbb4b6f2a8e9b0f00836fead212d776b456c855f8b15d",
+      "layer.11.input_norm": "5bf57cbbe648af545260502567a4eab2f905f0d4e1f59c401495e7421cd96622",
+      "layer.11.post_norm": "6ee3fcce9693137b21b0570ffe62c49cc60b01127dc7e8b185317c3080a62a94",
+      "layer.11.mlp": "35e5060467c6b283bb25e95df2e4cb7d340fc769cc6297e0b66c0ecfa0a34f7f",
+      "layer.12.q": "fe48bc388e7f66c787d6e00bf684629c11e7776acd26a5faab7e76edddd9bdf8",
+      "layer.12.k": "bb7655e2210c0994cedfdcdabb14b6401bac585606619195ad148f2caa261715",
+      "layer.12.v": "5d9330c4e96600e5c7252c4a7014095d3a77c4bea2e4e796b83afa9e30bb0602",
+      "layer.12.input_norm": "74094454bf4c32516ed2555a048be64f33f72cee6316afc459f725ccb44b5ed7",
+      "layer.12.post_norm": "824d1fc3db2cc36b138ff2a708a1787aa8af170f89ef8d8d53d57eaf5483650b",
+      "layer.12.mlp": "d0c38a2a6a7ca2d2e2cc34663a00a0b1201b11b9b1b1fef9f96da87299816214",
+      "layer.13.q": "bae37ceab95b8a464cb307b7bd852f5b74ea87cc48d2d547303680d82d63b209",
+      "layer.13.k": "9464a65d2700a1fcad1acd9e4b87a6e22812018bef9ed7444f7ede6553f0d785",
+      "layer.13.v": "83e9b1f53d36e39352c1eef9945f3c5e6fe4ab20b00636e1492197dd4edcc6f0",
+      "layer.13.input_norm": "7dbd6895c7d45f8e5539d2387f17ddeb2b156f43ca869052e1102f81e79c6a1f",
+      "layer.13.post_norm": "3b479a6fa667b563ac6acbcc514c1284acfe1f3b85245083d8a6791a288ba1d1",
+      "layer.13.mlp": "c24778dcf23f6a98c9afdd8aa9606aaeeda504dd0e54445ee694a0006cbfd8b4",
+      "layer.14.q": "1ef748420d621bd56602cd8128583c31ac382d50b1321029df6f9e511d46c122",
+      "layer.14.k": "301a068af3c1bbb16ed0aa1859a1d1421f273420ec666392fd903ad57a9aab69",
+      "layer.14.v": "67aa499609389c1faaceda3410a438e0267fb84e3da625935f9fae51e65acd4a",
+      "layer.14.input_norm": "05440cee64e381bfabcab38d958acd919ecc5ca96e1e7d8f97145c63722a8fef",
+      "layer.14.post_norm": "e679afd2b5e14e93ceb57a2ad983911a621b32d7064a555836b1ed5daf028cd0",
+      "layer.14.mlp": "32424c66adc82cc0aa0c648be38dee8689bcacf2c6aa0875859d6e25d2306b94",
+      "layer.15.q": "60b7294e9acd50278b7bafad245ac203232a89351d2fdee2f9d3864cd826fd73",
+      "layer.15.k": "d7410b60ad01075626815110aaf2f4b280ed7bc7cf27a8156f0eabdfcf86a4e1",
+      "layer.15.v": "cb063acc5f938555a0a83de06ea4ef021103879f70acf9d9cdd9d27ec3e4c7c9",
+      "layer.15.input_norm": "1c4d01f45c5bedeb2b892e97577e096102e8772e3963312e1a301b5e3cd340b6",
+      "layer.15.post_norm": "d454fd4439d2fd2dcbfe482910aecbfadf852cc3079602a57ee4d899b8775489",
+      "layer.15.mlp": "130a41e84fc432ca3e35fe5012243c345b2082f626c130eb76c9c2de43623b67",
+      "layer.16.q": "74db3d5b58f0066a9558443e31b8689d85fc2f9e471de8ba22b84e87d00e39cc",
+      "layer.16.k": "9075361a884683974fc94d0579229a7457615d8ed842abafe1951ac7d859e4d0",
+      "layer.16.v": "e3c476b95402ccaa1d09e08623e72959815d32417994d8b43970cf5fb87f0b15",
+      "layer.16.input_norm": "6d337244700c03555e3ae75e6f5ed11ce9f8f6e95cf8d59d162fdb0d75f2d384",
+      "layer.16.post_norm": "e313e4792ddc4d2c0bffcc09d9ef851098248310d02ab46978096e63d41d02c5",
+      "layer.16.mlp": "e502e1ca4ec542b23e77a8f8de0f63d4e6696b62d71880c6e85889b55aca9476",
+      "layer.17.q": "5199f6abbede14795ed25019ab542dc6c582c63cd54d338569d03a31127e2d83",
+      "layer.17.k": "1b56ee16ca43ec3141699ba1a7eaf43690619bc17faccee127b08276b66be7b1",
+      "layer.17.v": "59b0fddbecc618a8e73a524e323e64949ca5296b1da4d6d493bb0f776d6e7d51",
+      "layer.17.input_norm": "25b9e960fe2166eb79815c0b8fd2ad1f4bcbcc4cc8b060e02c8392b3bb31b90b",
+      "layer.17.post_norm": "ac5d6a00595e916d877bd0e2d1ef00e9017aa1b0c5d5eeecc8d15c6431175df7",
+      "layer.17.mlp": "ebd412cc615f24c03c41fdfcc559b5efb14308671073af1c8b26aa3a185160a6",
+      "layer.18.q": "95bf22e0ce35f2ec722696d87956497202317fec58ab8ff937922ce3aeb559be",
+      "layer.18.k": "e41ebed119d7e8d3dffb60476a594f12f3820cad4f744d542c9ceb45595d3c8b",
+      "layer.18.v": "a20346ac5db3e44d3059030b0d47a65bb6446671d15130bb088ea99ac3056330",
+      "layer.18.input_norm": "bb92648a3998a0587abd1b93e4ae45a2e6ef0268f545b086ce8f3d1ba1d9f93d",
+      "layer.18.post_norm": "b780f91710141b49a4e98e41ca4b9c81f6f320740003aaa57be679e9662faad8",
+      "layer.18.mlp": "01747a10126d849b2d4de29cb2d4641283ecd63b1c14f309fdf9dbfcf6bfd49b",
+      "layer.19.q": "b82e6fb4a344a2fbb3f4d09141f69fade9c2a31f0d3b3d3cfbe3f099904010fc",
+      "layer.19.k": "b5b9419dae1959df535dbc3b4cd1bbc1c38f97f47614d140f61fba0de90a2cbb",
+      "layer.19.v": "9f0395b763057a69022d4ed963e668a5cf337f6c72eb48fc8205f3344706e8ac",
+      "layer.19.input_norm": "141b4707ac61c6fc6f610e4985ea16fab91071e92847ccd61d295b98f6353067",
+      "layer.19.post_norm": "e2f4c27171c95443e820c739d07201ce1de10fb5c85a8097217d65a8aa547a05",
+      "layer.19.mlp": "f8ac19d8e4c7be8dc60a406549f39dc76dd9e8d144f7bd3fbf1e9cfb4526639a",
+      "layer.20.q": "69a81e50d6abea46f6dc089b4fe47ea7b774040bf6a6723289070c0f6d7b00db",
+      "layer.20.k": "2e4aa0953305b4c1f5eaf6798cb678379ecb285de1c1119f99f74563826c8530",
+      "layer.20.v": "d6fded74d66c663b8a563f7ae54f9216ede21e4cb706a81a382aae2fbdffb76c",
+      "layer.20.input_norm": "8f00e619b9c2c26cb732f651ffe5cf727b17c546f66208415f7a2c0c7373f03a",
+      "layer.20.post_norm": "ad10122b73b140a31248c89dd997062c983723455df6f2778ebc6f947ea0baf2",
+      "layer.20.mlp": "7767596bb61698c0e338395f1bd61c839081093fe94fa10a80f61fb11cd585b7",
+      "layer.21.q": "0350ed645bbccc7c7470f751bb77d195517e648b15b20d6a485a0c6c307f8660",
+      "layer.21.k": "1c135dcf5be0e37157427bac6bdd50305ea42c532228e1e664d7bcb52a40f079",
+      "layer.21.v": "03e8cd283f85fe1f72685e39a4434f79a33cd0620c442ca636aa616271ef098f",
+      "layer.21.input_norm": "3d3313e0d74048ae67895bc162c00a5fafd8926e0c4fe9150f462c9b3706db90",
+      "layer.21.post_norm": "366ac36cd8d5d046fbb65897dff4ef85984f43a9d1a640f6d5c915d4f7cb3882",
+      "layer.21.mlp": "4d30d611e80af515d246b58e48622cf0089ff98335754c1e884c2f9ea4cf70a1",
+      "layer.22.q": "02f76cfa3620bc5d80702652edee66e00bab8942c431f15000a2866005599ec6",
+      "layer.22.k": "54e0c62dd2da5bde50ecdb3a8fb4b85641e051340d5c0374bc6c6ab9a21660ee",
+      "layer.22.v": "1a9227d2963bdff6eaf0092a35c4e36bf091808e8a66b933c800fff2df766d29",
+      "layer.22.input_norm": "c8284aacca72eec248ce4a7ec33e9eb4fe0fcb5618bd9dd12c57efb9e6bab14c",
+      "layer.22.post_norm": "152d2e0db1299b288c3be07d90c0a197d0772dd92346d6ea749026320de172f3",
+      "layer.22.mlp": "63ba5f7c237104c68842f8b4f7d79fd51978ffc18016f84d9d22bded1f71e10c",
+      "layer.23.q": "22c655aed29864fec403d6b1218fd1b7cc590c179261fa0f0a1bc3e3508f8322",
+      "layer.23.k": "e8b3116ce897d8abe84cfb288156c6fc48ff6776b2ba7b7bd9f6119c3175e52c",
+      "layer.23.v": "5ee907676a5e986a688a4697325b38580944533911e83b51380d5d481dd53740",
+      "layer.23.input_norm": "570029fe0dfaf97e31f4aa54bd7255527b1a2e960faf097d2db9efaa56d8372b",
+      "layer.23.post_norm": "cacc058eeab0914f56b7ddc5a8ae7c629508da32c02c45f9423137ec255c4a82",
+      "layer.23.mlp": "1eb932d3555333c3ebe905f057c55b5d28faf6547a16e54888fbb2594d85e668",
+      "layer.24.q": "9fd1f2f0cce8b328f60ceed4c8fd618645f9fa20f59c5fff3dda95c7d54c4a83",
+      "layer.24.k": "03df4e15418c43704e2fab1e213ef486a9dbbe9462d6d181aca27bbcd4cf685b",
+      "layer.24.v": "5577b2597cacf59a440a5b6969d342ba0f1b84ab253a1d29cf3a1378732340fe",
+      "layer.24.input_norm": "9ba9a9edb1ae648d06f0cb29900c1342487c9e00c0f2fccd20066104f90341d6",
+      "layer.24.post_norm": "f3fbe7870d15949a07adc7e91e275caff260537194d4e889b6f17e2f50544be7",
+      "layer.24.mlp": "ae8a09ee15242f900295478aefb78bfd59f26db60f56a4af499550b69d7a4c9e",
+      "layer.25.q": "9bfab3196b8ea86455d2907d59f65e46d242763974bb1cf51faaef305453c925",
+      "layer.25.k": "ba4abd198fa3c5dc84cf188d743b8a0e20ec3d69444964f7feccafe6a14b8fdc",
+      "layer.25.v": "bdad222f3fac23277c20b7bccbe3c050978d41706d0e2c40afa059dc8ab3da14",
+      "layer.25.input_norm": "bf2321957cb5da6315aeec87f3316c5261bed36c770f9d4f20975139d9ea08d6",
+      "layer.25.post_norm": "2a82dbd824fe3ec114a042effe7f3a37a0a4626db0e32172c3572292fc4ebbcf",
+      "layer.25.mlp": "2a6217c8e5609ca535bde679bb169a4dae4394869e1735c402a9daf860ce7bd5",
+      "layer.26.q": "f38ae774086c0fcb1022be2af8fe2210678541099fad9e8c158fdb94b54ef7cc",
+      "layer.26.k": "7a5fad59b675a1212565de51bb829084640fe6aa1300d1275af78bea84c5b7ab",
+      "layer.26.v": "0c4125f4fdb229a11338ef9b78b5f2ab144ed644ce71f5f711bc42e208bfc1f3",
+      "layer.26.input_norm": "8fde2a88b8c11c32b037f1cc048c3019fc879cdbdebf1c8a51800e14991205c0",
+      "layer.26.post_norm": "a78eeba70d6f0a88bb21733f93431e14992336c110c48f1ae1c09051dbdd27e2",
+      "layer.26.mlp": "408c1851b9b0ac97685af4c2780cf5c9550b7813e03b781c485a86f2e6ccb872",
+      "layer.27.q": "05280032b71c0180b6e7d6817d8f7c9bcea31dba78ef33aa0dbc5ed2ecf580aa",
+      "layer.27.k": "014f074ea2e4ecbc22a68cec9b84c0b2e41ef26e135b8b8d475ca22e8542371d",
+      "layer.27.v": "91958e534322208bbcdd94ca7f40d270ece7dfaf6daf8887fd3adde95811b34c",
+      "layer.27.input_norm": "4c1e963e782c678e5a525ffb2cacac549b2637015e0263597b89ce2bd5aa5219",
+      "layer.27.post_norm": "9daad595c61ec24a878bae79cd9eef0d07be90a73bd48dd290a062cd319d77e5",
+      "layer.27.mlp": "cd6d40bec904ffb79b974d1eef3d6cf9caf96d19de417a6baf3d1a003488c74b",
+      "layer.28.q": "b5d2f1c5346ab6cee089e363521976ff879d33d478e118104fb9bd220ad24b20",
+      "layer.28.k": "50f558003f3d235a5a074a9f11e315b611862c2f5dc7e81fcd5f39d001da0fb9",
+      "layer.28.v": "00ed18c7b87556cce237e2adcad802cea96daa28344574e08b96894214cf6769",
+      "layer.28.input_norm": "350fc0745c0dfc9fc9f47e908c591a0cf65c79c30dc390cb846e8eb8906e1dd5",
+      "layer.28.post_norm": "78bb78a4e81a8c68bcc527aedf73e1fb5e3050928fa199ff59a86043c7b84388",
+      "layer.28.mlp": "8d3537ae4d334d18b7c32344e326566efb8d3fa4fc33d664342155b86fc7ebb2",
+      "layer.29.q": "cb44345bf69a790e5b32bb8f61d846c875bf8370714f70baf97a385c0cabf800",
+      "layer.29.k": "18aaef73a9de640305e74fd82b08263c8a0c9cccb152cef3316973fcaad43427",
+      "layer.29.v": "c31dbc87a6b165341da9d6c8ad4b5c8a04b61bd0100dca53319e48739b2bcbac",
+      "layer.29.input_norm": "772ea7aecdcd5c5ad65168601a28f94de720f091ea0c32c512f31d4a925beea7",
+      "layer.29.post_norm": "7755c237b1bed2e9ea4ef14c900d9d333c7383e7dbee2033331b0c531f437be2",
+      "layer.29.mlp": "b4bd08b1821fe153f50b63269ffc6376de80045f518105df47bf9665daee662f",
+      "layer.30.q": "299a2f416294186ae180575579ad6826422064e852b739f43bf10245bbe83b34",
+      "layer.30.k": "79327c6cd07150066ce929335897c2c100aad924fa5dbddb0b0ff2224504727f",
+      "layer.30.v": "ca587902be8566435bda2f2be369db73b2f1ae83a5f359d6a02d6f65facaffd9",
+      "layer.30.input_norm": "a8493bf76bba1f1486cac00153038aac3dfb77cce5714c9cbe552d0e7417c21b",
+      "layer.30.post_norm": "4dcc9840779ce386b3ce829f8c9f43d7771e23141e4e2351bb7b2f4feb554471",
+      "layer.30.mlp": "7a2821bb47f64ef4e40c94e26b8cc426d488f522cddd6c6e029bc84e87e6a096",
+      "layer.31.q": "b05c3f3e2be5abd056414034c3e8d0a7f3c65800013cc73c8260abe39edcf2b7",
+      "layer.31.k": "455b01c58d6e36de23c0b52f9df212b37e89cbb62727b74431e19e76f0881483",
+      "layer.31.v": "37345f607fa49a8aa428c5d0a936f12a3eb57fdfe2fc19ab7c3351e2252c6694",
+      "layer.31.input_norm": "f67243bb8553e4bbbb9b739aff8e128b14194d9963e250572329e760f65b2b13",
+      "layer.31.post_norm": "7844c425b1cd9bad6e3c7c8692873b505fbcfdde4e33774e60a6215708b7dae8",
+      "layer.31.mlp": "5cf54d7ee770497e28d89eae91c7d82897b06cc8f1dccad2436ad4a6304fa848",
+      "final_norm": "035a17270ae3a2231a3eecde407df3979ba14157257ee26b5b140dd1cc637526",
+      "head": "b70df6e0f56bf9983689742274cfce792f87eb6b1468acd21737140f543317ac"
+    },
+    "checkpoint_sha256": "6c37b83a183c3bf3bd0d09b83701562d2a5402af5f7e169ca27d2b86a80586ab",
+    "layout_sha256": "43b23eddc5a157ac33e85ab54bcf1547a8a2fe54b51604c00bd8cda5efb1837c",
+    "protocol_sha256": "a79d15c63ee6e429346ef4da586998acfcab3f051a0625b0d173524ab10121c7",
+    "source_hashes": {
+      "bezier_nested_llm_7b_v2/nested_llm/data.py": "3b062898961601235be46c5347a3ae49a2fd1421cc41a78423617e726baaced7",
+      "bezier_nested_llm_7b_v2/nested_llm/distillation.py": "7255f1ad45582f8c615cd6cb4442d76e92e08487973760483456f67751a02462",
+      "bezier_nested_llm_7b_v2/nested_llm/evaluation.py": "cb35caef98141d8cc6ad48dffdc0a0a6f0f46d2ce94ed74c0e8188671cb2dc02",
+      "bezier_nested_llm_7b_v2/nested_llm/geometry.py": "0678538c1d032dc0f8cffb1ba8b06a084d179728f3359417f12c56e08ba6e352",
+      "bezier_nested_llm_7b_v2/nested_llm/model.py": "697874a2937abe03857c64c465ee8faf7148d701daa5bdbfa1a40f8ba08589e5",
+      "bezier_nested_llm_7b_v2/nested_llm/optim.py": "6339997548cf7b11a0c73aaebcb5c5170b357c5506159b10ca8b0e4dde654af0",
+      "bezier_nested_llm_7b_v2/nested_llm/reasoning_data.py": "16d6b2678b06b686880d5fa2ed46d8c4bfe1209c7a973c55a582a14f3d51cf9f",
+      "bezier_nested_llm_7b_v2/nested_llm/training.py": "2e9686f8471f99dd22c7f8d8f2cc33948841523089ba1fb42aa0a7609baf7ed9",
+      "bezier_nested_llm_7b_v3/controller_sphere/__init__.py": "3e1bd1271bf1fa67cb749980f5677b503adc83425b92bce9c7db479e6ccdcb05",
+      "bezier_nested_llm_7b_v3/controller_sphere/engine.py": "2f1a711f10b900ac8fddceaa6c8fac260f03f57d815f420e4cc751a2f84eeb57",
+      "bezier_nested_llm_7b_v3/controller_sphere/model.py": "4961d1a1ae7b55de8ae65f1fbe4ee775f6250a095713a051154c4a782261330c",
+      "bezier_nested_llm_7b_v3/controller_sphere/training.py": "fb0a85591d09ab7031b667a651622b9fd6fc0a482c79ceaa399e4366943138c7",
+      "bezier_nested_llm_7b_v5/routing_core/__init__.py": "7ff26a4667ac2395163f33640808fe221874649f65c01f0edf1d7aa7aca7caca",
+      "bezier_nested_llm_7b_v5/routing_core/model.py": "560d328a66ebd5b367dbbd37912043aae2c4f24de162f253d5a748ca8a33c2c8",
+      "bezier_nested_llm_7b_v5/routing_core/optim.py": "a2e9b1ca11d742f5f464df6c26e71c2626ccaf9a18588991424f80fa2687c535",
+      "bezier_nested_llm_7b_v5/routing_core/training.py": "7b0b6ae6bc4e5c40dfe62260ee22e06364267b9a76122f56efbda780d7a1e420",
+      "bezier_nested_llm_7b_v5/scripts/build_corpus.py": "26946365887ba135d57c845a2f1344346119a802297e5be9b84c192cb593613d",
+      "bezier_nested_llm_7b_v5/scripts/check_weight_sharing.py": "ed25aba33a5c6c68e4d3ba7cc453b2250f9eb4e2f3d6fc8dab0e9107209c82c7",
+      "bezier_nested_llm_7b_v6/scripts/pilot.py": "793635ba10ed19bd51a663efb3f30de60492ad512b1bcbbb7555c38e14e4d6a2",
+      "bezier_nested_llm_7b_v7/scripts/recurrent_pilot.py": "6f1445775494085646abeb647ce46066f74c402d80b6c099828f82b744fb1433",
+      "bezier_nested_llm_7b_v7/spatial_core/__init__.py": "a6c08d2588df84f6bb660c8fecfc004c074858da7a00cb26db9c508655ff2bf9",
+      "bezier_nested_llm_7b_v7/spatial_core/atlas.py": "b2c6b80e65c3b7186d751fb453ad72d3628e732ad712b53e1b86d2f8ae8afbde",
+      "bezier_nested_llm_7b_v7/spatial_core/engine.py": "df5f83c293dd0eb68ce9af79aa836cfa7b838c5a824486a2a561e2aafba37c20",
+      "bezier_nested_llm_7b_v7/spatial_core/model.py": "3e034b43ce6ed5fc53a155b78b1b577864aa2c0b43381c72de89f998c80c8eec",
+      "bezier_nested_llm_7b_v7/spatial_core/recurrent.py": "d0ea77300dd0deedea522b8c731d688549a275ddf7392919dd2a905122024294",
+      "bezier_nested_llm_7b_v7/spatial_core/recurrent_engine.py": "eb925aea3ef24f2966b021c28a1d800f667203fae8e848f3100d3eda18fb2331",
+      "bezier_nested_llm_7b_v7/spatial_core/recurrent_training.py": "e7b31cd3ef5f5bfcc5076c36dca38c89ba175e95d315db08009ec0793e968d96",
+      "bezier_nested_llm_7b_v7/spatial_core/reinforcement.py": "2b4c60166476137288b0a09edeb77c3142b07768c937e5214efa7e0e27b8b890",
+      "bezier_nested_llm_7b_v7/spatial_core/reinforcement_explore.py": "7b2e4a9f3fc250e42f4a828e76bb29a670ed370c479f5f1e1028073d7c9bd783",
+      "bezier_nested_llm_7b_v7/spatial_core/reward_layout.py": "9abb4fc27f552950ac4982606ba20a5c84d95eb6de8c9cfb6759e8999a75ac1c",
+      "bezier_nested_llm_7b_v7/spatial_core/reward_layout_batch.py": "2883a8663aeaacc698b5c9abe5782b1c80598059c5cff099e1d30f61fb6247b3",
+      "bezier_nested_llm_7b_v7/scripts/reinforcement_pilot.py": "6d8f83514846521c6e0d40dbea744feac424f0d56a28f57e5d7f1d86d67481e1",
+      "bezier_nested_llm_7b_v7/scripts/continue_reinforcement.py": "3b4402c9bad383d600f7be4f678e729d79a1a14d04d880b483463174513b7af2"
+    },
+    "total_training_updates": 512,
+    "parent_checkpoint_sha256": "85fda8d85f60e5ce55a481f52e53346b0c8e1f3cc4a6561f6f1d4666e75ef554",
+    "optimizer_checkpoint_verified": true,
+    "rng_checkpoint_verified": true
+  },
+  "benchmark_source_sha256": "fb889ae06006b0cb878f91e370a82e6bc9f4218842d8f25ac210b7212b258eb0",
+  "helper_source_sha256": "02396e3a7ddef1e3724758cdb0a566f49df7236f4211737e7a5455d0eee50f40",
+  "fixture": {
+    "group_id": "1485121ab05262c3f3a702aaddc488a490cdc19e2cd86c2ec8ae16b183fb7121",
+    "example_ids": [
+      "1485121ab05262c3f3a702aaddc488a490cdc19e2cd86c2ec8ae16b183fb7121:input0-swap0",
+      "1485121ab05262c3f3a702aaddc488a490cdc19e2cd86c2ec8ae16b183fb7121:input0-swap1",
+      "1485121ab05262c3f3a702aaddc488a490cdc19e2cd86c2ec8ae16b183fb7121:input1-swap0",
+      "1485121ab05262c3f3a702aaddc488a490cdc19e2cd86c2ec8ae16b183fb7121:input1-swap1"
+    ],
+    "prompts": [
+      "Execute this program for a=9, b=6. After every stage, % 10 gives the nonnegative remainder from 0 to 9. Which choice equals the returned value? Reply with only A or B.\n\ndef solve(a, b):\n    v = a\n    v = (min(v, b)) % 10\n    v = (v * 6) % 10\n    v = (v * b) % 10\n    v = (v - 9) % 10\n    return v\n\nA: 7\nB: 5\nAnswer:",
+      "Execute this program for a=9, b=6. After every stage, % 10 gives the nonnegative remainder from 0 to 9. Which choice equals the returned value? Reply with only A or B.\n\ndef solve(a, b):\n    v = a\n    v = (min(v, b)) % 10\n    v = (v * 6) % 10\n    v = (v * b) % 10\n    v = (v - 9) % 10\n    return v\n\nA: 5\nB: 7\nAnswer:",
+      "Execute this program for a=3, b=8. After every stage, % 10 gives the nonnegative remainder from 0 to 9. Which choice equals the returned value? Reply with only A or B.\n\ndef solve(a, b):\n    v = a\n    v = (min(v, b)) % 10\n    v = (v * 6) % 10\n    v = (v * b) % 10\n    v = (v - 9) % 10\n    return v\n\nA: 7\nB: 5\nAnswer:",
+      "Execute this program for a=3, b=8. After every stage, % 10 gives the nonnegative remainder from 0 to 9. Which choice equals the returned value? Reply with only A or B.\n\ndef solve(a, b):\n    v = a\n    v = (min(v, b)) % 10\n    v = (v * 6) % 10\n    v = (v * b) % 10\n    v = (v - 9) % 10\n    return v\n\nA: 5\nB: 7\nAnswer:"
+    ],
+    "tokens": [
+      140,
+      140,
+      140,
+      140
+    ],
+    "shape": [
+      4,
+      140
+    ],
+    "input_ids_sha256": "cac2f19f1e7724c20a52df4e90bd5128e2f9786f003f150b4b3661df29af1876",
+    "attention_mask_sha256": "899cb69d2ccff0894839d24133bc6c66b176139606822664f5bccf3daab8ed25",
+    "corpus_manifest_sha256": "f6cef804a5894f1d75af999a2f4079963717780af08674206775696bba4a3530",
+    "group_file_sha256": "21ae29571cb2353a76889d802865e1857f145144ffb63babde96a16992234f14",
+    "labels_used": false
+  },
+  "warmups": 2,
+  "repetitions": 7,
+  "measurements": {
+    "learned": {
+      "median_call_ms": 143.53729970753193,
+      "median_per_prompt_ms": 35.88432492688298,
+      "mean_call_ms": 144.36319975980692,
+      "minimum_call_ms": 141.5133997797966,
+      "samples_call_ms": [
+        147.117399610579,
+        141.5133997797966,
+        143.53729970753193,
+        143.2082997635007,
+        144.68850009143353,
+        148.2194997370243,
+        142.25799962878227
+      ],
+      "allocated_before_gib": 13.567265510559082,
+      "reserved_before_gib": 13.595703125,
+      "peak_allocated_gib": 13.672747611999512,
+      "peak_reserved_gib": 13.705078125
+    },
+    "fixed": {
+      "median_call_ms": 123.6389996483922,
+      "median_per_prompt_ms": 30.90974991209805,
+      "mean_call_ms": 128.81664293152946,
+      "minimum_call_ms": 114.66439999639988,
+      "samples_call_ms": [
+        146.64500020444393,
+        142.0071003958583,
+        143.1501004844904,
+        123.6389996483922,
+        115.41180033236742,
+        116.19909945875406,
+        114.66439999639988
+      ],
+      "allocated_before_gib": 13.567265510559082,
+      "reserved_before_gib": 13.595703125,
+      "peak_allocated_gib": 13.672747611999512,
+      "peak_reserved_gib": 13.705078125
+    },
+    "shuffled": {
+      "median_call_ms": 137.1892001479864,
+      "median_per_prompt_ms": 34.2973000369966,
+      "mean_call_ms": 133.4151571084346,
+      "minimum_call_ms": 114.04749937355518,
+      "samples_call_ms": [
+        136.20890025049448,
+        141.90240018069744,
+        141.38650055974722,
+        142.7472997456789,
+        120.42429950088263,
+        114.04749937355518,
+        137.1892001479864
+      ],
+      "allocated_before_gib": 13.567265510559082,
+      "reserved_before_gib": 13.595703125,
+      "peak_allocated_gib": 13.672747611999512,
+      "peak_reserved_gib": 13.705078125
+    },
+    "dense": {
+      "median_call_ms": 70.0898002833128,
+      "median_per_prompt_ms": 17.5224500708282,
+      "mean_call_ms": 69.77122862424169,
+      "minimum_call_ms": 68.87080054730177,
+      "samples_call_ms": [
+        70.68859972059727,
+        68.87080054730177,
+        68.9904997125268,
+        69.11840010434389,
+        70.0898002833128,
+        70.35209983587265,
+        70.28840016573668
+      ],
+      "allocated_before_gib": 13.567265510559082,
+      "reserved_before_gib": 13.595703125,
+      "peak_allocated_gib": 13.65445852279663,
+      "peak_reserved_gib": 13.673828125
+    }
+  },
+  "diagnostics": {
+    "learned": {
+      "turns": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "controller_calls": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "parameter_uses": [
+        71319552,
+        71319552,
+        71319552,
+        71319552
+      ],
+      "node_uses": [
+        23552,
+        23552,
+        23552,
+        23552
+      ],
+      "unique_parameters": [
+        65515520,
+        65515520,
+        65515520,
+        65515520
+      ],
+      "unique_nodes": [
+        18984,
+        18984,
+        18984,
+        18984
+      ],
+      "actions": [
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "stop_reason": [
+        "learned_stop",
+        "learned_stop",
+        "learned_stop",
+        "learned_stop"
+      ],
+      "core_parameter_uses_per_call": 1087201280,
+      "controller_parameter_uses": [
+        3261603840,
+        3261603840,
+        3261603840,
+        3261603840
+      ]
+    },
+    "observed_dispatch": {
+      "outer_group_calls": 8,
+      "outer_prompt_executions": 8,
+      "core_calls": 12,
+      "core_prompt_executions": 12,
+      "expected_outer_prompt_executions": 8,
+      "expected_core_prompt_executions": 12,
+      "selected_only_dispatch_passed": true,
+      "unchosen_outer_executions": 0,
+      "node_set_reuse_traces": [
+        {
+          "turns": [
+            {
+              "action": 0,
+              "node_ids_sha256": "cec94a2826947c4c6d4d70b701cc819bde88167134b815f9121c46be1f5b8f45",
+              "exact_node_set_seen_before": false,
+              "node_count": 11776,
+              "parameter_uses": 35659776,
+              "attention_layer": 4,
+              "mlp_layers": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                21,
+                22
+              ],
+              "mlp_counts": [
+                214,
+                190,
+                177,
+                178,
+                153,
+                120,
+                127,
+                127,
+                107,
+                96,
+                92,
+                90,
+                88,
+                73,
+                67,
+                76,
+                68,
+                1,
+                4
+              ]
+            },
+            {
+              "action": 0,
+              "node_ids_sha256": "41d5a075b2712cf545963f8da24208c57ce9da5b5e8186073545dda0ef15be24",
+              "exact_node_set_seen_before": false,
+              "node_count": 11776,
+              "parameter_uses": 35659776,
+              "attention_layer": 21,
+              "mlp_layers": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "mlp_counts": [
+                193,
+                133,
+                95,
+                43,
+                8,
+                380,
+                338,
+                325,
+                273,
+                260
+              ]
+            }
+          ],
+          "exact_repeated_node_sets": 0
+        },
+        {
+          "turns": [
+            {
+              "action": 0,
+              "node_ids_sha256": "cec94a2826947c4c6d4d70b701cc819bde88167134b815f9121c46be1f5b8f45",
+              "exact_node_set_seen_before": false,
+              "node_count": 11776,
+              "parameter_uses": 35659776,
+              "attention_layer": 4,
+              "mlp_layers": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                21,
+                22
+              ],
+              "mlp_counts": [
+                214,
+                190,
+                177,
+                178,
+                153,
+                120,
+                127,
+                127,
+                107,
+                96,
+                92,
+                90,
+                88,
+                73,
+                67,
+                76,
+                68,
+                1,
+                4
+              ]
+            },
+            {
+              "action": 0,
+              "node_ids_sha256": "41d5a075b2712cf545963f8da24208c57ce9da5b5e8186073545dda0ef15be24",
+              "exact_node_set_seen_before": false,
+              "node_count": 11776,
+              "parameter_uses": 35659776,
+              "attention_layer": 21,
+              "mlp_layers": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "mlp_counts": [
+                193,
+                133,
+                95,
+                43,
+                8,
+                380,
+                338,
+                325,
+                273,
+                260
+              ]
+            }
+          ],
+          "exact_repeated_node_sets": 0
+        },
+        {
+          "turns": [
+            {
+              "action": 0,
+              "node_ids_sha256": "cec94a2826947c4c6d4d70b701cc819bde88167134b815f9121c46be1f5b8f45",
+              "exact_node_set_seen_before": false,
+              "node_count": 11776,
+              "parameter_uses": 35659776,
+              "attention_layer": 4,
+              "mlp_layers": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                21,
+                22
+              ],
+              "mlp_counts": [
+                214,
+                190,
+                177,
+                178,
+                153,
+                120,
+                127,
+                127,
+                107,
+                96,
+                92,
+                90,
+                88,
+                73,
+                67,
+                76,
+                68,
+                1,
+                4
+              ]
+            },
+            {
+              "action": 0,
+              "node_ids_sha256": "41d5a075b2712cf545963f8da24208c57ce9da5b5e8186073545dda0ef15be24",
+              "exact_node_set_seen_before": false,
+              "node_count": 11776,
+              "parameter_uses": 35659776,
+              "attention_layer": 21,
+              "mlp_layers": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "mlp_counts": [
+                193,
+                133,
+                95,
+                43,
+                8,
+                380,
+                338,
+                325,
+                273,
+                260
+              ]
+            }
+          ],
+          "exact_repeated_node_sets": 0
+        },
+        {
+          "turns": [
+            {
+              "action": 0,
+              "node_ids_sha256": "cec94a2826947c4c6d4d70b701cc819bde88167134b815f9121c46be1f5b8f45",
+              "exact_node_set_seen_before": false,
+              "node_count": 11776,
+              "parameter_uses": 35659776,
+              "attention_layer": 4,
+              "mlp_layers": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                21,
+                22
+              ],
+              "mlp_counts": [
+                214,
+                190,
+                177,
+                178,
+                153,
+                120,
+                127,
+                127,
+                107,
+                96,
+                92,
+                90,
+                88,
+                73,
+                67,
+                76,
+                68,
+                1,
+                4
+              ]
+            },
+            {
+              "action": 0,
+              "node_ids_sha256": "41d5a075b2712cf545963f8da24208c57ce9da5b5e8186073545dda0ef15be24",
+              "exact_node_set_seen_before": false,
+              "node_count": 11776,
+              "parameter_uses": 35659776,
+              "attention_layer": 21,
+              "mlp_layers": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                17,
+                18,
+                19,
+                20,
+                21
+              ],
+              "mlp_counts": [
+                193,
+                133,
+                95,
+                43,
+                8,
+                380,
+                338,
+                325,
+                273,
+                260
+              ]
+            }
+          ],
+          "exact_repeated_node_sets": 0
+        }
+      ]
+    },
+    "baselines": {
+      "fixed": {
+        "turns": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "controller_calls": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "parameter_uses": [
+          71319552,
+          71319552,
+          71319552,
+          71319552
+        ],
+        "node_uses": [
+          23552,
+          23552,
+          23552,
+          23552
+        ],
+        "unique_parameters": [
+          65515520,
+          65515520,
+          65515520,
+          65515520
+        ],
+        "unique_nodes": [
+          18984,
+          18984,
+          18984,
+          18984
+        ],
+        "actions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "stop_reason": [
+          "forced_budget",
+          "forced_budget",
+          "forced_budget",
+          "forced_budget"
+        ],
+        "core_parameter_uses_per_call": 1087201280,
+        "controller_parameter_uses": [
+          3261603840,
+          3261603840,
+          3261603840,
+          3261603840
+        ]
+      },
+      "shuffled": {
+        "turns": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "controller_calls": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "parameter_uses": [
+          71319552,
+          71319552,
+          71319552,
+          71319552
+        ],
+        "node_uses": [
+          23552,
+          23552,
+          23552,
+          23552
+        ],
+        "unique_parameters": [
+          65515520,
+          65515520,
+          65515520,
+          65515520
+        ],
+        "unique_nodes": [
+          18984,
+          18984,
+          18984,
+          18984
+        ],
+        "actions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "stop_reason": [
+          "forced_budget",
+          "forced_budget",
+          "forced_budget",
+          "forced_budget"
+        ],
+        "core_parameter_uses_per_call": 1087201280,
+        "controller_parameter_uses": [
+          3261603840,
+          3261603840,
+          3261603840,
+          3261603840
+        ]
+      },
+      "replay": {
+        "turns": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "controller_calls": [
+          3,
+          3,
+          3,
+          3
+        ],
+        "parameter_uses": [
+          71319552,
+          71319552,
+          71319552,
+          71319552
+        ],
+        "node_uses": [
+          23552,
+          23552,
+          23552,
+          23552
+        ],
+        "unique_parameters": [
+          65515520,
+          65515520,
+          65515520,
+          65515520
+        ],
+        "unique_nodes": [
+          18984,
+          18984,
+          18984,
+          18984
+        ],
+        "actions": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "stop_reason": [
+          "forced_budget",
+          "forced_budget",
+          "forced_budget",
+          "forced_budget"
+        ],
+        "core_parameter_uses_per_call": 1087201280,
+        "controller_parameter_uses": [
+          3261603840,
+          3261603840,
+          3261603840,
+          3261603840
+        ]
+      }
+    },
+    "matched_budgets": {
+      "fixed": {
+        "passed": true,
+        "exact_per_prompt_fields": [
+          "turns",
+          "controller_calls",
+          "parameter_uses",
+          "node_uses",
+          "controller_parameter_uses"
+        ],
+        "mandatory_interfaces": "identical token inputs and complete output readout",
+        "dense": "native full inference, not compute matched"
+      },
+      "shuffled": {
+        "passed": true,
+        "exact_per_prompt_fields": [
+          "turns",
+          "controller_calls",
+          "parameter_uses",
+          "node_uses",
+          "controller_parameter_uses"
+        ],
+        "mandatory_interfaces": "identical token inputs and complete output readout",
+        "dense": "native full inference, not compute matched"
+      },
+      "replay": {
+        "passed": true,
+        "exact_per_prompt_fields": [
+          "turns",
+          "controller_calls",
+          "parameter_uses",
+          "node_uses",
+          "controller_parameter_uses"
+        ],
+        "mandatory_interfaces": "identical token inputs and complete output readout",
+        "dense": "native full inference, not compute matched"
+      }
+    },
+    "shuffled_rule": "Cyclic next-prompt action path, repeated/truncated to recipient budget.",
+    "shuffled_changes_any_action": false,
+    "learned_route_replay_bitwise_equal": true
+  },
+  "layout_unchanged_during_inference": true,
+  "parameter_storage_and_versions_unchanged": true,
+  "all_weights_cuda": true,
+  "core_alias_audit": {
+    "separate_execution_context": true,
+    "additional_registered_parameters": 0,
+    "additional_parameter_bytes": 0,
+    "core_parameters": 1087201280,
+    "same_underlying_storage": true
+  },
+  "timing": "Synchronized wall time with return_details=False; diagnostics, tokenization and scoring outside timings.",
+  "per_prompt_definition": "Four-prompt API call divided by four; recurrent prompts execute serially.",
+  "memory": "New process; CUDA empty_cache before each mode and after two warmups; peaks reset per mode.",
+  "dense_budget": "Same final weights, native full dense pass; not compute matched.",
+  "layout_policy": "Final reward-trained layout frozen for all inference modes; no verifier, labels or geometry updates used.",
+  "kv_cache": false
+}

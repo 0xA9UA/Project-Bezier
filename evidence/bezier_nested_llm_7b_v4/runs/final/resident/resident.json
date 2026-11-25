@@ -1,0 +1,387 @@
+{
+  "complete": true,
+  "model": "WORKSPACE\\bezier_nested_llm_7b_v4\\runs\\accuracy_main\\best_r000768_u001024",
+  "policy": {
+    "decision_layer": 26,
+    "alternatives": [
+      27,
+      29
+    ],
+    "threshold": -0.005
+  },
+  "parameters": {
+    "total_params": 7248023552,
+    "core_params": 1087201280,
+    "core_fraction": 0.14999968918423293,
+    "added_params": 0,
+    "core_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "core_radius": 0.25,
+    "core_layers": 5,
+    "core_mlp_neurons": 14061,
+    "shared": true,
+    "core_passes": 1,
+    "control_passes": 1,
+    "control_readout_mode": "answer_margin",
+    "core_executed_layers": 5,
+    "full_core_mlp_addresses": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "parameter_aliases": {
+      "model.embed_tokens.weight": true,
+      "lm_head.weight": true,
+      "model.norm.weight": true,
+      "model.layers.17.self_attn.q_proj.weight": true,
+      "model.layers.17.self_attn.k_proj.weight": true,
+      "model.layers.17.self_attn.v_proj.weight": true,
+      "model.layers.17.self_attn.o_proj.weight": true,
+      "model.layers.17.mlp.gate_proj.weight": true,
+      "model.layers.17.mlp.up_proj.weight": true,
+      "model.layers.17.mlp.down_proj.weight": true,
+      "model.layers.17.input_layernorm.weight": true,
+      "model.layers.17.post_attention_layernorm.weight": true,
+      "model.layers.18.self_attn.q_proj.weight": true,
+      "model.layers.18.self_attn.k_proj.weight": true,
+      "model.layers.18.self_attn.v_proj.weight": true,
+      "model.layers.18.self_attn.o_proj.weight": true,
+      "model.layers.18.mlp.gate_proj.weight": true,
+      "model.layers.18.mlp.up_proj.weight": true,
+      "model.layers.18.mlp.down_proj.weight": true,
+      "model.layers.18.input_layernorm.weight": true,
+      "model.layers.18.post_attention_layernorm.weight": true,
+      "model.layers.19.self_attn.q_proj.weight": true,
+      "model.layers.19.self_attn.k_proj.weight": true,
+      "model.layers.19.self_attn.v_proj.weight": true,
+      "model.layers.19.self_attn.o_proj.weight": true,
+      "model.layers.19.mlp.gate_proj.weight": true,
+      "model.layers.19.mlp.up_proj.weight": true,
+      "model.layers.19.mlp.down_proj.weight": true,
+      "model.layers.19.input_layernorm.weight": true,
+      "model.layers.19.post_attention_layernorm.weight": true,
+      "model.layers.20.self_attn.q_proj.weight": true,
+      "model.layers.20.self_attn.k_proj.weight": true,
+      "model.layers.20.self_attn.v_proj.weight": true,
+      "model.layers.20.self_attn.o_proj.weight": true,
+      "model.layers.20.mlp.gate_proj.weight": true,
+      "model.layers.20.mlp.up_proj.weight": true,
+      "model.layers.20.mlp.down_proj.weight": true,
+      "model.layers.20.input_layernorm.weight": true,
+      "model.layers.20.post_attention_layernorm.weight": true,
+      "model.layers.21.self_attn.q_proj.weight": true,
+      "model.layers.21.self_attn.k_proj.weight": true,
+      "model.layers.21.self_attn.v_proj.weight": true,
+      "model.layers.21.self_attn.o_proj.weight": true,
+      "model.layers.21.mlp.gate_proj.weight": true,
+      "model.layers.21.mlp.up_proj.weight": true,
+      "model.layers.21.mlp.down_proj.weight": true,
+      "model.layers.21.input_layernorm.weight": true,
+      "model.layers.21.post_attention_layernorm.weight": true
+    },
+    "core_tensors": {
+      "model.embed_tokens.weight": [
+        2,
+        4096
+      ],
+      "lm_head.weight": [
+        2,
+        4096
+      ],
+      "model.norm.weight": [
+        4096
+      ],
+      "model.layers.17.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.17.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.17.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.17.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.17.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.17.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.17.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.17.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.17.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.18.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.18.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.18.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.18.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.18.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.18.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.18.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.18.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.18.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.19.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.19.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.19.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.19.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.19.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.19.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.19.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.19.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.19.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.20.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.20.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.20.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.20.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.20.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.20.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.20.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.20.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.20.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.21.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.21.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.21.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.21.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.21.mlp.gate_proj.weight": [
+        14061,
+        4096
+      ],
+      "model.layers.21.mlp.up_proj.weight": [
+        14061,
+        4096
+      ],
+      "model.layers.21.mlp.down_proj.weight": [
+        4096,
+        14061
+      ],
+      "model.layers.21.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.21.post_attention_layernorm.weight": [
+        4096
+      ]
+    },
+    "interface_included": [
+      "two_embedding_rows",
+      "two_language_head_rows",
+      "final_norm"
+    ],
+    "routing_scope": "one MLP substitution; original attention order; no KV cache",
+    "core_indices": [
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "partial_core_layer": 21,
+    "controller_anchor_token_ids": [
+      7871,
+      18407
+    ],
+    "control_output_token_ids": [
+      1098,
+      1133
+    ],
+    "controller_role": "predict continuation utility from live activation and geometry",
+    "standalone_core_language_model": false,
+    "controller_context": "all detached nonpadding outer activations plus two shared anchor/query tokens",
+    "controller_readout": "two shared head rows; unbounded margin / 4 for training",
+    "core_execution": {
+      "separate_execution_context": true,
+      "additional_registered_parameters": 0,
+      "additional_parameter_bytes": 0,
+      "core_parameters": 1087201280,
+      "same_underlying_storage": true
+    }
+  },
+  "all_parameters_cuda": true,
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "dtype": "torch.bfloat16",
+  "additional_core_context_allocated_bytes": 0,
+  "core_view_logical_bytes": 2174402560,
+  "parameter_storage_bytes": 14496047104,
+  "unique_parameter_storage_bytes": 14496047104,
+  "prompt_shape": [
+    4,
+    141
+  ],
+  "cases": {
+    "disabled": {
+      "median_seconds": 0.07072419952601194,
+      "repeats": [
+        0.07146190013736486,
+        0.07072419952601194,
+        0.07043639943003654
+      ]
+    },
+    "serial": {
+      "median_seconds": 0.09037689957767725,
+      "repeats": [
+        0.09187159966677427,
+        0.09037689957767725,
+        0.08978530019521713
+      ]
+    },
+    "concurrent": {
+      "median_seconds": 0.09041109960526228,
+      "repeats": [
+        0.09041109960526228,
+        0.08975659962743521,
+        0.09050740022212267
+      ]
+    },
+    "mixed": {
+      "median_seconds": 0.07204550039023161,
+      "repeats": [
+        0.07389070000499487,
+        0.07204550039023161,
+        0.07193929981440306
+      ]
+    }
+  },
+  "profiles": {
+    "serial": {
+      "streams": {
+        "7": 5486
+      },
+      "pairs": [],
+      "kernel_overlap_observed": false
+    },
+    "concurrent": {
+      "streams": {
+        "7": 4456,
+        "13": 1030
+      },
+      "pairs": [
+        {
+          "streams": [
+            "13",
+            "7"
+          ],
+          "overlap_us": 0.0
+        }
+      ],
+      "kernel_overlap_observed": false
+    }
+  },
+  "policy_sha256": "6361921259ce7d52a82390fd0419d8a01f5cb1807c5f15349edc256d8fd5d1fc",
+  "model_complete_sha256": "6495a8b713c2384fcbbd0017de11aadfcbff0dc0d8a263f76954ffe5fe34ac1f",
+  "source_sha256": {
+    "model.py": "2fcb29446bd0ac649d594226e988086d4f1e44cc7478926909e2316089b539b3",
+    "optim.py": "a2e9b1ca11d742f5f464df6c26e71c2626ccaf9a18588991424f80fa2687c535",
+    "training.py": "753b0121f43628c5d4e13c0e08a3d5e1e5c5ad2189a6ee8222b513c10d9dc9cb",
+    "__init__.py": "7ff26a4667ac2395163f33640808fe221874649f65c01f0edf1d7aa7aca7caca"
+  },
+  "interpretation": "One parameter store; shared core views add zero weight storage. Temporary activations remain separate. No offloading, quantization or second model.",
+  "serial_concurrent_logits_exact": true,
+  "serial_concurrent_actions_exact": true,
+  "peak_allocated_gib": 13.696372985839844,
+  "peak_reserved_gib": 14.20703125,
+  "weight_storage_stable": true
+}

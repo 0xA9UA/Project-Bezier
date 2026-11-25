@@ -1,0 +1,69 @@
+{
+  "prepared_utc": "2026-11-24T01:52:28.125708+00:00",
+  "status": "ready_for_authorized_overnight_launch",
+  "run_name": "coding_agent_overnight_v1",
+  "max_hours": 10,
+  "initial_checkpoint": "models/initial",
+  "initial_manifest_sha256": "b3c46025270e5dc906e137d5cb6e67bc97eba9b1a8c904702682970c35eaca9f",
+  "teacher": null,
+  "checks": {
+    "pipeline_checks": {
+      "passed": true,
+      "sha256": "e1595f757114fbdea0af02347dc060f1aec3dcccdadde448eada7789ee2a25e4"
+    },
+    "resume_checks": {
+      "passed": true,
+      "sha256": "8773f7d16fa187652c67fa5c926d78e9880df458ea4be806b02caa423cece9cf"
+    },
+    "gpu_preflight": {
+      "passed": true,
+      "sha256": "13c37fb898368a853e207266088bfa80d233688f2aa22e4536e650461ea5688f"
+    },
+    "oracle_episode_checks": {
+      "passed": true,
+      "sha256": "f70a19c14c8ae144cd1c47b002307e1e386cb18a20794340bbf3a294293362bd"
+    },
+    "inference_pipeline_check": {
+      "passed": true,
+      "sha256": "10791052784f5dd46c5ebc5daf16eb9790409eb03c0714f9bdc2ceb1b5dba67a"
+    },
+    "training_smoke": {
+      "completed": true,
+      "sha256": "a2d94c8b5e7fa3c3ffd444b4011f6e6a4a2b6566a0cdb989d24c7966a86347d2"
+    },
+    "resume_smoke": {
+      "completed": true,
+      "sha256": "922fecd875c803b72233cee525d6d3a84de955463d85a42cd483dacccdc44a48"
+    }
+  },
+  "configuration_sha256": "585d0385b9eb503b09b7e81a634df958bc21da0b385f74dcb39b3af66b2a85e6",
+  "source_sha256": {
+    "sphere_train\\build.py": "89c50742792b654fc86bcfc4283192bbe46c8a73d203f6374b2cbf735b520842",
+    "sphere_train\\checkpoint.py": "86e2ff31f063ac1d4dbfddcdc9b418f25768eec8c8b3f55eecc289da8de104fc",
+    "sphere_train\\checks.py": "71094c78bbc86ca8e086d031910ad7c00e9dc39e94b8ee8c293739178dedab32",
+    "sphere_train\\corpus.py": "c632097bb6cde9323da6ddcca0d072ddabd8fe8a3bd3f90cf6404e7d6f9f661c",
+    "sphere_train\\dashboard.py": "42ba8f2d73dbe6674afb122c7ef1004d2f6e529f809f74217e821f5c3750c385",
+    "sphere_train\\data.py": "eaa32dd296785175864f3e8564dfdda93d6c657e1e934182680c744b3cd5512c",
+    "sphere_train\\grader.py": "1d29e0c386bc9d3fe3ddb07f942f35b4bc6a7d580ecc436c119dbd152541ec30",
+    "sphere_train\\infer.py": "a85f46182590dd2886742ec79ae42315c15c771eeea05c35ed08df38cd2c8188",
+    "sphere_train\\learning.py": "1c0dc84775985eb19d142e66c54b043fe0a482a7954c0ca9051db6a4e2138634",
+    "sphere_train\\model.py": "a7d73cca178e6c9aa83b15c9d67b9f2e5dbd1d294164469c4bd218d57ecc4fbc",
+    "sphere_train\\optim.py": "aeaa53742041636d393dd18b6f9b45ce4c63471defe369a613d92ad968c45d2c",
+    "sphere_train\\project_grader.py": "d90fab6d6617f9494e7090d61a4d5e67ca2ab32809449fcb42f9797afac74fca",
+    "sphere_train\\protocol.py": "417c3c82a78e0abaf246c5eefc2995c1061e35f20f29eff87cf5438d09da8c97",
+    "sphere_train\\runtime.py": "a14b0fe52626067d0ffee29a96efe9b2b4768b34c27814508eb347886087c016",
+    "sphere_train\\tasks.py": "39dbb9f37629ce35a4232141a9351a915803ba78cdf102d0ef04cc1a814ef487",
+    "sphere_train\\train.py": "9936ed12bd23234a1cbf5241752ae2fc98132c5b1a5c32d40e8e932b99248469",
+    "sphere_train\\validation.py": "1201a7f658bba6ac2b18bd90be67f8e30a8e4b5b9c22ad2423cfba13aa2888c3",
+    "sphere_train\\verify_resume.py": "22d616c6647b24ca31af8b613b7b8ec37e7fe4dd78123e3eeb6c95c1d9ca8d33",
+    "sphere_train\\__init__.py": "de83886254261be6939c75a8d7600b01da205a538fd0f2d31f1c939e451df589"
+  },
+  "data_manifest_sha256": {
+    "code_manifest.json": "758576ac09d26c94475b3607967a5b1379a21f5ca04c0076a83c7e4d5c468c60",
+    "encoded_manifest.json": "bda9df44405dc8ce4d632d4abe69a4086876b360a1049b6cc61e02a31e99f6e6",
+    "task_manifest.json": "995178bd5ab5112968ab6b3d87ef50e712ab6c3732600bda8d7345c2eb595440"
+  },
+  "launch_script_sha256": "c4a1f455ad60573ef48fb174d430a52ee5bdf74f36c4605ead0b01034701a717",
+  "free_disk_bytes": 2964187615232,
+  "quality_claim": "No main-run quality claim before held-out evaluation."
+}

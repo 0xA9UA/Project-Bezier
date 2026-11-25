@@ -1,0 +1,98 @@
+{
+  "setup_status": "verified",
+  "completed_runs": 7,
+  "core_fraction_target": 0.05,
+  "full_heldout_evaluation": true,
+  "original_holdouts_preserved": true,
+  "training_test_semantics_disjoint": true,
+  "validation_only_checkpoint_selection": true,
+  "cuda_eager_overlap": true,
+  "cuda_graph_overlap": true,
+  "runs": [
+    {
+      "tier": 2,
+      "seed": 7,
+      "arm": "clean-outer",
+      "completed_updates": 2256,
+      "selected_update": 757,
+      "total_parameters": 4704970,
+      "core_parameters": 235210,
+      "core_fraction": 0.04999181716355258,
+      "core_test_accuracy": 0.59375,
+      "quality_criteria_passed": false
+    },
+    {
+      "tier": 2,
+      "seed": 7,
+      "arm": "unshared-core",
+      "completed_updates": 2256,
+      "selected_update": 1006,
+      "total_parameters": 4940180,
+      "core_parameters": 235210,
+      "core_fraction": 0.047611625487330424,
+      "core_test_accuracy": 0.568359375,
+      "quality_criteria_passed": false
+    },
+    {
+      "tier": 2,
+      "seed": 7,
+      "arm": "nested-core-concurrent",
+      "completed_updates": 2256,
+      "selected_update": 2256,
+      "total_parameters": 4704970,
+      "core_parameters": 235210,
+      "core_fraction": 0.04999181716355258,
+      "core_test_accuracy": 0.587890625,
+      "quality_criteria_passed": false
+    },
+    {
+      "tier": 1,
+      "seed": 7,
+      "arm": "clean-outer",
+      "completed_updates": 2256,
+      "selected_update": 1756,
+      "total_parameters": 183239,
+      "core_parameters": 9223,
+      "core_fraction": 0.05033317143184584,
+      "core_test_accuracy": 0.5625,
+      "quality_criteria_passed": false
+    },
+    {
+      "tier": 1,
+      "seed": 7,
+      "arm": "nested-core-concurrent",
+      "completed_updates": 2256,
+      "selected_update": 2006,
+      "total_parameters": 183239,
+      "core_parameters": 9223,
+      "core_fraction": 0.05033317143184584,
+      "core_test_accuracy": 0.552734375,
+      "quality_criteria_passed": false
+    },
+    {
+      "tier": 2,
+      "seed": 19,
+      "arm": "clean-outer",
+      "completed_updates": 2256,
+      "selected_update": 1756,
+      "total_parameters": 4704970,
+      "core_parameters": 235210,
+      "core_fraction": 0.04999181716355258,
+      "core_test_accuracy": 0.595703125,
+      "quality_criteria_passed": false
+    },
+    {
+      "tier": 2,
+      "seed": 19,
+      "arm": "nested-core-concurrent",
+      "completed_updates": 2256,
+      "selected_update": 2256,
+      "total_parameters": 4704970,
+      "core_parameters": 235210,
+      "core_fraction": 0.04999181716355258,
+      "core_test_accuracy": 0.59765625,
+      "quality_criteria_passed": false
+    }
+  ],
+  "full_original_protocol_executed": false
+}

@@ -1,0 +1,660 @@
+{
+  "passed": true,
+  "checks": {
+    "pilot_complete": true,
+    "manifest_content_checksum": true,
+    "corpus_group_checksums_and_truth_tables": true,
+    "prior_corpus_sources_unchanged": true,
+    "final_functions_unique": true,
+    "final_functions_exclude_prior_functions": true,
+    "evaluation_group_ids_exclude_training": true,
+    "live_sources_match_frozen_protocol": true,
+    "source_snapshots_match_frozen_protocol": true,
+    "selection_artifact_checksums": true,
+    "previous_recurrent_corpus_explicitly_excluded": true,
+    "rl_training_step_count": true,
+    "rl_training_groups_match_frozen_order": true,
+    "rl_saved_training_arithmetic": true,
+    "layout_only_eligible_success_paths": true,
+    "layout_event_gate_bounds_and_dispersion": true,
+    "layout_event_counters": true,
+    "layout_checkpoint_checksum": true,
+    "layout_original_anchors_and_ownership_verified": true,
+    "layout_core_and_mandatory_coordinates_bitwise_unchanged": true,
+    "layout_final_changed_node_count": true,
+    "layout_exact_parameter_budget": true,
+    "layout_fixed_center_radius": true,
+    "recorded_weight_storage_preserved": true,
+    "recorded_core_alias_preserved": true,
+    "recorded_layout_frozen_during_inference": true,
+    "recorded_chosen_path_replay_bitwise_equal": true,
+    "recorded_unchosen_inference_continuations_zero": true,
+    "test_learned_trace_consistency": true,
+    "test_fixed_exact_per_prompt_budgets": true,
+    "test_fixed_trace_consistency": true,
+    "test_shuffled_exact_per_prompt_budgets": true,
+    "test_shuffled_trace_consistency": true,
+    "test_independent_metric_recomputation": true,
+    "ood_learned_trace_consistency": true,
+    "ood_fixed_exact_per_prompt_budgets": true,
+    "ood_fixed_trace_consistency": true,
+    "ood_shuffled_exact_per_prompt_budgets": true,
+    "ood_shuffled_trace_consistency": true,
+    "ood_independent_metric_recomputation": true
+  },
+  "corpus": {
+    "groups": 64,
+    "examples": 256,
+    "unique_final_functions": 64,
+    "excluded_prior_functions": 5881,
+    "final_overlap_with_previous": [],
+    "training_group_id_overlap": [],
+    "source_hash_failures": [],
+    "group_verification_failures": [],
+    "all_100_inputs_recomputed_per_program": true,
+    "split_counts": {
+      "ood": 16,
+      "test": 32,
+      "validation": 16
+    }
+  },
+  "sources": {
+    "source_files": 30,
+    "live_failures": [],
+    "snapshot_failures": [],
+    "selection_checksum_checks": {
+      "protocol_checksum": true,
+      "manifest_checksum": true,
+      "selected_core_checksum": true,
+      "inspection_selection_checksum": true
+    },
+    "selected_checkpoint_sha256": "85fda8d85f60e5ce55a481f52e53346b0c8e1f3cc4a6561f6f1d4666e75ef554",
+    "chronology_note": "Checksums link the frozen selection to the inspection marker; chronology also depends on the audited driver control flow."
+  },
+  "reinforcement": {
+    "updates": 256,
+    "arithmetic_failures": {},
+    "populations": {
+      "episodes": {
+        "records": 2048,
+        "correct": 949,
+        "positive_rewards": 949,
+        "eligible": 949,
+        "correct_by_row": {
+          "0": 257,
+          "1": 220,
+          "2": 223,
+          "3": 249
+        },
+        "eligible_by_row": {
+          "0": 257,
+          "1": 220,
+          "2": 223,
+          "3": 249
+        },
+        "action_counts": {
+          "continue": 4824,
+          "redirect": 617,
+          "revisit": 148,
+          "stop": 1865
+        },
+        "stop_counts": {
+          "sampled_stop": 1865,
+          "max_budget": 183
+        },
+        "turns": {
+          "1": 59,
+          "2": 1582,
+          "3": 103,
+          "4": 59,
+          "5": 25,
+          "6": 27,
+          "7": 10,
+          "8": 183
+        }
+      },
+      "matched_probes": {
+        "records": 2048,
+        "correct": 956,
+        "positive_rewards": 956,
+        "eligible": 956,
+        "correct_by_row": {
+          "0": 293,
+          "1": 180,
+          "2": 183,
+          "3": 300
+        },
+        "eligible_by_row": {
+          "0": 293,
+          "1": 180,
+          "2": 183,
+          "3": 300
+        },
+        "action_counts": {
+          "continue": 3218,
+          "redirect": 614,
+          "revisit": 246,
+          "stop": 0
+        },
+        "stop_counts": {
+          "matched_horizon": 2048
+        },
+        "turns": {
+          "1": 18,
+          "2": 2030
+        }
+      }
+    },
+    "parameter_uses_per_node_turn": 35659776,
+    "controller_parameter_uses_per_call": 1087201280,
+    "final_readout_parameter_uses": 134221824,
+    "reward_min": -1.6460403135073218,
+    "reward_max": 0.9957204178895577,
+    "reward_mean": 0.3704104279248729,
+    "maximum_replayed_log_probability_error": 0.0,
+    "nonzero_sampled_score_gradient_coefficients": 1044,
+    "total_sampled_score_gradient_coefficients": 4096,
+    "gradient_tensor_count_histogram": {
+      "48": 256
+    },
+    "first8_vs_last8_unpaired_exploratory": {
+      "reinforce_loss": {
+        "first8": -0.23241404257714748,
+        "last8": -0.07533903233706951
+      },
+      "terminal_task_nll": {
+        "first8": 15.535125136375427,
+        "last8": 0.919292651116848
+      },
+      "dense_nll": {
+        "first8": 0.7295216917991638,
+        "last8": 0.5249453275318956
+      },
+      "mean_episode_reward": {
+        "first8": -0.7534196546691472,
+        "last8": 0.418003779512863
+      }
+    },
+    "evidence_limit": "Saved reward correctness is a runtime argmax-verifier result. No training logits are persisted for a new forward verification in this read-only audit. Replay errors and nonzero score coefficients establish the recorded RL signal; final parameter gradients combine RL, entropy and task objectives."
+  },
+  "layout_events": {
+    "successful_paths": 1905,
+    "expected_correct_positive_paths": 1905,
+    "eligible_paths_all_applied_exactly_once": true,
+    "update_calls_with_movement": 1905,
+    "accepted_contractions": 5513,
+    "rejected_contractions": 156,
+    "summed_node_movements_across_calls": 8035338,
+    "final_unique_moved_nodes_recorded": 115295,
+    "failures": {},
+    "accepted_dispersion_fractional_decrease": {
+      "minimum": 5.308765937316536e-06,
+      "median": 0.004478522435395051,
+      "mean": 0.006958258154489748,
+      "maximum": 0.03965409324759123
+    },
+    "config": {
+      "lr": 0.02,
+      "max_step": 0.005,
+      "max_displacement": 0.05,
+      "origin_regularization": 0.001,
+      "shell_epsilon": 0.0001
+    },
+    "evidence_limit": "Strict decrease is checked against saved independently measured before/after dispersion values. Per-event coordinate snapshots are not saved; final checkpoint coordinates and exact original anchors are independently checked below."
+  },
+  "layout_checkpoint": {
+    "cpu_only": true,
+    "nodes": 987136,
+    "moved_nodes": 115295,
+    "moved_by_family": {
+      "embedding": 0,
+      "q": 45316,
+      "k": 11321,
+      "v": 11334,
+      "input_norm": 0,
+      "post_norm": 0,
+      "mlp": 47324,
+      "final_norm": 0,
+      "head": 0
+    },
+    "core_nodes_moved": 0,
+    "mandatory_or_core_nodes_moved": 0,
+    "maximum_anchor_drift": 0.050000034272670746,
+    "maximum_radius": 0.9699997305870056,
+    "minimum_shell_radius": 0.30992835760116577,
+    "core_parameters": 1087201280,
+    "total_parameters": 7248023552,
+    "failures": {}
+  },
+  "storage": {
+    "outside_bitwise_unchanged": true,
+    "core_elements": 1087201280,
+    "outside_elements": 6160822272,
+    "changed_core_tensors": 48,
+    "same_parameter_storage": true,
+    "all_weights_cuda": true,
+    "core_view": {
+      "separate_execution_context": true,
+      "additional_registered_parameters": 0,
+      "additional_parameter_bytes": 0,
+      "core_parameters": 1087201280,
+      "same_underlying_storage": true
+    }
+  },
+  "evaluations": {
+    "test": {
+      "policies": {
+        "learned": {
+          "examples": 128,
+          "correct": 64,
+          "accuracy": 0.5,
+          "nll": 0.712305624037981,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1133": 128
+          },
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 256,
+            "turns_histogram": {
+              "2": 128
+            },
+            "stop_reason_histogram": {
+              "learned_stop": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 256,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 128,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 256,
+            "attention_region_histogram": {
+              "4": 128,
+              "21": 128
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 128
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "fixed": {
+          "examples": 128,
+          "correct": 64,
+          "accuracy": 0.5,
+          "nll": 0.712305624037981,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1133": 128
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 256,
+            "turns_histogram": {
+              "2": 128
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 256,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 256,
+            "attention_region_histogram": {
+              "4": 128,
+              "21": 128
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 128
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "shuffled": {
+          "examples": 128,
+          "correct": 64,
+          "accuracy": 0.5,
+          "nll": 0.712305624037981,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1133": 128
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 256,
+            "turns_histogram": {
+              "2": 128
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 256,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 256,
+            "attention_region_histogram": {
+              "4": 128,
+              "21": 128
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 128
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "dense": {
+          "examples": 128,
+          "correct": 79,
+          "accuracy": 0.6171875,
+          "nll": 0.564164437580871,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1098": 91,
+            "1133": 37
+          }
+        }
+      },
+      "learned_minus_baseline": {
+        "fixed": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.0
+        },
+        "shuffled": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.0
+        },
+        "dense": {
+          "accuracy_delta": -0.1171875,
+          "nll_delta": 0.14814118645711005
+        }
+      },
+      "metric_mismatch_modes": []
+    },
+    "ood": {
+      "policies": {
+        "learned": {
+          "examples": 64,
+          "correct": 32,
+          "accuracy": 0.5,
+          "nll": 0.7113481778651476,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1133": 64
+          },
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 128,
+            "turns_histogram": {
+              "2": 64
+            },
+            "stop_reason_histogram": {
+              "learned_stop": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 128,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 64,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 128,
+            "attention_region_histogram": {
+              "4": 64,
+              "21": 64
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 64
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "fixed": {
+          "examples": 64,
+          "correct": 32,
+          "accuracy": 0.5,
+          "nll": 0.7113481778651476,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1133": 64
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 128,
+            "turns_histogram": {
+              "2": 64
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 128,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 128,
+            "attention_region_histogram": {
+              "4": 64,
+              "21": 64
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 64
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "shuffled": {
+          "examples": 64,
+          "correct": 32,
+          "accuracy": 0.5,
+          "nll": 0.7113481778651476,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1133": 64
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 128,
+            "turns_histogram": {
+              "2": 64
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 128,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 2,
+            "node_set_fingerprint_occurrences_across_split": 128,
+            "attention_region_histogram": {
+              "4": 64,
+              "21": 64
+            },
+            "attention_region_revisits_within_prompt": 0,
+            "consecutive_same_attention_region": 0,
+            "attention_region_backward_index_jumps": 0,
+            "prompts_revisiting_attention_region": 0,
+            "prompts_with_backward_attention_index_jump": 0,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0": 64
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "dense": {
+          "examples": 64,
+          "correct": 31,
+          "accuracy": 0.484375,
+          "nll": 0.6826252976898104,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1098": 47,
+            "1133": 17
+          }
+        }
+      },
+      "learned_minus_baseline": {
+        "fixed": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.0
+        },
+        "shuffled": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.0
+        },
+        "dense": {
+          "accuracy_delta": 0.015625,
+          "nll_delta": 0.028722880175337195
+        }
+      },
+      "metric_mismatch_modes": []
+    }
+  },
+  "audit_script_sha256": "8cf0f25c91fd8cf8fcb26618149c461335b5e5aa9cc9d3a659a5ff74e2730eb7",
+  "caveats": [
+    "REINFORCE uses detached recurrent states; this is a truncated policy-gradient surrogate.",
+    "Reward and baseline arithmetic is recomputed from saved records; runtime replay establishes the on-policy log probabilities.",
+    "GPU pointer and allocation facts remain recorded runtime evidence; this audit does not instantiate a model or use GPU.",
+    "Learned stopping counts come from stop_reason. Inference action lists contain only executed continuation actions, so a missing stop action is not evidence of no stopping.",
+    "Outer reuse includes mandatory norms and excludes repeated controller-core and token interfaces.",
+    "Fixed/shuffled baselines retain learned per-prompt stopping budgets; dense uses unmatched native computation.",
+    "First/last training windows involve different programs/states and are exploratory, not a controlled efficacy comparison."
+  ]
+}

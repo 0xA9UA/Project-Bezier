@@ -1,0 +1,129 @@
+{
+  "complete": true,
+  "selection": {
+    "learned": {
+      "default_pair": [
+        2,
+        2
+      ],
+      "thresholds": [
+        0.0034475834108889103,
+        0.009643110446631908
+      ]
+    },
+    "best_fixed": [
+      2,
+      2
+    ],
+    "deploy_policy": "best_fixed",
+    "dense_guard": true,
+    "validation_gains": {
+      "vs_best_fixed": 0.0,
+      "vs_shuffled": 0.0078125
+    },
+    "rows_sha256": "effb303c91c010bf2173047b8b9d2ec625630629e00c2891297e109b80d41c2a",
+    "warm_core_sha256": "a7261286c2e214e435687bc8a7dec8aaa698755a0bbf91473d6c37d083dd81d3",
+    "protocol_sha256": "201fc87d3dc59ceb2c1ae99ac5d96b23e8f8667e096be192973c8af5fcf56d54",
+    "chosen_before_test": true
+  },
+  "weight_audit": {
+    "outside_bitwise_unchanged": true,
+    "outside_elements": 6160822272,
+    "core_elements": 1087201280,
+    "changed_core_tensors": 1,
+    "gpu_weight_pointers_unchanged": true,
+    "all_weights_cuda": true
+  },
+  "training": {
+    "elapsed_seconds": 588.5435293996707,
+    "peak_allocated_gib": 13.743054866790771,
+    "peak_reserved_gib": 13.8359375
+  },
+  "elapsed_seconds": 773.5918621001765,
+  "summaries": {
+    "test": {
+      "learned": {
+        "accuracy": 0.6380208333333334,
+        "nll": 0.624527071318577,
+        "examples": 768
+      },
+      "best_fixed": {
+        "accuracy": 0.6315104166666666,
+        "nll": 0.6244275797977631,
+        "examples": 768
+      },
+      "incumbent": {
+        "accuracy": 0.6315104166666666,
+        "nll": 0.6244275797977631,
+        "examples": 768
+      },
+      "shuffled": {
+        "accuracy": 0.6263020833333334,
+        "nll": 0.6248380799913017,
+        "examples": 768
+      },
+      "dense": {
+        "accuracy": 0.64453125,
+        "nll": 0.6086355296336023,
+        "examples": 768
+      },
+      "warm_v7_policy": {
+        "accuracy": 0.6302083333333334,
+        "nll": 0.6269046173155554,
+        "examples": 768
+      },
+      "warm_dense": {
+        "accuracy": 0.64453125,
+        "nll": 0.6078984226285229,
+        "examples": 768
+      },
+      "deployed": {
+        "accuracy": 0.6315104166666666,
+        "nll": 0.6244275797977631,
+        "examples": 768
+      }
+    },
+    "ood": {
+      "learned": {
+        "accuracy": 0.6171875,
+        "nll": 0.6601575107773291,
+        "examples": 384
+      },
+      "best_fixed": {
+        "accuracy": 0.5833333333333334,
+        "nll": 0.6623072282818612,
+        "examples": 384
+      },
+      "incumbent": {
+        "accuracy": 0.5833333333333334,
+        "nll": 0.6623072282818612,
+        "examples": 384
+      },
+      "shuffled": {
+        "accuracy": 0.6197916666666666,
+        "nll": 0.658151049180257,
+        "examples": 384
+      },
+      "dense": {
+        "accuracy": 0.6197916666666666,
+        "nll": 0.638304779333339,
+        "examples": 384
+      },
+      "warm_v7_policy": {
+        "accuracy": 0.5963541666666666,
+        "nll": 0.6625402838956992,
+        "examples": 384
+      },
+      "warm_dense": {
+        "accuracy": 0.6328125,
+        "nll": 0.6382017945255333,
+        "examples": 384
+      },
+      "deployed": {
+        "accuracy": 0.5833333333333334,
+        "nll": 0.6623072282818612,
+        "examples": 384
+      }
+    }
+  }
+}

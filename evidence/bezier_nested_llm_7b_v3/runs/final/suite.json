@@ -1,0 +1,83 @@
+{
+  "complete": true,
+  "selection_sha256": "5ba5aad7f7ae024aa84ed3c7ab13af12e5e6a0fdb21b421ac14739ea68856f8d",
+  "tasks": {
+    "initial": {
+      "status": "complete",
+      "argv": [
+        "evaluate_controller.py",
+        "--initial",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v2\\runs\\distill_recovery\\best_u000512",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\final\\initial"
+      ],
+      "exit_code": 0,
+      "seconds": 46.56056740041822
+    },
+    "selected": {
+      "status": "complete",
+      "argv": [
+        "evaluate_controller.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\best_u000512",
+        "--policy-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\training_summary.json",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\final\\selected",
+        "--steered-traces"
+      ],
+      "exit_code": 0,
+      "seconds": 125.99191080033779
+    },
+    "core_reuse": {
+      "status": "complete",
+      "argv": [
+        "evaluate_core_reuse.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\best_u000512",
+        "--standard-evaluation",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\final\\selected\\evaluation.json",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\final\\core_reuse"
+      ],
+      "exit_code": 0,
+      "seconds": 88.06240630056709
+    },
+    "engine": {
+      "status": "complete",
+      "argv": [
+        "benchmark_engine.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\best_u000512",
+        "--policy-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\training_summary.json",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\final\\engine",
+        "--mode-order",
+        "streamed,resident"
+      ],
+      "exit_code": 0,
+      "seconds": 52.65513120032847
+    },
+    "generation_smoke": {
+      "status": "complete",
+      "argv": [
+        "generate.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\best_u000512",
+        "--policy-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\training_summary.json",
+        "--prompt",
+        "Start with 12, add 5, then multiply by 2. Is the result A: 34 or B: 29? Reply with A or B.",
+        "--max-new-tokens",
+        "4",
+        "--mode",
+        "streamed"
+      ],
+      "exit_code": 0,
+      "seconds": 21.92997319996357
+    }
+  },
+  "current_task": null
+}

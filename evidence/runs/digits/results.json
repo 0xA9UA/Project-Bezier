@@ -1,0 +1,1414 @@
+{
+  "runs": [
+    {
+      "model": "bezier",
+      "seed": 7,
+      "best_epoch": 31,
+      "training_seconds": 2.7766492003574967,
+      "validation": {
+        "loss": 0.1474417746067047,
+        "accuracy": 0.9721448421478271
+      },
+      "test": {
+        "loss": 0.15623651444911957,
+        "accuracy": 0.9666666984558105
+      },
+      "parameters": 40974,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39936,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9917910024523735,
+          "min_batch_ms": 0.9728190023452044,
+          "max_batch_ms": 1.0077039990574121,
+          "examples_per_second": 1008.2769429520215,
+          "repeat_batch_ms": [
+            1.0077039990574121,
+            1.0065250005573034,
+            0.9917910024523735,
+            1.0011789947748184,
+            0.9846169967204332,
+            0.9906050004065037,
+            0.9728190023452044
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 8892416,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.1092060059309006,
+          "min_batch_ms": 1.0607030056416988,
+          "max_batch_ms": 1.1269159987568855,
+          "examples_per_second": 230795.72111147392,
+          "repeat_batch_ms": [
+            1.1203949991613626,
+            1.1092060059309006,
+            1.1269159987568855,
+            1.1198340076953173,
+            1.0655490029603243,
+            1.0648119915276766,
+            1.0607030056416988
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14638080,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.9896659851074219,
+        "control_max_radius": 0.7325997352600098,
+        "mean_curve_to_chord_distance": 0.10742857307195663,
+        "expert_selection_counts": [
+          228,
+          118,
+          573,
+          1059,
+          497,
+          117,
+          66,
+          222
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.133324384689331,
+        "shuffled_route_accuracy": 0.8888888955116272,
+        "straightened_route_test": {
+          "loss": 0.17358769476413727,
+          "accuracy": 0.9694444537162781
+        },
+        "bypass_interior_test": {
+          "loss": 1.7497795820236206,
+          "accuracy": 0.5722222328186035
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "dense_reference_benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.0667640063911676,
+          "min_batch_ms": 1.0617659986019135,
+          "max_batch_ms": 1.1136400047689676,
+          "examples_per_second": 937.414455314228,
+          "repeat_batch_ms": [
+            1.066220998764038,
+            1.0640639998018742,
+            1.077885003760457,
+            1.0667640063911676,
+            1.0617659986019135,
+            1.110070003196597,
+            1.1136400047689676
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "dense_reference",
+          "peak_allocated_bytes": 9992704,
+          "forward_increment_bytes": 73216
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.1934270057827234,
+          "min_batch_ms": 1.1767749954015017,
+          "max_batch_ms": 1.3714899960905313,
+          "examples_per_second": 214508.30152121396,
+          "repeat_batch_ms": [
+            1.1950699985027313,
+            1.192840002477169,
+            1.1767749954015017,
+            1.3714899960905313,
+            1.1934270057827234,
+            1.1886959988623857,
+            1.220423998311162
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "dense_reference",
+          "peak_allocated_bytes": 28220928,
+          "forward_increment_bytes": 18301440
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "straight",
+      "seed": 7,
+      "best_epoch": 15,
+      "training_seconds": 2.331482700072229,
+      "validation": {
+        "loss": 0.11215618252754211,
+        "accuracy": 0.9721448421478271
+      },
+      "test": {
+        "loss": 0.13443157076835632,
+        "accuracy": 0.9638888835906982
+      },
+      "parameters": 40776,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39744,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9617909975349903,
+          "min_batch_ms": 0.9539579972624779,
+          "max_batch_ms": 0.9647510014474392,
+          "examples_per_second": 1039.7269287848783,
+          "repeat_batch_ms": [
+            0.9625730011612177,
+            0.9635500051081181,
+            0.9617909975349903,
+            0.9647510014474392,
+            0.9576420020312071,
+            0.9539579972624779,
+            0.9541079960763454
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9940480,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.0380519926548004,
+          "min_batch_ms": 1.0226169973611832,
+          "max_batch_ms": 1.0507329925894737,
+          "examples_per_second": 246615.77821866545,
+          "repeat_batch_ms": [
+            1.0239530075341463,
+            1.0500580072402954,
+            1.0380519926548004,
+            1.0507329925894737,
+            1.0226169973611832,
+            1.0422119963914156,
+            1.0340060014277697
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14637568,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.9889771342277527,
+        "control_max_radius": 0.7126482129096985,
+        "mean_curve_to_chord_distance": 0.0,
+        "expert_selection_counts": [
+          648,
+          233,
+          172,
+          457,
+          280,
+          460,
+          98,
+          532
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.3400787115097046,
+        "shuffled_route_accuracy": 0.8083333373069763,
+        "straightened_route_test": {
+          "loss": 0.13443157076835632,
+          "accuracy": 0.9638888835906982
+        },
+        "bypass_interior_test": {
+          "loss": 1.7227305173873901,
+          "accuracy": 0.6805555820465088
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "moe",
+      "seed": 7,
+      "best_epoch": 35,
+      "training_seconds": 1.7947584995999932,
+      "validation": {
+        "loss": 0.15347902476787567,
+        "accuracy": 0.9693593382835388
+      },
+      "test": {
+        "loss": 0.15685929358005524,
+        "accuracy": 0.9750000238418579
+      },
+      "parameters": 38994,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39552,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.632202997803688,
+          "min_batch_ms": 0.6283339951187372,
+          "max_batch_ms": 0.6432559993118048,
+          "examples_per_second": 1581.7704178468962,
+          "repeat_batch_ms": [
+            0.6303100008517504,
+            0.6308550015091896,
+            0.632202997803688,
+            0.6371149979531765,
+            0.6283339951187372,
+            0.6413670070469379,
+            0.6432559993118048
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9931264,
+          "forward_increment_bytes": 20480
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 0.6809850037097931,
+          "min_batch_ms": 0.6659700069576502,
+          "max_batch_ms": 0.696596996858716,
+          "examples_per_second": 375926.04624975903,
+          "repeat_batch_ms": [
+            0.6827609986066818,
+            0.6840469967573881,
+            0.696596996858716,
+            0.6744430027902126,
+            0.6659700069576502,
+            0.6809850037097931,
+            0.6719939969480038
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14580224,
+          "forward_increment_bytes": 4669440
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "residual",
+      "seed": 7,
+      "best_epoch": 26,
+      "training_seconds": 1.4784078001976013,
+      "validation": {
+        "loss": 0.1240367442369461,
+        "accuracy": 0.9665737748146057
+      },
+      "test": {
+        "loss": 0.18807078897953033,
+        "accuracy": 0.9694444537162781
+      },
+      "parameters": 38474,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 37504,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.4713840037584305,
+          "min_batch_ms": 0.46891999430954456,
+          "max_batch_ms": 0.7400860078632832,
+          "examples_per_second": 2121.412674224874,
+          "repeat_batch_ms": [
+            0.7400860078632832,
+            0.5276930052787066,
+            0.4713840037584305,
+            0.4699499998241663,
+            0.4728170018643141,
+            0.46891999430954456,
+            0.4692749958485365
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9910272,
+          "forward_increment_bytes": 2560
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 0.8482519909739494,
+          "min_batch_ms": 0.5227570049464703,
+          "max_batch_ms": 0.8630440011620522,
+          "examples_per_second": 301797.1106747004,
+          "repeat_batch_ms": [
+            0.5318159982562065,
+            0.5227570049464703,
+            0.8457859978079796,
+            0.8630440011620522,
+            0.8616500068455935,
+            0.8482519909739494,
+            0.8622829988598824
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 10137088,
+          "forward_increment_bytes": 229376
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "bezier_transfer",
+      "seed": 7,
+      "best_epoch": 27,
+      "training_seconds": 3.22640569973737,
+      "validation": {
+        "loss": 0.10757926851511002,
+        "accuracy": 0.9805013537406921
+      },
+      "test": {
+        "loss": 0.15725034475326538,
+        "accuracy": 0.9666666984558105
+      },
+      "parameters": 41998,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39936,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 2.086526993662119,
+          "min_batch_ms": 1.3384049944579601,
+          "max_batch_ms": 2.1102749928832054,
+          "examples_per_second": 479.2653069131272,
+          "repeat_batch_ms": [
+            2.1102749928832054,
+            2.10393900051713,
+            2.0888520032167435,
+            2.086526993662119,
+            1.8681439943611622,
+            1.3384049944579601,
+            1.3600629940629005
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9945088,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.685991995036602,
+          "min_batch_ms": 1.4326860010623932,
+          "max_batch_ms": 2.2767330054193735,
+          "examples_per_second": 151839.39233023603,
+          "repeat_batch_ms": [
+            1.4359010010957718,
+            1.4326860010623932,
+            1.4522110018879175,
+            2.2767330054193735,
+            2.2582259960472584,
+            2.26817699149251,
+            1.685991995036602
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14642176,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.993292510509491,
+        "control_max_radius": 0.8250272870063782,
+        "mean_curve_to_chord_distance": 0.2219860851764679,
+        "expert_selection_counts": [
+          523,
+          242,
+          398,
+          376,
+          532,
+          242,
+          235,
+          332
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.591652274131775,
+        "shuffled_route_accuracy": 0.7972222566604614,
+        "straightened_route_test": {
+          "loss": 0.16869734227657318,
+          "accuracy": 0.9638888835906982
+        },
+        "bypass_interior_test": {
+          "loss": 1.4017969369888306,
+          "accuracy": 0.7277777791023254
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "straight",
+      "seed": 19,
+      "best_epoch": 23,
+      "training_seconds": 2.470010899938643,
+      "validation": {
+        "loss": 0.13112184405326843,
+        "accuracy": 0.961002767086029
+      },
+      "test": {
+        "loss": 0.10063402354717255,
+        "accuracy": 0.9694444537162781
+      },
+      "parameters": 40776,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39744,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9443769976496696,
+          "min_batch_ms": 0.9239430073648691,
+          "max_batch_ms": 0.9620810020714998,
+          "examples_per_second": 1058.8991499038655,
+          "repeat_batch_ms": [
+            0.9443769976496696,
+            0.9358169976621866,
+            0.950607992708683,
+            0.9239430073648691,
+            0.9307229984551668,
+            0.9620810020714998,
+            0.9530939999967813
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9940480,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.600624993443489,
+          "min_batch_ms": 1.0186879988759756,
+          "max_batch_ms": 1.6360499989241362,
+          "examples_per_second": 159937.52505966864,
+          "repeat_batch_ms": [
+            1.0321140009909868,
+            1.0186879988759756,
+            1.1218160018324852,
+            1.6360499989241362,
+            1.6052250005304813,
+            1.6170169971883297,
+            1.600624993443489
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14637568,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.9941561818122864,
+        "control_max_radius": 0.8593066334724426,
+        "mean_curve_to_chord_distance": 0.0,
+        "expert_selection_counts": [
+          637,
+          127,
+          141,
+          662,
+          346,
+          193,
+          411,
+          363
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.6351215839385986,
+        "shuffled_route_accuracy": 0.819444477558136,
+        "straightened_route_test": {
+          "loss": 0.10063402354717255,
+          "accuracy": 0.9694444537162781
+        },
+        "bypass_interior_test": {
+          "loss": 1.7817041873931885,
+          "accuracy": 0.7833333611488342
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "moe",
+      "seed": 19,
+      "best_epoch": 56,
+      "training_seconds": 1.9998570000752807,
+      "validation": {
+        "loss": 0.17900590598583221,
+        "accuracy": 0.961002767086029
+      },
+      "test": {
+        "loss": 0.12975023686885834,
+        "accuracy": 0.9694444537162781
+      },
+      "parameters": 38994,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39552,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.6325259990990162,
+          "min_batch_ms": 0.6251710001379251,
+          "max_batch_ms": 0.9315169975161552,
+          "examples_per_second": 1580.9626820469384,
+          "repeat_batch_ms": [
+            0.9315169975161552,
+            0.6325259990990162,
+            0.6251710001379251,
+            0.6309880036860704,
+            0.6376209948211908,
+            0.6253240071237087,
+            0.6619950011372566
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9931264,
+          "forward_increment_bytes": 20480
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 0.6772980000823736,
+          "min_batch_ms": 0.6617100071161985,
+          "max_batch_ms": 0.6830949988216162,
+          "examples_per_second": 377972.4729275224,
+          "repeat_batch_ms": [
+            0.6792220007628202,
+            0.6826839968562126,
+            0.673529002815485,
+            0.6772980000823736,
+            0.6830949988216162,
+            0.6617100071161985,
+            0.6728459987789392
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14580224,
+          "forward_increment_bytes": 4669440
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "residual",
+      "seed": 19,
+      "best_epoch": 21,
+      "training_seconds": 1.5847177999094129,
+      "validation": {
+        "loss": 0.1380947232246399,
+        "accuracy": 0.961002767086029
+      },
+      "test": {
+        "loss": 0.1328626275062561,
+        "accuracy": 0.9611111283302307
+      },
+      "parameters": 38474,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 37504,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.46980099752545357,
+          "min_batch_ms": 0.4654920008033514,
+          "max_batch_ms": 0.47884699888527393,
+          "examples_per_second": 2128.560827386963,
+          "repeat_batch_ms": [
+            0.4778079967945814,
+            0.47884699888527393,
+            0.4666060023009777,
+            0.4696470033377409,
+            0.4654920008033514,
+            0.4716680012643337,
+            0.46980099752545357
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9910272,
+          "forward_increment_bytes": 2560
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 0.5306999944150448,
+          "min_batch_ms": 0.523717999458313,
+          "max_batch_ms": 0.5369830038398504,
+          "examples_per_second": 482381.76501616836,
+          "repeat_batch_ms": [
+            0.5331879947334528,
+            0.5369830038398504,
+            0.5306999944150448,
+            0.5272630043327808,
+            0.523717999458313,
+            0.5357010010629892,
+            0.5288849957287312
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 10137088,
+          "forward_increment_bytes": 229376
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "bezier_transfer",
+      "seed": 19,
+      "best_epoch": 19,
+      "training_seconds": 3.3393216002732515,
+      "validation": {
+        "loss": 0.11922990530729294,
+        "accuracy": 0.9582172632217407
+      },
+      "test": {
+        "loss": 0.13057225942611694,
+        "accuracy": 0.9722222685813904
+      },
+      "parameters": 41998,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39936,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.3431670051068068,
+          "min_batch_ms": 1.3281300012022257,
+          "max_batch_ms": 2.136810002848506,
+          "examples_per_second": 744.5090567278203,
+          "repeat_batch_ms": [
+            1.3431670051068068,
+            1.3385850004851818,
+            1.3281300012022257,
+            2.136810002848506,
+            1.938200006261468,
+            1.3308550044894218,
+            1.3784549944102764
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9945088,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.5187789965420961,
+          "min_batch_ms": 1.4753490034490824,
+          "max_batch_ms": 2.2628000006079674,
+          "examples_per_second": 168556.4526391608,
+          "repeat_batch_ms": [
+            1.5187789965420961,
+            1.498964000493288,
+            1.4869670011103153,
+            1.4753490034490824,
+            1.7055989988148212,
+            2.2628000006079674,
+            1.8501430004835129
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14642176,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.9946051836013794,
+        "control_max_radius": 0.8399674296379089,
+        "mean_curve_to_chord_distance": 0.22652503848075867,
+        "expert_selection_counts": [
+          685,
+          640,
+          368,
+          7,
+          387,
+          293,
+          321,
+          179
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.521442174911499,
+        "shuffled_route_accuracy": 0.7944444417953491,
+        "straightened_route_test": {
+          "loss": 0.15419194102287292,
+          "accuracy": 0.9611111283302307
+        },
+        "bypass_interior_test": {
+          "loss": 1.5069464445114136,
+          "accuracy": 0.7750000357627869
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "bezier",
+      "seed": 19,
+      "best_epoch": 25,
+      "training_seconds": 2.513316299766302,
+      "validation": {
+        "loss": 0.10068065673112869,
+        "accuracy": 0.9693593382835388
+      },
+      "test": {
+        "loss": 0.14523546397686005,
+        "accuracy": 0.9638888835906982
+      },
+      "parameters": 40974,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39936,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.0172649938613176,
+          "min_batch_ms": 1.0128029994666576,
+          "max_batch_ms": 1.032955003902316,
+          "examples_per_second": 983.0280271458241,
+          "repeat_batch_ms": [
+            1.0172649938613176,
+            1.0128029994666576,
+            1.0143249947577715,
+            1.032955003902316,
+            1.0226610023528337,
+            1.0172989964485168,
+            1.0159590002149343
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9940992,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.1114360019564629,
+          "min_batch_ms": 1.1001740023493767,
+          "max_batch_ms": 1.116368006914854,
+          "examples_per_second": 230332.6503274707,
+          "repeat_batch_ms": [
+            1.1120229959487915,
+            1.107539003714919,
+            1.116368006914854,
+            1.1148119997233152,
+            1.1114360019564629,
+            1.10096400603652,
+            1.1001740023493767
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14638080,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.9884448051452637,
+        "control_max_radius": 0.6732967495918274,
+        "mean_curve_to_chord_distance": 0.1309262067079544,
+        "expert_selection_counts": [
+          722,
+          388,
+          227,
+          230,
+          321,
+          584,
+          158,
+          250
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.4835243225097656,
+        "shuffled_route_accuracy": 0.9000000357627869,
+        "straightened_route_test": {
+          "loss": 0.18094706535339355,
+          "accuracy": 0.9555555582046509
+        },
+        "bypass_interior_test": {
+          "loss": 1.7884529829025269,
+          "accuracy": 0.6833333373069763
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "dense_reference_benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.297097997739911,
+          "min_batch_ms": 1.0926729999482632,
+          "max_batch_ms": 1.6043549962341785,
+          "examples_per_second": 770.9517721424438,
+          "repeat_batch_ms": [
+            1.0926729999482632,
+            1.297097997739911,
+            1.12432099878788,
+            1.245534997433424,
+            1.3950549997389317,
+            1.6043549962341785,
+            1.571629997342825
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "dense_reference",
+          "peak_allocated_bytes": 9992704,
+          "forward_increment_bytes": 73216
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.3586580008268356,
+          "min_batch_ms": 1.2229990027844906,
+          "max_batch_ms": 2.018872993066907,
+          "examples_per_second": 188421.2214142239,
+          "repeat_batch_ms": [
+            1.2286069989204407,
+            1.2229990027844906,
+            1.3586580008268356,
+            2.018872993066907,
+            1.9849919993430376,
+            1.6269249934703112,
+            1.242535999044776
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "dense_reference",
+          "peak_allocated_bytes": 28220928,
+          "forward_increment_bytes": 18301440
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "moe",
+      "seed": 42,
+      "best_epoch": 23,
+      "training_seconds": 1.9531505005434155,
+      "validation": {
+        "loss": 0.11656971275806427,
+        "accuracy": 0.9637882709503174
+      },
+      "test": {
+        "loss": 0.17064054310321808,
+        "accuracy": 0.9638888835906982
+      },
+      "parameters": 38994,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39552,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.6703029945492744,
+          "min_batch_ms": 0.6567669939249754,
+          "max_batch_ms": 0.9930029977113008,
+          "examples_per_second": 1491.862647387426,
+          "repeat_batch_ms": [
+            0.6703029945492744,
+            0.6567669939249754,
+            0.6577489990741014,
+            0.6606320012360811,
+            0.9455749951303005,
+            0.9930029977113008,
+            0.9763030055910349
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9931264,
+          "forward_increment_bytes": 20480
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.0755870025604963,
+          "min_batch_ms": 0.7004649937152863,
+          "max_batch_ms": 1.0961319971829653,
+          "examples_per_second": 238009.57002137194,
+          "repeat_batch_ms": [
+            1.0755870025604963,
+            1.0896020010113716,
+            1.0954010020941496,
+            1.0961319971829653,
+            0.7140119932591915,
+            0.7008839957416058,
+            0.7004649937152863
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14580224,
+          "forward_increment_bytes": 4669440
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "residual",
+      "seed": 42,
+      "best_epoch": 26,
+      "training_seconds": 1.531156100332737,
+      "validation": {
+        "loss": 0.10372576117515564,
+        "accuracy": 0.9665737748146057
+      },
+      "test": {
+        "loss": 0.15455196797847748,
+        "accuracy": 0.9694444537162781
+      },
+      "parameters": 38474,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 37504,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.5505539942532778,
+          "min_batch_ms": 0.46499500051140785,
+          "max_batch_ms": 0.738445995375514,
+          "examples_per_second": 1816.3522750503528,
+          "repeat_batch_ms": [
+            0.48574999906122684,
+            0.7290379982441664,
+            0.738445995375514,
+            0.7236430048942566,
+            0.5505539942532778,
+            0.46499500051140785,
+            0.46938699670135975
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9910272,
+          "forward_increment_bytes": 2560
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 0.5340970028191805,
+          "min_batch_ms": 0.5301490053534508,
+          "max_batch_ms": 0.5436279997229576,
+          "examples_per_second": 479313.6801905426,
+          "repeat_batch_ms": [
+            0.5301490053534508,
+            0.5340970028191805,
+            0.5328600015491247,
+            0.5325409956276417,
+            0.5383819993585348,
+            0.5436279997229576,
+            0.5358910001814365
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 10137088,
+          "forward_increment_bytes": 229376
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "bezier_transfer",
+      "seed": 42,
+      "best_epoch": 26,
+      "training_seconds": 3.237262800335884,
+      "validation": {
+        "loss": 0.09004410356283188,
+        "accuracy": 0.9777158498764038
+      },
+      "test": {
+        "loss": 0.15535318851470947,
+        "accuracy": 0.9666666984558105
+      },
+      "parameters": 41998,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39936,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.365336999297142,
+          "min_batch_ms": 1.3523790054023266,
+          "max_batch_ms": 2.1568030025810003,
+          "examples_per_second": 732.4199084290451,
+          "repeat_batch_ms": [
+            2.1568030025810003,
+            1.3760170061141253,
+            1.3546410016715527,
+            1.3523790054023266,
+            1.3722409959882498,
+            1.365336999297142,
+            1.3537180051207542
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9945088,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.6516640037298203,
+          "min_batch_ms": 1.4663419965654612,
+          "max_batch_ms": 2.3614570032805204,
+          "examples_per_second": 154995.20448583717,
+          "repeat_batch_ms": [
+            1.4728130027651787,
+            1.4663419965654612,
+            1.4876489993184805,
+            1.6516640037298203,
+            2.3354540020227432,
+            2.3614570032805204,
+            1.891071991994977
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14642176,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.9910125732421875,
+        "control_max_radius": 0.7601122856140137,
+        "mean_curve_to_chord_distance": 0.2300700694322586,
+        "expert_selection_counts": [
+          533,
+          168,
+          174,
+          527,
+          457,
+          313,
+          178,
+          530
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.627557396888733,
+        "shuffled_route_accuracy": 0.7972222566604614,
+        "straightened_route_test": {
+          "loss": 0.17984865605831146,
+          "accuracy": 0.9527778029441833
+        },
+        "bypass_interior_test": {
+          "loss": 1.4438841342926025,
+          "accuracy": 0.7638888955116272
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "bezier",
+      "seed": 42,
+      "best_epoch": 21,
+      "training_seconds": 2.6280614994466305,
+      "validation": {
+        "loss": 0.11521140486001968,
+        "accuracy": 0.9582172632217407
+      },
+      "test": {
+        "loss": 0.11213912069797516,
+        "accuracy": 0.9722222685813904
+      },
+      "parameters": 40974,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39936,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9758829977363348,
+          "min_batch_ms": 0.969022000208497,
+          "max_batch_ms": 0.9985189978033304,
+          "examples_per_second": 1024.7130058824748,
+          "repeat_batch_ms": [
+            0.9899189975112677,
+            0.9816360007971525,
+            0.9985189978033304,
+            0.9758829977363348,
+            0.9719249978661537,
+            0.9756739996373653,
+            0.969022000208497
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9940992,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.0908350069075823,
+          "min_batch_ms": 1.074441997334361,
+          "max_batch_ms": 1.1133420001715422,
+          "examples_per_second": 234682.60404085915,
+          "repeat_batch_ms": [
+            1.074441997334361,
+            1.0859380010515451,
+            1.0908350069075823,
+            1.1133420001715422,
+            1.0951809957623482,
+            1.0801369976252317,
+            1.0912949964404106
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14638080,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.9886016845703125,
+        "control_max_radius": 0.7335119843482971,
+        "mean_curve_to_chord_distance": 0.09603158384561539,
+        "expert_selection_counts": [
+          479,
+          222,
+          183,
+          579,
+          417,
+          313,
+          287,
+          400
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.5476986169815063,
+        "shuffled_route_accuracy": 0.8666666746139526,
+        "straightened_route_test": {
+          "loss": 0.14019617438316345,
+          "accuracy": 0.9638888835906982
+        },
+        "bypass_interior_test": {
+          "loss": 1.7477681636810303,
+          "accuracy": 0.6916666626930237
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "dense_reference_benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.1586210038512945,
+          "min_batch_ms": 1.08474999666214,
+          "max_batch_ms": 1.672221003100276,
+          "examples_per_second": 863.0950040401192,
+          "repeat_batch_ms": [
+            1.1059120018035173,
+            1.0931259952485561,
+            1.08474999666214,
+            1.1586210038512945,
+            1.672221003100276,
+            1.6471899952739477,
+            1.4049460086971521
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "dense_reference",
+          "peak_allocated_bytes": 9992704,
+          "forward_increment_bytes": 73216
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.2024709954857826,
+          "min_batch_ms": 1.1966409999877214,
+          "max_batch_ms": 1.956443004310131,
+          "examples_per_second": 212894.94795388335,
+          "repeat_batch_ms": [
+            1.1966409999877214,
+            1.956443004310131,
+            1.483247997239232,
+            1.199672995135188,
+            1.198546001687646,
+            1.2024709954857826,
+            1.2100080028176308
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "dense_reference",
+          "peak_allocated_bytes": 28220928,
+          "forward_increment_bytes": 18301440
+        }
+      ],
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    },
+    {
+      "model": "straight",
+      "seed": 42,
+      "best_epoch": 21,
+      "training_seconds": 2.401074600405991,
+      "validation": {
+        "loss": 0.1514601707458496,
+        "accuracy": 0.9637882709503174
+      },
+      "test": {
+        "loss": 0.09439067542552948,
+        "accuracy": 0.9805555939674377
+      },
+      "parameters": 40776,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39744,
+      "mac_scope": "Linear projections only; excludes routing distances, top-k, normalization, activation and memory traffic.",
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9463199973106384,
+          "min_batch_ms": 0.9318799991160631,
+          "max_batch_ms": 0.9647019952535629,
+          "examples_per_second": 1056.7250008896733,
+          "repeat_batch_ms": [
+            0.9647019952535629,
+            0.9572520013898611,
+            0.9463319927453995,
+            0.9318799991160631,
+            0.9460350032895803,
+            0.9440910071134567,
+            0.9463199973106384
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 9940480,
+          "forward_increment_bytes": 21504
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.04695999994874,
+          "min_batch_ms": 1.0346930008381605,
+          "max_batch_ms": 1.0568130016326904,
+          "examples_per_second": 244517.46008685525,
+          "repeat_batch_ms": [
+            1.0568130016326904,
+            1.0365290008485317,
+            1.0424620006233454,
+            1.04695999994874,
+            1.0346930008381605,
+            1.0490019991993904,
+            1.0531360004097223
+          ],
+          "iterations_per_repeat": 100,
+          "dispatch": "sparse",
+          "peak_allocated_bytes": 14637568,
+          "forward_increment_bytes": 4718592
+        }
+      ],
+      "diagnostics": {
+        "surface_radius_max_error": 1.1920928955078125e-07,
+        "interior_max_radius": 0.9842725992202759,
+        "control_max_radius": 0.5472577214241028,
+        "mean_curve_to_chord_distance": 0.0,
+        "expert_selection_counts": [
+          291,
+          518,
+          651,
+          190,
+          60,
+          303,
+          659,
+          208
+        ],
+        "dense_reference_max_logit_error": 0.0,
+        "shuffled_route_mean_logit_change": 1.450024127960205,
+        "shuffled_route_accuracy": 0.8388888835906982,
+        "straightened_route_test": {
+          "loss": 0.09439067542552948,
+          "accuracy": 0.9805555939674377
+        },
+        "bypass_interior_test": {
+          "loss": 1.7839579582214355,
+          "accuracy": 0.6916666626930237
+        },
+        "interpretation": "Post-training interventions are diagnostics, not separately trained or retuned baselines."
+      },
+      "benchmark_context": "Fresh inference-only process; no optimizer, gradients or training tensors. CUDA peak is process allocator memory including model and input, not physical memory traffic."
+    }
+  ],
+  "aggregate": [
+    {
+      "model": "bezier",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "mean_test_accuracy": 0.9675926168759664,
+      "std_test_accuracy": 0.0042431497783322674,
+      "parameters": 40974,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39936,
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9917910024523735
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.1092060059309006
+        }
+      ]
+    },
+    {
+      "model": "straight",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "mean_test_accuracy": 0.9712963104248047,
+      "std_test_accuracy": 0.00848627354303497,
+      "parameters": 40776,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39744,
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.9463199973106384
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.04695999994874
+        }
+      ]
+    },
+    {
+      "model": "moe",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "mean_test_accuracy": 0.9694444537162781,
+      "std_test_accuracy": 0.005555570125579834,
+      "parameters": 38994,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39552,
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.6325259990990162
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 0.6809850037097931
+        }
+      ]
+    },
+    {
+      "model": "residual",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "mean_test_accuracy": 0.9666666785875956,
+      "std_test_accuracy": 0.004811247654879188,
+      "parameters": 38474,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 37504,
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 0.4713840037584305
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 0.5340970028191805
+        }
+      ]
+    },
+    {
+      "model": "bezier_transfer",
+      "seeds": [
+        7,
+        19,
+        42
+      ],
+      "mean_test_accuracy": 0.9685185551643372,
+      "std_test_accuracy": 0.0032075099075053602,
+      "parameters": 41998,
+      "expert_evaluations_per_example": 8,
+      "linear_macs_per_example": 39936,
+      "benchmark": [
+        {
+          "batch_size": 1,
+          "median_batch_ms": 1.365336999297142
+        },
+        {
+          "batch_size": 256,
+          "median_batch_ms": 1.6516640037298203
+        }
+      ]
+    }
+  ]
+}

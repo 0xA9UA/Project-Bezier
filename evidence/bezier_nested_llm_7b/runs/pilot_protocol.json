@@ -1,0 +1,45 @@
+{
+  "config": {
+    "core_warmup_updates": 0,
+    "joint_updates": 512,
+    "batch_size": 4,
+    "balanced_program_batches": true,
+    "max_prompt_tokens": 384,
+    "learning_rate": 2e-06,
+    "core_learning_rate": 2e-06,
+    "lr_warmup_updates": 32,
+    "core_reasoning_weight": 0.25,
+    "control_weight": 0.1,
+    "control_gain_scale": 0.05,
+    "control_rank_weight": 1.0,
+    "control_every": 1,
+    "threshold": 0.005,
+    "decision_layer": 8,
+    "decision_layers": [
+      8,
+      16,
+      24
+    ],
+    "stochastic_rounding": true,
+    "log_every": 16,
+    "audit_before_training": true
+  },
+  "config_sha256": "a2184d2a459f8b5334ef52410b400771a1f6659297164172b181c8a0e082b877",
+  "source_hashes": {
+    "data.py": "3b062898961601235be46c5347a3ae49a2fd1421cc41a78423617e726baaced7",
+    "evaluation.py": "cb35caef98141d8cc6ad48dffdc0a0a6f0f46d2ce94ed74c0e8188671cb2dc02",
+    "geometry.py": "52f7dc6a43ae4d8af4b3eb0bdec2a93fe42979298abbd1830face2fc002e000c",
+    "model.py": "b834e8caf7452348f65cde5699f107409594a0b8a47265a9447a01d2ab5e3d7e",
+    "optim.py": "6339997548cf7b11a0c73aaebcb5c5170b357c5506159b10ca8b0e4dde654af0",
+    "training.py": "2e9686f8471f99dd22c7f8d8f2cc33948841523089ba1fb42aa0a7609baf7ed9"
+  },
+  "base_manifest_sha256": "b47ddc4259b4ce9459901c878c71b79217b81c5aa11df2ba4d9f7d0cbd597814",
+  "corpus_manifest_sha256": "257969c1b134abccf0a890c92a67ae0e711087692842af10718c9610169038af",
+  "seed": 7,
+  "primary_comparison": "shared steered versus separately trained baseline disabled on test",
+  "secondary_comparison": "shared steered versus the same checkpoint disabled",
+  "pretrained_reference": "unmodified pinned Mistral evaluated separately",
+  "selection": "validation conditional A/B NLL only; threshold frozen before test/OOD",
+  "evaluation": "all 64 test and all 64 OOD programs, both swaps; primary decision layer8",
+  "training_compute": "same examples and updates; additional counterfactual/controller work in shared arm"
+}

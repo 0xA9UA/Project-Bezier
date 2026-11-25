@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "checked_utc": "2026-11-23T20:05:58.354047+00:00",
+  "completed_process_receipts": 12,
+  "coding_task_records": 16,
+  "workflow_stage_records": 24,
+  "decoder_equivalence_records": 4,
+  "frozen_sources_unchanged": [
+    "tasks.py",
+    "workflow.py",
+    "codec.py"
+  ],
+  "checked": "Recomputed success counts, token totals, elapsed-time sums, public-only selection, completion/log hashes, and frozen source identities from saved records.",
+  "report_sha256": "59641b101fa9dadf2a0b67f8422706215204e378985521708a3be0d2c13f26dc",
+  "results_sha256": "42c470f1c064105ae47106c3c266312beb5c040ea201e285352a7b9099958b8e",
+  "figure_sha256": {
+    "results.png": "36a6f003d82c68da44676d7da084ae9feb30a6594527f71a0153f721e847468a",
+    "results.svg": "86df8a73a7106009830ab5b396739589629a81c6f2fd4ba05650b7d6ad63e607",
+    "routes.png": "b8c2f8685d5ffa806f7e15980a5d07baf33fb634e0be0334ed61bddefb2de20d",
+    "routes.svg": "3260ce026691e119e906fe808e68f3094b6b4d913f7d1c6c8b6824195b6f7bff"
+  }
+}

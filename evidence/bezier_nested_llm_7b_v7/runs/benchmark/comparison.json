@@ -1,0 +1,48 @@
+{
+  "short": {
+    "dense": {
+      "v6_ms": 21.052599884569645,
+      "v7_ms": 27.676500380039215,
+      "speedup": 0.7606669772365134,
+      "max_logit_error": 0.0,
+      "greedy_equivalent": true
+    },
+    "uniform": {
+      "v6_ms": 96.79810050874949,
+      "v7_ms": 45.66990025341511,
+      "speedup": 2.1195163547901794,
+      "max_logit_error": 0.03125,
+      "greedy_equivalent": true
+    },
+    "mixed": {
+      "v6_ms": 140.2724999934435,
+      "v7_ms": 70.82720007747412,
+      "speedup": 1.9804891318590434,
+      "max_logit_error": 0.03125,
+      "greedy_equivalent": true
+    }
+  },
+  "program": {
+    "dense": {
+      "v6_ms": 69.50819958001375,
+      "v7_ms": 69.41310036927462,
+      "speedup": 1.0013700470117775,
+      "max_logit_error": 0.0,
+      "greedy_equivalent": true
+    },
+    "uniform": {
+      "v6_ms": 141.13900065422058,
+      "v7_ms": 95.44890001416206,
+      "speedup": 1.478686507998304,
+      "max_logit_error": 0.03125,
+      "greedy_equivalent": true
+    },
+    "mixed": {
+      "v6_ms": 1451.7898000776768,
+      "v7_ms": 154.95940018445253,
+      "speedup": 9.36883982739718,
+      "max_logit_error": 0.0625,
+      "greedy_equivalent": true
+    }
+  }
+}

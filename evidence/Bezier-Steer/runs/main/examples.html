@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Bezier-Steer verified examples</title><style>body{background:#101c28;color:#e8eef5;font:15px/1.6 system-ui;margin:0}main{max-width:1200px;margin:auto;padding:32px}p{color:#bdcddd}a{color:#65d5c4}section{margin:25px 0;padding:22px;background:#192b3d;border-radius:12px}.programs{display:flex;gap:16px;flex-wrap:wrap}article{flex:1;min-width:290px;overflow:auto}pre{font-size:12px;line-height:1.6}img{width:min(100%,620px);display:block;border-radius:8px}</style><main><h1>Different programs, identical verified behavior</h1><p>These are actual saved outputs from the held-out test tasks. Every program passes all 16 possible Boolean inputs. Its displayed curve uses the same latent draw as its saved generation. Curves may overlap: geometric distance is not a measure of semantic difference. Dead instructions can appear in the raw code; the diversity count removes them and other simple equivalent rewrites.</p><p><a href="report.html">Full experiment</a> · <a href="examples.json">Inputs, outputs, controls and expert selections</a></p><section><h2>Task 1: truth mask 0xc48</h2><p>Only the curve varies; the initial hidden state and greedy token decoding are fixed.</p><img src="examples/task_1_routes.png" alt="Actual Bezier routes"><div class="programs"><article><a href="examples/task_1_solution_1.py">Program 1 · Python file</a><pre>def solution_1(a: bool, b: bool, c: bool, d: bool) -&gt; bool:
+    r0 = not (d or a)
+    r1 = (r0 != c)
+    r2 = not (r1 or b)
+    r3 = not (r2 != r1)
+    return bool(r3)
+</pre></article><article><a href="examples/task_1_solution_2.py">Program 2 · Python file</a><pre>def solution_2(a: bool, b: bool, c: bool, d: bool) -&gt; bool:
+    r0 = not (d or a)
+    r1 = (r0 != c)
+    r2 = (r1 != b)
+    r3 = (r2 and b)
+    return bool(r3)
+</pre></article></div></section><section><h2>Task 2: truth mask 0x3636</h2><p>Only the curve varies; the initial hidden state and greedy token decoding are fixed.</p><img src="examples/task_2_routes.png" alt="Actual Bezier routes"><div class="programs"><article><a href="examples/task_2_solution_1.py">Program 1 · Python file</a><pre>def solution_1(a: bool, b: bool, c: bool, d: bool) -&gt; bool:
+    r0 = not (a != c)
+    r1 = not (r0 and c)
+    r2 = not (r1 and r0)
+    r3 = (r2 != b)
+    return bool(r3)
+</pre></article><article><a href="examples/task_2_solution_2.py">Program 2 · Python file</a><pre>def solution_2(a: bool, b: bool, c: bool, d: bool) -&gt; bool:
+    r0 = not (a != c)
+    r1 = not (r0 and a)
+    r2 = not (r1 and r0)
+    r3 = (r2 != b)
+    return bool(r3)
+</pre></article></div></section><section><h2>Task 3: truth mask 0x3ffc</h2><p>Both the latent plan and token sampling vary. These examples do not attribute all variation to the curve.</p><img src="examples/task_3_routes.png" alt="Actual Bezier routes"><div class="programs"><article><a href="examples/task_3_solution_1.py">Program 1 · Python file</a><pre>def solution_1(a: bool, b: bool, c: bool, d: bool) -&gt; bool:
+    r0 = (b != c)
+    r1 = not (r0 or b)
+    r2 = (d != c)
+    r3 = (r2 or r0)
+    return bool(r3)
+</pre></article><article><a href="examples/task_3_solution_2.py">Program 2 · Python file</a><pre>def solution_2(a: bool, b: bool, c: bool, d: bool) -&gt; bool:
+    r0 = (b != c)
+    r1 = not (c or r0)
+    r2 = not (r1 != d)
+    r3 = (r2 or r0)
+    return bool(r3)
+</pre></article><article><a href="examples/task_3_solution_3.py">Program 3 · Python file</a><pre>def solution_3(a: bool, b: bool, c: bool, d: bool) -&gt; bool:
+    r0 = not (d != c)
+    r1 = (r0 != b)
+    r2 = (r1 != d)
+    r3 = not (r2 and r0)
+    return bool(r3)
+</pre></article></div></section></main></html>

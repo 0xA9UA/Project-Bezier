@@ -1,0 +1,629 @@
+{
+  "passed": true,
+  "checks": {
+    "pilot_marked_complete": true,
+    "manifest_content_checksum": true,
+    "corpus_group_checksums_and_truth_tables": true,
+    "prior_corpus_sources_unchanged": true,
+    "final_functions_unique": true,
+    "final_functions_exclude_prior_functions": true,
+    "evaluation_group_ids_exclude_training": true,
+    "live_sources_match_frozen_protocol": true,
+    "source_snapshots_match_frozen_protocol": true,
+    "selection_artifact_checksums": true,
+    "training_step_count": true,
+    "training_gradients_finite": true,
+    "training_losses_finite": true,
+    "training_continuations_start_identically_and_match_budgets": true,
+    "recorded_storage_checks": true,
+    "recorded_core_storage_alias": true,
+    "exact_core_parameter_budget": true,
+    "recorded_selected_replay_bitwise_equal": true,
+    "recorded_inference_unchosen_continuations_zero": true,
+    "test_learned_trace_consistency": true,
+    "test_fixed_exact_per_prompt_budgets": true,
+    "test_fixed_trace_consistency": true,
+    "test_shuffled_exact_per_prompt_budgets": true,
+    "test_shuffled_trace_consistency": true,
+    "test_independent_metric_recomputation": true,
+    "ood_learned_trace_consistency": true,
+    "ood_fixed_exact_per_prompt_budgets": true,
+    "ood_fixed_trace_consistency": true,
+    "ood_shuffled_exact_per_prompt_budgets": true,
+    "ood_shuffled_trace_consistency": true,
+    "ood_independent_metric_recomputation": true
+  },
+  "corpus": {
+    "groups": 64,
+    "examples": 256,
+    "unique_final_functions": 64,
+    "excluded_prior_functions": 5803,
+    "final_overlap_with_previous": [],
+    "training_group_id_overlap": [],
+    "source_hash_failures": [],
+    "group_verification_failures": [],
+    "all_100_inputs_recomputed_per_program": true,
+    "split_counts": {
+      "ood": 16,
+      "test": 32,
+      "validation": 16
+    }
+  },
+  "sources": {
+    "source_files": 27,
+    "live_failures": [],
+    "snapshot_failures": [],
+    "selection_checksum_checks": {
+      "protocol_checksum": true,
+      "manifest_checksum": true,
+      "selected_core_checksum": true,
+      "inspection_selection_checksum": true
+    },
+    "selected_checkpoint_sha256": "506f0b26f8d5f79e1ed215e303aee90a30139c9797051fe81adcc0a8c171324f",
+    "chronology_note": "Checksums link the frozen selection to the inspection marker; chronology also depends on the audited driver control flow."
+  },
+  "training": {
+    "completed_updates": 64,
+    "nonzero_core_tensor_gradient_count_histogram": {
+      "48": 64
+    },
+    "equal_budget_comparison_failures": [],
+    "first8_vs_last8": {
+      "loss": {
+        "first8_mean": 19.850383043289185,
+        "last8_mean": 18.455524802207947,
+        "last8_minus_first8": -1.3948582410812378
+      },
+      "policy_loss": {
+        "first8_mean": 1.394946113228798,
+        "last8_mean": 0.8754517631023191,
+        "last8_minus_first8": -0.5194943501264788
+      },
+      "recurrent_task_nll": {
+        "first8_mean": 18.331270933151245,
+        "last8_mean": 17.47655761241913,
+        "last8_minus_first8": -0.8547133207321167
+      },
+      "dense_nll": {
+        "first8_mean": 0.4966631103307009,
+        "last8_mean": 0.4140629673493095,
+        "last8_minus_first8": -0.0826001429813914
+      }
+    },
+    "comparison_caveat": "Unpaired exploratory windows use different training programs and captured states; loss changes do not establish training efficacy.",
+    "captured_prefix_turn_histogram": {
+      "0": 8,
+      "1": 8,
+      "2": 8,
+      "3": 8,
+      "4": 8,
+      "5": 8,
+      "6": 8,
+      "7": 8
+    },
+    "halt_target_probability_mean": 0.1162238161205334,
+    "predicted_halt_probability_mean": 0.13962153217289597
+  },
+  "storage": {
+    "outside_bitwise_unchanged": true,
+    "core_elements": 1087201280,
+    "outside_elements": 6160822272,
+    "changed_core_tensors": 48,
+    "same_parameter_storage": true,
+    "all_weights_cuda": true,
+    "core_view": {
+      "separate_execution_context": true,
+      "additional_registered_parameters": 0,
+      "additional_parameter_bytes": 0,
+      "core_parameters": 1087201280,
+      "same_underlying_storage": true
+    }
+  },
+  "evaluations": {
+    "test": {
+      "policies": {
+        "learned": {
+          "examples": 128,
+          "correct": 0,
+          "accuracy": 0.0,
+          "nll": 10.815936647355556,
+          "answer_token_predictions": 0,
+          "prediction_token_histogram": {
+            "10685": 2,
+            "10982": 2,
+            "11227": 2,
+            "12173": 2,
+            "13715": 2,
+            "14408": 4,
+            "15716": 11,
+            "20973": 14,
+            "25942": 6,
+            "28296": 13,
+            "3910": 11,
+            "5650": 12,
+            "6841": 43,
+            "8922": 4
+          },
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 1024,
+            "turns_histogram": {
+              "8": 128
+            },
+            "stop_reason_histogram": {
+              "max_budget": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 935,
+              "redirect": 71,
+              "revisit": 18
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 18,
+            "explicit_revisit_action_fraction": 0.017578125,
+            "prompts_with_explicit_revisit": 18,
+            "explicit_revisit_prompt_fraction": 0.140625,
+            "exact_repeated_node_sets_within_prompt": 18,
+            "consecutive_identical_node_sets": 18,
+            "prompts_with_exact_node_set_repeat": 18,
+            "unique_node_set_fingerprints_across_split": 12,
+            "node_set_fingerprint_occurrences_across_split": 1024,
+            "attention_region_histogram": {
+              "0": 65,
+              "4": 396,
+              "13": 2,
+              "16": 2,
+              "21": 299,
+              "28": 258,
+              "31": 2
+            },
+            "attention_region_revisits_within_prompt": 569,
+            "consecutive_same_attention_region": 274,
+            "attention_region_backward_index_jumps": 319,
+            "prompts_revisiting_attention_region": 128,
+            "prompts_with_backward_attention_index_jump": 128,
+            "distinct_action_sequences": 5,
+            "action_sequence_histogram": {
+              "0,0,0,0,0,0,0,1": 65,
+              "0,0,0,0,0,0,0,0": 43,
+              "0,0,0,0,0,0,0,2": 16,
+              "0,0,0,0,0,0,2,1": 2,
+              "0,0,0,0,0,0,1,1": 2
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "fixed": {
+          "examples": 128,
+          "correct": 0,
+          "accuracy": 0.0,
+          "nll": 10.738387696444988,
+          "answer_token_predictions": 0,
+          "prediction_token_histogram": {
+            "10982": 3,
+            "11227": 2,
+            "12173": 2,
+            "12996": 2,
+            "13715": 2,
+            "14408": 4,
+            "15716": 5,
+            "20973": 16,
+            "21508": 2,
+            "25942": 7,
+            "28296": 16,
+            "3910": 7,
+            "5650": 10,
+            "6841": 50
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 1024,
+            "turns_histogram": {
+              "8": 128
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 1024,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 8,
+            "node_set_fingerprint_occurrences_across_split": 1024,
+            "attention_region_histogram": {
+              "4": 384,
+              "21": 384,
+              "28": 256
+            },
+            "attention_region_revisits_within_prompt": 640,
+            "consecutive_same_attention_region": 256,
+            "attention_region_backward_index_jumps": 256,
+            "prompts_revisiting_attention_region": 128,
+            "prompts_with_backward_attention_index_jump": 128,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0,0,0,0,0,0,0": 128
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "shuffled": {
+          "examples": 128,
+          "correct": 0,
+          "accuracy": 0.0,
+          "nll": 10.820702485740185,
+          "answer_token_predictions": 0,
+          "prediction_token_histogram": {
+            "10982": 2,
+            "13715": 4,
+            "14408": 2,
+            "15716": 11,
+            "17493": 2,
+            "20973": 15,
+            "25942": 7,
+            "28296": 14,
+            "3910": 10,
+            "5650": 9,
+            "6841": 49,
+            "8922": 3
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 128,
+            "node_turns": 1024,
+            "turns_histogram": {
+              "8": 128
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 128
+            },
+            "continuation_action_histogram": {
+              "continue": 935,
+              "redirect": 71,
+              "revisit": 18
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 18,
+            "explicit_revisit_action_fraction": 0.017578125,
+            "prompts_with_explicit_revisit": 18,
+            "explicit_revisit_prompt_fraction": 0.140625,
+            "exact_repeated_node_sets_within_prompt": 18,
+            "consecutive_identical_node_sets": 18,
+            "prompts_with_exact_node_set_repeat": 18,
+            "unique_node_set_fingerprints_across_split": 12,
+            "node_set_fingerprint_occurrences_across_split": 1024,
+            "attention_region_histogram": {
+              "0": 65,
+              "4": 396,
+              "13": 2,
+              "16": 2,
+              "21": 299,
+              "28": 258,
+              "31": 2
+            },
+            "attention_region_revisits_within_prompt": 569,
+            "consecutive_same_attention_region": 274,
+            "attention_region_backward_index_jumps": 319,
+            "prompts_revisiting_attention_region": 128,
+            "prompts_with_backward_attention_index_jump": 128,
+            "distinct_action_sequences": 5,
+            "action_sequence_histogram": {
+              "0,0,0,0,0,0,0,1": 65,
+              "0,0,0,0,0,0,0,0": 43,
+              "0,0,0,0,0,0,0,2": 16,
+              "0,0,0,0,0,0,1,1": 2,
+              "0,0,0,0,0,0,2,1": 2
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "dense": {
+          "examples": 128,
+          "correct": 79,
+          "accuracy": 0.6171875,
+          "nll": 0.698553750370138,
+          "answer_token_predictions": 128,
+          "prediction_token_histogram": {
+            "1098": 41,
+            "1133": 87
+          }
+        }
+      },
+      "learned_minus_baseline": {
+        "fixed": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.07754895091056824
+        },
+        "shuffled": {
+          "accuracy_delta": 0.0,
+          "nll_delta": -0.004765838384628296
+        },
+        "dense": {
+          "accuracy_delta": -0.6171875,
+          "nll_delta": 10.117382896985418
+        }
+      },
+      "metric_mismatch_modes": []
+    },
+    "ood": {
+      "policies": {
+        "learned": {
+          "examples": 64,
+          "correct": 0,
+          "accuracy": 0.0,
+          "nll": 11.742892146110535,
+          "answer_token_predictions": 0,
+          "prediction_token_histogram": {
+            "12996": 2,
+            "15716": 3,
+            "21508": 16,
+            "21863": 2,
+            "28296": 3,
+            "3910": 30,
+            "6841": 8
+          },
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 512,
+            "turns_histogram": {
+              "8": 64
+            },
+            "stop_reason_histogram": {
+              "max_budget": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 459,
+              "redirect": 33,
+              "revisit": 20
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 20,
+            "explicit_revisit_action_fraction": 0.0390625,
+            "prompts_with_explicit_revisit": 20,
+            "explicit_revisit_prompt_fraction": 0.3125,
+            "exact_repeated_node_sets_within_prompt": 20,
+            "consecutive_identical_node_sets": 20,
+            "prompts_with_exact_node_set_repeat": 20,
+            "unique_node_set_fingerprints_across_split": 11,
+            "node_set_fingerprint_occurrences_across_split": 512,
+            "attention_region_histogram": {
+              "0": 25,
+              "4": 208,
+              "13": 4,
+              "16": 4,
+              "21": 143,
+              "28": 128
+            },
+            "attention_region_revisits_within_prompt": 287,
+            "consecutive_same_attention_region": 148,
+            "attention_region_backward_index_jumps": 153,
+            "prompts_revisiting_attention_region": 64,
+            "prompts_with_backward_attention_index_jump": 64,
+            "distinct_action_sequences": 4,
+            "action_sequence_histogram": {
+              "0,0,0,0,0,0,0,1": 25,
+              "0,0,0,0,0,0,0,0": 15,
+              "0,0,0,0,0,0,1,1": 4,
+              "0,0,0,0,0,0,0,2": 20
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "fixed": {
+          "examples": 64,
+          "correct": 0,
+          "accuracy": 0.0,
+          "nll": 11.532993495464325,
+          "answer_token_predictions": 0,
+          "prediction_token_histogram": {
+            "12996": 4,
+            "15716": 6,
+            "20973": 2,
+            "21508": 14,
+            "25942": 2,
+            "28296": 5,
+            "3910": 28,
+            "6841": 3
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 512,
+            "turns_histogram": {
+              "8": 64
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 512,
+              "redirect": 0,
+              "revisit": 0
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 0,
+            "explicit_revisit_action_fraction": 0.0,
+            "prompts_with_explicit_revisit": 0,
+            "explicit_revisit_prompt_fraction": 0.0,
+            "exact_repeated_node_sets_within_prompt": 0,
+            "consecutive_identical_node_sets": 0,
+            "prompts_with_exact_node_set_repeat": 0,
+            "unique_node_set_fingerprints_across_split": 8,
+            "node_set_fingerprint_occurrences_across_split": 512,
+            "attention_region_histogram": {
+              "4": 192,
+              "21": 192,
+              "28": 128
+            },
+            "attention_region_revisits_within_prompt": 320,
+            "consecutive_same_attention_region": 128,
+            "attention_region_backward_index_jumps": 128,
+            "prompts_revisiting_attention_region": 64,
+            "prompts_with_backward_attention_index_jump": 64,
+            "distinct_action_sequences": 1,
+            "action_sequence_histogram": {
+              "0,0,0,0,0,0,0,0": 64
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "shuffled": {
+          "examples": 64,
+          "correct": 0,
+          "accuracy": 0.0,
+          "nll": 11.793942660093307,
+          "answer_token_predictions": 0,
+          "prediction_token_histogram": {
+            "12996": 2,
+            "15716": 2,
+            "20973": 7,
+            "21508": 17,
+            "25942": 2,
+            "28296": 3,
+            "3910": 25,
+            "6841": 6
+          },
+          "matched_budget_fields": [
+            "turns",
+            "controller_calls",
+            "parameter_uses",
+            "node_uses",
+            "controller_parameter_uses",
+            "mandatory_interface_parameter_uses",
+            "total_parameter_uses",
+            "parameter_token_product_proxy",
+            "estimated_projection_attention_flops"
+          ],
+          "path_statistics": {
+            "examples": 64,
+            "node_turns": 512,
+            "turns_histogram": {
+              "8": 64
+            },
+            "stop_reason_histogram": {
+              "forced_budget": 64
+            },
+            "continuation_action_histogram": {
+              "continue": 459,
+              "redirect": 33,
+              "revisit": 20
+            },
+            "learned_stop_decisions": 0,
+            "explicit_revisit_actions": 20,
+            "explicit_revisit_action_fraction": 0.0390625,
+            "prompts_with_explicit_revisit": 20,
+            "explicit_revisit_prompt_fraction": 0.3125,
+            "exact_repeated_node_sets_within_prompt": 20,
+            "consecutive_identical_node_sets": 20,
+            "prompts_with_exact_node_set_repeat": 20,
+            "unique_node_set_fingerprints_across_split": 11,
+            "node_set_fingerprint_occurrences_across_split": 512,
+            "attention_region_histogram": {
+              "0": 25,
+              "4": 208,
+              "13": 4,
+              "16": 4,
+              "21": 143,
+              "28": 128
+            },
+            "attention_region_revisits_within_prompt": 287,
+            "consecutive_same_attention_region": 148,
+            "attention_region_backward_index_jumps": 153,
+            "prompts_revisiting_attention_region": 64,
+            "prompts_with_backward_attention_index_jump": 64,
+            "distinct_action_sequences": 4,
+            "action_sequence_histogram": {
+              "0,0,0,0,0,0,1,1": 4,
+              "0,0,0,0,0,0,0,1": 25,
+              "0,0,0,0,0,0,0,0": 15,
+              "0,0,0,0,0,0,0,2": 20
+            },
+            "trace_consistency_failures": [],
+            "interpretation": "Exact node-set fingerprints test complete selected-node reuse. Attention indices identify source parameter regions, not a required layer schedule. Repeated source indices and backward jumps describe execution, not answer efficacy."
+          }
+        },
+        "dense": {
+          "examples": 64,
+          "correct": 40,
+          "accuracy": 0.625,
+          "nll": 0.6663464688995191,
+          "answer_token_predictions": 64,
+          "prediction_token_histogram": {
+            "1098": 18,
+            "1133": 46
+          }
+        }
+      },
+      "learned_minus_baseline": {
+        "fixed": {
+          "accuracy_delta": 0.0,
+          "nll_delta": 0.20989865064620972
+        },
+        "shuffled": {
+          "accuracy_delta": 0.0,
+          "nll_delta": -0.05105051398277283
+        },
+        "dense": {
+          "accuracy_delta": -0.625,
+          "nll_delta": 11.076545677211016
+        }
+      },
+      "metric_mismatch_modes": []
+    }
+  },
+  "audit_script_sha256": "85a05e7d7d92ff417f3510b229844b0d50c3573d5aba82f3b3267ef0fa1917a8",
+  "caveats": [
+    "This audit recomputes saved data and metadata; CUDA pointer/storage facts are recorded runtime evidence, not remeasured here.",
+    "Outer parameter-reuse fractions include mandatory normalization nodes and exclude controller-core reuse and final token interfaces.",
+    "Every multi-turn prompt reuses at least final normalization; explicit revisit actions and full node-set fingerprints are reported separately.",
+    "Matched fixed/shuffled policies preserve each input’s learned stopping budget; they isolate routing rather than the causal value of learned halting.",
+    "Native dense inference has a different computation budget.",
+    "Original evaluation timings include execution-history summaries; use the separate clean timing artifact for ordinary forward latency.",
+    "First/last loss windows are unpaired exploratory comparisons, and neither lower NLL nor parameter reuse establishes improved answer accuracy."
+  ]
+}

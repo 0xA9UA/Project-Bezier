@@ -1,0 +1,219 @@
+{
+  "device": "cpu",
+  "read_only": true,
+  "optimizer_steps": 0,
+  "checkpoint": "WORKSPACE\\bezier_nested_core_v2\\runs\\pilot\\seed7\\nested-core-concurrent\\final.pt",
+  "checkpoint_sha256": "d859b3f6de56d9287b29f549aa04430db029291ba9cc37c5bbd604276253f2bf",
+  "checkpoint_step": 128,
+  "checkpoint_arm": "nested-core-concurrent",
+  "teacher_source": "frozen teacher saved in checkpoint",
+  "teacher_snapshot_step": 100,
+  "manifest": "WORKSPACE\\bezier_nested_core_v2\\corpus\\manifest.json",
+  "manifest_sha256": "fd946fb6162d9333d9ef9b02c88ad0195d101c91a68733b4ebbf60125ec6bd2e",
+  "current_source_sha256": {
+    "__init__.py": "523ca6358c1158c624d68a82897122329c5377c6fffbe7fb81c82de22caa8f7e",
+    "audits.py": "96e59a18ffa2bb79e725473e515592b1a05f98fbf747594cfe4a4d40033f831a",
+    "concurrent_engine.py": "e1fc374ba496b23f48cc20787e5bfccf0e355231c77d932607a331c86a67e326",
+    "data.py": "0c2ad4bfb239ef777b8bb3c3b464c11299ca937e5da132e02eb8b2797d45bc69",
+    "evaluation.py": "0f0a333946e51d8da3dbf95b4efe0128ace4e0f45fc11a277eed745c06edac6b",
+    "geometry.py": "2911f3468bee0abeaf1d077b26dd43db87e4b57cf52d9e29f464d4a9aaee36d1",
+    "model.py": "f59a8f33454d3ced58867d6513689975e533f7b0401626d2827f5e4530145026",
+    "reasoning_data.py": "8bc08b24c43c4408f203ee2a2347aac5131b6b871d5ad02b01f4270534b8e605",
+    "trainer.py": "ab561e8f7e7ec0df8c7cfa309f0dabfa1e93ef17493c9fb2e6533d73c3552d0e"
+  },
+  "source_matches_checkpoint": true,
+  "split": "test",
+  "seed": 2026,
+  "visits": 16,
+  "requested_samples": 32,
+  "actual_samples": 32,
+  "program_ids": [
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "41f0309d29eba62cb8bf53cbb78b68f087bc4447ca98b149d08528b1341e27a4",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165",
+    "c16d82d1f60032f281ebc11b8a293be1bdb7304991d81e40e397b4491d929165"
+  ],
+  "unique_programs": 2,
+  "input_and_target_sha256": "e02b8a7fde35bd5cbd570f987a53fa065c9b71aec189f94518d8f7e75881b21c",
+  "sampling": "deterministic corpus.iter_batches; seed controls the sampled eligible control checkpoint per example",
+  "parameter_scope": "entire spatial model.core, identical ordered parameter vector for all three objectives",
+  "parameter_order": [
+    "w1",
+    "b1",
+    "w2",
+    "b2"
+  ],
+  "core_parameters": 1312,
+  "shared_controller": true,
+  "objectives": {
+    "outer_answer": {
+      "loss": 0.7043672204017639,
+      "gradient_l2": 0.019778870579293433,
+      "training_objective_weight": 1.0,
+      "weighted_gradient_l2": 0.019778870579293433,
+      "nonzero_elements": 1312,
+      "parameter_elements": 1312,
+      "nonzero_fraction": 1.0,
+      "per_tensor": {
+        "w1": {
+          "gradient_l2": 0.004960700513450343,
+          "nonzero_elements": 1024,
+          "parameter_elements": 1024
+        },
+        "b1": {
+          "gradient_l2": 0.0006206231804436954,
+          "nonzero_elements": 16,
+          "parameter_elements": 16
+        },
+        "w2": {
+          "gradient_l2": 0.018257964420075205,
+          "nonzero_elements": 256,
+          "parameter_elements": 256
+        },
+        "b2": {
+          "gradient_l2": 0.005732079370652213,
+          "nonzero_elements": 16,
+          "parameter_elements": 16
+        }
+      }
+    },
+    "direct_core_reasoning": {
+      "loss": 0.6933742165565491,
+      "gradient_l2": 0.027506016196215607,
+      "training_objective_weight": 1.0,
+      "weighted_gradient_l2": 0.027506016196215607,
+      "nonzero_elements": 1312,
+      "parameter_elements": 1312,
+      "nonzero_fraction": 1.0,
+      "per_tensor": {
+        "w1": {
+          "gradient_l2": 0.007418277018982033,
+          "nonzero_elements": 1024,
+          "parameter_elements": 1024
+        },
+        "b1": {
+          "gradient_l2": 0.0012734429530219912,
+          "nonzero_elements": 16,
+          "parameter_elements": 16
+        },
+        "w2": {
+          "gradient_l2": 0.019790058646410404,
+          "nonzero_elements": 256,
+          "parameter_elements": 256
+        },
+        "b2": {
+          "gradient_l2": 0.01755796158080869,
+          "nonzero_elements": 16,
+          "parameter_elements": 16
+        }
+      }
+    },
+    "live_control": {
+      "loss": 0.00017975224182009697,
+      "gradient_l2": 0.03710567374491362,
+      "training_objective_weight": 1.0,
+      "weighted_gradient_l2": 0.03710567374491362,
+      "nonzero_elements": 1312,
+      "parameter_elements": 1312,
+      "nonzero_fraction": 1.0,
+      "per_tensor": {
+        "w1": {
+          "gradient_l2": 0.004733779886000347,
+          "nonzero_elements": 1024,
+          "parameter_elements": 1024
+        },
+        "b1": {
+          "gradient_l2": 0.0004035794538030423,
+          "nonzero_elements": 16,
+          "parameter_elements": 16
+        },
+        "w2": {
+          "gradient_l2": 0.035869934951213565,
+          "nonzero_elements": 256,
+          "parameter_elements": 256
+        },
+        "b2": {
+          "gradient_l2": 0.008222362329345895,
+          "nonzero_elements": 16,
+          "parameter_elements": 16
+        }
+      }
+    }
+  },
+  "pairwise_alignment": [
+    {
+      "first": "outer_answer",
+      "second": "direct_core_reasoning",
+      "dot_product": 1.0104415187511362e-05,
+      "cosine_similarity": 0.018572997481977948,
+      "negative_local_alignment": false,
+      "undefined_reason": null
+    },
+    {
+      "first": "outer_answer",
+      "second": "live_control",
+      "dot_product": -2.2210899775356316e-05,
+      "cosine_similarity": -0.030263861585517946,
+      "negative_local_alignment": true,
+      "undefined_reason": null
+    },
+    {
+      "first": "direct_core_reasoning",
+      "second": "live_control",
+      "dot_product": -9.742219495753908e-05,
+      "cosine_similarity": -0.09545306850331439,
+      "negative_local_alignment": true,
+      "undefined_reason": null
+    }
+  ],
+  "control_details": {
+    "teacher_gain_mean": -0.0005217944271862507,
+    "teacher_mse": 1.1166088285108344e-05,
+    "control_rank_kl": 0.00016858615049386572,
+    "oracle_local_regret_nats": 0.0012881457805633545,
+    "oracle_decision_accuracy": 0.21875,
+    "control_activation_gradients": true,
+    "counterfactual_comparisons": 128,
+    "remaining_expert_calls": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28
+    ],
+    "label_schedule": "pipeline_reference"
+  },
+  "outer_objective_note": "No routing checks; initial curve detached. Core gradients therefore come from outer expert visits.",
+  "reasoning_objective_note": "Syntax adapter and shared core only; no learned outer encoder or shell.",
+  "interpretation": "Negative cosine shows opposing local raw gradients on this batch. It does not prove training failure or persistent conflict. Positive cosine does not establish reasoning/control competence. Objective weights, clipping, optimizer state and future batches determine actual updates. Zero entries can reflect unsupported features in this batch; they do not show unused parameters."
+}

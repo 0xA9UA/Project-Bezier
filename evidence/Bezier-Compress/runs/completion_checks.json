@@ -1,0 +1,30 @@
+{
+  "completed_evaluation_cases": 27,
+  "distinct_artifacts_reconstructed_and_checked": 22,
+  "document_links": [
+    {
+      "file": "README.md",
+      "links_checked": 15
+    },
+    {
+      "file": "docs\\usage.md",
+      "links_checked": 0
+    },
+    {
+      "file": "runs\\main\\report.html",
+      "links_checked": 5
+    },
+    {
+      "file": "runs\\anchor_followup\\report.html",
+      "links_checked": 6
+    }
+  ],
+  "unit_tests": {
+    "passed": 23,
+    "command": ".\\.venv\\Scripts\\python.exe -m pytest -q"
+  },
+  "primary_verification": "runs/main/verification.json",
+  "followup_verification": "runs/anchor_followup/verification.json",
+  "figure_review": "Both figures visually inspected; final follow-up labels checked separately.",
+  "generation_demo": "runs/demo_zero_anchor.txt"
+}

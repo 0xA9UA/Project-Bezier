@@ -1,0 +1,72 @@
+{
+  "scope": "Float64 numerical checks of algebra and deliberately constructed examples. No AI model was trained; no benchmark accuracy or real-world compression claim follows.",
+  "seed": 2026,
+  "source_sha256": "666f59c196dca68dea2fc93287636703245edb1015c304fe8f8d1e47277ff44c",
+  "score_factorization": {
+    "sampled_times": 257,
+    "experts": 64,
+    "equivalent_score_rank": 4,
+    "max_absolute_difference": 2.6645352591003757e-15
+  },
+  "route_perturbation": {
+    "control_error_bound": 0.0001,
+    "max_path_displacement": 0.00010000000000002687,
+    "certified_top2_samples": 252,
+    "certificate_violations": 0
+  },
+  "constructed_weight_compression": {
+    "matrices": 64,
+    "matrix_width": 64,
+    "known_uniform_addresses": true,
+    "dense_fp32_bytes": 1048576,
+    "cubic_control_fp32_bytes": 65536,
+    "bank_only_compression_ratio": 16.0,
+    "structured_relative_error": 7.41576677537386e-16,
+    "structured_fp32_reconstruction_relative_error": 5.0549817316430225e-08,
+    "independent_relative_error": 0.9683508179826724
+  },
+  "commuting_flow": {
+    "hidden_dimension": 32,
+    "shared_basis_width": 6,
+    "spatial_polynomial_terms": 20,
+    "gauss_points": 5,
+    "quadrature_max_difference_vs_20_points": 7.216449660063518e-16,
+    "closed_form_relative_difference_vs_rk4_1024": 3.3372228558361785e-14,
+    "rk4_convergence": [
+      {
+        "rk4_steps": 1,
+        "relative_error": 0.013456256988524299
+      },
+      {
+        "rk4_steps": 2,
+        "relative_error": 0.0018938956686678492
+      },
+      {
+        "rk4_steps": 4,
+        "relative_error": 0.00015399351661538283
+      },
+      {
+        "rk4_steps": 8,
+        "relative_error": 9.745062698794118e-06
+      },
+      {
+        "rk4_steps": 16,
+        "relative_error": 5.871598583938623e-07
+      },
+      {
+        "rk4_steps": 32,
+        "relative_error": 3.568742832050689e-08
+      },
+      {
+        "rk4_steps": 64,
+        "relative_error": 2.1952757268468815e-09
+      }
+    ],
+    "noncommuting_counterexample_relative_error": 0.1024656282268739
+  },
+  "router_parameters_at_width1024_experts64": {
+    "bezier": 33388,
+    "ordinary_linear_gate": 65600
+  },
+  "one_fp32_gather_bytes_at_batch128_k2_d1024_b512": 536870912
+}

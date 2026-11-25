@@ -1,0 +1,357 @@
+{
+  "complete": true,
+  "engineering_checks_passed": true,
+  "scientific_controller_success": false,
+  "cpu_tests": 42,
+  "source_and_script_hashes_unchanged": true,
+  "all_five_gpu_tasks_completed": true,
+  "parameter_budget": {
+    "total_params": 7248023552,
+    "core_params": 1087201280,
+    "core_fraction": 0.14999968918423293,
+    "added_params": 0,
+    "core_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "core_radius": 0.25,
+    "core_layers": 5,
+    "core_mlp_neurons": 14061,
+    "shared": true,
+    "core_passes": 1,
+    "control_passes": 1,
+    "control_readout_mode": "answer_margin",
+    "core_executed_layers": 5,
+    "full_core_mlp_addresses": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "parameter_aliases": {
+      "model.embed_tokens.weight": true,
+      "lm_head.weight": true,
+      "model.norm.weight": true,
+      "model.layers.17.self_attn.q_proj.weight": true,
+      "model.layers.17.self_attn.k_proj.weight": true,
+      "model.layers.17.self_attn.v_proj.weight": true,
+      "model.layers.17.self_attn.o_proj.weight": true,
+      "model.layers.17.mlp.gate_proj.weight": true,
+      "model.layers.17.mlp.up_proj.weight": true,
+      "model.layers.17.mlp.down_proj.weight": true,
+      "model.layers.17.input_layernorm.weight": true,
+      "model.layers.17.post_attention_layernorm.weight": true,
+      "model.layers.18.self_attn.q_proj.weight": true,
+      "model.layers.18.self_attn.k_proj.weight": true,
+      "model.layers.18.self_attn.v_proj.weight": true,
+      "model.layers.18.self_attn.o_proj.weight": true,
+      "model.layers.18.mlp.gate_proj.weight": true,
+      "model.layers.18.mlp.up_proj.weight": true,
+      "model.layers.18.mlp.down_proj.weight": true,
+      "model.layers.18.input_layernorm.weight": true,
+      "model.layers.18.post_attention_layernorm.weight": true,
+      "model.layers.19.self_attn.q_proj.weight": true,
+      "model.layers.19.self_attn.k_proj.weight": true,
+      "model.layers.19.self_attn.v_proj.weight": true,
+      "model.layers.19.self_attn.o_proj.weight": true,
+      "model.layers.19.mlp.gate_proj.weight": true,
+      "model.layers.19.mlp.up_proj.weight": true,
+      "model.layers.19.mlp.down_proj.weight": true,
+      "model.layers.19.input_layernorm.weight": true,
+      "model.layers.19.post_attention_layernorm.weight": true,
+      "model.layers.20.self_attn.q_proj.weight": true,
+      "model.layers.20.self_attn.k_proj.weight": true,
+      "model.layers.20.self_attn.v_proj.weight": true,
+      "model.layers.20.self_attn.o_proj.weight": true,
+      "model.layers.20.mlp.gate_proj.weight": true,
+      "model.layers.20.mlp.up_proj.weight": true,
+      "model.layers.20.mlp.down_proj.weight": true,
+      "model.layers.20.input_layernorm.weight": true,
+      "model.layers.20.post_attention_layernorm.weight": true,
+      "model.layers.21.self_attn.q_proj.weight": true,
+      "model.layers.21.self_attn.k_proj.weight": true,
+      "model.layers.21.self_attn.v_proj.weight": true,
+      "model.layers.21.self_attn.o_proj.weight": true,
+      "model.layers.21.mlp.gate_proj.weight": true,
+      "model.layers.21.mlp.up_proj.weight": true,
+      "model.layers.21.mlp.down_proj.weight": true,
+      "model.layers.21.input_layernorm.weight": true,
+      "model.layers.21.post_attention_layernorm.weight": true
+    },
+    "core_tensors": {
+      "model.embed_tokens.weight": [
+        2,
+        4096
+      ],
+      "lm_head.weight": [
+        2,
+        4096
+      ],
+      "model.norm.weight": [
+        4096
+      ],
+      "model.layers.17.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.17.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.17.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.17.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.17.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.17.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.17.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.17.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.17.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.18.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.18.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.18.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.18.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.18.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.18.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.18.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.18.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.18.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.19.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.19.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.19.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.19.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.19.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.19.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.19.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.19.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.19.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.20.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.20.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.20.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.20.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.20.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.20.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.20.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.20.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.20.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.21.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.21.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.21.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.21.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.21.mlp.gate_proj.weight": [
+        14061,
+        4096
+      ],
+      "model.layers.21.mlp.up_proj.weight": [
+        14061,
+        4096
+      ],
+      "model.layers.21.mlp.down_proj.weight": [
+        4096,
+        14061
+      ],
+      "model.layers.21.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.21.post_attention_layernorm.weight": [
+        4096
+      ]
+    },
+    "interface_included": [
+      "two_embedding_rows",
+      "two_language_head_rows",
+      "final_norm"
+    ],
+    "routing_scope": "one MLP substitution; original attention order; no KV cache",
+    "core_indices": [
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "partial_core_layer": 21,
+    "controller_anchor_token_ids": [
+      7871,
+      18407
+    ],
+    "control_output_token_ids": [
+      1098,
+      1133
+    ],
+    "controller_role": "predict continuation utility from live activation and geometry",
+    "standalone_core_language_model": false
+  },
+  "runtime_equivalence": {
+    "disabled": {
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "raw_predictions_equal": true,
+      "route_decisions_equal": true
+    },
+    "controlled": {
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "raw_predictions_equal": true,
+      "route_decisions_equal": true
+    },
+    "outer_alternate_turn": {
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "raw_predictions_equal": true,
+      "route_decisions_equal": true
+    },
+    "outer_alternate_mixed": {
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "raw_predictions_equal": true,
+      "route_decisions_equal": true
+    }
+  },
+  "generation_tokens_bitwise_equal": true,
+  "core_restoration_invariants": {
+    "training_performed": false,
+    "selection_performed": false,
+    "steering_used": false,
+    "standalone_core_evaluated": false,
+    "checkpoint_writes": false,
+    "checkpoint_hashes_verified_before": true,
+    "checkpoint_hashes_verified_after": true,
+    "in_memory_parameters_restored_exactly": true,
+    "reference_slices_installed_exactly": true
+  },
+  "figure_visually_reviewed": true,
+  "generation_smoke": {
+    "runtime_completed": true,
+    "generated_text": "B: 2",
+    "expected_answer": "A (34)",
+    "arithmetic_correct": false,
+    "scope": "An informal four-token execution smoke check, not part of the program benchmark; incorrect observed answer is retained."
+  },
+  "environment": {
+    "python": "3.14.3 (tags/v3.14.3:323c59a, Feb  3 2026, 16:04:56) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "WORKSPACE\\Bezier-Think\\.venv\\Scripts\\python.exe",
+    "torch": "2.10.0+cu128",
+    "transformers": "4.57.1",
+    "huggingface_hub": "0.36.0",
+    "cuda_build": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5090"
+  },
+  "evidence_sha256": {
+    "runs\\final\\suite.json": "2356c67d0c8d8152252aeacf57822d85a373167a0c91cfa9219276269edf4cb4",
+    "runs\\final\\selection.json": "5ba5aad7f7ae024aa84ed3c7ab13af12e5e6a0fdb21b421ac14739ea68856f8d",
+    "runs\\final\\initial\\evaluation.json": "0dee7c97a51aa8d42d1f50320e1163be000b5a1d0c60bcb7c5ac1138978c8a14",
+    "runs\\final\\selected\\evaluation.json": "4ffa2f7fb10057e43a7e7ac1ad15c6581d472e3febe57425348d783dc80beaba",
+    "runs\\final\\core_reuse\\core_reuse.json": "193a42c11e7701ebc1ee963c4c588c737d0012e1a6750ceedaf7457f1a4fbeb1",
+    "runs\\final\\engine\\benchmark.json": "2c187805e4bbaa666fedfebc5bd5608dfbe27dad1a2e40b3f2bd9c1bfb6ba5b2",
+    "runs\\final\\summary\\results_summary.json": "1b1b0f6a1080b1ed27eb1ae7f9cec523a367bb2868bca537724d35734daea375",
+    "runs\\final\\summary\\summary.png": "4ba9e5e529b250241cf3832ba17d98a744f943095fc0d11d38ca8607e5fb38ff",
+    "corpus_holdout\\INSPECTED.json": "adecab3ff07d064e0b61a3e35e161b4d50b6be1cce0c9f4e0038d3f214de4fda",
+    "runs\\cpu-tests.log": "e6aeaca5ecb4ebfbda7e2cc6df6cc7b4e0d012c28b64926bdbf5fee61d95d0ef"
+  }
+}

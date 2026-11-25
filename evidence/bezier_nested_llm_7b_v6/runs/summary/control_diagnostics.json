@@ -1,0 +1,165 @@
+{
+  "post_selection_descriptive_only": true,
+  "changes_policy": false,
+  "measurement": "Actual deployed selected paths; supersedes cached-tree diagnostics",
+  "sources": {
+    "deployed_verification.json": "9c60aa2fdf8e48a7233d2866763e5bbe23faa51d82cdd0396d58ff00a98e7608"
+  },
+  "splits": {
+    "test": {
+      "examples": 256,
+      "action_pairs": {
+        "2,2": 201,
+        "2,0": 55
+      },
+      "first_action": {
+        "2": 256
+      },
+      "second_action": {
+        "2": 201,
+        "0": 55
+      },
+      "learned_vs_stay": {
+        "rescues": 49,
+        "spoils": 31,
+        "correctness_disagreements": 80,
+        "prediction_disagreements": 80,
+        "by_answer_label": {
+          "0": {
+            "examples": 128,
+            "rescues": 43,
+            "spoils": 2,
+            "net": 41
+          },
+          "1": {
+            "examples": 128,
+            "rescues": 6,
+            "spoils": 29,
+            "net": -23
+          }
+        },
+        "net": 18
+      },
+      "learned_vs_fixed": {
+        "rescues": 2,
+        "spoils": 1,
+        "correctness_disagreements": 3,
+        "prediction_disagreements": 3,
+        "by_answer_label": {
+          "0": {
+            "examples": 128,
+            "rescues": 2,
+            "spoils": 0,
+            "net": 2
+          },
+          "1": {
+            "examples": 128,
+            "rescues": 0,
+            "spoils": 1,
+            "net": -1
+          }
+        },
+        "net": 1
+      },
+      "learned_vs_shuffled": {
+        "rescues": 3,
+        "spoils": 1,
+        "correctness_disagreements": 4,
+        "prediction_disagreements": 4,
+        "by_answer_label": {
+          "0": {
+            "examples": 128,
+            "rescues": 2,
+            "spoils": 0,
+            "net": 2
+          },
+          "1": {
+            "examples": 128,
+            "rescues": 1,
+            "spoils": 1,
+            "net": 0
+          }
+        },
+        "net": 2
+      }
+    },
+    "ood": {
+      "examples": 128,
+      "action_pairs": {
+        "2,2": 115,
+        "2,0": 13
+      },
+      "first_action": {
+        "2": 128
+      },
+      "second_action": {
+        "2": 115,
+        "0": 13
+      },
+      "learned_vs_stay": {
+        "rescues": 20,
+        "spoils": 17,
+        "correctness_disagreements": 37,
+        "prediction_disagreements": 37,
+        "by_answer_label": {
+          "0": {
+            "examples": 64,
+            "rescues": 15,
+            "spoils": 2,
+            "net": 13
+          },
+          "1": {
+            "examples": 64,
+            "rescues": 5,
+            "spoils": 15,
+            "net": -10
+          }
+        },
+        "net": 3
+      },
+      "learned_vs_fixed": {
+        "rescues": 0,
+        "spoils": 0,
+        "correctness_disagreements": 0,
+        "prediction_disagreements": 0,
+        "by_answer_label": {
+          "0": {
+            "examples": 64,
+            "rescues": 0,
+            "spoils": 0,
+            "net": 0
+          },
+          "1": {
+            "examples": 64,
+            "rescues": 0,
+            "spoils": 0,
+            "net": 0
+          }
+        },
+        "net": 0
+      },
+      "learned_vs_shuffled": {
+        "rescues": 1,
+        "spoils": 1,
+        "correctness_disagreements": 2,
+        "prediction_disagreements": 2,
+        "by_answer_label": {
+          "0": {
+            "examples": 64,
+            "rescues": 0,
+            "spoils": 1,
+            "net": -1
+          },
+          "1": {
+            "examples": 64,
+            "rescues": 1,
+            "spoils": 0,
+            "net": 1
+          }
+        },
+        "net": 0
+      }
+    }
+  },
+  "analysis_sha256": "1d6d75ac4d8f6810bfc0b94a27e2ef4b9a0234894f70900985c6b96072c2b9b7"
+}

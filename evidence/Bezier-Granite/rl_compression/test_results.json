@@ -1,0 +1,54 @@
+[
+  {
+    "tokens": 32768,
+    "nll": 2.8914757848838386,
+    "perplexity": 18.019883459696565,
+    "questions": 512,
+    "accuracy": 0.80859375,
+    "perplexity_ratio": 1.004625986989271,
+    "reference_correct_retained": 0.9621749408983451,
+    "retained_count": 407,
+    "reference_correct_count": 423,
+    "passed": true,
+    "name": "parent6"
+  },
+  {
+    "tokens": 32768,
+    "nll": 2.948689402571842,
+    "perplexity": 19.080929916066733,
+    "questions": 512,
+    "accuracy": 0.82421875,
+    "perplexity_ratio": 1.0637803564310309,
+    "reference_correct_retained": 0.9645390070921985,
+    "retained_count": 408,
+    "reference_correct_count": 423,
+    "passed": true,
+    "name": "fixed4"
+  },
+  {
+    "tokens": 32768,
+    "nll": 2.9030947262693942,
+    "perplexity": 18.23047649428911,
+    "questions": 512,
+    "accuracy": 0.80859375,
+    "perplexity_ratio": 1.0163667529994282,
+    "reference_correct_retained": 0.9574468085106383,
+    "retained_count": 405,
+    "reference_correct_count": 423,
+    "passed": true,
+    "name": "selected_rl"
+  },
+  {
+    "tokens": 32768,
+    "nll": 2.926891257581482,
+    "perplexity": 18.669501518174727,
+    "questions": 512,
+    "accuracy": 0.818359375,
+    "perplexity_ratio": 1.040842824052859,
+    "reference_correct_retained": 0.9550827423167849,
+    "retained_count": 404,
+    "reference_correct_count": 423,
+    "passed": true,
+    "name": "selected_random"
+  }
+]

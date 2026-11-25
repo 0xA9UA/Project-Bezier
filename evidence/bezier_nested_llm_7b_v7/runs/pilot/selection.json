@@ -1,0 +1,37 @@
+{
+  "policy": {
+    "thresholds": [
+      1.5680710673332214,
+      2.172690987586975
+    ],
+    "summary": {
+      "accuracy": 0.65625,
+      "nll": 0.6106541933859262,
+      "examples": 256
+    },
+    "gain_vs_best_fixed": -0.01171875,
+    "gain_vs_shuffled": 0.0234375,
+    "gain_vs_incumbent": 0.015625,
+    "eligible": true,
+    "best_fixed": "1,1",
+    "rank": [
+      1,
+      -0.0,
+      -0.65625,
+      0.6106541933859262
+    ],
+    "positive_validation_gain": false,
+    "cached_summary": {
+      "accuracy": 0.65625,
+      "nll": 0.6079456192148882,
+      "examples": 256
+    },
+    "reasoning_updates": 0,
+    "replay_updates": 0,
+    "phase": "readout_fit"
+  },
+  "core_checkpoint": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\pilot\\selected_core.pt",
+  "sha256": "a7261286c2e214e435687bc8a7dec8aaa698755a0bbf91473d6c37d083dd81d3",
+  "protocol_sha256": "ee4d40e464ac95ed2d1921aa36c257753e6f66c44aa9e39d083a74d4ac7657de",
+  "chosen_before_test": true
+}

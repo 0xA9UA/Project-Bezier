@@ -1,0 +1,1504 @@
+{
+  "passed": true,
+  "checks": {
+    "optimizer_steps_equal_saved": true,
+    "optimizer_calls_equal_saved": true,
+    "optimizer_slices_exactly_48": true,
+    "optimizer_rounding_policy_equal_saved": true,
+    "all_optimizer_state_values_exact": true,
+    "all_optimizer_tensor_states_cuda": true,
+    "all_floating_optimizer_states_fp32": true,
+    "all_optimizer_views_alias_outer_storage": true,
+    "all_saved_rng_states_restored_exactly": true,
+    "all_five_rng_draw_streams_reproduce_exactly": true,
+    "optimizer_steps_and_calls_unchanged_by_check": true,
+    "no_parameter_gradients_created": true,
+    "optimizer_hooks_removed": true,
+    "parameter_storage_pointers_unchanged": true,
+    "parameter_versions_unchanged": true,
+    "all_model_weights_cuda": true,
+    "core_views_share_outer_parameter_storage": true,
+    "saved_geometry_unchanged": true
+  },
+  "run": "WORKSPACE\\bezier_nested_llm_7b_v7\\runs\\reinforcement_continued",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "total_model_updates": 512,
+  "saved_optimizer_updates": 256,
+  "optimizer_parameter_slices": 48,
+  "optimizer_tensor_states": 133,
+  "optimizer_moment_tensors": 85,
+  "optimizer_tensor_elements": 462075,
+  "optimizer_slices": [
+    {
+      "parameter": "model.embed_tokens.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 2,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.self_attn.q_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.self_attn.k_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.self_attn.v_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.self_attn.o_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.mlp.gate_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.mlp.up_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.mlp.down_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.input_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.17.post_attention_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.self_attn.q_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.self_attn.k_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.self_attn.v_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.self_attn.o_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.mlp.gate_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.mlp.up_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.mlp.down_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.input_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.18.post_attention_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.self_attn.q_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.self_attn.k_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.self_attn.v_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.self_attn.o_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.mlp.gate_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.mlp.up_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.mlp.down_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.input_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.19.post_attention_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.self_attn.q_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.self_attn.k_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.self_attn.v_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.self_attn.o_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.mlp.gate_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.mlp.up_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.mlp.down_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 14336,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.input_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.20.post_attention_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.self_attn.q_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.self_attn.k_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.self_attn.v_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 1024,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.self_attn.o_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.mlp.gate_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14061,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.mlp.up_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 14061,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.mlp.down_proj.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 14061,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.input_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.layers.21.post_attention_layernorm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "model.norm.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    },
+    {
+      "parameter": "lm_head.weight",
+      "aliases_outer_storage": true,
+      "state_keys_equal": true,
+      "optimizer_settings_equal": true,
+      "step": 256,
+      "tensor_fields": [
+        {
+          "name": "exp_avg_sq_row",
+          "elements": 2,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "exp_avg_sq_col",
+          "elements": 4096,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        },
+        {
+          "name": "RMS",
+          "elements": 1,
+          "cuda": true,
+          "float32": true,
+          "exact_saved_values": true
+        }
+      ]
+    }
+  ],
+  "mismatches": [],
+  "rng_state_checks": {
+    "torch_cpu": true,
+    "torch_cuda": true,
+    "rollout_generator": true,
+    "python": true,
+    "numpy": true
+  },
+  "rng_draw_replay_checks": {
+    "torch_cpu": true,
+    "torch_cuda": true,
+    "rollout_generator": true,
+    "python": true,
+    "numpy": true
+  },
+  "draws_per_stream": 16,
+  "core_alias_audit": {
+    "separate_execution_context": true,
+    "additional_registered_parameters": 0,
+    "additional_parameter_bytes": 0,
+    "core_parameters": 1087201280,
+    "same_underlying_storage": true
+  },
+  "layout_audit": {
+    "schema": "bezier-reward-layout-v1",
+    "gate": "correct AND finite reward > 0",
+    "config": {
+      "lr": 0.02,
+      "max_step": 0.005,
+      "max_displacement": 0.05,
+      "origin_regularization": 0.001,
+      "shell_epsilon": 0.0001
+    },
+    "core_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "core_radius": 0.25,
+    "core_coordinates_bitwise_equal": true,
+    "mandatory_coordinates_bitwise_equal": true,
+    "original_anchors_preserved": true,
+    "core_membership_unchanged": true,
+    "all_outer_nodes_in_bounded_shell": true,
+    "all_nodes_inside_sphere": true,
+    "minimum_shell_radius": 0.3121204376220703,
+    "maximum_node_radius": 0.9699996709823608,
+    "total_parameters": 7248023552,
+    "core_parameters": 1087201280,
+    "core_fraction": 0.14999968918423293,
+    "parameter_objects_and_storage_unchanged": true,
+    "additional_parameter_bytes": 0,
+    "moved_nodes": 130376,
+    "maximum_anchor_displacement": 0.05000003054738045,
+    "update_calls": 3561,
+    "accepted_events": 9930,
+    "gated_rows": 3561,
+    "movable_families": [
+      "k",
+      "mlp",
+      "q",
+      "v"
+    ]
+  },
+  "checkpoint_sha256": "6c37b83a183c3bf3bd0d09b83701562d2a5402af5f7e169ca27d2b86a80586ab",
+  "layout_sha256": "43b23eddc5a157ac33e85ab54bcf1547a8a2fe54b51604c00bd8cda5efb1837c",
+  "optimizer_sha256": "6741b08f020f44e2e5d2caffd00cb794eedb663163d750590e7a25704b94a75c",
+  "rng_sha256": "0f5e3ab94b9db68771cac456467898d19aaf16251e88f233b6abfc941d7536b1",
+  "protocol_sha256": "a79d15c63ee6e429346ef4da586998acfcab3f051a0625b0d173524ab10121c7",
+  "source_hashes": {
+    "bezier_nested_llm_7b_v2/nested_llm/data.py": "3b062898961601235be46c5347a3ae49a2fd1421cc41a78423617e726baaced7",
+    "bezier_nested_llm_7b_v2/nested_llm/distillation.py": "7255f1ad45582f8c615cd6cb4442d76e92e08487973760483456f67751a02462",
+    "bezier_nested_llm_7b_v2/nested_llm/evaluation.py": "cb35caef98141d8cc6ad48dffdc0a0a6f0f46d2ce94ed74c0e8188671cb2dc02",
+    "bezier_nested_llm_7b_v2/nested_llm/geometry.py": "0678538c1d032dc0f8cffb1ba8b06a084d179728f3359417f12c56e08ba6e352",
+    "bezier_nested_llm_7b_v2/nested_llm/model.py": "697874a2937abe03857c64c465ee8faf7148d701daa5bdbfa1a40f8ba08589e5",
+    "bezier_nested_llm_7b_v2/nested_llm/optim.py": "6339997548cf7b11a0c73aaebcb5c5170b357c5506159b10ca8b0e4dde654af0",
+    "bezier_nested_llm_7b_v2/nested_llm/reasoning_data.py": "16d6b2678b06b686880d5fa2ed46d8c4bfe1209c7a973c55a582a14f3d51cf9f",
+    "bezier_nested_llm_7b_v2/nested_llm/training.py": "2e9686f8471f99dd22c7f8d8f2cc33948841523089ba1fb42aa0a7609baf7ed9",
+    "bezier_nested_llm_7b_v3/controller_sphere/__init__.py": "3e1bd1271bf1fa67cb749980f5677b503adc83425b92bce9c7db479e6ccdcb05",
+    "bezier_nested_llm_7b_v3/controller_sphere/engine.py": "2f1a711f10b900ac8fddceaa6c8fac260f03f57d815f420e4cc751a2f84eeb57",
+    "bezier_nested_llm_7b_v3/controller_sphere/model.py": "4961d1a1ae7b55de8ae65f1fbe4ee775f6250a095713a051154c4a782261330c",
+    "bezier_nested_llm_7b_v3/controller_sphere/training.py": "fb0a85591d09ab7031b667a651622b9fd6fc0a482c79ceaa399e4366943138c7",
+    "bezier_nested_llm_7b_v5/routing_core/__init__.py": "7ff26a4667ac2395163f33640808fe221874649f65c01f0edf1d7aa7aca7caca",
+    "bezier_nested_llm_7b_v5/routing_core/model.py": "560d328a66ebd5b367dbbd37912043aae2c4f24de162f253d5a748ca8a33c2c8",
+    "bezier_nested_llm_7b_v5/routing_core/optim.py": "a2e9b1ca11d742f5f464df6c26e71c2626ccaf9a18588991424f80fa2687c535",
+    "bezier_nested_llm_7b_v5/routing_core/training.py": "7b0b6ae6bc4e5c40dfe62260ee22e06364267b9a76122f56efbda780d7a1e420",
+    "bezier_nested_llm_7b_v5/scripts/build_corpus.py": "26946365887ba135d57c845a2f1344346119a802297e5be9b84c192cb593613d",
+    "bezier_nested_llm_7b_v5/scripts/check_weight_sharing.py": "ed25aba33a5c6c68e4d3ba7cc453b2250f9eb4e2f3d6fc8dab0e9107209c82c7",
+    "bezier_nested_llm_7b_v6/scripts/pilot.py": "793635ba10ed19bd51a663efb3f30de60492ad512b1bcbbb7555c38e14e4d6a2",
+    "bezier_nested_llm_7b_v7/scripts/recurrent_pilot.py": "6f1445775494085646abeb647ce46066f74c402d80b6c099828f82b744fb1433",
+    "bezier_nested_llm_7b_v7/spatial_core/__init__.py": "a6c08d2588df84f6bb660c8fecfc004c074858da7a00cb26db9c508655ff2bf9",
+    "bezier_nested_llm_7b_v7/spatial_core/atlas.py": "b2c6b80e65c3b7186d751fb453ad72d3628e732ad712b53e1b86d2f8ae8afbde",
+    "bezier_nested_llm_7b_v7/spatial_core/engine.py": "df5f83c293dd0eb68ce9af79aa836cfa7b838c5a824486a2a561e2aafba37c20",
+    "bezier_nested_llm_7b_v7/spatial_core/model.py": "3e034b43ce6ed5fc53a155b78b1b577864aa2c0b43381c72de89f998c80c8eec",
+    "bezier_nested_llm_7b_v7/spatial_core/recurrent.py": "d0ea77300dd0deedea522b8c731d688549a275ddf7392919dd2a905122024294",
+    "bezier_nested_llm_7b_v7/spatial_core/recurrent_engine.py": "eb925aea3ef24f2966b021c28a1d800f667203fae8e848f3100d3eda18fb2331",
+    "bezier_nested_llm_7b_v7/spatial_core/recurrent_training.py": "e7b31cd3ef5f5bfcc5076c36dca38c89ba175e95d315db08009ec0793e968d96",
+    "bezier_nested_llm_7b_v7/spatial_core/reinforcement.py": "2b4c60166476137288b0a09edeb77c3142b07768c937e5214efa7e0e27b8b890",
+    "bezier_nested_llm_7b_v7/spatial_core/reinforcement_explore.py": "7b2e4a9f3fc250e42f4a828e76bb29a670ed370c479f5f1e1028073d7c9bd783",
+    "bezier_nested_llm_7b_v7/spatial_core/reward_layout.py": "9abb4fc27f552950ac4982606ba20a5c84d95eb6de8c9cfb6759e8999a75ac1c",
+    "bezier_nested_llm_7b_v7/spatial_core/reward_layout_batch.py": "2883a8663aeaacc698b5c9abe5782b1c80598059c5cff099e1d30f61fb6247b3",
+    "bezier_nested_llm_7b_v7/scripts/reinforcement_pilot.py": "6d8f83514846521c6e0d40dbea744feac424f0d56a28f57e5d7f1d86d67481e1",
+    "bezier_nested_llm_7b_v7/scripts/continue_reinforcement.py": "3b4402c9bad383d600f7be4f678e729d79a1a14d04d880b483463174513b7af2"
+  },
+  "check_script_sha256": "d4549de0924724e4b3c3ccb0c6237bfd322a9e79d8dbeb7e051c346e833637b8",
+  "loader_script_sha256": "fb889ae06006b0cb878f91e370a82e6bc9f4218842d8f25ac210b7212b258eb0",
+  "no_forward_backward_optimizer_step_or_layout_update": true,
+  "scope": "Actual GPU restoration of all 48 optimizer slices, their tensor states, storage aliases and five RNG streams; not a replay of an interrupted data cursor."
+}

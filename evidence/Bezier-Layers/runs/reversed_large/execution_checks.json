@@ -1,0 +1,254 @@
+[
+  {
+    "mode": "cpu",
+    "dispatch": "gather",
+    "pinned": false,
+    "metrics": {
+      "accuracy": 0.7794680595397949,
+      "loss": 0.7359775900840759,
+      "group_accuracy_by_hop": [
+        0.6763829588890076,
+        0.7532978653907776,
+        0.7652127742767334,
+        0.7725532054901123
+      ],
+      "inputs_switching_layer": 0.2896808385848999,
+      "adjacent_hop_switch_rate": 0.1305319219827652,
+      "layer_counts": [
+        3943,
+        2849,
+        3931,
+        2973,
+        3173,
+        2878,
+        3054,
+        2971,
+        3139,
+        3413,
+        2964,
+        2312
+      ]
+    },
+    "max_abs_logit_error": 1.1444091796875e-05,
+    "prediction_agreement": 1.0,
+    "same_layer_sequence_fraction": 1.0,
+    "same_expert_sequence_fraction": 1.0,
+    "logits_within_tolerance": true
+  },
+  {
+    "mode": "cpu",
+    "dispatch": "grouped",
+    "pinned": false,
+    "metrics": {
+      "accuracy": 0.7794680595397949,
+      "loss": 0.7359776496887207,
+      "group_accuracy_by_hop": [
+        0.6763829588890076,
+        0.7532978653907776,
+        0.7652127742767334,
+        0.7725532054901123
+      ],
+      "inputs_switching_layer": 0.2896808385848999,
+      "adjacent_hop_switch_rate": 0.1305319219827652,
+      "layer_counts": [
+        3943,
+        2849,
+        3931,
+        2973,
+        3173,
+        2878,
+        3054,
+        2971,
+        3139,
+        3413,
+        2964,
+        2312
+      ]
+    },
+    "max_abs_logit_error": 1.1444091796875e-05,
+    "prediction_agreement": 1.0,
+    "same_layer_sequence_fraction": 1.0,
+    "same_expert_sequence_fraction": 1.0,
+    "logits_within_tolerance": true
+  },
+  {
+    "mode": "gpu",
+    "dispatch": "gather",
+    "pinned": false,
+    "metrics": {
+      "accuracy": 0.7794680595397949,
+      "loss": 0.7359775900840759,
+      "group_accuracy_by_hop": [
+        0.6763829588890076,
+        0.7532978653907776,
+        0.7652127742767334,
+        0.7725532054901123
+      ],
+      "inputs_switching_layer": 0.2896808385848999,
+      "adjacent_hop_switch_rate": 0.1305319219827652,
+      "layer_counts": [
+        3943,
+        2849,
+        3931,
+        2973,
+        3173,
+        2878,
+        3054,
+        2971,
+        3139,
+        3413,
+        2964,
+        2312
+      ]
+    },
+    "max_abs_logit_error": 0.0,
+    "prediction_agreement": 1.0,
+    "same_layer_sequence_fraction": 1.0,
+    "same_expert_sequence_fraction": 1.0,
+    "logits_within_tolerance": true
+  },
+  {
+    "mode": "cpu_layers",
+    "dispatch": "gather",
+    "pinned": false,
+    "metrics": {
+      "accuracy": 0.7794680595397949,
+      "loss": 0.7359775900840759,
+      "group_accuracy_by_hop": [
+        0.6763829588890076,
+        0.7532978653907776,
+        0.7652127742767334,
+        0.7725532054901123
+      ],
+      "inputs_switching_layer": 0.2896808385848999,
+      "adjacent_hop_switch_rate": 0.1305319219827652,
+      "layer_counts": [
+        3943,
+        2849,
+        3931,
+        2973,
+        3173,
+        2878,
+        3054,
+        2971,
+        3139,
+        3413,
+        2964,
+        2312
+      ]
+    },
+    "max_abs_logit_error": 0.0,
+    "prediction_agreement": 1.0,
+    "same_layer_sequence_fraction": 1.0,
+    "same_expert_sequence_fraction": 1.0,
+    "logits_within_tolerance": true
+  },
+  {
+    "mode": "gpu_layers",
+    "dispatch": "gather",
+    "pinned": false,
+    "metrics": {
+      "accuracy": 0.7794680595397949,
+      "loss": 0.7359775900840759,
+      "group_accuracy_by_hop": [
+        0.6763829588890076,
+        0.7532978653907776,
+        0.7652127742767334,
+        0.7725532054901123
+      ],
+      "inputs_switching_layer": 0.2896808385848999,
+      "adjacent_hop_switch_rate": 0.1305319219827652,
+      "layer_counts": [
+        3943,
+        2849,
+        3931,
+        2973,
+        3173,
+        2878,
+        3054,
+        2971,
+        3139,
+        3413,
+        2964,
+        2312
+      ]
+    },
+    "max_abs_logit_error": 1.1444091796875e-05,
+    "prediction_agreement": 1.0,
+    "same_layer_sequence_fraction": 1.0,
+    "same_expert_sequence_fraction": 1.0,
+    "logits_within_tolerance": true
+  },
+  {
+    "mode": "gpu_layers",
+    "dispatch": "grouped",
+    "pinned": false,
+    "metrics": {
+      "accuracy": 0.7794680595397949,
+      "loss": 0.7359776496887207,
+      "group_accuracy_by_hop": [
+        0.6763829588890076,
+        0.7532978653907776,
+        0.7652127742767334,
+        0.7725532054901123
+      ],
+      "inputs_switching_layer": 0.2896808385848999,
+      "adjacent_hop_switch_rate": 0.1305319219827652,
+      "layer_counts": [
+        3943,
+        2849,
+        3931,
+        2973,
+        3173,
+        2878,
+        3054,
+        2971,
+        3139,
+        3413,
+        2964,
+        2312
+      ]
+    },
+    "max_abs_logit_error": 1.1444091796875e-05,
+    "prediction_agreement": 1.0,
+    "same_layer_sequence_fraction": 1.0,
+    "same_expert_sequence_fraction": 1.0,
+    "logits_within_tolerance": true
+  },
+  {
+    "mode": "gpu_layers",
+    "dispatch": "grouped",
+    "pinned": true,
+    "metrics": {
+      "accuracy": 0.7794680595397949,
+      "loss": 0.7359776496887207,
+      "group_accuracy_by_hop": [
+        0.6763829588890076,
+        0.7532978653907776,
+        0.7652127742767334,
+        0.7725532054901123
+      ],
+      "inputs_switching_layer": 0.2896808385848999,
+      "adjacent_hop_switch_rate": 0.1305319219827652,
+      "layer_counts": [
+        3943,
+        2849,
+        3931,
+        2973,
+        3173,
+        2878,
+        3054,
+        2971,
+        3139,
+        3413,
+        2964,
+        2312
+      ]
+    },
+    "max_abs_logit_error": 1.1444091796875e-05,
+    "prediction_agreement": 1.0,
+    "same_layer_sequence_fraction": 1.0,
+    "same_expert_sequence_fraction": 1.0,
+    "logits_within_tolerance": true
+  }
+]

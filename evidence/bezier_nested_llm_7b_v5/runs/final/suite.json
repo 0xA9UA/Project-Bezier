@@ -1,0 +1,133 @@
+{
+  "complete": true,
+  "primary_arm": "absolute",
+  "selection_sha256": "664cfc4ce12de9f6b3f26b2304de0435702dddceb94dd990cfa667e98c189828",
+  "tasks": {
+    "initial": {
+      "status": "complete",
+      "argv": [
+        "evaluate.py",
+        "--initial",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v4\\runs\\accuracy_main\\best_r000768_u001024",
+        "--selection-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\selection.json",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\initial"
+      ],
+      "exit_code": 0,
+      "seconds": 60.3977776998654
+    },
+    "absolute": {
+      "status": "complete",
+      "argv": [
+        "evaluate.py",
+        "--arm",
+        "absolute",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\absolute\\best_r000768_u001024",
+        "--selection-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\selection.json",
+        "--policy-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\absolute\\training_summary.json",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\absolute"
+      ],
+      "exit_code": 0,
+      "seconds": 274.9608233999461
+    },
+    "relative": {
+      "status": "complete",
+      "argv": [
+        "evaluate.py",
+        "--arm",
+        "relative",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\relative\\best_r000128_u000170",
+        "--selection-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\selection.json",
+        "--policy-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\relative\\training_summary.json",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\relative"
+      ],
+      "exit_code": 0,
+      "seconds": 280.3793398998678
+    },
+    "absolute_weight_sharing": {
+      "status": "complete",
+      "argv": [
+        "check_weight_sharing.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\absolute\\best_r000768_u001024",
+        "--reference",
+        "WORKSPACE\\bezier_nested_llm_7b_v4\\runs\\accuracy_main\\best_r000768_u001024",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\absolute_weight_sharing.json"
+      ],
+      "exit_code": 0,
+      "seconds": 45.84677549917251
+    },
+    "absolute_resident": {
+      "status": "complete",
+      "argv": [
+        "check_resident.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\absolute\\best_r000768_u001024",
+        "--policy-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\absolute\\training_summary.json",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\absolute_resident"
+      ],
+      "exit_code": 0,
+      "seconds": 22.810235200449824
+    },
+    "relative_weight_sharing": {
+      "status": "complete",
+      "argv": [
+        "check_weight_sharing.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\relative\\best_r000128_u000170",
+        "--reference",
+        "WORKSPACE\\bezier_nested_llm_7b_v4\\runs\\accuracy_main\\best_r000768_u001024",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\relative_weight_sharing.json"
+      ],
+      "exit_code": 0,
+      "seconds": 42.35032770037651
+    },
+    "relative_resident": {
+      "status": "complete",
+      "argv": [
+        "check_resident.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\relative\\best_r000128_u000170",
+        "--policy-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\relative\\training_summary.json",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\relative_resident"
+      ],
+      "exit_code": 0,
+      "seconds": 23.11697760038078
+    },
+    "generation": {
+      "status": "complete",
+      "argv": [
+        "generate.py",
+        "--model",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\absolute\\best_r000768_u001024",
+        "--policy-json",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\absolute\\training_summary.json",
+        "--prompt",
+        "Start with 12, add 5, then multiply by 2. Is the result A: 34 or B: 29? Reply with A or B.",
+        "--max-new-tokens",
+        "8",
+        "--output",
+        "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\final\\generation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 20.137143299914896
+    }
+  },
+  "current_task": null
+}

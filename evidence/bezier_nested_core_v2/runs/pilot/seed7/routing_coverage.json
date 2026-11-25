@@ -1,0 +1,95 @@
+{
+  "checkpoint": "WORKSPACE\\bezier_nested_core_v2\\runs\\pilot\\seed7\\nested-core-concurrent\\final.pt",
+  "checkpoint_sha256": "d859b3f6de56d9287b29f549aa04430db029291ba9cc37c5bbd604276253f2bf",
+  "checkpoint_step": 128,
+  "checkpoint_seed": 7,
+  "manifest": "WORKSPACE\\bezier_nested_core_v2\\corpus\\manifest.json",
+  "manifest_sha256": "fd946fb6162d9333d9ef9b02c88ad0195d101c91a68733b4ebbf60125ec6bd2e",
+  "source_sha256": {
+    "__init__.py": "523ca6358c1158c624d68a82897122329c5377c6fffbe7fb81c82de22caa8f7e",
+    "audits.py": "96e59a18ffa2bb79e725473e515592b1a05f98fbf747594cfe4a4d40033f831a",
+    "concurrent_engine.py": "e1fc374ba496b23f48cc20787e5bfccf0e355231c77d932607a331c86a67e326",
+    "data.py": "0c2ad4bfb239ef777b8bb3c3b464c11299ca937e5da132e02eb8b2797d45bc69",
+    "evaluation.py": "0f0a333946e51d8da3dbf95b4efe0128ace4e0f45fc11a277eed745c06edac6b",
+    "geometry.py": "2911f3468bee0abeaf1d077b26dd43db87e4b57cf52d9e29f464d4a9aaee36d1",
+    "model.py": "f59a8f33454d3ced58867d6513689975e533f7b0401626d2827f5e4530145026",
+    "reasoning_data.py": "8bc08b24c43c4408f203ee2a2347aac5131b6b871d5ad02b01f4270534b8e605",
+    "trainer.py": "ab561e8f7e7ec0df8c7cfa309f0dabfa1e93ef17493c9fb2e6533d73c3552d0e"
+  },
+  "source_matches_checkpoint": true,
+  "device": "cpu",
+  "mode": "pipeline_reference",
+  "scope": "entire capped test sample used by the pilot",
+  "split": "test",
+  "examples": 128,
+  "programs": 8,
+  "program_ids": [
+    "1522ae1e1ee7be89d6cfa9da733c562318e0aaa9aa25fb5319bf5f1847b4faac",
+    "2c882899156b6e76d03a3f98b52f34c03c8e7a77001214158b118bf73f46d7cd",
+    "4a4b45b7ba7853d5195f8b9f4d9ba8740ee485ef5c1ecb9036dedbc1842aa596",
+    "77ad0acf5037192d00ce2c6b569b1ef5bf9719da3352264febfe0bfd04f26b13",
+    "a35a7156906fe216138d850f1f76d6a4dcfe7e10860d8728b177731524c9e7a4",
+    "ae5631eb2a66b415ca633999dcac6f036e8190c95fe1e412e25375e0a1ca26b3",
+    "d8baac9cbcd3796d2ac1c7c5b8608f0c242485df72c4359b1cd0964e2e950d61",
+    "f4a7c5ec5a2e3a43c84590d10ddb0c7f2d5a5970d098cc9ad2d7a916831766e0"
+  ],
+  "batch_size": 16,
+  "visits": 16,
+  "threshold": 0.2,
+  "threshold_source": "validation-selected full-turn margin at16visits",
+  "input_target_sha256": "998491a35b39187cfa79232d77a3e95a8846c909ee5a13fa517d62c8b2e40835",
+  "core_radius": 0.25,
+  "total_visits": 2048,
+  "total_expert_calls": 4096,
+  "core_selected_visits": 1984,
+  "core_selected_visit_fraction": 0.96875,
+  "outside_core_radius_visits": 1776,
+  "core_selected_outside_radius_visits": 1712,
+  "visit_radius_minmax": [
+    0.2210472673177719,
+    0.838537335395813
+  ],
+  "core_mixture_weight_mean": 0.380885021895665,
+  "core_mixture_weight_minmax": [
+    0.0,
+    0.7957730889320374
+  ],
+  "shell_expert_call_counts": {
+    "1": 48,
+    "2": 1424,
+    "3": 0,
+    "4": 0,
+    "5": 640,
+    "6": 0,
+    "7": 0
+  },
+  "shell_experts_used": 3,
+  "shell_experts_available": 7,
+  "selected_expert_pairs": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      2
+    ]
+  ],
+  "interpretation": "The central location is a fixed parameter address. Nearest-two-center routing is not a hard radial execution gate: the core can execute while the cursor is outside radius0.25. A trajectory core-entry fraction of1 means each curve intersects the core ball at least once, not that every visit lies inside. The pilot primarily uses the core plus two shell regions; four shell experts are unused on this sample. This is limited observed routing coverage, not demonstrated broad shell exploration."
+}

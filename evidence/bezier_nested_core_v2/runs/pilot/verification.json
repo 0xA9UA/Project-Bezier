@@ -1,0 +1,83 @@
+{
+  "revision": 2,
+  "setup_status": "verified",
+  "tests_passed": 48,
+  "completed_arms": 7,
+  "updates_per_arm": 128,
+  "core_budget": 1312,
+  "same_whole_core_budget_both_tiers": true,
+  "shared_added_checker_parameters": 0,
+  "all_core_tensors_receive_outer_control_reasoning_gradients": true,
+  "outer_encoder_receives_control_gradients": true,
+  "direct_core_reasoning_uses_outer_encoder": false,
+  "corpus_programs": {
+    "train": {
+      "files": 128,
+      "prefixes": 2048,
+      "positive_answers": 1024,
+      "sha256": "cbda78d5d2f8a5e5df78fca93f755f30902e5ff7cd8e67c2d66fcb302cc37f15"
+    },
+    "validation": {
+      "files": 32,
+      "prefixes": 512,
+      "positive_answers": 256,
+      "sha256": "a756378d45798adaa8e04f27bb053be433e74f2c1e2539bd0a8f796882cbb5a9"
+    },
+    "test": {
+      "files": 32,
+      "prefixes": 512,
+      "positive_answers": 256,
+      "sha256": "1867085eaff31339175b6c12965a5849245810244f9c95c451214943ac722de3"
+    },
+    "ood": {
+      "files": 32,
+      "prefixes": 512,
+      "positive_answers": 256,
+      "sha256": "93daf36e3c80807228a392654fd218f03ed51a4c9a639f9954d068fd30dbe99b"
+    }
+  },
+  "cuda_eager_overlap": true,
+  "cuda_graph_overlap": true,
+  "core_reasoning_test_accuracy": 0.5078125,
+  "core_reasoning_ood_accuracy": 0.46875,
+  "sample_quality_criteria_passed": false,
+  "scientific_success": "pilot_only",
+  "full_study_executed": false,
+  "parameter_tiers": [
+    {
+      "tier": 1,
+      "total_params": 175328,
+      "added_params": 0,
+      "core_params": 1312,
+      "spatial_core_params": 1312,
+      "checker_params": 1312,
+      "core_budget": 1312,
+      "core_fraction": 0.007483117357181967,
+      "shared": true,
+      "core_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shell_experts": 7
+    },
+    {
+      "tier": 2,
+      "total_params": 4471072,
+      "added_params": 0,
+      "core_params": 1312,
+      "spatial_core_params": 1312,
+      "checker_params": 1312,
+      "core_budget": 1312,
+      "core_fraction": 0.00029344193070476166,
+      "shared": true,
+      "core_center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "shell_experts": 15
+    }
+  ],
+  "report": "WORKSPACE\\bezier_nested_core_v2\\runs\\pilot\\report.md"
+}

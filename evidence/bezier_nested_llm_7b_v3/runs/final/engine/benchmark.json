@@ -1,0 +1,874 @@
+{
+  "model": "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\best_u000512",
+  "checkpoint_completion_sha256": "29cd36b1c842011a9f843094d38d5f85071f26e7556996d2b787b8b1a782c5f3",
+  "parameters": {
+    "total_params": 7248023552,
+    "core_params": 1087201280,
+    "core_fraction": 0.14999968918423293,
+    "added_params": 0,
+    "core_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "core_radius": 0.25,
+    "core_layers": 5,
+    "core_mlp_neurons": 14061,
+    "shared": true,
+    "core_passes": 1,
+    "control_passes": 1,
+    "control_readout_mode": "answer_margin",
+    "core_executed_layers": 5,
+    "full_core_mlp_addresses": [
+      17,
+      18,
+      19,
+      20
+    ],
+    "parameter_aliases": {
+      "model.embed_tokens.weight": true,
+      "lm_head.weight": true,
+      "model.norm.weight": true,
+      "model.layers.17.self_attn.q_proj.weight": true,
+      "model.layers.17.self_attn.k_proj.weight": true,
+      "model.layers.17.self_attn.v_proj.weight": true,
+      "model.layers.17.self_attn.o_proj.weight": true,
+      "model.layers.17.mlp.gate_proj.weight": true,
+      "model.layers.17.mlp.up_proj.weight": true,
+      "model.layers.17.mlp.down_proj.weight": true,
+      "model.layers.17.input_layernorm.weight": true,
+      "model.layers.17.post_attention_layernorm.weight": true,
+      "model.layers.18.self_attn.q_proj.weight": true,
+      "model.layers.18.self_attn.k_proj.weight": true,
+      "model.layers.18.self_attn.v_proj.weight": true,
+      "model.layers.18.self_attn.o_proj.weight": true,
+      "model.layers.18.mlp.gate_proj.weight": true,
+      "model.layers.18.mlp.up_proj.weight": true,
+      "model.layers.18.mlp.down_proj.weight": true,
+      "model.layers.18.input_layernorm.weight": true,
+      "model.layers.18.post_attention_layernorm.weight": true,
+      "model.layers.19.self_attn.q_proj.weight": true,
+      "model.layers.19.self_attn.k_proj.weight": true,
+      "model.layers.19.self_attn.v_proj.weight": true,
+      "model.layers.19.self_attn.o_proj.weight": true,
+      "model.layers.19.mlp.gate_proj.weight": true,
+      "model.layers.19.mlp.up_proj.weight": true,
+      "model.layers.19.mlp.down_proj.weight": true,
+      "model.layers.19.input_layernorm.weight": true,
+      "model.layers.19.post_attention_layernorm.weight": true,
+      "model.layers.20.self_attn.q_proj.weight": true,
+      "model.layers.20.self_attn.k_proj.weight": true,
+      "model.layers.20.self_attn.v_proj.weight": true,
+      "model.layers.20.self_attn.o_proj.weight": true,
+      "model.layers.20.mlp.gate_proj.weight": true,
+      "model.layers.20.mlp.up_proj.weight": true,
+      "model.layers.20.mlp.down_proj.weight": true,
+      "model.layers.20.input_layernorm.weight": true,
+      "model.layers.20.post_attention_layernorm.weight": true,
+      "model.layers.21.self_attn.q_proj.weight": true,
+      "model.layers.21.self_attn.k_proj.weight": true,
+      "model.layers.21.self_attn.v_proj.weight": true,
+      "model.layers.21.self_attn.o_proj.weight": true,
+      "model.layers.21.mlp.gate_proj.weight": true,
+      "model.layers.21.mlp.up_proj.weight": true,
+      "model.layers.21.mlp.down_proj.weight": true,
+      "model.layers.21.input_layernorm.weight": true,
+      "model.layers.21.post_attention_layernorm.weight": true
+    },
+    "core_tensors": {
+      "model.embed_tokens.weight": [
+        2,
+        4096
+      ],
+      "lm_head.weight": [
+        2,
+        4096
+      ],
+      "model.norm.weight": [
+        4096
+      ],
+      "model.layers.17.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.17.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.17.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.17.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.17.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.17.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.17.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.17.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.17.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.18.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.18.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.18.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.18.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.18.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.18.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.18.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.18.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.18.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.19.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.19.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.19.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.19.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.19.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.19.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.19.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.19.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.19.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.20.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.20.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.20.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.20.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.20.mlp.gate_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.20.mlp.up_proj.weight": [
+        14336,
+        4096
+      ],
+      "model.layers.20.mlp.down_proj.weight": [
+        4096,
+        14336
+      ],
+      "model.layers.20.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.20.post_attention_layernorm.weight": [
+        4096
+      ],
+      "model.layers.21.self_attn.q_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.21.self_attn.k_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.21.self_attn.v_proj.weight": [
+        1024,
+        4096
+      ],
+      "model.layers.21.self_attn.o_proj.weight": [
+        4096,
+        4096
+      ],
+      "model.layers.21.mlp.gate_proj.weight": [
+        14061,
+        4096
+      ],
+      "model.layers.21.mlp.up_proj.weight": [
+        14061,
+        4096
+      ],
+      "model.layers.21.mlp.down_proj.weight": [
+        4096,
+        14061
+      ],
+      "model.layers.21.input_layernorm.weight": [
+        4096
+      ],
+      "model.layers.21.post_attention_layernorm.weight": [
+        4096
+      ]
+    },
+    "interface_included": [
+      "two_embedding_rows",
+      "two_language_head_rows",
+      "final_norm"
+    ],
+    "routing_scope": "one MLP substitution; original attention order; no KV cache",
+    "core_indices": [
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "partial_core_layer": 21,
+    "controller_anchor_token_ids": [
+      7871,
+      18407
+    ],
+    "control_output_token_ids": [
+      1098,
+      1133
+    ],
+    "controller_role": "predict continuation utility from live activation and geometry",
+    "standalone_core_language_model": false
+  },
+  "dtype": "bfloat16",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "scope": "Runtime equivalence on4 fixed validation prompts, not an accuracy benchmark; same weights and operations.",
+  "batch_size": 4,
+  "prompt_shape": [
+    4,
+    139
+  ],
+  "repeats": 3,
+  "generation_tokens": 8,
+  "mode_order": "streamed,resident",
+  "controlled_policy": {
+    "source": "completed_training_summary",
+    "path": "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\training_summary.json",
+    "sha256": "96e92e3971cbfbab06d53c76efd53b2f8629584dda6fbd91dc97b2588812da4a",
+    "selected_checkpoint": "WORKSPACE\\bezier_nested_llm_7b_v3\\runs\\controller_recovery\\best_u000512",
+    "values": {
+      "decision_layer": 16,
+      "alternative_layer": 17,
+      "threshold": 1.0
+    }
+  },
+  "benchmark_script_sha256": "26e8f4b387a705fe68383c7959dcd15a5d8555946e9b80534afbf4d7772489e5",
+  "timing_note": "Cold means coldGPUweightcache, notcoldOSdiskcache. Fixedmodeorderanddesktoploadcaninfluencetiming.",
+  "modes": {
+    "streamed": {
+      "initialization_seconds": 1.0006071999669075,
+      "initial_allocated_bytes": 0,
+      "initial_reserved_bytes": 0,
+      "cases": {
+        "disabled": {
+          "cold_seconds": 4.260024200193584,
+          "repeat_seconds": [
+            1.225624899379909,
+            1.1776733007282019,
+            1.1466000005602837
+          ],
+          "median_seconds": 1.1776733007282019,
+          "engine": {
+            "calls": 4,
+            "failures": 0,
+            "loads": 108,
+            "evictions": 106,
+            "cache_hits": 432,
+            "staged_parameter_bytes": 47112192000,
+            "h2d_parameter_bytes": 47112192000,
+            "stage_wall_seconds": 7.392458401620388,
+            "max_cached_blocks": 2,
+            "max_logical_resident_parameter_bytes": 3590447104,
+            "mode": "streamed",
+            "device": "cuda:0",
+            "cache_capacity_blocks": 2,
+            "cache_capacity_bytes": 872448000,
+            "cached_layers": [
+              30,
+              31
+            ],
+            "hot_layers": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "total_unique_parameters": 7248023552,
+            "total_parameter_bytes": 14496047104,
+            "logical_core_parameters": 1087201280,
+            "logical_core_parameter_bytes": 2174402560,
+            "hot_parameter_bytes": 2717999104,
+            "extra_hot_noncore_parameter_bytes": 543596544,
+            "current_logical_resident_parameter_bytes": 3590447104,
+            "cpu_shell_backing_bytes": 11778048000,
+            "actual_cuda_parameter_bytes": 3590447104,
+            "registered_buffer_bytes": 295564,
+            "learned_parameters_added": 0,
+            "weights_shared": true,
+            "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+            "cpu_target_note": null,
+            "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+          }
+        },
+        "controlled": {
+          "cold_seconds": 1.3609025003388524,
+          "repeat_seconds": [
+            1.2835206994786859,
+            1.1472503002732992,
+            1.2081193998456001
+          ],
+          "median_seconds": 1.2081193998456001,
+          "engine": {
+            "calls": 4,
+            "failures": 0,
+            "loads": 108,
+            "evictions": 106,
+            "cache_hits": 432,
+            "staged_parameter_bytes": 47112192000,
+            "h2d_parameter_bytes": 47112192000,
+            "stage_wall_seconds": 4.609237002208829,
+            "max_cached_blocks": 2,
+            "max_logical_resident_parameter_bytes": 3590447104,
+            "mode": "streamed",
+            "device": "cuda:0",
+            "cache_capacity_blocks": 2,
+            "cache_capacity_bytes": 872448000,
+            "cached_layers": [
+              30,
+              31
+            ],
+            "hot_layers": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "total_unique_parameters": 7248023552,
+            "total_parameter_bytes": 14496047104,
+            "logical_core_parameters": 1087201280,
+            "logical_core_parameter_bytes": 2174402560,
+            "hot_parameter_bytes": 2717999104,
+            "extra_hot_noncore_parameter_bytes": 543596544,
+            "current_logical_resident_parameter_bytes": 3590447104,
+            "cpu_shell_backing_bytes": 11778048000,
+            "actual_cuda_parameter_bytes": 3590447104,
+            "registered_buffer_bytes": 295564,
+            "learned_parameters_added": 0,
+            "weights_shared": true,
+            "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+            "cpu_target_note": null,
+            "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+          }
+        },
+        "outer_alternate_turn": {
+          "cold_seconds": 1.2087531005963683,
+          "repeat_seconds": [
+            1.2971958005800843,
+            1.2279738998040557,
+            1.204751799814403
+          ],
+          "median_seconds": 1.2279738998040557,
+          "engine": {
+            "calls": 12,
+            "failures": 0,
+            "loads": 108,
+            "evictions": 106,
+            "cache_hits": 428,
+            "staged_parameter_bytes": 47112192000,
+            "h2d_parameter_bytes": 47112192000,
+            "stage_wall_seconds": 4.779128595255315,
+            "max_cached_blocks": 2,
+            "max_logical_resident_parameter_bytes": 3590447104,
+            "mode": "streamed",
+            "device": "cuda:0",
+            "cache_capacity_blocks": 2,
+            "cache_capacity_bytes": 872448000,
+            "cached_layers": [
+              30,
+              31
+            ],
+            "hot_layers": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "total_unique_parameters": 7248023552,
+            "total_parameter_bytes": 14496047104,
+            "logical_core_parameters": 1087201280,
+            "logical_core_parameter_bytes": 2174402560,
+            "hot_parameter_bytes": 2717999104,
+            "extra_hot_noncore_parameter_bytes": 543596544,
+            "current_logical_resident_parameter_bytes": 3590447104,
+            "cpu_shell_backing_bytes": 11778048000,
+            "actual_cuda_parameter_bytes": 3590447104,
+            "registered_buffer_bytes": 295564,
+            "learned_parameters_added": 0,
+            "weights_shared": true,
+            "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+            "cpu_target_note": null,
+            "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+          }
+        },
+        "outer_alternate_mixed": {
+          "cold_seconds": 1.1910060998052359,
+          "repeat_seconds": [
+            1.2263376992195845,
+            1.1631864001974463,
+            1.1826712004840374
+          ],
+          "median_seconds": 1.1826712004840374,
+          "engine": {
+            "calls": 12,
+            "failures": 0,
+            "loads": 108,
+            "evictions": 106,
+            "cache_hits": 432,
+            "staged_parameter_bytes": 47112192000,
+            "h2d_parameter_bytes": 47112192000,
+            "stage_wall_seconds": 4.602391595952213,
+            "max_cached_blocks": 2,
+            "max_logical_resident_parameter_bytes": 3590447104,
+            "mode": "streamed",
+            "device": "cuda:0",
+            "cache_capacity_blocks": 2,
+            "cache_capacity_bytes": 872448000,
+            "cached_layers": [
+              30,
+              31
+            ],
+            "hot_layers": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "total_unique_parameters": 7248023552,
+            "total_parameter_bytes": 14496047104,
+            "logical_core_parameters": 1087201280,
+            "logical_core_parameter_bytes": 2174402560,
+            "hot_parameter_bytes": 2717999104,
+            "extra_hot_noncore_parameter_bytes": 543596544,
+            "current_logical_resident_parameter_bytes": 3590447104,
+            "cpu_shell_backing_bytes": 11778048000,
+            "actual_cuda_parameter_bytes": 3590447104,
+            "registered_buffer_bytes": 295564,
+            "learned_parameters_added": 0,
+            "weights_shared": true,
+            "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+            "cpu_target_note": null,
+            "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+          }
+        }
+      },
+      "generation": {
+        "token_ids": [
+          1098,
+          2,
+          1098,
+          2,
+          1098,
+          2,
+          1098,
+          2
+        ],
+        "seconds": 9.464574299752712,
+        "kv_cache": false
+      },
+      "peak_allocated_bytes": 3695893504,
+      "peak_reserved_bytes": 3749707776,
+      "process_rss_bytes": 14614188032,
+      "current_allocation": {
+        "calls": 20,
+        "failures": 0,
+        "loads": 324,
+        "evictions": 322,
+        "cache_hits": 1296,
+        "staged_parameter_bytes": 141336576000,
+        "h2d_parameter_bytes": 141336576000,
+        "stage_wall_seconds": 13.704100686125457,
+        "max_cached_blocks": 2,
+        "max_logical_resident_parameter_bytes": 3590447104,
+        "mode": "streamed",
+        "device": "cuda:0",
+        "cache_capacity_blocks": 2,
+        "cache_capacity_bytes": 872448000,
+        "cached_layers": [
+          30,
+          31
+        ],
+        "hot_layers": [
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "total_unique_parameters": 7248023552,
+        "total_parameter_bytes": 14496047104,
+        "logical_core_parameters": 1087201280,
+        "logical_core_parameter_bytes": 2174402560,
+        "hot_parameter_bytes": 2717999104,
+        "extra_hot_noncore_parameter_bytes": 543596544,
+        "current_logical_resident_parameter_bytes": 3590447104,
+        "cpu_shell_backing_bytes": 11778048000,
+        "actual_cuda_parameter_bytes": 3590447104,
+        "registered_buffer_bytes": 295564,
+        "learned_parameters_added": 0,
+        "weights_shared": true,
+        "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+        "cpu_target_note": null,
+        "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+      },
+      "core_gpu_storage_stable": true
+    },
+    "resident": {
+      "initialization_seconds": 1.640485999174416,
+      "initial_allocated_bytes": 8519680,
+      "initial_reserved_bytes": 20971520,
+      "cases": {
+        "disabled": {
+          "cold_seconds": 0.07007039990276098,
+          "repeat_seconds": [
+            0.06891350075602531,
+            0.0689682001248002,
+            0.06995939929038286
+          ],
+          "median_seconds": 0.0689682001248002,
+          "engine": {
+            "calls": 4,
+            "failures": 0,
+            "loads": 0,
+            "evictions": 0,
+            "cache_hits": 0,
+            "staged_parameter_bytes": 0,
+            "h2d_parameter_bytes": 0,
+            "stage_wall_seconds": 0.0,
+            "max_cached_blocks": 0,
+            "max_logical_resident_parameter_bytes": 14496047104,
+            "mode": "resident",
+            "device": "cuda:0",
+            "cache_capacity_blocks": 2,
+            "cache_capacity_bytes": 872448000,
+            "cached_layers": [],
+            "hot_layers": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "total_unique_parameters": 7248023552,
+            "total_parameter_bytes": 14496047104,
+            "logical_core_parameters": 1087201280,
+            "logical_core_parameter_bytes": 2174402560,
+            "hot_parameter_bytes": 2717999104,
+            "extra_hot_noncore_parameter_bytes": 543596544,
+            "current_logical_resident_parameter_bytes": 14496047104,
+            "cpu_shell_backing_bytes": 11778048000,
+            "actual_cuda_parameter_bytes": 14496047104,
+            "registered_buffer_bytes": 295564,
+            "learned_parameters_added": 0,
+            "weights_shared": true,
+            "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+            "cpu_target_note": null,
+            "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+          }
+        },
+        "controlled": {
+          "cold_seconds": 0.11263700015842915,
+          "repeat_seconds": [
+            0.07997590024024248,
+            0.07966130040585995,
+            0.07896040007472038
+          ],
+          "median_seconds": 0.07966130040585995,
+          "engine": {
+            "calls": 4,
+            "failures": 0,
+            "loads": 0,
+            "evictions": 0,
+            "cache_hits": 0,
+            "staged_parameter_bytes": 0,
+            "h2d_parameter_bytes": 0,
+            "stage_wall_seconds": 0.0,
+            "max_cached_blocks": 0,
+            "max_logical_resident_parameter_bytes": 14496047104,
+            "mode": "resident",
+            "device": "cuda:0",
+            "cache_capacity_blocks": 2,
+            "cache_capacity_bytes": 872448000,
+            "cached_layers": [],
+            "hot_layers": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "total_unique_parameters": 7248023552,
+            "total_parameter_bytes": 14496047104,
+            "logical_core_parameters": 1087201280,
+            "logical_core_parameter_bytes": 2174402560,
+            "hot_parameter_bytes": 2717999104,
+            "extra_hot_noncore_parameter_bytes": 543596544,
+            "current_logical_resident_parameter_bytes": 14496047104,
+            "cpu_shell_backing_bytes": 11778048000,
+            "actual_cuda_parameter_bytes": 14496047104,
+            "registered_buffer_bytes": 295564,
+            "learned_parameters_added": 0,
+            "weights_shared": true,
+            "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+            "cpu_target_note": null,
+            "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+          }
+        },
+        "outer_alternate_turn": {
+          "cold_seconds": 0.0704415999352932,
+          "repeat_seconds": [
+            0.07048969995230436,
+            0.07104089949280024,
+            0.06953700073063374
+          ],
+          "median_seconds": 0.07048969995230436,
+          "engine": {
+            "calls": 12,
+            "failures": 0,
+            "loads": 0,
+            "evictions": 0,
+            "cache_hits": 0,
+            "staged_parameter_bytes": 0,
+            "h2d_parameter_bytes": 0,
+            "stage_wall_seconds": 0.0,
+            "max_cached_blocks": 0,
+            "max_logical_resident_parameter_bytes": 14496047104,
+            "mode": "resident",
+            "device": "cuda:0",
+            "cache_capacity_blocks": 2,
+            "cache_capacity_bytes": 872448000,
+            "cached_layers": [],
+            "hot_layers": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "total_unique_parameters": 7248023552,
+            "total_parameter_bytes": 14496047104,
+            "logical_core_parameters": 1087201280,
+            "logical_core_parameter_bytes": 2174402560,
+            "hot_parameter_bytes": 2717999104,
+            "extra_hot_noncore_parameter_bytes": 543596544,
+            "current_logical_resident_parameter_bytes": 14496047104,
+            "cpu_shell_backing_bytes": 11778048000,
+            "actual_cuda_parameter_bytes": 14496047104,
+            "registered_buffer_bytes": 295564,
+            "learned_parameters_added": 0,
+            "weights_shared": true,
+            "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+            "cpu_target_note": null,
+            "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+          }
+        },
+        "outer_alternate_mixed": {
+          "cold_seconds": 0.07293539959937334,
+          "repeat_seconds": [
+            0.07176529988646507,
+            0.07202980015426874,
+            0.07199649978429079
+          ],
+          "median_seconds": 0.07199649978429079,
+          "engine": {
+            "calls": 12,
+            "failures": 0,
+            "loads": 0,
+            "evictions": 0,
+            "cache_hits": 0,
+            "staged_parameter_bytes": 0,
+            "h2d_parameter_bytes": 0,
+            "stage_wall_seconds": 0.0,
+            "max_cached_blocks": 0,
+            "max_logical_resident_parameter_bytes": 14496047104,
+            "mode": "resident",
+            "device": "cuda:0",
+            "cache_capacity_blocks": 2,
+            "cache_capacity_bytes": 872448000,
+            "cached_layers": [],
+            "hot_layers": [
+              17,
+              18,
+              19,
+              20,
+              21
+            ],
+            "total_unique_parameters": 7248023552,
+            "total_parameter_bytes": 14496047104,
+            "logical_core_parameters": 1087201280,
+            "logical_core_parameter_bytes": 2174402560,
+            "hot_parameter_bytes": 2717999104,
+            "extra_hot_noncore_parameter_bytes": 543596544,
+            "current_logical_resident_parameter_bytes": 14496047104,
+            "cpu_shell_backing_bytes": 11778048000,
+            "actual_cuda_parameter_bytes": 14496047104,
+            "registered_buffer_bytes": 295564,
+            "learned_parameters_added": 0,
+            "weights_shared": true,
+            "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+            "cpu_target_note": null,
+            "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+          }
+        }
+      },
+      "generation": {
+        "token_ids": [
+          1098,
+          2,
+          1098,
+          2,
+          1098,
+          2,
+          1098,
+          2
+        ],
+        "seconds": 0.32458730041980743,
+        "kv_cache": false
+      },
+      "peak_allocated_bytes": 14600051712,
+      "peak_reserved_bytes": 14761852928,
+      "process_rss_bytes": 15118794752,
+      "current_allocation": {
+        "calls": 20,
+        "failures": 0,
+        "loads": 0,
+        "evictions": 0,
+        "cache_hits": 0,
+        "staged_parameter_bytes": 0,
+        "h2d_parameter_bytes": 0,
+        "stage_wall_seconds": 0.0,
+        "max_cached_blocks": 0,
+        "max_logical_resident_parameter_bytes": 14496047104,
+        "mode": "resident",
+        "device": "cuda:0",
+        "cache_capacity_blocks": 2,
+        "cache_capacity_bytes": 872448000,
+        "cached_layers": [],
+        "hot_layers": [
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "total_unique_parameters": 7248023552,
+        "total_parameter_bytes": 14496047104,
+        "logical_core_parameters": 1087201280,
+        "logical_core_parameter_bytes": 2174402560,
+        "hot_parameter_bytes": 2717999104,
+        "extra_hot_noncore_parameter_bytes": 543596544,
+        "current_logical_resident_parameter_bytes": 14496047104,
+        "cpu_shell_backing_bytes": 11778048000,
+        "actual_cuda_parameter_bytes": 14496047104,
+        "registered_buffer_bytes": 295564,
+        "learned_parameters_added": 0,
+        "weights_shared": true,
+        "stage_timing_note": "Synchronous staging wall time includes allocation, transfer and waiting for prior queued GPU work; not isolated PCIe time.",
+        "cpu_target_note": null,
+        "scope": "Weight residency only; activations, allocator reserve, KV cache and driver memory require separate measurement."
+      },
+      "core_gpu_storage_stable": true
+    }
+  },
+  "equivalence": {
+    "disabled": {
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "raw_predictions_equal": true,
+      "route_decisions_equal": true
+    },
+    "controlled": {
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "raw_predictions_equal": true,
+      "route_decisions_equal": true
+    },
+    "outer_alternate_turn": {
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "raw_predictions_equal": true,
+      "route_decisions_equal": true
+    },
+    "outer_alternate_mixed": {
+      "logits_bitwise_equal": true,
+      "max_abs_logit_difference": 0.0,
+      "raw_predictions_equal": true,
+      "route_decisions_equal": true
+    }
+  },
+  "source_sha256": {
+    "model.py": "4961d1a1ae7b55de8ae65f1fbe4ee775f6250a095713a051154c4a782261330c",
+    "engine.py": "2f1a711f10b900ac8fddceaa6c8fac260f03f57d815f420e4cc751a2f84eeb57"
+  },
+  "complete": true,
+  "generation_tokens_equal": true,
+  "peak_allocated_reduction_fraction": 0.7468575059249762,
+  "interpretation": "ReducedGPUresidencyfromCPUweightstreaming. Noaddedlearnedparameters; notmodelcompression,noveltyproof,oraccuracygain. Transferlatencyandhostmemoryreported.",
+  "elapsed_seconds": 47.53566400054842
+}

@@ -1,0 +1,874 @@
+{
+  "models": [
+    {
+      "tokens": 32768,
+      "nll": 2.886860464888115,
+      "perplexity": 17.936907558702252,
+      "questions": 512,
+      "accuracy": 0.826171875,
+      "name": "reference",
+      "label": "Original BF16",
+      "stored_bytes": 58553540608,
+      "accuracy_change_pp": 0.0,
+      "qa_difference_95_interval_pp": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "losses": 0,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "reference_correct_retained": 1.0,
+      "retained_count": 423,
+      "reference_correct_count": 423,
+      "retention_95_interval": [
+        1.0,
+        1.0
+      ],
+      "perplexity_ratio": 1.0,
+      "perplexity_ratio_95_interval": [
+        1.0,
+        1.0
+      ],
+      "next_token_agreement": 1.0,
+      "passed": true
+    },
+    {
+      "tokens": 32768,
+      "nll": 2.8914757848838386,
+      "perplexity": 18.019883459696565,
+      "questions": 512,
+      "accuracy": 0.80859375,
+      "name": "parent6",
+      "label": "Six-bit shared parent",
+      "stored_bytes": 23579372827,
+      "accuracy_change_pp": -1.7578125,
+      "qa_difference_95_interval_pp": [
+        -3.515625,
+        0.0
+      ],
+      "wins": 7,
+      "losses": 16,
+      "mcnemar_exact_two_sided_p": 0.0931396484375,
+      "reference_correct_retained": 0.9621749408983451,
+      "retained_count": 407,
+      "reference_correct_count": 423,
+      "retention_95_interval": [
+        0.943127962085308,
+        0.9790209790209791
+      ],
+      "perplexity_ratio": 1.004625986989271,
+      "perplexity_ratio_95_interval": [
+        0.9977483861919197,
+        1.011957234328193
+      ],
+      "next_token_agreement": 0.877716064453125,
+      "passed": true
+    },
+    {
+      "tokens": 32768,
+      "nll": 2.948689402571842,
+      "perplexity": 19.080929916066733,
+      "questions": 512,
+      "accuracy": 0.82421875,
+      "name": "fixed4",
+      "label": "Fixed 4-bit Bézier",
+      "stored_bytes": 16566408624,
+      "accuracy_change_pp": -0.1953125,
+      "qa_difference_95_interval_pp": [
+        -2.34375,
+        1.7578125
+      ],
+      "wins": 14,
+      "losses": 15,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "reference_correct_retained": 0.9645390070921985,
+      "retained_count": 408,
+      "reference_correct_count": 423,
+      "retention_95_interval": [
+        0.9467312348668281,
+        0.9810437744389544
+      ],
+      "perplexity_ratio": 1.0637803564310313,
+      "perplexity_ratio_95_interval": [
+        1.052702894131179,
+        1.0754253962481255
+      ],
+      "next_token_agreement": 0.81719970703125,
+      "passed": true
+    },
+    {
+      "tokens": 32768,
+      "nll": 2.9030947262693942,
+      "perplexity": 18.23047649428911,
+      "questions": 512,
+      "accuracy": 0.80859375,
+      "name": "selected_rl",
+      "label": "RL mixed Bézier",
+      "stored_bytes": 17677915527,
+      "accuracy_change_pp": -1.7578125,
+      "qa_difference_95_interval_pp": [
+        -3.7109375,
+        0.1953125
+      ],
+      "wins": 9,
+      "losses": 18,
+      "mcnemar_exact_two_sided_p": 0.12207812070846558,
+      "reference_correct_retained": 0.9574468085106383,
+      "retained_count": 405,
+      "reference_correct_count": 423,
+      "retention_95_interval": [
+        0.9379277346972447,
+        0.975788387081681
+      ],
+      "perplexity_ratio": 1.0163667529994285,
+      "perplexity_ratio_95_interval": [
+        1.0064972587667622,
+        1.0268391703318422
+      ],
+      "next_token_agreement": 0.83026123046875,
+      "passed": true
+    },
+    {
+      "tokens": 32768,
+      "nll": 2.926891257581482,
+      "perplexity": 18.669501518174727,
+      "questions": 512,
+      "accuracy": 0.818359375,
+      "name": "selected_random",
+      "label": "Random mixed Bézier",
+      "stored_bytes": 16788712022,
+      "accuracy_change_pp": -0.78125,
+      "qa_difference_95_interval_pp": [
+        -2.9296875,
+        1.3671875
+      ],
+      "wins": 15,
+      "losses": 19,
+      "mcnemar_exact_two_sided_p": 0.6075913612730801,
+      "reference_correct_retained": 0.9550827423167849,
+      "retained_count": 404,
+      "reference_correct_count": 423,
+      "retention_95_interval": [
+        0.9345756090087329,
+        0.9739336492890995
+      ],
+      "perplexity_ratio": 1.040842824052859,
+      "perplexity_ratio_95_interval": [
+        1.0312355451059474,
+        1.0510900294928314
+      ],
+      "next_token_agreement": 0.82196044921875,
+      "passed": true
+    }
+  ],
+  "rl_paired_comparisons": {
+    "parent6": {
+      "accuracy_change_pp": 0.0,
+      "qa_difference_95_interval_pp": [
+        -1.7578125,
+        1.7578125
+      ],
+      "wins": 11,
+      "losses": 11,
+      "mcnemar_exact_two_sided_p": 1.0,
+      "reference_correct_retained": 0.9734299516908212,
+      "retained_count": 403,
+      "reference_correct_count": 414,
+      "retention_95_interval": [
+        0.9572446555819477,
+        0.9878345498783455
+      ],
+      "perplexity_ratio": 1.0116867034719486,
+      "perplexity_ratio_95_interval": [
+        1.0043794852448942,
+        1.0192585840687143
+      ],
+      "next_token_agreement": 0.860015869140625
+    },
+    "fixed4": {
+      "accuracy_change_pp": -1.5625,
+      "qa_difference_95_interval_pp": [
+        -2.9296875,
+        -0.1953125
+      ],
+      "wins": 3,
+      "losses": 11,
+      "mcnemar_exact_two_sided_p": 0.057373046875,
+      "reference_correct_retained": 0.9739336492890995,
+      "retained_count": 411,
+      "reference_correct_count": 422,
+      "retention_95_interval": [
+        0.9582365164151707,
+        0.9882075471698113
+      ],
+      "perplexity_ratio": 0.9554291417913798,
+      "perplexity_ratio_95_interval": [
+        0.9487702759458866,
+        0.9622338049001606
+      ],
+      "next_token_agreement": 0.886383056640625
+    },
+    "selected_random": {
+      "accuracy_change_pp": -0.9765625,
+      "qa_difference_95_interval_pp": [
+        -2.734375,
+        0.78125
+      ],
+      "wins": 7,
+      "losses": 12,
+      "mcnemar_exact_two_sided_p": 0.359283447265625,
+      "reference_correct_retained": 0.9713603818615751,
+      "retained_count": 407,
+      "reference_correct_count": 419,
+      "retention_95_interval": [
+        0.9548666723221355,
+        0.9876237623762376
+      ],
+      "perplexity_ratio": 0.9764843735405455,
+      "perplexity_ratio_95_interval": [
+        0.9703853661339353,
+        0.9826391142291037
+      ],
+      "next_token_agreement": 0.89715576171875
+    }
+  },
+  "rl_storage_reduction_from_parent": 0.2502805033576816,
+  "rl_storage_reduction_from_original_payload": 0.6980897253447264,
+  "selection": {
+    "candidates": [
+      {
+        "sections": [
+          4,
+          4,
+          4,
+          4,
+          6,
+          6,
+          4,
+          4,
+          3,
+          4,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "nll": 3.1053466796875,
+        "size_bytes": 17061346635,
+        "seconds": 8.471436900086701,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": 0.18964384218007346,
+        "episode": 43,
+        "update": 10,
+        "search": "reinforce",
+        "log_probability": -10.782620429992676,
+        "name": "rl_1",
+        "kind": "rl",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.106983359259414,
+          "perplexity": 22.353510079367393,
+          "questions": 128,
+          "accuracy": 0.7890625,
+          "perplexity_ratio": 1.0465599297503363,
+          "reference_correct_retained": 0.9519230769230769,
+          "retained_count": 99,
+          "reference_correct_count": 104,
+          "passed": false
+        }
+      },
+      {
+        "sections": [
+          4,
+          4,
+          4,
+          4,
+          6,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          4,
+          4,
+          6,
+          6
+        ],
+        "nll": 3.1021506786346436,
+        "size_bytes": 17677915627,
+        "seconds": 5.508327700197697,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": 0.16988718475511444,
+        "episode": 22,
+        "update": 5,
+        "search": "reinforce",
+        "log_probability": -10.97727108001709,
+        "name": "rl_2",
+        "kind": "rl",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.0880518053932726,
+          "perplexity": 21.93430403049306,
+          "questions": 128,
+          "accuracy": 0.796875,
+          "perplexity_ratio": 1.0269332916293825,
+          "reference_correct_retained": 0.9615384615384616,
+          "retained_count": 100,
+          "reference_correct_count": 104,
+          "passed": true
+        }
+      },
+      {
+        "sections": [
+          4,
+          4,
+          4,
+          3,
+          6,
+          6,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          6
+        ],
+        "nll": 3.1022331714630127,
+        "size_bytes": 17677915627,
+        "seconds": 10.588810100220144,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": 0.16972219909837616,
+        "episode": 63,
+        "update": 15,
+        "search": "reinforce",
+        "log_probability": -8.46939754486084,
+        "name": "rl_3",
+        "kind": "rl",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.0814804143342593,
+          "perplexity": 21.790637701912004,
+          "questions": 128,
+          "accuracy": 0.8046875,
+          "perplexity_ratio": 1.0202070360116549,
+          "reference_correct_retained": 0.9615384615384616,
+          "retained_count": 100,
+          "reference_correct_count": 104,
+          "passed": true
+        }
+      },
+      {
+        "sections": [
+          4,
+          4,
+          3,
+          4,
+          6,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "nll": 3.12506365776062,
+        "size_bytes": 16788712235,
+        "seconds": 5.979455900378525,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": 0.16177229704452029,
+        "episode": 34,
+        "search": "random",
+        "name": "random_1",
+        "kind": "random",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.109666859292366,
+          "perplexity": 22.413576282185005,
+          "questions": 128,
+          "accuracy": 0.796875,
+          "perplexity_ratio": 1.0493721449585058,
+          "reference_correct_retained": 0.9423076923076923,
+          "retained_count": 98,
+          "reference_correct_count": 104,
+          "passed": false
+        }
+      },
+      {
+        "sections": [
+          4,
+          3,
+          3,
+          4,
+          4,
+          6,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "nll": 3.1303062438964844,
+        "size_bytes": 16566413195,
+        "seconds": 6.1646488001570106,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": 0.16071481573094365,
+        "episode": 49,
+        "search": "random",
+        "name": "random_2",
+        "kind": "random",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.1288177927771557,
+          "perplexity": 22.84695373680949,
+          "questions": 128,
+          "accuracy": 0.78125,
+          "perplexity_ratio": 1.0696622683823802,
+          "reference_correct_retained": 0.9326923076923077,
+          "retained_count": 97,
+          "reference_correct_count": 104,
+          "passed": false
+        }
+      },
+      {
+        "sections": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "nll": 3.2936906814575195,
+        "size_bytes": 13059956683,
+        "seconds": 8.992554199881852,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": -1.1087572589991777,
+        "name": "fixed3",
+        "kind": "fixed",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.2823479193211686,
+          "perplexity": 26.638243779900062,
+          "questions": 128,
+          "accuracy": 0.765625,
+          "perplexity_ratio": 1.2471651405072535,
+          "reference_correct_retained": 0.9134615384615384,
+          "retained_count": 95,
+          "reference_correct_count": 104,
+          "passed": false
+        }
+      },
+      {
+        "sections": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "nll": 3.1514859199523926,
+        "size_bytes": 16566409579,
+        "seconds": 12.005032899789512,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": 0.118355616973503,
+        "name": "fixed4",
+        "kind": "fixed",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.1401120467802186,
+          "perplexity": 23.106455717648245,
+          "questions": 128,
+          "accuracy": 0.78125,
+          "perplexity_ratio": 1.081811786461304,
+          "reference_correct_retained": 0.9326923076923077,
+          "retained_count": 97,
+          "reference_correct_count": 104,
+          "passed": false
+        }
+      },
+      {
+        "sections": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "nll": 3.0619540214538574,
+        "size_bytes": 23579372827,
+        "seconds": 2.350117700174451,
+        "reward_tokens": 2048,
+        "cache_hit": true,
+        "reward": 0.0,
+        "name": "fixed6",
+        "kind": "fixed",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.064965297647307,
+          "perplexity": 21.43371817382808,
+          "questions": 128,
+          "accuracy": 0.8203125,
+          "perplexity_ratio": 1.0034965652662653,
+          "reference_correct_retained": 0.9711538461538461,
+          "retained_count": 101,
+          "reference_correct_count": 104,
+          "passed": true
+        }
+      }
+    ],
+    "selected": {
+      "rl": {
+        "sections": [
+          4,
+          4,
+          4,
+          3,
+          6,
+          6,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          6
+        ],
+        "nll": 3.1022331714630127,
+        "size_bytes": 17677915627,
+        "seconds": 10.588810100220144,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": 0.16972219909837616,
+        "episode": 63,
+        "update": 15,
+        "search": "reinforce",
+        "log_probability": -8.46939754486084,
+        "name": "rl_3",
+        "kind": "rl",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.0814804143342593,
+          "perplexity": 21.790637701912004,
+          "questions": 128,
+          "accuracy": 0.8046875,
+          "perplexity_ratio": 1.0202070360116549,
+          "reference_correct_retained": 0.9615384615384616,
+          "retained_count": 100,
+          "reference_correct_count": 104,
+          "passed": true
+        },
+        "quality_preserving_validation": true
+      },
+      "random": {
+        "sections": [
+          4,
+          4,
+          3,
+          4,
+          6,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4
+        ],
+        "nll": 3.12506365776062,
+        "size_bytes": 16788712235,
+        "seconds": 5.979455900378525,
+        "reward_tokens": 2048,
+        "cache_hit": false,
+        "reward": 0.16177229704452029,
+        "episode": 34,
+        "search": "random",
+        "name": "random_1",
+        "kind": "random",
+        "validation": {
+          "tokens": 4096,
+          "nll": 3.109666859292366,
+          "perplexity": 22.413576282185005,
+          "questions": 128,
+          "accuracy": 0.796875,
+          "perplexity_ratio": 1.0493721449585058,
+          "reference_correct_retained": 0.9423076923076923,
+          "retained_count": 98,
+          "reference_correct_count": 104,
+          "passed": false
+        },
+        "quality_preserving_validation": false
+      }
+    },
+    "frozen_before_final_test": true,
+    "rule": "Smallest passing validation candidate; otherwise label the highest-reward failed attempt experimental."
+  },
+  "freeze": {
+    "selection_sha256": "c90b2ff3355953de961cf249004f5f3bed25574ef6a992d9d20723e2b5c0d969",
+    "language_sha256": "e8a2c256018f2fbcd13598882d8079d04f617b0cebd59bc8f6da578bcca6f4cf",
+    "questions_sha256": "8be89c2b50d3f50d57b63624a50ad58a0d80bfc845a2922eab71ce8d72b05917",
+    "artifact_manifests": {
+      "rl": "523c791bf375feb1c52ce3e4ed4c5f8003565afbd1a6ceef1795928cebdc1150",
+      "random": "225aeb3141a95925c96c69650af6a1c199518262872dc2a3d3328edfc3550c7e"
+    },
+    "utc": "2026-11-23T16:49:40.063394+00:00"
+  },
+  "training_evaluations": {
+    "reinforce": 64,
+    "random": 64,
+    "fixed_controls": 3,
+    "unique_total": 131
+  },
+  "policy_update_count": 16,
+  "nonzero_policy_gradients": true,
+  "verification": {
+    "rl_bezier_mixed": {
+      "verification": {
+        "files_hashed": 76,
+        "quantized_matrices_checked": 445,
+        "independent_sample_decodes": 1335,
+        "source_size_and_mtimes_unchanged": true,
+        "artifact_bytes": 17677915527,
+        "status": "passed"
+      },
+      "live_verification": {
+        "status": "passed",
+        "packed_vs_dense_max_logit_difference": 0.0,
+        "cache_vs_prefill_max_logit_difference": 0.3828125,
+        "cache_same_top_token": true,
+        "persistent_tensor_bytes": 17667838852,
+        "allocated_before_bytes": 17680829952,
+        "peak_allocated_bytes": 19101372928,
+        "peak_reserved_bytes": 19585302528,
+        "load_seconds": 16.10881009977311,
+        "prefill_32_tokens_seconds": 3.7052656998857856,
+        "source_weights_used_during_packed_loading": false
+      },
+      "audit": {
+        "data": {
+          "status": "passed",
+          "training_tokens": 2048,
+          "validation_tokens": 4096,
+          "test_tokens": 32768,
+          "validation_questions": 128,
+          "test_questions": 512,
+          "previous_positions_and_question_ids_excluded": true,
+          "input_hashes_match": true
+        },
+        "structure": {
+          "status": "passed",
+          "shared_block_sha256": "8a0bc4fc2d4c335730c638b0377a144618aa20b89304601362e8af20126bde5b",
+          "routing_settings": {
+            "width": 4096,
+            "latent": 512,
+            "field_rank": 128,
+            "groups": 16,
+            "selected": 4,
+            "steps": 3,
+            "mode": "bezier"
+          },
+          "static_files_identical": 12,
+          "norms_identical": 128,
+          "cubic_bezier_matrices_by_bits": {
+            "3": 28,
+            "4": 333,
+            "6": 84
+          },
+          "quantized_weights_by_bits": {
+            "3": 1778384896,
+            "4": 20937965568,
+            "6": 5335154688
+          },
+          "quantized_weight_mean_bits": 4.3169856459330145,
+          "old_layer32_mlp_absent": true,
+          "no_original_checkpoint_required_for_inference": true
+        }
+      }
+    },
+    "random_bezier_mixed": {
+      "verification": {
+        "files_hashed": 76,
+        "quantized_matrices_checked": 445,
+        "independent_sample_decodes": 1335,
+        "source_size_and_mtimes_unchanged": true,
+        "artifact_bytes": 16788712022,
+        "status": "passed"
+      },
+      "live_verification": {
+        "status": "passed",
+        "packed_vs_dense_max_logit_difference": 0.0,
+        "cache_vs_prefill_max_logit_difference": 0.625,
+        "cache_same_top_token": true,
+        "persistent_tensor_bytes": 16778635652,
+        "allocated_before_bytes": 16791113216,
+        "peak_allocated_bytes": 18211721728,
+        "peak_reserved_bytes": 18696110080,
+        "load_seconds": 13.666762799955904,
+        "prefill_32_tokens_seconds": 3.31686370074749,
+        "source_weights_used_during_packed_loading": false
+      },
+      "audit": {
+        "data": {
+          "status": "passed",
+          "training_tokens": 2048,
+          "validation_tokens": 4096,
+          "test_tokens": 32768,
+          "validation_questions": 128,
+          "test_questions": 512,
+          "previous_positions_and_question_ids_excluded": true,
+          "input_hashes_match": true
+        },
+        "structure": {
+          "status": "passed",
+          "shared_block_sha256": "8a0bc4fc2d4c335730c638b0377a144618aa20b89304601362e8af20126bde5b",
+          "routing_settings": {
+            "width": 4096,
+            "latent": 512,
+            "field_rank": 128,
+            "groups": 16,
+            "selected": 4,
+            "steps": 3,
+            "mode": "bezier"
+          },
+          "static_files_identical": 12,
+          "norms_identical": 128,
+          "cubic_bezier_matrices_by_bits": {
+            "3": 28,
+            "4": 389,
+            "6": 28
+          },
+          "quantized_weights_by_bits": {
+            "3": 1778384896,
+            "4": 24494735360,
+            "6": 1778384896
+          },
+          "quantized_weight_mean_bits": 4.063397129186603,
+          "old_layer32_mlp_absent": true,
+          "no_original_checkpoint_required_for_inference": true
+        }
+      }
+    }
+  },
+  "uncertainty": "5000 paired bootstrap draws over questions or 256-token windows; one training seed; no correction for exploratory comparisons.",
+  "generation": {
+    "prompt": "Write a Python function named is_even(n) that returns whether an integer is even. Return only the code.",
+    "response": "```python\ndef is_even(n):\n    return n % 2 == 0\n```",
+    "artifact": "rl_compression/artifacts/rl_bezier_mixed",
+    "experimental": null,
+    "input_tokens": 39,
+    "generated_tokens": 23,
+    "generation_seconds": 64.57465569954365,
+    "tokens_per_second": 0.3561768893823547,
+    "load_seconds": 16.829518099315464,
+    "peak_allocated_bytes": 19107793408,
+    "peak_reserved_bytes": 19612565504,
+    "persistent_tensor_bytes": 17667838852
+  },
+  "parent_generation_current": {
+    "prompt": "Write a Python function named is_even(n) that returns whether an integer is even. Return only the code.",
+    "response": "```python\ndef is_even(n):\n    return n % 2 == 0\n```",
+    "artifact": "artifacts/bezier6-shared-bezier",
+    "experimental": null,
+    "input_tokens": 39,
+    "generated_tokens": 23,
+    "generation_seconds": 117.3416840992868,
+    "tokens_per_second": 0.19600877707310657,
+    "load_seconds": 38.1262569995597,
+    "peak_allocated_bytes": 25004984832,
+    "peak_reserved_bytes": 25367150592,
+    "persistent_tensor_bytes": 23569294788
+  },
+  "generation_speed_ratio_to_parent": 1.817147653798734,
+  "parent_generation_historical": {
+    "prompt": "Write a Python function named is_even(n) that returns whether an integer is even. Return only the code.",
+    "response": "```python\ndef is_even(n):\n    return n % 2 == 0\n```",
+    "artifact": "artifacts/bezier6-shared-bezier",
+    "experimental": null,
+    "input_tokens": 39,
+    "generated_tokens": 23,
+    "generation_seconds": 20.408123399131,
+    "tokens_per_second": 1.1270022015340893,
+    "load_seconds": 18.850815299898386,
+    "peak_allocated_bytes": 25004984832,
+    "peak_reserved_bytes": 25367150592,
+    "persistent_tensor_bytes": 23569294788
+  },
+  "routing_check": {
+    "status": "passed",
+    "activation_tokens": 256,
+    "steps": 3,
+    "groups": 16,
+    "selected_per_step": 4,
+    "changed_group_set_fraction_by_step": [
+      0.0,
+      0.23828125,
+      0.25390625
+    ],
+    "later_changed_fraction": 0.24609375,
+    "intervention": "Add +1/-1 to latent components 0/1 after step 0; no training or model modification.",
+    "interpretation": "Routing response check only; changed selections do not demonstrate a quality benefit."
+  }
+}

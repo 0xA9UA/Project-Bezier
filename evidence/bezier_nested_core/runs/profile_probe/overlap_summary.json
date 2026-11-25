@@ -1,0 +1,129 @@
+{
+  "trained": false,
+  "tier": 1,
+  "visits": 16,
+  "batches": {
+    "1": {
+      "eager": {
+        "execution": "eager",
+        "turn_cap": null,
+        "kernel_overlap_proven": true,
+        "identified_streams": {
+          "nested_core_checker": [
+            29
+          ],
+          "nested_outer_update": [
+            7
+          ]
+        },
+        "stream_pair_measurements": [
+          {
+            "outer_stream": 7,
+            "core_stream": 29,
+            "outer_kernel_events": 766,
+            "core_kernel_events": 749,
+            "overlap_microseconds": 5.375,
+            "kernel_overlap_proven": true,
+            "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\eager_tier1_b1.json"
+          }
+        ],
+        "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\eager_tier1_b1.json",
+        "note": "Failure to identify CUDA kernels is not evidence of overlap; inspect profiler availability and raw trace."
+      },
+      "graph": {
+        "execution": "captured_graph",
+        "turn_cap": null,
+        "kernel_overlap_proven": true,
+        "kernel_streams": [
+          7,
+          158
+        ],
+        "stream_pair_measurements": [
+          {
+            "outer_stream": 7,
+            "core_stream": 158,
+            "outer_kernel_events": 1260,
+            "core_kernel_events": 259,
+            "overlap_microseconds": 273.3681640625,
+            "kernel_overlap_proven": true,
+            "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\graph_tier1_b1.json"
+          }
+        ],
+        "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\graph_tier1_b1.json",
+        "attribution": "CUDA graph replay may remap logical streams. These are overlapping kernel lanes in the captured graph; compare turn_cap=0 to exclude overlap already present without checker work."
+      },
+      "graph_zero": {
+        "execution": "captured_graph",
+        "turn_cap": 0,
+        "kernel_overlap_proven": false,
+        "kernel_streams": [
+          7
+        ],
+        "stream_pair_measurements": [],
+        "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\graph_zero_tier1_b1.json",
+        "attribution": "CUDA graph replay may remap logical streams. These are overlapping kernel lanes in the captured graph; compare turn_cap=0 to exclude overlap already present without checker work."
+      }
+    },
+    "16": {
+      "eager": {
+        "execution": "eager",
+        "turn_cap": null,
+        "kernel_overlap_proven": true,
+        "identified_streams": {
+          "nested_core_checker": [
+            29
+          ],
+          "nested_outer_update": [
+            7
+          ]
+        },
+        "stream_pair_measurements": [
+          {
+            "outer_stream": 7,
+            "core_stream": 29,
+            "outer_kernel_events": 767,
+            "core_kernel_events": 763,
+            "overlap_microseconds": 5.185546875,
+            "kernel_overlap_proven": true,
+            "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\eager_tier1_b16.json"
+          }
+        ],
+        "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\eager_tier1_b16.json",
+        "note": "Failure to identify CUDA kernels is not evidence of overlap; inspect profiler availability and raw trace."
+      },
+      "graph": {
+        "execution": "captured_graph",
+        "turn_cap": null,
+        "kernel_overlap_proven": true,
+        "kernel_streams": [
+          7,
+          161
+        ],
+        "stream_pair_measurements": [
+          {
+            "outer_stream": 7,
+            "core_stream": 161,
+            "outer_kernel_events": 1274,
+            "core_kernel_events": 259,
+            "overlap_microseconds": 306.0234375,
+            "kernel_overlap_proven": true,
+            "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\graph_tier1_b16.json"
+          }
+        ],
+        "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\graph_tier1_b16.json",
+        "attribution": "CUDA graph replay may remap logical streams. These are overlapping kernel lanes in the captured graph; compare turn_cap=0 to exclude overlap already present without checker work."
+      },
+      "graph_zero": {
+        "execution": "captured_graph",
+        "turn_cap": 0,
+        "kernel_overlap_proven": false,
+        "kernel_streams": [
+          7
+        ],
+        "stream_pair_measurements": [],
+        "trace": "WORKSPACE\\bezier_nested_core\\runs\\profile_probe\\graph_zero_tier1_b16.json",
+        "attribution": "CUDA graph replay may remap logical streams. These are overlapping kernel lanes in the captured graph; compare turn_cap=0 to exclude overlap already present without checker work."
+      }
+    }
+  }
+}

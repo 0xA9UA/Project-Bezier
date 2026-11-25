@@ -1,0 +1,2640 @@
+{
+  "complete": true,
+  "initial": "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\absolute\\best_r000768_u001024",
+  "selected_core": "WORKSPACE\\bezier_nested_llm_7b_v6\\runs\\pilot_v2\\selected_core.pt",
+  "selected_core_sha256": "eb1d7fff6cbda4377e34c1c0741b1f791829a92b93e0e7cfb7a65fdbcdc3a576",
+  "density": 0.98,
+  "threshold": -0.5,
+  "atlas": {
+    "total_nodes": 987136,
+    "total_parameters": 7248023552,
+    "core_parameters": 1087201280,
+    "core_fraction": 0.14999968918423293,
+    "all_weights_owned_once": true,
+    "core_center": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "core_radius": 0.25,
+    "all_core_nodes_inside": true,
+    "all_shell_nodes_outside": true,
+    "added_learned_parameters": 0,
+    "coordinate_bytes": 11845632,
+    "node_definition": "weight-owning computational channels; scalar weights are edges",
+    "groups": {
+      "embedding": {
+        "nodes": 32768,
+        "core_nodes": 2,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.embed_tokens.weight",
+            0
+          ]
+        ]
+      },
+      "layer.0.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.0.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.0.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.0.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.0.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.0.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.0.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.0.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.0.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.0.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.0.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.0.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.0.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.0.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.0.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.1.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.1.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.1.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.1.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.1.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.1.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.1.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.1.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.1.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.1.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.1.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.1.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.1.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.1.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.1.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.2.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.2.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.2.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.2.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.2.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.2.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.2.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.2.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.2.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.2.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.2.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.2.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.2.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.2.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.2.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.3.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.3.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.3.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.3.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.3.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.3.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.3.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.3.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.3.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.3.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.3.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.3.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.3.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.3.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.3.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.4.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.4.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.4.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.4.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.4.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.4.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.4.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.4.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.4.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.4.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.4.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.4.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.4.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.4.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.4.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.5.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.5.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.5.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.5.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.5.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.5.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.5.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.5.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.5.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.5.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.5.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.5.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.5.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.5.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.5.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.6.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.6.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.6.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.6.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.6.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.6.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.6.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.6.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.6.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.6.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.6.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.6.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.6.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.6.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.6.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.7.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.7.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.7.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.7.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.7.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.7.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.7.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.7.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.7.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.7.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.7.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.7.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.7.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.7.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.7.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.8.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.8.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.8.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.8.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.8.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.8.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.8.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.8.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.8.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.8.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.8.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.8.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.8.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.8.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.8.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.9.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.9.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.9.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.9.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.9.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.9.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.9.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.9.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.9.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.9.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.9.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.9.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.9.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.9.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.9.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.10.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.10.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.10.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.10.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.10.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.10.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.10.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.10.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.10.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.10.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.10.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.10.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.10.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.10.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.10.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.11.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.11.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.11.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.11.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.11.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.11.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.11.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.11.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.11.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.11.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.11.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.11.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.11.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.11.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.11.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.12.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.12.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.12.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.12.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.12.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.12.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.12.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.12.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.12.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.12.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.12.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.12.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.12.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.12.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.12.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.13.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.13.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.13.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.13.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.13.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.13.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.13.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.13.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.13.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.13.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.13.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.13.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.13.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.13.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.13.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.14.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.14.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.14.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.14.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.14.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.14.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.14.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.14.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.14.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.14.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.14.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.14.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.14.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.14.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.14.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.15.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.15.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.15.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.15.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.15.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.15.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.15.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.15.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.15.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.15.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.15.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.15.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.15.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.15.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.15.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.16.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.16.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.16.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.16.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.16.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.16.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.16.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.16.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.16.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.16.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.16.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.16.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.16.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.16.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.16.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.17.q": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.17.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.17.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.17.k": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.17.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.17.v": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.17.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.17.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.17.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.17.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.17.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.17.mlp": {
+        "nodes": 14336,
+        "core_nodes": 14336,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.17.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.17.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.17.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.18.q": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.18.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.18.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.18.k": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.18.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.18.v": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.18.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.18.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.18.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.18.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.18.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.18.mlp": {
+        "nodes": 14336,
+        "core_nodes": 14336,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.18.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.18.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.18.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.19.q": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.19.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.19.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.19.k": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.19.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.19.v": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.19.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.19.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.19.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.19.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.19.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.19.mlp": {
+        "nodes": 14336,
+        "core_nodes": 14336,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.19.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.19.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.19.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.20.q": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.20.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.20.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.20.k": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.20.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.20.v": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.20.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.20.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.20.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.20.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.20.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.20.mlp": {
+        "nodes": 14336,
+        "core_nodes": 14336,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.20.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.20.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.20.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.21.q": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.21.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.21.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.21.k": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.21.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.21.v": {
+        "nodes": 1024,
+        "core_nodes": 1024,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.21.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.21.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.21.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.21.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.21.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.21.mlp": {
+        "nodes": 14336,
+        "core_nodes": 14061,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.21.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.21.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.21.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.22.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.22.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.22.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.22.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.22.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.22.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.22.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.22.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.22.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.22.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.22.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.22.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.22.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.22.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.22.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.23.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.23.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.23.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.23.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.23.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.23.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.23.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.23.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.23.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.23.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.23.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.23.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.23.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.23.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.23.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.24.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.24.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.24.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.24.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.24.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.24.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.24.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.24.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.24.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.24.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.24.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.24.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.24.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.24.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.24.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.25.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.25.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.25.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.25.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.25.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.25.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.25.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.25.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.25.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.25.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.25.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.25.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.25.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.25.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.25.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.26.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.26.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.26.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.26.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.26.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.26.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.26.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.26.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.26.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.26.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.26.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.26.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.26.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.26.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.26.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.27.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.27.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.27.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.27.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.27.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.27.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.27.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.27.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.27.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.27.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.27.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.27.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.27.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.27.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.27.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.28.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.28.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.28.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.28.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.28.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.28.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.28.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.28.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.28.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.28.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.28.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.28.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.28.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.28.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.28.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.29.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.29.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.29.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.29.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.29.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.29.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.29.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.29.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.29.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.29.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.29.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.29.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.29.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.29.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.29.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.30.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.30.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.30.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.30.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.30.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.30.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.30.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.30.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.30.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.30.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.30.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.30.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.30.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.30.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.30.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.31.q": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 8192,
+        "parameter_axes": [
+          [
+            "model.layers.31.self_attn.q_proj.weight",
+            0
+          ],
+          [
+            "model.layers.31.self_attn.o_proj.weight",
+            1
+          ]
+        ]
+      },
+      "layer.31.k": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.31.self_attn.k_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.31.v": {
+        "nodes": 1024,
+        "core_nodes": 0,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "model.layers.31.self_attn.v_proj.weight",
+            0
+          ]
+        ]
+      },
+      "layer.31.input_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.31.input_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.31.post_norm": {
+        "nodes": 4096,
+        "core_nodes": 0,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.layers.31.post_attention_layernorm.weight",
+            0
+          ]
+        ]
+      },
+      "layer.31.mlp": {
+        "nodes": 14336,
+        "core_nodes": 0,
+        "parameters_per_node": 12288,
+        "parameter_axes": [
+          [
+            "model.layers.31.mlp.gate_proj.weight",
+            0
+          ],
+          [
+            "model.layers.31.mlp.up_proj.weight",
+            0
+          ],
+          [
+            "model.layers.31.mlp.down_proj.weight",
+            1
+          ]
+        ]
+      },
+      "final_norm": {
+        "nodes": 4096,
+        "core_nodes": 4096,
+        "parameters_per_node": 1,
+        "parameter_axes": [
+          [
+            "model.norm.weight",
+            0
+          ]
+        ]
+      },
+      "head": {
+        "nodes": 32768,
+        "core_nodes": 2,
+        "parameters_per_node": 4096,
+        "parameter_axes": [
+          [
+            "lm_head.weight",
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "storage": {
+    "additional_persistent_weight_bytes": 0,
+    "same_parameter_objects": true,
+    "all_weights_cuda": true,
+    "unique_weight_bytes": 14496047104,
+    "metadata_bytes": 20729856,
+    "transient_weight_gathers": true,
+    "route_sample_count": 33,
+    "route_parameter_window": [
+      0.125,
+      1.0
+    ],
+    "attention": "selected projection channels; dense causal attention arithmetic",
+    "interface": "mandatory semantic rows; coordinates determine execution order"
+  },
+  "extra_core_view_cuda_bytes": 0,
+  "core_aliases": {
+    "separate_execution_context": true,
+    "additional_registered_parameters": 0,
+    "additional_parameter_bytes": 0,
+    "core_parameters": 1087201280,
+    "same_underlying_storage": true
+  },
+  "all_gpu_weight_pointers_stable": true,
+  "dense_equivalence": {
+    "max_absolute_logit_error": 0.0625,
+    "greedy_predictions_match": true,
+    "rtol": 0.025,
+    "atol": 0.125
+  },
+  "coordinate_causality": {
+    "group": "layer.0.mlp",
+    "swapped_nodes": [
+      0,
+      10146
+    ],
+    "selection_changed": true,
+    "max_logit_change": 0.125,
+    "restored_output_bitwise_equal": true
+  },
+  "actual_inference": {
+    "selected_actions": [
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "forced_same_paths_bitwise_equal": true,
+    "unchosen_continuations": 0
+  },
+  "batch_size": 2,
+  "padded_tokens": 31,
+  "seconds": {
+    "dense_median": 0.023243600502610207,
+    "spatial_stay_median": 0.09723719954490662,
+    "controlled_median": 0.119917799718678,
+    "dense_samples": [
+      0.0212937006726861,
+      0.023243600502610207,
+      0.02750250045210123
+    ],
+    "spatial_stay_samples": [
+      0.09723719954490662,
+      0.09797069989144802,
+      0.09297250024974346
+    ],
+    "controlled_samples": [
+      0.12017189990729094,
+      0.11670849937945604,
+      0.119917799718678
+    ]
+  },
+  "peak_allocated_gib": 13.717109203338623,
+  "peak_reserved_gib": 13.77734375,
+  "notes": [
+    "No KV cache or weight offload. Timings are a short workload-specific check.",
+    "All vocabulary rows execute in coordinate order; interface eligibility is mandatory.",
+    "Attention scores remain dense after sparse projection-channel dispatch."
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "passed": true,
+  "counts": {
+    "actions": 3335,
+    "stages": 864
+  },
+  "conditions": [
+    {
+      "condition": "small-none-7-t0",
+      "rescored": 36,
+      "passed": 15
+    },
+    {
+      "condition": "small-ordinary-7-t4",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-ordinary-7-t8",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-ordinary-7-t16",
+      "rescored": 36,
+      "passed": 13
+    },
+    {
+      "condition": "small-nongeometric-7-t4",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-nongeometric-7-t8",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-nongeometric-7-t16",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-nongeometric-7-t8-no_revisit",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-bezier-7-t4",
+      "rescored": 36,
+      "passed": 13
+    },
+    {
+      "condition": "small-bezier-7-t8",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-bezier-7-t16",
+      "rescored": 36,
+      "passed": 13
+    },
+    {
+      "condition": "small-bezier-7-t8-no_revisit",
+      "rescored": 36,
+      "passed": 13
+    },
+    {
+      "condition": "small-none-19-t0",
+      "rescored": 36,
+      "passed": 15
+    },
+    {
+      "condition": "small-ordinary-19-t4",
+      "rescored": 36,
+      "passed": 15
+    },
+    {
+      "condition": "small-ordinary-19-t8",
+      "rescored": 36,
+      "passed": 16
+    },
+    {
+      "condition": "small-ordinary-19-t16",
+      "rescored": 36,
+      "passed": 15
+    },
+    {
+      "condition": "small-nongeometric-19-t4",
+      "rescored": 36,
+      "passed": 15
+    },
+    {
+      "condition": "small-nongeometric-19-t8",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-nongeometric-19-t16",
+      "rescored": 36,
+      "passed": 17
+    },
+    {
+      "condition": "small-nongeometric-19-t8-no_revisit",
+      "rescored": 36,
+      "passed": 15
+    },
+    {
+      "condition": "small-bezier-19-t4",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-bezier-19-t8",
+      "rescored": 36,
+      "passed": 14
+    },
+    {
+      "condition": "small-bezier-19-t16",
+      "rescored": 36,
+      "passed": 13
+    },
+    {
+      "condition": "small-bezier-19-t8-no_revisit",
+      "rescored": 36,
+      "passed": 14
+    }
+  ],
+  "adapters": [
+    {
+      "mode": "ordinary",
+      "seed": 7,
+      "parameters": 1637936,
+      "bytes": 6564608,
+      "hash_verified": true,
+      "field_reload_exact": true,
+      "persisted_update_metrics": 190,
+      "selected_checkpoint_update": 192,
+      "unlogged_tail_declared_schedule": [
+        [
+          191,
+          8,
+          "mbpp_614",
+          2.0021416500945376e-05
+        ],
+        [
+          192,
+          4,
+          "mbpp_869",
+          2.000535448361753e-05
+        ]
+      ]
+    },
+    {
+      "mode": "nongeometric",
+      "seed": 7,
+      "parameters": 1637936,
+      "bytes": 6564608,
+      "hash_verified": true,
+      "field_reload_exact": true,
+      "persisted_update_metrics": 190,
+      "selected_checkpoint_update": 192,
+      "unlogged_tail_declared_schedule": [
+        [
+          191,
+          8,
+          "mbpp_614",
+          2.0021416500945376e-05
+        ],
+        [
+          192,
+          4,
+          "mbpp_869",
+          2.000535448361753e-05
+        ]
+      ]
+    },
+    {
+      "mode": "bezier",
+      "seed": 7,
+      "parameters": 1637936,
+      "bytes": 6564608,
+      "hash_verified": true,
+      "field_reload_exact": true,
+      "persisted_update_metrics": 190,
+      "selected_checkpoint_update": 192,
+      "unlogged_tail_declared_schedule": [
+        [
+          191,
+          8,
+          "mbpp_614",
+          2.0021416500945376e-05
+        ],
+        [
+          192,
+          4,
+          "mbpp_869",
+          2.000535448361753e-05
+        ]
+      ]
+    },
+    {
+      "mode": "ordinary",
+      "seed": 19,
+      "parameters": 1637936,
+      "bytes": 6564608,
+      "hash_verified": true,
+      "field_reload_exact": true,
+      "persisted_update_metrics": 190,
+      "selected_checkpoint_update": 192,
+      "unlogged_tail_declared_schedule": [
+        [
+          191,
+          4,
+          "mbpp_716",
+          2.0021416500945376e-05
+        ],
+        [
+          192,
+          8,
+          "mbpp_959",
+          2.000535448361753e-05
+        ]
+      ]
+    },
+    {
+      "mode": "nongeometric",
+      "seed": 19,
+      "parameters": 1637936,
+      "bytes": 6564608,
+      "hash_verified": true,
+      "field_reload_exact": true,
+      "persisted_update_metrics": 190,
+      "selected_checkpoint_update": 192,
+      "unlogged_tail_declared_schedule": [
+        [
+          191,
+          4,
+          "mbpp_716",
+          2.0021416500945376e-05
+        ],
+        [
+          192,
+          8,
+          "mbpp_959",
+          2.000535448361753e-05
+        ]
+      ]
+    },
+    {
+      "mode": "bezier",
+      "seed": 19,
+      "parameters": 1637936,
+      "bytes": 6564608,
+      "hash_verified": true,
+      "field_reload_exact": true,
+      "persisted_update_metrics": 190,
+      "selected_checkpoint_update": 192,
+      "unlogged_tail_declared_schedule": [
+        [
+          191,
+          4,
+          "mbpp_716",
+          2.0021416500945376e-05
+        ],
+        [
+          192,
+          8,
+          "mbpp_959",
+          2.000535448361753e-05
+        ]
+      ]
+    }
+  ],
+  "route_actions": 3045,
+  "timing_probes": 60,
+  "source_asset_files_verified": 14,
+  "matched_logged_training_schedules": true,
+  "training_log_caveat": "Trainer flushes every 10 updates: loss/gradient records stop at 190. Checkpoint metadata and completion record attest update 192; final two scheduled tasks/steps are reconstructed, not observed metrics.",
+  "matched_primary_budget": {
+    "total_parameters": 1545352240,
+    "trainable_parameters": 1637936,
+    "parameter_bytes": 3093980352,
+    "field_parameters": 548400,
+    "computed_regions_per_sample": 16,
+    "selected_regions_per_sample": 16,
+    "field_samples_per_step": 3,
+    "field_matrix_macs_per_step": 834944,
+    "embedding_rms": 0.0174099113792181
+  }
+}

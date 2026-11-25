@@ -1,0 +1,1507 @@
+{
+  "complete": true,
+  "completed_conditions": 34,
+  "conditions": [
+    {
+      "condition": "large-stock-7-t0",
+      "size": "large",
+      "mode": "stock",
+      "seed": 7,
+      "steps": 0,
+      "stage_successes": 20,
+      "stage_count": 24,
+      "function_successes": 10,
+      "function_count": 12,
+      "complete_projects": 2,
+      "project_count": 4,
+      "wall_seconds": 120.63971299957484,
+      "model_amortized_seconds": 116.3971755951643,
+      "tokens": 5905,
+      "invalid_actions": 4,
+      "actions": 76,
+      "repairs": 2,
+      "peak_vram_gib": 28.51610279083252,
+      "batch_one_peak_vram_gib": 27.654422760009766,
+      "batch_one_seconds": 1.1493685003370047,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 27.51139361411333,
+      "failure_types": {
+        "failed_function_checks": 4
+      },
+      "parameters": {
+        "total_parameters": 14770033664,
+        "trainable_parameters": 0,
+        "parameter_bytes": 29540067328,
+        "field_parameters": 0,
+        "active_groups_per_step": 0,
+        "embedding_rms": 0.022064391523599625
+      }
+    },
+    {
+      "condition": "small-bezier-19-t16",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 19,
+      "steps": 16,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 9,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 51.57907589990646,
+      "model_amortized_seconds": 47.32954559568316,
+      "tokens": 4477,
+      "invalid_actions": 4,
+      "actions": 101,
+      "repairs": 12,
+      "peak_vram_gib": 3.1581897735595703,
+      "batch_one_peak_vram_gib": 2.9214024543762207,
+      "batch_one_seconds": 0.8556359997019172,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 12,
+        "invalid_python_syntax": 2
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-19-t2",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 19,
+      "steps": 2,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 9,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 44.92771239951253,
+      "model_amortized_seconds": 41.23125130031258,
+      "tokens": 4569,
+      "invalid_actions": 6,
+      "actions": 100,
+      "repairs": 15,
+      "peak_vram_gib": 3.1327829360961914,
+      "batch_one_peak_vram_gib": 2.921387195587158,
+      "batch_one_seconds": 0.6683586329842607,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 9,
+        "invalid_python_syntax": 5
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-19-t32",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 19,
+      "steps": 32,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 9,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 64.6594095993787,
+      "model_amortized_seconds": 60.61280770320445,
+      "tokens": 4303,
+      "invalid_actions": 3,
+      "actions": 98,
+      "repairs": 13,
+      "peak_vram_gib": 3.164391040802002,
+      "batch_one_peak_vram_gib": 2.921379566192627,
+      "batch_one_seconds": 1.4004192998011906,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 11,
+        "invalid_python_syntax": 3
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-19-t4",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 19,
+      "steps": 4,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 9,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 53.21872359979898,
+      "model_amortized_seconds": 49.61563400179148,
+      "tokens": 4770,
+      "invalid_actions": 7,
+      "actions": 101,
+      "repairs": 15,
+      "peak_vram_gib": 3.1546502113342285,
+      "batch_one_peak_vram_gib": 2.921387195587158,
+      "batch_one_seconds": 0.656497166181604,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 8,
+        "invalid_python_syntax": 6
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-19-t8",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 19,
+      "steps": 8,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 9,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 58.84249040018767,
+      "model_amortized_seconds": 55.01509810052812,
+      "tokens": 4807,
+      "invalid_actions": 4,
+      "actions": 102,
+      "repairs": 18,
+      "peak_vram_gib": 3.1449766159057617,
+      "batch_one_peak_vram_gib": 2.9214024543762207,
+      "batch_one_seconds": 0.72018226608634,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 9,
+        "invalid_python_syntax": 5
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-7-t16",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 7,
+      "steps": 16,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 40.131008700467646,
+      "model_amortized_seconds": 35.967862800695,
+      "tokens": 3346,
+      "invalid_actions": 0,
+      "actions": 93,
+      "repairs": 14,
+      "peak_vram_gib": 3.163797378540039,
+      "batch_one_peak_vram_gib": 2.9214024543762207,
+      "batch_one_seconds": 0.9929260332137346,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 12,
+        "invalid_python_syntax": 2
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-7-t2",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 7,
+      "steps": 2,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 7,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 42.02192569989711,
+      "model_amortized_seconds": 38.02622010279447,
+      "tokens": 3977,
+      "invalid_actions": 0,
+      "actions": 101,
+      "repairs": 18,
+      "peak_vram_gib": 3.1586570739746094,
+      "batch_one_peak_vram_gib": 2.921387195587158,
+      "batch_one_seconds": 0.817869366457065,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 12,
+        "invalid_python_syntax": 3
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-7-t32",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 7,
+      "steps": 32,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 7,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 49.92210659943521,
+      "model_amortized_seconds": 45.90910700149834,
+      "tokens": 2792,
+      "invalid_actions": 11,
+      "actions": 83,
+      "repairs": 3,
+      "peak_vram_gib": 3.1182751655578613,
+      "batch_one_peak_vram_gib": 2.921379566192627,
+      "batch_one_seconds": 1.3010435334096353,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 13,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-7-t4",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 7,
+      "steps": 4,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 35.07526329997927,
+      "model_amortized_seconds": 30.82318220101297,
+      "tokens": 3423,
+      "invalid_actions": 0,
+      "actions": 92,
+      "repairs": 12,
+      "peak_vram_gib": 3.1584649085998535,
+      "batch_one_peak_vram_gib": 2.921387195587158,
+      "batch_one_seconds": 0.7540087997913361,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 13,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-bezier-7-t8",
+      "size": "small",
+      "mode": "bezier",
+      "seed": 7,
+      "steps": 8,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 7,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 43.272290400229394,
+      "model_amortized_seconds": 39.088460800237954,
+      "tokens": 3492,
+      "invalid_actions": 0,
+      "actions": 93,
+      "repairs": 13,
+      "peak_vram_gib": 3.1455869674682617,
+      "batch_one_peak_vram_gib": 2.9214024543762207,
+      "batch_one_seconds": 0.7696002330631018,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8827393613755703,
+      "failure_types": {
+        "failed_function_checks": 14,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1545673801,
+        "trainable_parameters": 1959497,
+        "parameter_bytes": 3095266596,
+        "field_parameters": 869961,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-none-19-t0",
+      "size": "small",
+      "mode": "none",
+      "seed": 19,
+      "steps": 0,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 45.19186959974468,
+      "model_amortized_seconds": 40.51321119815111,
+      "tokens": 4289,
+      "invalid_actions": 0,
+      "actions": 99,
+      "repairs": 16,
+      "peak_vram_gib": 3.1284027099609375,
+      "batch_one_peak_vram_gib": 2.9181294441223145,
+      "batch_one_seconds": 0.6612731333201131,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.879497639834881,
+      "failure_types": {
+        "failed_function_checks": 14,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1544803840,
+        "trainable_parameters": 1089536,
+        "parameter_bytes": 3091786752,
+        "field_parameters": 0,
+        "active_groups_per_step": 0,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-none-7-t0",
+      "size": "small",
+      "mode": "none",
+      "seed": 7,
+      "steps": 0,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 36.076798300258815,
+      "model_amortized_seconds": 31.79642970394343,
+      "tokens": 4224,
+      "invalid_actions": 0,
+      "actions": 96,
+      "repairs": 14,
+      "peak_vram_gib": 3.1543641090393066,
+      "batch_one_peak_vram_gib": 2.9181294441223145,
+      "batch_one_seconds": 0.572256633390983,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.879497639834881,
+      "failure_types": {
+        "failed_function_checks": 14,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1544803840,
+        "trainable_parameters": 1089536,
+        "parameter_bytes": 3091786752,
+        "field_parameters": 0,
+        "active_groups_per_step": 0,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-19-t16",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 19,
+      "steps": 16,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 50.73379520047456,
+      "model_amortized_seconds": 46.28058419935405,
+      "tokens": 4416,
+      "invalid_actions": 2,
+      "actions": 99,
+      "repairs": 13,
+      "peak_vram_gib": 3.1315793991088867,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 0.8719723004226884,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "invalid_python_syntax": 2,
+        "failed_function_checks": 13
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-19-t2",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 19,
+      "steps": 2,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 9,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 44.39279690012336,
+      "model_amortized_seconds": 40.32848399877548,
+      "tokens": 4131,
+      "invalid_actions": 2,
+      "actions": 94,
+      "repairs": 12,
+      "peak_vram_gib": 3.1387906074523926,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 0.6435593000302712,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "invalid_python_syntax": 2,
+        "failed_function_checks": 12
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-19-t32",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 19,
+      "steps": 32,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 9,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 55.78569030016661,
+      "model_amortized_seconds": 51.21512630209327,
+      "tokens": 3622,
+      "invalid_actions": 0,
+      "actions": 92,
+      "repairs": 8,
+      "peak_vram_gib": 3.121194362640381,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 1.1378201333185036,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "failed_function_checks": 13,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-19-t4",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 19,
+      "steps": 4,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 9,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 50.13586110062897,
+      "model_amortized_seconds": 45.91453150101006,
+      "tokens": 4170,
+      "invalid_actions": 2,
+      "actions": 94,
+      "repairs": 12,
+      "peak_vram_gib": 3.1387906074523926,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 0.6873120665550232,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "invalid_python_syntax": 2,
+        "failed_function_checks": 12
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-19-t8",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 19,
+      "steps": 8,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 49.30140689946711,
+      "model_amortized_seconds": 45.15681209880859,
+      "tokens": 4305,
+      "invalid_actions": 2,
+      "actions": 94,
+      "repairs": 12,
+      "peak_vram_gib": 3.1387906074523926,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 0.6699465997517109,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "invalid_python_syntax": 2,
+        "failed_function_checks": 13
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-7-t16",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 7,
+      "steps": 16,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 61.67295389994979,
+      "model_amortized_seconds": 57.377689994871616,
+      "tokens": 4798,
+      "invalid_actions": 5,
+      "actions": 95,
+      "repairs": 12,
+      "peak_vram_gib": 3.158395290374756,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 0.9823896664505204,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "failed_function_checks": 12,
+        "invalid_python_syntax": 2
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-7-t2",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 7,
+      "steps": 2,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 42.979796800762415,
+      "model_amortized_seconds": 38.667978497222066,
+      "tokens": 4147,
+      "invalid_actions": 0,
+      "actions": 96,
+      "repairs": 14,
+      "peak_vram_gib": 3.1218085289001465,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 0.7137905331328511,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "failed_function_checks": 14,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-7-t32",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 7,
+      "steps": 32,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 75.40452819969505,
+      "model_amortized_seconds": 70.86209680140018,
+      "tokens": 4553,
+      "invalid_actions": 1,
+      "actions": 96,
+      "repairs": 14,
+      "peak_vram_gib": 3.165134906768799,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 1.1948772333562374,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "failed_function_checks": 14
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-7-t4",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 7,
+      "steps": 4,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 44.84149459935725,
+      "model_amortized_seconds": 40.68333750311285,
+      "tokens": 4447,
+      "invalid_actions": 1,
+      "actions": 95,
+      "repairs": 13,
+      "peak_vram_gib": 3.1218085289001465,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 0.7122738665590683,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "failed_function_checks": 13,
+        "invalid_python_syntax": 2
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-ordinary-7-t8",
+      "size": "small",
+      "mode": "ordinary",
+      "seed": 7,
+      "steps": 8,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 47.207185700535774,
+      "model_amortized_seconds": 42.911110199056566,
+      "tokens": 4352,
+      "invalid_actions": 1,
+      "actions": 96,
+      "repairs": 13,
+      "peak_vram_gib": 3.121945858001709,
+      "batch_one_peak_vram_gib": 2.9213061332702637,
+      "batch_one_seconds": 0.7511126333847642,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8826743960380554,
+      "failure_types": {
+        "failed_function_checks": 13,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1545656448,
+        "trainable_parameters": 1942144,
+        "parameter_bytes": 3095197184,
+        "field_parameters": 852608,
+        "active_groups_per_step": 16,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-stock-7-t0",
+      "size": "small",
+      "mode": "stock",
+      "seed": 7,
+      "steps": 0,
+      "stage_successes": 1,
+      "stage_count": 24,
+      "function_successes": 0,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 149.58375259954482,
+      "model_amortized_seconds": 148.8153070937842,
+      "tokens": 17304,
+      "invalid_actions": 23,
+      "actions": 144,
+      "repairs": 89,
+      "peak_vram_gib": 3.1340813636779785,
+      "batch_one_peak_vram_gib": 2.9140758514404297,
+      "batch_one_seconds": 0.48270150025685626,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.8754278495907784,
+      "failure_types": {
+        "invalid_python_syntax": 10,
+        "other_execution_error": 5,
+        "restricted_python_feature": 8
+      },
+      "parameters": {
+        "total_parameters": 1543714304,
+        "trainable_parameters": 0,
+        "parameter_bytes": 3087428608,
+        "field_parameters": 0,
+        "active_groups_per_step": 0,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-19-t16",
+      "size": "small",
+      "mode": "straight",
+      "seed": 19,
+      "steps": 16,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 52.63709900062531,
+      "model_amortized_seconds": 48.10338250081986,
+      "tokens": 4277,
+      "invalid_actions": 0,
+      "actions": 97,
+      "repairs": 14,
+      "peak_vram_gib": 3.1420130729675293,
+      "batch_one_peak_vram_gib": 2.921401023864746,
+      "batch_one_seconds": 1.0141475001970928,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "failed_function_checks": 14,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-19-t2",
+      "size": "small",
+      "mode": "straight",
+      "seed": 19,
+      "steps": 2,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 48.17530759982765,
+      "model_amortized_seconds": 43.74540869798511,
+      "tokens": 4175,
+      "invalid_actions": 0,
+      "actions": 94,
+      "repairs": 13,
+      "peak_vram_gib": 3.138856887817383,
+      "batch_one_peak_vram_gib": 2.9213857650756836,
+      "batch_one_seconds": 0.7982656999180714,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "failed_function_checks": 14,
+        "invalid_python_syntax": 1
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-19-t32",
+      "size": "small",
+      "mode": "straight",
+      "seed": 19,
+      "steps": 32,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 63.16620659921318,
+      "model_amortized_seconds": 58.862928298301995,
+      "tokens": 4247,
+      "invalid_actions": 1,
+      "actions": 93,
+      "repairs": 9,
+      "peak_vram_gib": 3.138885498046875,
+      "batch_one_peak_vram_gib": 2.9213781356811523,
+      "batch_one_seconds": 1.2879596663018067,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "failed_function_checks": 13,
+        "invalid_python_syntax": 2
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-19-t4",
+      "size": "small",
+      "mode": "straight",
+      "seed": 19,
+      "steps": 4,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 50.60043240059167,
+      "model_amortized_seconds": 46.54292100202292,
+      "tokens": 4507,
+      "invalid_actions": 6,
+      "actions": 99,
+      "repairs": 15,
+      "peak_vram_gib": 3.138355255126953,
+      "batch_one_peak_vram_gib": 2.9213857650756836,
+      "batch_one_seconds": 0.6342438667391738,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "failed_function_checks": 12,
+        "invalid_python_syntax": 3
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-19-t8",
+      "size": "small",
+      "mode": "straight",
+      "seed": 19,
+      "steps": 8,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 46.26518809981644,
+      "model_amortized_seconds": 41.86923619825393,
+      "tokens": 4244,
+      "invalid_actions": 0,
+      "actions": 98,
+      "repairs": 16,
+      "peak_vram_gib": 3.144608974456787,
+      "batch_one_peak_vram_gib": 2.921401023864746,
+      "batch_one_seconds": 0.8373477999120951,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "failed_function_checks": 13,
+        "invalid_python_syntax": 2
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-7-t16",
+      "size": "small",
+      "mode": "straight",
+      "seed": 7,
+      "steps": 16,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 67.96648230031133,
+      "model_amortized_seconds": 64.03276259824634,
+      "tokens": 5537,
+      "invalid_actions": 4,
+      "actions": 104,
+      "repairs": 19,
+      "peak_vram_gib": 3.165480136871338,
+      "batch_one_peak_vram_gib": 2.921401023864746,
+      "batch_one_seconds": 0.9006210332736373,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "restricted_python_feature": 1,
+        "failed_function_checks": 8,
+        "invalid_python_syntax": 5
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-7-t2",
+      "size": "small",
+      "mode": "straight",
+      "seed": 7,
+      "steps": 2,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 48.02849460020661,
+      "model_amortized_seconds": 43.898426103405654,
+      "tokens": 4998,
+      "invalid_actions": 0,
+      "actions": 106,
+      "repairs": 22,
+      "peak_vram_gib": 3.163285732269287,
+      "batch_one_peak_vram_gib": 2.9213857650756836,
+      "batch_one_seconds": 0.784779567271471,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "failed_function_checks": 11,
+        "invalid_python_syntax": 4
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-7-t32",
+      "size": "small",
+      "mode": "straight",
+      "seed": 7,
+      "steps": 32,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 67.39790970087051,
+      "model_amortized_seconds": 63.484056199900806,
+      "tokens": 4895,
+      "invalid_actions": 1,
+      "actions": 102,
+      "repairs": 18,
+      "peak_vram_gib": 3.131685733795166,
+      "batch_one_peak_vram_gib": 2.9213781356811523,
+      "batch_one_seconds": 1.157709166718026,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "failed_function_checks": 11,
+        "invalid_python_syntax": 4
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-7-t4",
+      "size": "small",
+      "mode": "straight",
+      "seed": 7,
+      "steps": 4,
+      "stage_successes": 9,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 51.864441899582744,
+      "model_amortized_seconds": 47.72006110101938,
+      "tokens": 5149,
+      "invalid_actions": 2,
+      "actions": 106,
+      "repairs": 22,
+      "peak_vram_gib": 3.16328763961792,
+      "batch_one_peak_vram_gib": 2.9213857650756836,
+      "batch_one_seconds": 0.6429415000602603,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "failed_function_checks": 11,
+        "invalid_python_syntax": 4
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "condition": "small-straight-7-t8",
+      "size": "small",
+      "mode": "straight",
+      "seed": 7,
+      "steps": 8,
+      "stage_successes": 10,
+      "stage_count": 24,
+      "function_successes": 8,
+      "function_count": 12,
+      "complete_projects": 0,
+      "project_count": 4,
+      "wall_seconds": 48.97476819995791,
+      "model_amortized_seconds": 45.06429940275848,
+      "tokens": 4712,
+      "invalid_actions": 3,
+      "actions": 103,
+      "repairs": 19,
+      "peak_vram_gib": 3.1440787315368652,
+      "batch_one_peak_vram_gib": 2.921401023864746,
+      "batch_one_seconds": 0.8030804665759206,
+      "batch_one_tokens": 32,
+      "checkpoint_disk_gib": 2.882737908512354,
+      "failure_types": {
+        "invalid_python_syntax": 5,
+        "failed_function_checks": 9
+      },
+      "parameters": {
+        "total_parameters": 1545673411,
+        "trainable_parameters": 1959107,
+        "parameter_bytes": 3095265036,
+        "field_parameters": 869571,
+        "active_groups_per_step": 4,
+        "embedding_rms": 0.0174099113792181
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "steps": 2,
+      "control": "straight",
+      "delta_percentage_points": 2.083333333333333,
+      "paired_cluster_95_interval_percentage_points": [
+        -5.0,
+        9.090909090909092
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 2,
+      "control": "ordinary",
+      "delta_percentage_points": 0.0,
+      "paired_cluster_95_interval_percentage_points": [
+        -9.090909090909092,
+        7.6923076923076925
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 2,
+      "control": "none",
+      "delta_percentage_points": 2.083333333333333,
+      "paired_cluster_95_interval_percentage_points": [
+        -5.0,
+        9.090909090909092
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 2,
+      "control": "stock-small",
+      "delta_percentage_points": 35.41666666666667,
+      "paired_cluster_95_interval_percentage_points": [
+        16.071428571428573,
+        63.888888888888886
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 2,
+      "control": "stock-large",
+      "delta_percentage_points": -43.75,
+      "paired_cluster_95_interval_percentage_points": [
+        -64.28571428571429,
+        -17.5
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 4,
+      "control": "straight",
+      "delta_percentage_points": 4.166666666666666,
+      "paired_cluster_95_interval_percentage_points": [
+        -5.0,
+        15.909090909090908
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 4,
+      "control": "ordinary",
+      "delta_percentage_points": 2.083333333333333,
+      "paired_cluster_95_interval_percentage_points": [
+        -8.34821428571428,
+        14.583333333333334
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 4,
+      "control": "none",
+      "delta_percentage_points": 4.166666666666666,
+      "paired_cluster_95_interval_percentage_points": [
+        -5.357142857142857,
+        15.384615384615385
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 4,
+      "control": "stock-small",
+      "delta_percentage_points": 37.5,
+      "paired_cluster_95_interval_percentage_points": [
+        16.666666666666664,
+        66.66666666666666
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 4,
+      "control": "stock-large",
+      "delta_percentage_points": -41.66666666666667,
+      "paired_cluster_95_interval_percentage_points": [
+        -62.5,
+        -15.0
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 8,
+      "control": "straight",
+      "delta_percentage_points": 0.0,
+      "paired_cluster_95_interval_percentage_points": [
+        -6.25,
+        6.25
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 8,
+      "control": "ordinary",
+      "delta_percentage_points": 0.0,
+      "paired_cluster_95_interval_percentage_points": [
+        -6.25,
+        6.8181818181818175
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 8,
+      "control": "none",
+      "delta_percentage_points": 2.083333333333333,
+      "paired_cluster_95_interval_percentage_points": [
+        -5.0,
+        9.090909090909092
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 8,
+      "control": "stock-small",
+      "delta_percentage_points": 35.41666666666667,
+      "paired_cluster_95_interval_percentage_points": [
+        16.071428571428573,
+        62.5
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 8,
+      "control": "stock-large",
+      "delta_percentage_points": -43.75,
+      "paired_cluster_95_interval_percentage_points": [
+        -64.58333333333334,
+        -16.666666666666664
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 16,
+      "control": "straight",
+      "delta_percentage_points": 2.083333333333333,
+      "paired_cluster_95_interval_percentage_points": [
+        -5.769230769230769,
+        13.636363636363635
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 16,
+      "control": "ordinary",
+      "delta_percentage_points": 2.083333333333333,
+      "paired_cluster_95_interval_percentage_points": [
+        -5.555555555555555,
+        13.636363636363635
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 16,
+      "control": "none",
+      "delta_percentage_points": 4.166666666666666,
+      "paired_cluster_95_interval_percentage_points": [
+        -5.0,
+        15.384615384615385
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 16,
+      "control": "stock-small",
+      "delta_percentage_points": 37.5,
+      "paired_cluster_95_interval_percentage_points": [
+        17.1875,
+        66.66666666666666
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 16,
+      "control": "stock-large",
+      "delta_percentage_points": -41.66666666666667,
+      "paired_cluster_95_interval_percentage_points": [
+        -63.33333333333333,
+        -15.0
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 32,
+      "control": "straight",
+      "delta_percentage_points": 4.166666666666666,
+      "paired_cluster_95_interval_percentage_points": [
+        -4.545454545454546,
+        11.363636363636363
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 32,
+      "control": "ordinary",
+      "delta_percentage_points": 0.0,
+      "paired_cluster_95_interval_percentage_points": [
+        -9.098011363636362,
+        7.8125
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 32,
+      "control": "none",
+      "delta_percentage_points": 4.166666666666666,
+      "paired_cluster_95_interval_percentage_points": [
+        -4.166666666666666,
+        11.538461538461538
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 32,
+      "control": "stock-small",
+      "delta_percentage_points": 37.5,
+      "paired_cluster_95_interval_percentage_points": [
+        17.857142857142858,
+        63.888888888888886
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    },
+    {
+      "steps": 32,
+      "control": "stock-large",
+      "delta_percentage_points": -41.66666666666667,
+      "paired_cluster_95_interval_percentage_points": [
+        -62.5,
+        -16.666666666666664
+      ],
+      "families": 16,
+      "seed_pairs": 2
+    }
+  ]
+}

@@ -1,0 +1,925 @@
+{
+  "conditions": [
+    {
+      "mode": "bezier",
+      "steps": 4,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 13,
+        "19": 14
+      },
+      "successes": 27,
+      "trials": 72,
+      "success_rate": 0.375,
+      "functions_solved": 25,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 12687,
+      "actions": 268,
+      "model_amortized_seconds": 130.47727120295167,
+      "tool_seconds": 4.537158390507102,
+      "evaluation_wall_seconds": 142.9305249992758,
+      "invalid_actions": 13,
+      "inference_latency_seconds": 0.6849992000497878,
+      "inference_latency_range_seconds": [
+        0.5998173002153635,
+        0.954725299961865
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.1527366638183594,
+      "route_actions": 268,
+      "actions_with_returns": 268,
+      "region_returns": 3565,
+      "primary_returns": 1408,
+      "median_primary_regions": 4.0,
+      "direction_reversals": 1680,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 4,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "bezier",
+      "steps": 8,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 14,
+        "19": 14
+      },
+      "successes": 28,
+      "trials": 72,
+      "success_rate": 0.3888888888888889,
+      "functions_solved": 26,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 12893,
+      "actions": 277,
+      "model_amortized_seconds": 144.56168059725314,
+      "tool_seconds": 4.822848700918257,
+      "evaluation_wall_seconds": 157.38664050027728,
+      "invalid_actions": 13,
+      "inference_latency_seconds": 0.833627849817276,
+      "inference_latency_range_seconds": [
+        0.6811892995610833,
+        1.0859663002192974
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.13179349899292,
+      "route_actions": 277,
+      "actions_with_returns": 277,
+      "region_returns": 10051,
+      "primary_returns": 3711,
+      "median_primary_regions": 4,
+      "direction_reversals": 3885,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 4,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "bezier",
+      "steps": 8,
+      "no_revisit": true,
+      "stages_solved_per_seed": {
+        "7": 13,
+        "19": 14
+      },
+      "successes": 27,
+      "trials": 72,
+      "success_rate": 0.375,
+      "functions_solved": 25,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 13218,
+      "actions": 276,
+      "model_amortized_seconds": 153.91416000109166,
+      "tool_seconds": 4.743900505825877,
+      "evaluation_wall_seconds": 166.62782280053943,
+      "invalid_actions": 14,
+      "inference_latency_seconds": null,
+      "inference_latency_range_seconds": null,
+      "inference_peak_gib": null,
+      "quality_batch_peak_gib": 3.1227855682373047,
+      "route_actions": 276,
+      "actions_with_returns": 0,
+      "region_returns": 0,
+      "primary_returns": 3387,
+      "median_primary_regions": 4.0,
+      "direction_reversals": 3868,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 4,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "bezier",
+      "steps": 16,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 13,
+        "19": 13
+      },
+      "successes": 26,
+      "trials": 72,
+      "success_rate": 0.3611111111111111,
+      "functions_solved": 24,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 13311,
+      "actions": 279,
+      "model_amortized_seconds": 156.64398039598018,
+      "tool_seconds": 4.844219097867608,
+      "evaluation_wall_seconds": 169.6336942994967,
+      "invalid_actions": 13,
+      "inference_latency_seconds": 0.8583928002044559,
+      "inference_latency_range_seconds": [
+        0.8524950006976724,
+        0.8791250009089708
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.163924217224121,
+      "route_actions": 279,
+      "actions_with_returns": 279,
+      "region_returns": 21805,
+      "primary_returns": 7595,
+      "median_primary_regions": 5,
+      "direction_reversals": 8479,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 4,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "none",
+      "steps": 0,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 15,
+        "19": 15
+      },
+      "successes": 30,
+      "trials": 72,
+      "success_rate": 0.4166666666666667,
+      "functions_solved": 28,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 12667,
+      "actions": 290,
+      "model_amortized_seconds": 109.75576549954712,
+      "tool_seconds": 5.097037389874458,
+      "evaluation_wall_seconds": 128.6498972987756,
+      "invalid_actions": 8,
+      "inference_latency_seconds": 0.5426332000643015,
+      "inference_latency_range_seconds": [
+        0.5369990998879075,
+        0.66156189981848
+      ],
+      "inference_peak_gib": 2.9181294441223145,
+      "quality_batch_peak_gib": 3.1544899940490723,
+      "route_actions": 0,
+      "actions_with_returns": 0,
+      "region_returns": 0,
+      "primary_returns": 0,
+      "median_primary_regions": null,
+      "direction_reversals": 0,
+      "parameters": {
+        "total_parameters": 1544803840,
+        "trainable_parameters": 1089536,
+        "parameter_bytes": 3091786752,
+        "field_parameters": 0,
+        "computed_regions_per_sample": 0,
+        "selected_regions_per_sample": 0,
+        "field_samples_per_step": 0,
+        "field_matrix_macs_per_step": 0,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "nongeometric",
+      "steps": 4,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 14,
+        "19": 15
+      },
+      "successes": 29,
+      "trials": 72,
+      "success_rate": 0.4027777777777778,
+      "functions_solved": 27,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 12983,
+      "actions": 276,
+      "model_amortized_seconds": 123.54988429322839,
+      "tool_seconds": 4.725861294195056,
+      "evaluation_wall_seconds": 136.38850489910692,
+      "invalid_actions": 14,
+      "inference_latency_seconds": 0.781565850134939,
+      "inference_latency_range_seconds": [
+        0.6230690004304051,
+        0.8510261997580528
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.154327869415283,
+      "route_actions": 276,
+      "actions_with_returns": 276,
+      "region_returns": 4283,
+      "primary_returns": 1287,
+      "median_primary_regions": 2.0,
+      "direction_reversals": 1656,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 4,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "nongeometric",
+      "steps": 8,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 14,
+        "19": 14
+      },
+      "successes": 28,
+      "trials": 72,
+      "success_rate": 0.3888888888888889,
+      "functions_solved": 26,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 13563,
+      "actions": 287,
+      "model_amortized_seconds": 142.83984850067645,
+      "tool_seconds": 5.052222185768187,
+      "evaluation_wall_seconds": 155.8027176996693,
+      "invalid_actions": 8,
+      "inference_latency_seconds": 0.7343067503534257,
+      "inference_latency_range_seconds": [
+        0.6807075999677181,
+        0.9359511006623507
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.153805732727051,
+      "route_actions": 287,
+      "actions_with_returns": 287,
+      "region_returns": 10245,
+      "primary_returns": 3969,
+      "median_primary_regions": 5,
+      "direction_reversals": 4018,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 4,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "nongeometric",
+      "steps": 8,
+      "no_revisit": true,
+      "stages_solved_per_seed": {
+        "7": 14,
+        "19": 15
+      },
+      "successes": 29,
+      "trials": 72,
+      "success_rate": 0.4027777777777778,
+      "functions_solved": 27,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 13959,
+      "actions": 283,
+      "model_amortized_seconds": 158.76877750083804,
+      "tool_seconds": 4.860531099140644,
+      "evaluation_wall_seconds": 171.5101843001321,
+      "invalid_actions": 8,
+      "inference_latency_seconds": null,
+      "inference_latency_range_seconds": null,
+      "inference_peak_gib": null,
+      "quality_batch_peak_gib": 3.153805732727051,
+      "route_actions": 283,
+      "actions_with_returns": 0,
+      "region_returns": 0,
+      "primary_returns": 3311,
+      "median_primary_regions": 3,
+      "direction_reversals": 3962,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 4,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "nongeometric",
+      "steps": 16,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 14,
+        "19": 17
+      },
+      "successes": 31,
+      "trials": 72,
+      "success_rate": 0.4305555555555556,
+      "functions_solved": 29,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 13678,
+      "actions": 275,
+      "model_amortized_seconds": 166.53810819983482,
+      "tool_seconds": 4.890298289246857,
+      "evaluation_wall_seconds": 179.62295840028673,
+      "invalid_actions": 8,
+      "inference_latency_seconds": 0.911756849847734,
+      "inference_latency_range_seconds": [
+        0.8305805996060371,
+        1.1480573993176222
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.176335334777832,
+      "route_actions": 275,
+      "actions_with_returns": 275,
+      "region_returns": 26505,
+      "primary_returns": 9889,
+      "median_primary_regions": 6,
+      "direction_reversals": 8276,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 4,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "ordinary",
+      "steps": 4,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 14,
+        "19": 15
+      },
+      "successes": 29,
+      "trials": 72,
+      "success_rate": 0.4027777777777778,
+      "functions_solved": 27,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 13550,
+      "actions": 268,
+      "model_amortized_seconds": 135.57865289971232,
+      "tool_seconds": 4.714015481993556,
+      "evaluation_wall_seconds": 148.64252059999853,
+      "invalid_actions": 22,
+      "inference_latency_seconds": 0.7064181501045823,
+      "inference_latency_range_seconds": [
+        0.6126349996775389,
+        0.8379771998152137
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.154331684112549,
+      "route_actions": 268,
+      "actions_with_returns": 0,
+      "region_returns": 0,
+      "primary_returns": 0,
+      "median_primary_regions": 1.0,
+      "direction_reversals": 1608,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 16,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "ordinary",
+      "steps": 8,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 14,
+        "19": 16
+      },
+      "successes": 30,
+      "trials": 72,
+      "success_rate": 0.4166666666666667,
+      "functions_solved": 28,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 14761,
+      "actions": 278,
+      "model_amortized_seconds": 168.14546299912035,
+      "tool_seconds": 4.973812899552286,
+      "evaluation_wall_seconds": 181.2676478996873,
+      "invalid_actions": 19,
+      "inference_latency_seconds": 0.7134479000233114,
+      "inference_latency_range_seconds": [
+        0.6886820998042822,
+        0.8226569006219506
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.152759552001953,
+      "route_actions": 278,
+      "actions_with_returns": 0,
+      "region_returns": 0,
+      "primary_returns": 0,
+      "median_primary_regions": 1.0,
+      "direction_reversals": 4401,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 16,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    },
+    {
+      "mode": "ordinary",
+      "steps": 16,
+      "no_revisit": false,
+      "stages_solved_per_seed": {
+        "7": 13,
+        "19": 15
+      },
+      "successes": 28,
+      "trials": 72,
+      "success_rate": 0.3888888888888889,
+      "functions_solved": 26,
+      "function_trials": 48,
+      "project_stages_solved": 2,
+      "project_stage_trials": 24,
+      "projects_completed": 0,
+      "project_trials": 8,
+      "generated_tokens": 13357,
+      "actions": 278,
+      "model_amortized_seconds": 155.30002169776708,
+      "tool_seconds": 5.4176109954714775,
+      "evaluation_wall_seconds": 169.2539697000757,
+      "invalid_actions": 15,
+      "inference_latency_seconds": 0.9193563000299037,
+      "inference_latency_range_seconds": [
+        0.8258806997910142,
+        1.0762663008645177
+      ],
+      "inference_peak_gib": 2.92022705078125,
+      "quality_batch_peak_gib": 3.1318392753601074,
+      "route_actions": 278,
+      "actions_with_returns": 0,
+      "region_returns": 0,
+      "primary_returns": 0,
+      "median_primary_regions": 1.0,
+      "direction_reversals": 10397,
+      "parameters": {
+        "total_parameters": 1545352240,
+        "trainable_parameters": 1637936,
+        "parameter_bytes": 3093980352,
+        "field_parameters": 548400,
+        "computed_regions_per_sample": 16,
+        "selected_regions_per_sample": 16,
+        "field_samples_per_step": 3,
+        "field_matrix_macs_per_step": 834944,
+        "embedding_rms": 0.0174099113792181
+      }
+    }
+  ],
+  "paired_comparisons": {
+    "bezier_minus_ordinary": {
+      "difference_pp": -2.7777777777777777,
+      "interval95_pp": [
+        -7.352941176470589,
+        0.0
+      ],
+      "discordant_task_families": 2,
+      "task_families": 28,
+      "degenerate_bootstrap": false,
+      "resampling": "8000 paired task-family draws, seeds averaged; no training-seed uncertainty"
+    },
+    "bezier_minus_nongeometric": {
+      "difference_pp": 0.0,
+      "interval95_pp": [
+        0.0,
+        0.0
+      ],
+      "discordant_task_families": 0,
+      "task_families": 28,
+      "degenerate_bootstrap": true,
+      "resampling": "8000 paired task-family draws, seeds averaged; no training-seed uncertainty"
+    },
+    "bezier_returns_minus_blocked": {
+      "difference_pp": 1.3888888888888888,
+      "interval95_pp": [
+        0.0,
+        4.6875
+      ],
+      "discordant_task_families": 1,
+      "task_families": 28,
+      "degenerate_bootstrap": false,
+      "resampling": "8000 paired task-family draws, seeds averaged; no training-seed uncertainty",
+      "output_diagnostics": {
+        "same_input_first_actions": 56,
+        "identical_first_actions": 44,
+        "final_program_pairs": 72,
+        "identical_final_programs": 57,
+        "identical_action_trajectories": 53
+      }
+    },
+    "nongeometric_returns_minus_blocked": {
+      "difference_pp": -1.3888888888888888,
+      "interval95_pp": [
+        -4.6875,
+        0.0
+      ],
+      "discordant_task_families": 1,
+      "task_families": 28,
+      "degenerate_bootstrap": false,
+      "resampling": "8000 paired task-family draws, seeds averaged; no training-seed uncertainty",
+      "output_diagnostics": {
+        "same_input_first_actions": 56,
+        "identical_first_actions": 45,
+        "final_program_pairs": 72,
+        "identical_final_programs": 61,
+        "identical_action_trajectories": 57
+      }
+    }
+  },
+  "audit": {
+    "passed": true,
+    "counts": {
+      "actions": 3335,
+      "stages": 864
+    },
+    "conditions": [
+      {
+        "condition": "small-none-7-t0",
+        "rescored": 36,
+        "passed": 15
+      },
+      {
+        "condition": "small-ordinary-7-t4",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-ordinary-7-t8",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-ordinary-7-t16",
+        "rescored": 36,
+        "passed": 13
+      },
+      {
+        "condition": "small-nongeometric-7-t4",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-nongeometric-7-t8",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-nongeometric-7-t16",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-nongeometric-7-t8-no_revisit",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-bezier-7-t4",
+        "rescored": 36,
+        "passed": 13
+      },
+      {
+        "condition": "small-bezier-7-t8",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-bezier-7-t16",
+        "rescored": 36,
+        "passed": 13
+      },
+      {
+        "condition": "small-bezier-7-t8-no_revisit",
+        "rescored": 36,
+        "passed": 13
+      },
+      {
+        "condition": "small-none-19-t0",
+        "rescored": 36,
+        "passed": 15
+      },
+      {
+        "condition": "small-ordinary-19-t4",
+        "rescored": 36,
+        "passed": 15
+      },
+      {
+        "condition": "small-ordinary-19-t8",
+        "rescored": 36,
+        "passed": 16
+      },
+      {
+        "condition": "small-ordinary-19-t16",
+        "rescored": 36,
+        "passed": 15
+      },
+      {
+        "condition": "small-nongeometric-19-t4",
+        "rescored": 36,
+        "passed": 15
+      },
+      {
+        "condition": "small-nongeometric-19-t8",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-nongeometric-19-t16",
+        "rescored": 36,
+        "passed": 17
+      },
+      {
+        "condition": "small-nongeometric-19-t8-no_revisit",
+        "rescored": 36,
+        "passed": 15
+      },
+      {
+        "condition": "small-bezier-19-t4",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-bezier-19-t8",
+        "rescored": 36,
+        "passed": 14
+      },
+      {
+        "condition": "small-bezier-19-t16",
+        "rescored": 36,
+        "passed": 13
+      },
+      {
+        "condition": "small-bezier-19-t8-no_revisit",
+        "rescored": 36,
+        "passed": 14
+      }
+    ],
+    "adapters": [
+      {
+        "mode": "ordinary",
+        "seed": 7,
+        "parameters": 1637936,
+        "bytes": 6564608,
+        "hash_verified": true,
+        "field_reload_exact": true,
+        "persisted_update_metrics": 190,
+        "selected_checkpoint_update": 192,
+        "unlogged_tail_declared_schedule": [
+          [
+            191,
+            8,
+            "mbpp_614",
+            2.0021416500945376e-05
+          ],
+          [
+            192,
+            4,
+            "mbpp_869",
+            2.000535448361753e-05
+          ]
+        ]
+      },
+      {
+        "mode": "nongeometric",
+        "seed": 7,
+        "parameters": 1637936,
+        "bytes": 6564608,
+        "hash_verified": true,
+        "field_reload_exact": true,
+        "persisted_update_metrics": 190,
+        "selected_checkpoint_update": 192,
+        "unlogged_tail_declared_schedule": [
+          [
+            191,
+            8,
+            "mbpp_614",
+            2.0021416500945376e-05
+          ],
+          [
+            192,
+            4,
+            "mbpp_869",
+            2.000535448361753e-05
+          ]
+        ]
+      },
+      {
+        "mode": "bezier",
+        "seed": 7,
+        "parameters": 1637936,
+        "bytes": 6564608,
+        "hash_verified": true,
+        "field_reload_exact": true,
+        "persisted_update_metrics": 190,
+        "selected_checkpoint_update": 192,
+        "unlogged_tail_declared_schedule": [
+          [
+            191,
+            8,
+            "mbpp_614",
+            2.0021416500945376e-05
+          ],
+          [
+            192,
+            4,
+            "mbpp_869",
+            2.000535448361753e-05
+          ]
+        ]
+      },
+      {
+        "mode": "ordinary",
+        "seed": 19,
+        "parameters": 1637936,
+        "bytes": 6564608,
+        "hash_verified": true,
+        "field_reload_exact": true,
+        "persisted_update_metrics": 190,
+        "selected_checkpoint_update": 192,
+        "unlogged_tail_declared_schedule": [
+          [
+            191,
+            4,
+            "mbpp_716",
+            2.0021416500945376e-05
+          ],
+          [
+            192,
+            8,
+            "mbpp_959",
+            2.000535448361753e-05
+          ]
+        ]
+      },
+      {
+        "mode": "nongeometric",
+        "seed": 19,
+        "parameters": 1637936,
+        "bytes": 6564608,
+        "hash_verified": true,
+        "field_reload_exact": true,
+        "persisted_update_metrics": 190,
+        "selected_checkpoint_update": 192,
+        "unlogged_tail_declared_schedule": [
+          [
+            191,
+            4,
+            "mbpp_716",
+            2.0021416500945376e-05
+          ],
+          [
+            192,
+            8,
+            "mbpp_959",
+            2.000535448361753e-05
+          ]
+        ]
+      },
+      {
+        "mode": "bezier",
+        "seed": 19,
+        "parameters": 1637936,
+        "bytes": 6564608,
+        "hash_verified": true,
+        "field_reload_exact": true,
+        "persisted_update_metrics": 190,
+        "selected_checkpoint_update": 192,
+        "unlogged_tail_declared_schedule": [
+          [
+            191,
+            4,
+            "mbpp_716",
+            2.0021416500945376e-05
+          ],
+          [
+            192,
+            8,
+            "mbpp_959",
+            2.000535448361753e-05
+          ]
+        ]
+      }
+    ],
+    "route_actions": 3045,
+    "timing_probes": 60,
+    "source_asset_files_verified": 14,
+    "matched_logged_training_schedules": true,
+    "training_log_caveat": "Trainer flushes every 10 updates: loss/gradient records stop at 190. Checkpoint metadata and completion record attest update 192; final two scheduled tasks/steps are reconstructed, not observed metrics.",
+    "matched_primary_budget": {
+      "total_parameters": 1545352240,
+      "trainable_parameters": 1637936,
+      "parameter_bytes": 3093980352,
+      "field_parameters": 548400,
+      "computed_regions_per_sample": 16,
+      "selected_regions_per_sample": 16,
+      "field_samples_per_step": 3,
+      "field_matrix_macs_per_step": 834944,
+      "embedding_rms": 0.0174099113792181
+    }
+  }
+}

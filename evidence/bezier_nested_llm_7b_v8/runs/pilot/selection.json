@@ -1,0 +1,26 @@
+{
+  "learned": {
+    "default_pair": [
+      2,
+      2
+    ],
+    "thresholds": [
+      0.0034475834108889103,
+      0.009643110446631908
+    ]
+  },
+  "best_fixed": [
+    2,
+    2
+  ],
+  "deploy_policy": "best_fixed",
+  "dense_guard": true,
+  "validation_gains": {
+    "vs_best_fixed": 0.0,
+    "vs_shuffled": 0.0078125
+  },
+  "rows_sha256": "effb303c91c010bf2173047b8b9d2ec625630629e00c2891297e109b80d41c2a",
+  "warm_core_sha256": "a7261286c2e214e435687bc8a7dec8aaa698755a0bbf91473d6c37d083dd81d3",
+  "protocol_sha256": "201fc87d3dc59ceb2c1ae99ac5d96b23e8f8667e096be192973c8af5fcf56d54",
+  "chosen_before_test": true
+}

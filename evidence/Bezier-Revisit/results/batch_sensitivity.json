@@ -1,0 +1,39 @@
+{
+  "purpose": "Post-experiment batch-shape sensitivity diagnostic; excluded from benchmark scores",
+  "task": "mbpp_501",
+  "mode": "bezier",
+  "seed": 7,
+  "steps": 8,
+  "initial_prompt_sha256": "a729a8a26b00d96e7c8e2ec8557b9d516f635ce267504d7c4032f947d4c25c06",
+  "original_batch_tasks": [
+    "mbpp_18",
+    "mbpp_501",
+    "mbpp_161",
+    "mbpp_378"
+  ],
+  "original_first_actions": [
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def str_to_list(string):\\n    return list(string)\\n\\n\\ndef lst_to_string(List):\\n    return ''.join(List)\\n\\n\\ndef get_char_count_array(string):\\n    count = [0] * 256\\n    for i in string:\\n        count[ord(i)] += 1\\n    return count\\n\\n\\ndef remove_dirty_chars(string, second_string):\\n    char_count = get_char_count_array(second_string)\\n    result = ''\\n    for i in string:\\n        if char_count[ord(i)] == 0:\\n            result += i\\n    return result\"}",
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def ngcd(x, y):\\n    if x == 0:\\n        return y\\n    return ngcd(y % x, x)\\n\\ndef num_comm_div(x, y):\\n    gcd = ngcd(x, y)\\n    i = 1\\n    comm_div = 0\\n    while (i * gcd <= x and i * gcd <= y):\\n        if (x % i == 0 and y % i == 0):\\n            comm_div += 1\\n        i += 1\\n    return comm_div\"}",
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def remove_elements(list1, list2):\\n    for i in list2:\\n        list1.remove(i)\\n    return list1\"}",
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def move_first(test_list):\\n  test_list.insert(0, test_list.pop())\\n  return test_list\"}"
+  ],
+  "replayed_batch_first_actions": [
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def str_to_list(string):\\n    return list(string)\\n\\n\\ndef lst_to_string(List):\\n    return ''.join(List)\\n\\n\\ndef get_char_count_array(string):\\n    count = [0] * 256\\n    for i in string:\\n        count[ord(i)] += 1\\n    return count\\n\\n\\ndef remove_dirty_chars(string, second_string):\\n    char_count = get_char_count_array(second_string)\\n    result = ''\\n    for i in string:\\n        if char_count[ord(i)] == 0:\\n            result += i\\n    return result\"}",
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def ngcd(x, y):\\n    if x == 0:\\n        return y\\n    return ngcd(y % x, x)\\n\\ndef num_comm_div(x, y):\\n    gcd = ngcd(x, y)\\n    i = 1\\n    comm_div = 0\\n    while (i * gcd <= x and i * gcd <= y):\\n        if (x % i == 0 and y % i == 0):\\n            comm_div += 1\\n        i += 1\\n    return comm_div\"}",
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def remove_elements(list1, list2):\\n    for i in list2:\\n        list1.remove(i)\\n    return list1\"}",
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def move_first(test_list):\\n  test_list.insert(0, test_list.pop())\\n  return test_list\"}"
+  ],
+  "batch_replay_exact": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "single_first_actions": [
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def ngcd(x, y):\\n    if (y == 0):\\n        return x\\n    else:\\n        return ngcd(y, x % y)\\n\\n\\ndef num_comm_div(x, y):\\n    gcd = ngcd(x, y)\\n    i = 1\\n    comm_div = 0\\n    while (i * gcd <= x and i * gcd <= y):\\n        if (x % i == 0 and y % i == 0):\\n            comm_div += 1\\n        i += 1\\n    return comm_div\"}",
+    "{\"tool\": \"write_file\", \"path\": \"solution.py\", \"content\": \"def ngcd(x, y):\\n    if (y == 0):\\n        return x\\n    else:\\n        return ngcd(y, x % y)\\n\\n\\ndef num_comm_div(x, y):\\n    gcd = ngcd(x, y)\\n    i = 1\\n    comm_div = 0\\n    while (i * gcd <= x and i * gcd <= y):\\n        if (x % i == 0 and y % i == 0):\\n            comm_div += 1\\n        i += 1\\n    return comm_div\"}"
+  ],
+  "single_repeats_exact": true,
+  "single_equals_original_batch": false,
+  "interpretation": "This checks observed batch sensitivity, not its floating-point root cause."
+}

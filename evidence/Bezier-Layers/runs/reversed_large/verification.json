@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "larger_checkpoint_sha256": "910df962a694003a7d62bfb41608e426451e392c9b9b03467a72ccd12525d81c",
+  "trained_examples": 9400,
+  "large_execution_variants": 7,
+  "prior_checkpoints": 6,
+  "timing_cases": 84,
+  "fresh_memory_processes": 6,
+  "source_snapshots": [
+    "reversed_benchmark",
+    "reversed_diagnostics",
+    "reversed_memory_stress_270m_cpu",
+    "reversed_memory_stress_270m_gpu_layers",
+    "reversed_memory_stress_270m_gpu",
+    "reversed_memory_trained_51m_cpu",
+    "reversed_memory_trained_51m_gpu_layers",
+    "reversed_memory_trained_51m_gpu",
+    "reversed_reporting",
+    "reversed_training"
+  ]
+}

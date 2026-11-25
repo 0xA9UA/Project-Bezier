@@ -1,0 +1,79 @@
+{
+  "complete": true,
+  "created_utc": "2026-11-25T10:51:51.594614+00:00",
+  "reason": "Correct the earlier chart title, which called arms matched despite a declared early retention stop.",
+  "input": {
+    "path": "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\summary\\results_summary.json",
+    "sha256": "b262a96f637bddd3a7f35a0a5af80821d265e95ce82d87c522db33a8c3b2d9d2"
+  },
+  "renderer": {
+    "path": "WORKSPACE\\bezier_nested_llm_7b_v5\\analysis\\render_cohort_budget.py",
+    "sha256": "d70cd9486d5e4edb7dac1a002d76cebf2e3eaa7631064cda1c316e3fe1f2f6bc"
+  },
+  "render": {
+    "path": "WORKSPACE\\bezier_nested_llm_7b_v5\\runs\\summary_final\\cohort_comparison.png",
+    "sha256": "43bc7b106036d276a21896b30894d44dcf054f5fe11960d72cb9599da208edfb"
+  },
+  "original_figure": {
+    "file": "cohort_comparison.png",
+    "sha256": "18f7604062b9033e6af37d08fcaad03297010f29d9ad48d3170a5df1481d2c98"
+  },
+  "primary_arm": "absolute",
+  "training_budgets": {
+    "absolute": {
+      "completed_reasoning_updates": 1024,
+      "completed_replay_updates": 341,
+      "selected_reasoning_updates": 768,
+      "selected_replay_updates": 256,
+      "status": "training_complete"
+    },
+    "relative": {
+      "completed_reasoning_updates": 256,
+      "completed_replay_updates": 85,
+      "selected_reasoning_updates": 128,
+      "selected_replay_updates": 42,
+      "status": "validation_guard_stopped"
+    }
+  },
+  "plotted_metrics": {
+    "accuracy": {
+      "absolute_selected_disabled": [
+        0.650390625,
+        0.6015625
+      ],
+      "absolute_learned": [
+        0.6474609375,
+        0.59375
+      ],
+      "relative_selected_disabled": [
+        0.6513671875,
+        0.6103515625
+      ],
+      "relative_learned": [
+        0.6513671875,
+        0.6103515625
+      ]
+    },
+    "relative_minus_absolute_control_gain": {
+      "test": {
+        "gain": 0.0029296875,
+        "ci95": [
+          -0.015625,
+          0.021484375
+        ]
+      },
+      "ood": {
+        "gain": 0.0078125,
+        "ci95": [
+          -0.008813476562499978,
+          0.0244140625
+        ]
+      }
+    }
+  },
+  "metrics_changed": false,
+  "model_inference": false,
+  "gpu_used": false,
+  "policy_or_checkpoint_selection": false,
+  "frozen_scripts_edited": false
+}

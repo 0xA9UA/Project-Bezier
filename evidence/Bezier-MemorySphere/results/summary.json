@@ -1,0 +1,2206 @@
+{
+  "conditions": {
+    "bezier_s19_16": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 29.48058439977467,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 4,
+      "valid_final_programs": 48,
+      "actions": 350,
+      "invalid_json_actions": 1
+    },
+    "bezier_s19_2": {
+      "passed": 1,
+      "total": 60,
+      "percent": 1.6666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 1,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 15.726344699971378,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 3,
+      "valid_final_programs": 51,
+      "actions": 351,
+      "invalid_json_actions": 0
+    },
+    "bezier_s19_32": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 49.861928899772465,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 4,
+      "valid_final_programs": 48,
+      "actions": 348,
+      "invalid_json_actions": 0
+    },
+    "bezier_s19_4": {
+      "passed": 1,
+      "total": 60,
+      "percent": 1.6666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 18.188348799943924,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 4,
+      "valid_final_programs": 48,
+      "actions": 348,
+      "invalid_json_actions": 0
+    },
+    "bezier_s19_8": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 22.382644499652088,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 3,
+      "valid_final_programs": 48,
+      "actions": 351,
+      "invalid_json_actions": 0
+    },
+    "bezier_s19_adaptive": {
+      "passed": 1,
+      "total": 60,
+      "percent": 1.6666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 1,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 3.5487113145586626,
+      "learned_exit_fraction": 0.9485520947357946,
+      "learned_exit_mean_steps": 2.0055602182123375,
+      "quality_seconds": 24.887488500215113,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 4,
+      "valid_final_programs": 48,
+      "actions": 349,
+      "invalid_json_actions": 3
+    },
+    "bezier_s19_adaptive_no_memory_route": {
+      "passed": 1,
+      "total": 60,
+      "percent": 1.6666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 1,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 3.1366504854368933,
+      "learned_exit_fraction": 0.9622977346278317,
+      "learned_exit_mean_steps": 2.0058012443248696,
+      "quality_seconds": 29.547026899643242,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 1,
+      "valid_final_programs": 58,
+      "actions": 357,
+      "invalid_json_actions": 29
+    },
+    "bezier_s19_adaptive_permuted_route": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 1.0,
+      "learned_exit_mean_steps": 2.0,
+      "quality_seconds": 6.711274199187756,
+      "quality_peak_gib": 0.1896042823791504,
+      "finished": 39,
+      "valid_final_programs": 60,
+      "actions": 178,
+      "invalid_json_actions": 5
+    },
+    "bezier_s19_adaptive_uniform_recurrence": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.3024830699774266,
+      "learned_exit_fraction": 0.9902182091798345,
+      "learned_exit_mean_steps": 2.0091185410334345,
+      "quality_seconds": 5.2774670999497175,
+      "quality_peak_gib": 0.1896042823791504,
+      "finished": 59,
+      "valid_final_programs": 40,
+      "actions": 83,
+      "invalid_json_actions": 0
+    },
+    "bezier_s7_16": {
+      "passed": 6,
+      "total": 60,
+      "percent": 10.0,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 32.247627099975944,
+      "quality_peak_gib": 0.22547483444213867,
+      "finished": 8,
+      "valid_final_programs": 48,
+      "actions": 340,
+      "invalid_json_actions": 0
+    },
+    "bezier_s7_2": {
+      "passed": 4,
+      "total": 60,
+      "percent": 6.666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 16.13348780013621,
+      "quality_peak_gib": 0.21375703811645508,
+      "finished": 5,
+      "valid_final_programs": 48,
+      "actions": 347,
+      "invalid_json_actions": 0
+    },
+    "bezier_s7_32": {
+      "passed": 5,
+      "total": 60,
+      "percent": 8.333333333333334,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 70.92998099979013,
+      "quality_peak_gib": 0.21223115921020508,
+      "finished": 6,
+      "valid_final_programs": 51,
+      "actions": 342,
+      "invalid_json_actions": 18
+    },
+    "bezier_s7_4": {
+      "passed": 5,
+      "total": 60,
+      "percent": 8.333333333333334,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 18.49808880034834,
+      "quality_peak_gib": 0.21897459030151367,
+      "finished": 6,
+      "valid_final_programs": 48,
+      "actions": 344,
+      "invalid_json_actions": 0
+    },
+    "bezier_s7_8": {
+      "passed": 5,
+      "total": 60,
+      "percent": 8.333333333333334,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 25.233873900026083,
+      "quality_peak_gib": 0.27033185958862305,
+      "finished": 6,
+      "valid_final_programs": 48,
+      "actions": 344,
+      "invalid_json_actions": 0
+    },
+    "bezier_s7_adaptive": {
+      "passed": 5,
+      "total": 60,
+      "percent": 8.333333333333334,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 5.05284139100933,
+      "learned_exit_fraction": 0.8983884648006786,
+      "learned_exit_mean_steps": 2.0050037764350455,
+      "quality_seconds": 33.73735779989511,
+      "quality_peak_gib": 0.20603609085083008,
+      "finished": 6,
+      "valid_final_programs": 55,
+      "actions": 342,
+      "invalid_json_actions": 2
+    },
+    "bezier_s7_adaptive_no_memory_route": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 6.4348183687457166,
+      "learned_exit_fraction": 0.8522960932145305,
+      "learned_exit_mean_steps": 2.0043425814234017,
+      "quality_seconds": 33.123710099607706,
+      "quality_peak_gib": 0.23796319961547852,
+      "finished": 4,
+      "valid_final_programs": 55,
+      "actions": 348,
+      "invalid_json_actions": 0
+    },
+    "bezier_s7_adaptive_permuted_route": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.4076603325415675,
+      "learned_exit_fraction": 0.9936658749010293,
+      "learned_exit_mean_steps": 2.21902390438247,
+      "quality_seconds": 9.876513299532235,
+      "quality_peak_gib": 0.1975688934326172,
+      "finished": 0,
+      "valid_final_programs": 13,
+      "actions": 360,
+      "invalid_json_actions": 35
+    },
+    "bezier_s7_adaptive_uniform_recurrence": {
+      "passed": 1,
+      "total": 60,
+      "percent": 1.6666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 1,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 8.954934049829019,
+      "learned_exit_fraction": 0.7681973619931607,
+      "learned_exit_mean_steps": 2.001112877583466,
+      "quality_seconds": 53.91896540019661,
+      "quality_peak_gib": 0.20603609085083008,
+      "finished": 57,
+      "valid_final_programs": 54,
+      "actions": 138,
+      "invalid_json_actions": 19
+    },
+    "direct_s19_16": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 45.70695110037923,
+      "quality_peak_gib": 0.1972179412841797,
+      "finished": 8,
+      "valid_final_programs": 49,
+      "actions": 343,
+      "invalid_json_actions": 1
+    },
+    "direct_s19_2": {
+      "passed": 1,
+      "total": 60,
+      "percent": 1.6666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 1,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 13.113378000445664,
+      "quality_peak_gib": 0.1972179412841797,
+      "finished": 11,
+      "valid_final_programs": 51,
+      "actions": 333,
+      "invalid_json_actions": 0
+    },
+    "direct_s19_32": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 82.13331720046699,
+      "quality_peak_gib": 0.1972179412841797,
+      "finished": 5,
+      "valid_final_programs": 48,
+      "actions": 348,
+      "invalid_json_actions": 11
+    },
+    "direct_s19_4": {
+      "passed": 1,
+      "total": 60,
+      "percent": 1.6666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 1,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 17.13629399985075,
+      "quality_peak_gib": 0.1972179412841797,
+      "finished": 13,
+      "valid_final_programs": 50,
+      "actions": 331,
+      "invalid_json_actions": 1
+    },
+    "direct_s19_8": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 22.227984399534762,
+      "quality_peak_gib": 0.1972179412841797,
+      "finished": 8,
+      "valid_final_programs": 49,
+      "actions": 340,
+      "invalid_json_actions": 0
+    },
+    "direct_s19_adaptive": {
+      "passed": 2,
+      "total": 60,
+      "percent": 3.3333333333333335,
+      "groups": {
+        "iid": {
+          "passed": 1,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 3.4404301075268817,
+      "learned_exit_fraction": 0.9526021505376344,
+      "learned_exit_mean_steps": 2.0194148455842513,
+      "quality_seconds": 25.444271699525416,
+      "quality_peak_gib": 0.1972179412841797,
+      "finished": 13,
+      "valid_final_programs": 52,
+      "actions": 332,
+      "invalid_json_actions": 2
+    },
+    "direct_s7_16": {
+      "passed": 3,
+      "total": 60,
+      "percent": 5.0,
+      "groups": {
+        "iid": {
+          "passed": 2,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 36.03049249947071,
+      "quality_peak_gib": 0.23070812225341797,
+      "finished": 7,
+      "valid_final_programs": 48,
+      "actions": 342,
+      "invalid_json_actions": 1
+    },
+    "direct_s7_2": {
+      "passed": 5,
+      "total": 60,
+      "percent": 8.333333333333334,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 17.521237900480628,
+      "quality_peak_gib": 0.23070812225341797,
+      "finished": 7,
+      "valid_final_programs": 49,
+      "actions": 340,
+      "invalid_json_actions": 1
+    },
+    "direct_s7_32": {
+      "passed": 3,
+      "total": 60,
+      "percent": 5.0,
+      "groups": {
+        "iid": {
+          "passed": 2,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 53.074183399789035,
+      "quality_peak_gib": 0.1992931365966797,
+      "finished": 17,
+      "valid_final_programs": 53,
+      "actions": 316,
+      "invalid_json_actions": 9
+    },
+    "direct_s7_4": {
+      "passed": 5,
+      "total": 60,
+      "percent": 8.333333333333334,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 18.510897600091994,
+      "quality_peak_gib": 0.20839405059814453,
+      "finished": 6,
+      "valid_final_programs": 49,
+      "actions": 342,
+      "invalid_json_actions": 0
+    },
+    "direct_s7_8": {
+      "passed": 4,
+      "total": 60,
+      "percent": 6.666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 3,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 22.553772699087858,
+      "quality_peak_gib": 0.21736907958984375,
+      "finished": 6,
+      "valid_final_programs": 48,
+      "actions": 342,
+      "invalid_json_actions": 0
+    },
+    "direct_s7_adaptive": {
+      "passed": 5,
+      "total": 60,
+      "percent": 8.333333333333334,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 4.131250655204948,
+      "learned_exit_fraction": 0.9345843379809204,
+      "learned_exit_mean_steps": 2.1805945036455414,
+      "quality_seconds": 32.35182600002736,
+      "quality_peak_gib": 0.1992931365966797,
+      "finished": 15,
+      "valid_final_programs": 54,
+      "actions": 315,
+      "invalid_json_actions": 8
+    },
+    "qwen_1.5B": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 1.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 217.4051405005157,
+      "quality_peak_gib": 2.9552273750305176,
+      "finished": 1,
+      "valid_final_programs": 2,
+      "actions": 356,
+      "invalid_json_actions": 12
+    },
+    "qwen_14B": {
+      "passed": 48,
+      "total": 60,
+      "percent": 80.0,
+      "groups": {
+        "iid": {
+          "passed": 21,
+          "total": 24
+        },
+        "long": {
+          "passed": 7,
+          "total": 12
+        },
+        "project": {
+          "passed": 11,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 9,
+          "total": 12
+        }
+      },
+      "projects_passed": 3,
+      "projects_total": 4,
+      "mean_steps": 1.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 531.7387031000108,
+      "quality_peak_gib": 27.838371753692627,
+      "finished": 20,
+      "valid_final_programs": 60,
+      "actions": 300,
+      "invalid_json_actions": 30
+    },
+    "straight_s19_16": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 29.29263269994408,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 2,
+      "valid_final_programs": 48,
+      "actions": 356,
+      "invalid_json_actions": 0
+    },
+    "straight_s19_2": {
+      "passed": 2,
+      "total": 60,
+      "percent": 3.3333333333333335,
+      "groups": {
+        "iid": {
+          "passed": 2,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 17.549479300156236,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 2,
+      "valid_final_programs": 51,
+      "actions": 354,
+      "invalid_json_actions": 2
+    },
+    "straight_s19_32": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 44.327319299802184,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 1,
+      "valid_final_programs": 48,
+      "actions": 357,
+      "invalid_json_actions": 1
+    },
+    "straight_s19_4": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 21.875391099601984,
+      "quality_peak_gib": 0.22883129119873047,
+      "finished": 1,
+      "valid_final_programs": 48,
+      "actions": 357,
+      "invalid_json_actions": 4
+    },
+    "straight_s19_8": {
+      "passed": 0,
+      "total": 60,
+      "percent": 0.0,
+      "groups": {
+        "iid": {
+          "passed": 0,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 23.221214699558914,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 1,
+      "valid_final_programs": 48,
+      "actions": 357,
+      "invalid_json_actions": 0
+    },
+    "straight_s19_adaptive": {
+      "passed": 2,
+      "total": 60,
+      "percent": 3.3333333333333335,
+      "groups": {
+        "iid": {
+          "passed": 2,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.789270473481,
+      "learned_exit_fraction": 0.973785815891079,
+      "learned_exit_mean_steps": 2.0029215358931554,
+      "quality_seconds": 22.915868000127375,
+      "quality_peak_gib": 0.20005559921264648,
+      "finished": 2,
+      "valid_final_programs": 48,
+      "actions": 354,
+      "invalid_json_actions": 0
+    },
+    "straight_s7_16": {
+      "passed": 4,
+      "total": 60,
+      "percent": 6.666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 36.95738880056888,
+      "quality_peak_gib": 0.21366500854492188,
+      "finished": 5,
+      "valid_final_programs": 49,
+      "actions": 345,
+      "invalid_json_actions": 13
+    },
+    "straight_s7_2": {
+      "passed": 5,
+      "total": 60,
+      "percent": 8.333333333333334,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 15.084212099201977,
+      "quality_peak_gib": 0.21388673782348633,
+      "finished": 6,
+      "valid_final_programs": 50,
+      "actions": 342,
+      "invalid_json_actions": 0
+    },
+    "straight_s7_32": {
+      "passed": 4,
+      "total": 60,
+      "percent": 6.666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 64.99167300015688,
+      "quality_peak_gib": 0.21366500854492188,
+      "finished": 6,
+      "valid_final_programs": 49,
+      "actions": 342,
+      "invalid_json_actions": 23
+    },
+    "straight_s7_4": {
+      "passed": 6,
+      "total": 60,
+      "percent": 10.0,
+      "groups": {
+        "iid": {
+          "passed": 6,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 16.816520200110972,
+      "quality_peak_gib": 0.21388673782348633,
+      "finished": 7,
+      "valid_final_programs": 47,
+      "actions": 341,
+      "invalid_json_actions": 0
+    },
+    "straight_s7_8": {
+      "passed": 6,
+      "total": 60,
+      "percent": 10.0,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 1,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "quality_seconds": 20.834116900339723,
+      "quality_peak_gib": 0.20902681350708008,
+      "finished": 7,
+      "valid_final_programs": 48,
+      "actions": 343,
+      "invalid_json_actions": 0
+    },
+    "straight_s7_adaptive": {
+      "passed": 4,
+      "total": 60,
+      "percent": 6.666666666666667,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 24
+        },
+        "long": {
+          "passed": 0,
+          "total": 12
+        },
+        "project": {
+          "passed": 0,
+          "total": 12
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 12
+        }
+      },
+      "projects_passed": 0,
+      "projects_total": 4,
+      "mean_steps": 3.365221878224974,
+      "learned_exit_fraction": 0.955108359133127,
+      "learned_exit_mean_steps": 2.0193408968125337,
+      "quality_seconds": 23.3357736999169,
+      "quality_peak_gib": 0.20396137237548828,
+      "finished": 5,
+      "valid_final_programs": 52,
+      "actions": 345,
+      "invalid_json_actions": 5
+    }
+  },
+  "aggregate": [
+    {
+      "mode": "bezier",
+      "budget": "2",
+      "passed": 5,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 0,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "bezier",
+      "budget": "4",
+      "passed": 6,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 2,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "bezier",
+      "budget": "8",
+      "passed": 5,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "bezier",
+      "budget": "16",
+      "passed": 6,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "bezier",
+      "budget": "32",
+      "passed": 5,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "bezier",
+      "budget": "adaptive",
+      "passed": 6,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 4.300776352783997,
+      "learned_exit_fraction": 0.9234702797682366,
+      "learned_exit_mean_steps": 2.0052819973236913,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "straight",
+      "budget": "2",
+      "passed": 7,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 7,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 0,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "straight",
+      "budget": "4",
+      "passed": 6,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 6,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 0,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "straight",
+      "budget": "8",
+      "passed": 6,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "straight",
+      "budget": "16",
+      "passed": 4,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 0,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "straight",
+      "budget": "32",
+      "passed": 4,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 4,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 0,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "straight",
+      "budget": "adaptive",
+      "passed": 6,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 3.077246175852987,
+      "learned_exit_fraction": 0.964447087512103,
+      "learned_exit_mean_steps": 2.0111312163528448,
+      "groups": {
+        "iid": {
+          "passed": 6,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 0,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "direct",
+      "budget": "2",
+      "passed": 6,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 2.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "direct",
+      "budget": "4",
+      "passed": 6,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 4.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "direct",
+      "budget": "8",
+      "passed": 4,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 8.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 3,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "direct",
+      "budget": "16",
+      "passed": 3,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 16.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 2,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "direct",
+      "budget": "32",
+      "passed": 3,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 32.0,
+      "learned_exit_fraction": 0.0,
+      "learned_exit_mean_steps": null,
+      "groups": {
+        "iid": {
+          "passed": 2,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 1,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    },
+    {
+      "mode": "direct",
+      "budget": "adaptive",
+      "passed": 7,
+      "total": 120,
+      "projects_passed": 0,
+      "projects_total": 8,
+      "mean_steps": 3.7858403813659147,
+      "learned_exit_fraction": 0.9435932442592774,
+      "learned_exit_mean_steps": 2.1000046746148966,
+      "groups": {
+        "iid": {
+          "passed": 5,
+          "total": 48
+        },
+        "long": {
+          "passed": 0,
+          "total": 24
+        },
+        "project": {
+          "passed": 2,
+          "total": 24
+        },
+        "mbpp": {
+          "passed": 0,
+          "total": 24
+        }
+      }
+    }
+  ],
+  "comparisons": {
+    "bezier_minus_straight_2": {
+      "difference_pp": -1.6666666666666667,
+      "bootstrap_95": [
+        -5.172413793103448,
+        0.0
+      ],
+      "paired_wins": 0,
+      "paired_losses": 2,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_straight_4": {
+      "difference_pp": 0.0,
+      "bootstrap_95": [
+        -5.357142857142857,
+        3.90625
+      ],
+      "paired_wins": 2,
+      "paired_losses": 2,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_straight_8": {
+      "difference_pp": -0.8333333333333334,
+      "bootstrap_95": [
+        -5.172413793103448,
+        1.7857142857142858
+      ],
+      "paired_wins": 1,
+      "paired_losses": 2,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_straight_16": {
+      "difference_pp": 1.6666666666666667,
+      "bootstrap_95": [
+        0.0,
+        6.451612903225806
+      ],
+      "paired_wins": 2,
+      "paired_losses": 0,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_straight_32": {
+      "difference_pp": 0.8333333333333334,
+      "bootstrap_95": [
+        -1.9230769230769231,
+        5.172413793103448
+      ],
+      "paired_wins": 2,
+      "paired_losses": 1,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_straight_adaptive": {
+      "difference_pp": 0.0,
+      "bootstrap_95": [
+        -4.6875,
+        5.172413793103448
+      ],
+      "paired_wins": 2,
+      "paired_losses": 2,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_direct_2": {
+      "difference_pp": -0.8333333333333334,
+      "bootstrap_95": [
+        -4.6875,
+        3.3333333333333335
+      ],
+      "paired_wins": 1,
+      "paired_losses": 2,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_direct_4": {
+      "difference_pp": 0.0,
+      "bootstrap_95": [
+        -3.7037037037037037,
+        3.448874521072788
+      ],
+      "paired_wins": 2,
+      "paired_losses": 2,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_direct_8": {
+      "difference_pp": 0.8333333333333334,
+      "bootstrap_95": [
+        -1.8518518518518519,
+        5.357142857142857
+      ],
+      "paired_wins": 2,
+      "paired_losses": 1,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_direct_16": {
+      "difference_pp": 2.5,
+      "bootstrap_95": [
+        -0.8333333333333334,
+        9.67741935483871
+      ],
+      "paired_wins": 4,
+      "paired_losses": 1,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_direct_32": {
+      "difference_pp": 1.6666666666666667,
+      "bootstrap_95": [
+        -1.6129032258064515,
+        7.407407407407407
+      ],
+      "paired_wins": 3,
+      "paired_losses": 1,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_minus_direct_adaptive": {
+      "difference_pp": -0.8333333333333334,
+      "bootstrap_95": [
+        -5.882352941176471,
+        3.5714285714285716
+      ],
+      "paired_wins": 2,
+      "paired_losses": 3,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "bezier_32_minus_2": {
+      "difference_pp": 0.0,
+      "bootstrap_95": [
+        -3.7037037037037037,
+        3.4482758620689653
+      ],
+      "paired_wins": 1,
+      "paired_losses": 1,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "straight_32_minus_2": {
+      "difference_pp": -2.5,
+      "bootstrap_95": [
+        -7.407407407407407,
+        1.7857142857142858
+      ],
+      "paired_wins": 1,
+      "paired_losses": 4,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    },
+    "direct_32_minus_2": {
+      "difference_pp": -2.5,
+      "bootstrap_95": [
+        -6.896551724137931,
+        0.0
+      ],
+      "paired_wins": 0,
+      "paired_losses": 3,
+      "families": 52,
+      "stage_runs": 120,
+      "caution": "Pilot only; zero-width bootstrap when all outcomes match does not prove equivalence."
+    }
+  }
+}
