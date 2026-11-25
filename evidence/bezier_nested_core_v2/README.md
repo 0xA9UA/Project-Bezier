@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Revision 2: a fixed-budget shared reasoning and control core
 
 The **entire central parameter region contains exactly 1,312 learned parameters**:

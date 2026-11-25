@@ -28,7 +28,7 @@ Granite's six-bit deployment passed the project's limited language and QA screen
 
 Earlier nested-core revisions established shared storage and execution behavior without satisfying their combined quality criteria. V4 added a fixed input-preserving skip and compared matched clean and shared models.
 
-On 512 held-out examples from the seed-7 experiment, the same shared checkpoint improved from 52.73% accuracy with redirects disabled to 57.62% with redirects enabled. The recorded NLL comparisons against zero turns, one turn, and a separately trained clean control had positive paired-program intervals. Both clean and shared models benefited from the changed representation.
+On 512 held-out answer-prefix cases from 32 program files in the seed-7 experiment, the same shared checkpoint improved from 52.73% accuracy with redirects disabled to 57.62% with redirects enabled. The recorded NLL comparisons against zero turns, one turn, and a separately trained clean control had positive paired-program intervals. Both clean and shared models benefited from the changed representation. The clean model reached 57.03% accuracy, so the 4.89-point improvement is against disabled redirects in the same checkpoint, not against the clean model.
 
 This remains a single-seed adaptive follow-up using reused holdouts. Longer-program core reasoning remained near chance, and controlled inference was slower than clean inference. Replication should preserve those boundaries. [V4 report](evidence/bezier_nested_core_v4/runs/input_preserving/report.md) · [Matched comparison](evidence/bezier_nested_core_v4/runs/input_preserving/comparison.md) · [Saved verification](evidence/bezier_nested_core_v4/runs/input_preserving/verification.json)
 

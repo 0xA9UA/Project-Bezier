@@ -8,6 +8,9 @@ The strongest results are concrete: learned routes can change which computation 
 
 ## Start reading
 
+- [What this research is useful for](READ_THIS_FIRST.md): practical lessons, evidence strength, and reproduction limits.
+- [Second-pass review](REVIEW.md): research-quality and privacy checks.
+
 - [Research atlas](atlas/index.html): searchable project summaries, findings, limitations, and evidence links. Download the repository and open the HTML in a browser to use the interactive version.
 - [Consolidated report](reports/project_bezier_consolidated.pdf): the complete narrative in PDF form.
 - [Research notes](RESEARCH_NOTES.md): the main questions, interpretation, and next experiments.
@@ -23,7 +26,7 @@ The publication contains a curated evidence snapshot. It does not include the en
 |---|---|
 | Does geometric routing affect computation? | Yes. Activation and coordinate interventions changed later expert or node selections and model outputs. A useful routing mechanism still needs to outperform a matched fixed, shuffled, or ordinary-routing control. |
 | Can sharing or compression reduce storage? | Yes, under the tested conditions. Shared fields helped several bounded tasks; Granite's later validation-selected mixed-precision artifact passed its fresh quality screen at **16.464 GiB**. Simpler quantization controls remain competitive. |
-| Does steering ever help? | In the **nested-core v4 single-seed pilot**, enabling redirects improved the same checkpoint from **52.73% to 57.62%** on 512 held-out examples. The result needs new holdouts and additional seeds. |
+| Does steering ever help? | In the **nested-core v4 single-seed pilot**, enabling redirects improved the same checkpoint from **52.73% to 57.62%** on **512 answer-prefix cases from 32 programs, one seed**. The clean model reached 57.03%; the 4.89-point gain is against disabled redirects. The result needs new holdouts and additional seeds. |
 | Does learned routing help the pretrained 7B models? | An input-specific benefit over fixed and shuffled routes remains unresolved. The v8 release rule retained **fixed `(2,2)`** as the default policy. |
 | Do more internal visits produce a better coding agent? | The matched coding studies found no dependable gain. The from-scratch 7.41B training run completed, but its partially scored final panels achieved **0/60** and **0/40** successful tasks. |
 | Does less arithmetic or GPU memory mean faster inference? | Often it did not. Transfers, dispatch, repeated passes, and allocation costs mattered; some reduced-memory designs were substantially slower. |

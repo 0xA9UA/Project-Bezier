@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../../PUBLICATION_SCOPE.md) · [Reader guide](../../../../READ_THIS_FIRST.md).
+
 # Core learning diagnostic
 
 These probes used CPU only (two threads), the enlarged **235,210-parameter**

@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../PUBLICATION_SCOPE.md) · [Reader guide](../../../READ_THIS_FIRST.md).
+
 # Supplementary execution scaling
 
 Fifteen configurations, random weights, seed 2026. Widths 256, 512 and 1024; 32, 64 and 64 stored experts, respectively, except the compact residual with eight. All routed models perform eight expert transformations per input; the full residual executes every stored block. Reported timings are medians of five synchronized wall-clock repeats of 50 forwards after warmup, including routing and dispatch, excluding host transfer, preprocessing, loading and startup. Each configuration ran sequentially after the main experiment released the GPU.

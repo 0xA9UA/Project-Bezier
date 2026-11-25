@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../PUBLICATION_SCOPE.md) · [Reader guide](../../../READ_THIS_FIRST.md).
+
 # Bézier sphere experiment
 
 Fixed stratified 60/20/20 split, identical training budget, validation-loss checkpoint selection; seed variation is not independent-data uncertainty. All timing includes routing; inputs reside on device. Eager float32; no compilation or mixed precision.

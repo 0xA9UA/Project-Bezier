@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Resident shared-core controller: completed pilot
 
 **The shared parameter and resident-runtime implementation passes its checks. Useful conditional control is not established.** Learned routing reaches 66.70% test accuracy versus 65.82% with the same weights and control disabled, but its paired confidence interval crosses zero; shuffled routing scores higher and longer-program OOD accuracy falls slightly. Training, the five-task final suite, and secondary diagnostics are complete.

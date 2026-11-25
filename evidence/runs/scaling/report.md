@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../PUBLICATION_SCOPE.md) · [Reader guide](../../../READ_THIS_FIRST.md).
+
 # Bézier scaling experiment
 
 92 preregistered runs, seeds 7 and 19. EMNIST has 100,000 training / 12,800 validation / 18,800 official test images; the medium-size data sweep uses nested 10,000 and 40,000 training subsets. Fact tables contain 1,024, 4,096 or 16,384 independent associations. Twenty image epochs or 2,000 fact updates per run, identical optimizer settings and batch size. Checkpoints are selected by validation loss. Test labels do not select training settings or checkpoints. Reported table values are means over two training seeds; plot error bars show one sample standard deviation across those seeds.

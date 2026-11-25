@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # V5 shared-core controller: completed two-arm pilot
 
 **Neither arm demonstrates useful learned steering on fresh test/OOD programs.** Training, evaluations, diagnostics, preservation audits, and runtime checks are complete. Exact shared storage and update scope passed independently of the accuracy result. Absolute remains the preregistered primary; selected checkpoints and policies stay frozen.

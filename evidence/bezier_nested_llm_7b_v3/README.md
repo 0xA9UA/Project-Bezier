@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Controller-first shared core and bounded GPU residency
 
 The core's job is to improve the **full outer model's decisions**. It is not required to match that model as a standalone language model. This revision corrects the v2 training/selection objective and adds a runtime that can keep the full parameter set available without keeping all of it in VRAM.

@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Shared-core controller experiment: completed results
 
 **The adapted outer model improved on the fresh task, and streaming reduced GPU allocation by 74.69%. Conditional control did not improve the selected model: validation selected Always Stay.** These measurements do not establish the proposed combination of smarter routing and efficient residency.

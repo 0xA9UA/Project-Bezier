@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Recurrent spatial computation
 
 The first, supervised 64-update pilot passed its execution checks but failed answer accuracy: all recurrent policies scored 0% on fresh test and longer-program sets, and every learned run reached the maximum budget. See the [measured results](runs/recurrent_pilot/REPORT.md). The current training method is [reinforcement learning with reward-gated position changes](REINFORCEMENT.md).

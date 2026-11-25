@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](PUBLICATION_SCOPE.md) · [Reader guide](../READ_THIS_FIRST.md).
+
 # Project Bézier
 
 A working, trained PyTorch proof of concept of **input-dependent Bézier paths through the interior of a sphere**. An input enters at a learned surface point, carries a hidden feature vector through spatially selected processing modules, and is decoded at another learned surface point. The original model has 64 hidden features; the trained scaling study also tests widths 128 and 256.

@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # One resident model with a shared controller core
 
 The completed pilot implements the fixed 15% shared core and proves exact weight sharing, but **does not establish useful conditional improvement of the outer model**. The objective is to steer the full model; standalone core task accuracy is not used as the success criterion.

@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../../PUBLICATION_SCOPE.md) · [Reader guide](../../../../READ_THIS_FIRST.md).
+
 # Recurrent node pilot
 
 **The recurrent implementation passes its correctness and storage checks, but this pilot fails task accuracy.** Learned, matched fixed and shuffled recurrent routing all scored 0/128 on fresh test examples and 0/64 on longer programs. The same trained weights under dense inference scored 79/128 (61.72%) and 40/64 (62.50%). Every learned run exhausted the eight-turn budget; no early stopping occurred. This checkpoint is an architecture experiment with failed answer quality.

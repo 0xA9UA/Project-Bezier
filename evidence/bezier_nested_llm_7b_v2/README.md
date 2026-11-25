@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Joint reasoning and control with a shared 15% core
 
 This is the second full-size adaptation experiment. It starts from the **adapted, non-steering Mistral-7B-Instruct-v0.3 checkpoint** in the preceding experiment. The original project and its checkpoints remain unchanged. Completed results and checkpoint selection are reported in [EXPERIMENT_REPORT.md](EXPERIMENT_REPORT.md).

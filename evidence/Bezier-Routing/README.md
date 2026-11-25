@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Bezier-Routing
 
 An independent experiment in **changing a Bézier route after intermediate neural computation**. All source, copied data, checkpoints, traces and reports for this experiment are kept in this folder. It uses the already-installed Python environment at `WORKSPACE\.venv`; it does not modify the earlier model or the other sibling projects.

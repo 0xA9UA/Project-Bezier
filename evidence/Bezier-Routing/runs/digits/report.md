@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../../PUBLICATION_SCOPE.md) · [Reader guide](../../../../READ_THIS_FIRST.md).
+
 # Activation-dependent Bézier routing
 
 Twenty-four exploratory runs: eight configurations and training seeds 7, 19 and 42. Same 1,078 training / 359 validation / 360 test digit examples as the earlier project; this is a reused test set, not a new untouched benchmark. Eighty epochs; checkpoint selection uses validation loss. Each feedback/frozen pair starts from identical weights, with the same parameter and active-neuron budgets. No hyperparameters were selected using these new test results.

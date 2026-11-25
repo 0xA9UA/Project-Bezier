@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Bezier-Engine
 
 A custom PyTorch execution engine testing both requested CPU/GPU splits on the existing Bézier sphere network. It includes inference, supervised learning, and a small PPO reinforcement-learning experiment. It uses the parent project's local Python environment and RTX 5090; no downloads or paid services are required.

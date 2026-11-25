@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Shared recurrence and Bézier revisits: coding results
 
 At the prespecified eight-pass budget, Bézier routing passed 28/72 stage trials, ordinary recurrence 30/72, and non-geometric routing 28/72. This pilot provides no clear evidence that Bézier routing improves coding success over the matched controls. Allowing Bézier returns changed success by +1.39 percentage points relative to blocking returns in the fitted model. This intervention also changes the routing distribution, so it does not isolate a benefit from geometry itself.

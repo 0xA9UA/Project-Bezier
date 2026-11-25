@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Conditional routing on fresh arithmetic programs
 
 **The trained core recovered five more answers than fixed routing on the 768-prompt test and 13 more on the 384 longer prompts. The uncertainty intervals include zero.** On the longer programs, shuffling the learned decisions among programs recovered one more answer than matching each decision to its own prompt. These results show opportunities for redirection while leaving its input-specific accuracy benefit unresolved. The application defaults to fixed (2, 2), the policy selected before either test set was scored.

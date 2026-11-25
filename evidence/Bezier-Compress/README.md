@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Bezier-Compress
 
 A separate project testing whether compact Bézier representations can compress a pretrained language model while retaining useful behavior. All new source, downloaded models, datasets, codec artifacts, reports and caches live here. The project uses its own Python environment and reuses the parent project's installed CUDA PyTorch runtime read-only; new packages do not modify the original experiment.

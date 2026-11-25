@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../../PUBLICATION_SCOPE.md) · [Reader guide](../../../../READ_THIS_FIRST.md).
+
 # Reversed responsibilities: GPU chooses layers, CPU computes
 
 The requested split works on a trained **50,915,372-parameter** model and an explicitly untrained **269,946,720-parameter** stress model. The trained model is 566 times the size of the earlier 89,968-parameter digit model. All expert weights and full hidden states stay in system RAM. Only the small layer controller resides on GPU.

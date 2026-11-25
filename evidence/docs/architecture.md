@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Mathematical specification
 
 This project implements the interior-ball interpretation from the referenced conversation. It is a geometric mixture of experts with a fixed number of residual state updates. It is not an implementation of a general-purpose language model, an exact ODE solver, or a claim of architectural novelty.

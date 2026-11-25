@@ -12,14 +12,14 @@ Completed two-arm exploratory follow-up; first positive per-seed steering criter
 
 - Added a fixed syntax/input skip to the recurrent encoder output in both clean and shared-controller arms, using existing deterministic projection buffers and no answer execution.
 - Retained 4,704,970 total parameters and a fully shared 235,210-parameter core; completed the matched seed-7 clean/shared pair with 2,256 updates each.
-- Evaluated complete 512-example heldout splits, saved validation-selected best and full-endpoint checkpoints, and compared matched v3/v4 results and provenance.
+- Evaluated complete held-out splits of 512 answer-prefix cases from 32 program files, saved validation-selected best and full-endpoint checkpoints, and compared matched v3/v4 results and provenance.
 - Recorded artifact verification, shared-role gradient audits, CUDA timing/overlap, trajectory data, and an offline interactive experiment visualization.
 
 ## Findings
 
-**Measured.** On 512 heldout examples, the same shared checkpoint improved from 52.73% with redirects disabled to 57.62% with redirects enabled, averaging 6.055 redirects per 16 visits. Answer NLL fell from 0.657042 to 0.646470.
+**Measured.** On 512 held-out answer-prefix cases from 32 program files in seed 7, the same shared checkpoint improved from 52.73% with redirects disabled to 57.62% with redirects enabled, averaging 6.055 redirects per 16 visits. Answer NLL fell from 0.657042 to 0.646470. The separately trained clean model reached 57.03% accuracy; the 4.89-point increase is versus disabled redirects, not versus that clean model.
 
-[S143](../evidence/bezier_nested_core_v4/runs/input_preserving/comparison.md) · [S142](../evidence/bezier_nested_core_v4/runs/input_preserving/report.md)
+[S143](../evidence/bezier_nested_core_v4/runs/input_preserving/comparison.md) · [S142](../evidence/bezier_nested_core_v4/runs/input_preserving/report.md) · [S145](../evidence/bezier_nested_core_v4/runs/input_preserving/suite.json)
 
 **Measured.** Full-turn NLL gain was 0.010572 [95% paired-program interval 0.008350, 0.012941] versus zero turns; 0.004572 [0.003005, 0.006242] versus one turn; and 0.011479 [0.001261, 0.021992] versus the separately trained clean control. The saved per-seed combined criterion passed.
 
@@ -43,7 +43,7 @@ Completed two-arm exploratory follow-up; first positive per-seed steering criter
 
 ## Limits and open questions
 
-- One seed and an adaptive follow-up using reused holdouts; positive program-bootstrap intervals do not establish replication across training seeds.
+- One seed and an adaptive follow-up using reused holdouts. The 512 answer-prefix cases are grouped within 32 programs; program-bootstrap intervals do not establish replication across training seeds.
 - Multiple descriptive intervals were reported without a multiplicity-adjusted study-level success gate.
 - Validation-selected checkpoints and margins differ between revisions and arms.
 - Longer-program reasoning remains approximately chance, and the shared direct core does not outperform the clean direct core.

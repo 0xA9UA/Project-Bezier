@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # V6 node-level spatial routing experiment
 
 **Node-level routing, shared GPU storage, training, and the new pilot are complete.** Coordinates demonstrably change hidden computation. The learned policy improves this test set over spatial Stay, but an advantage over fixed routing or shuffled control remains unproven. The implementation currently adds latency; it does not establish reduced total VRAM relative to one dense model.

@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../../PUBLICATION_SCOPE.md) · [Reader guide](../../../../READ_THIS_FIRST.md).
+
 # Input-preserving follow-up versus revision 3
 
 This adaptive, exploratory follow-up was motivated by a training-only diagnostic of input-bit loss through the outer GRU. It adds a parameter-free syntax/input skip, with the same training recipe, corpus, parameter budget, and central shared core. It uses one seed and is not a confirmatory experiment.

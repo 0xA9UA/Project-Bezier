@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Learning when to redirect a 7B model
 
 This pilot measures whether a smaller execution path through the same model can choose a better next-token prediction for each prompt. It adapts a 7,248,023,552-parameter Mistral decoder. The sphere of radius 0.25 at the origin contains 1,087,201,280 of its existing parameters, or 14.99997%. The outer model can use the weights in that sphere in its ordinary transformer computation.

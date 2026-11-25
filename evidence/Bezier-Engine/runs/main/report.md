@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../../PUBLICATION_SCOPE.md) · [Reader guide](../../../../READ_THIS_FIRST.md).
+
 # GPU/CPU Bézier engine: measured findings
 
 Both requested execution splits work and preserve the network's outputs and gradients. Across the nine primary model/batch settings, a split beat the faster CPU-only/GPU-only baseline in 0 cases. These are execution comparisons of the same model, not an architecture or knowledge-compression study.

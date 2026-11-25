@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../PUBLICATION_SCOPE.md) · [Reader guide](../../../READ_THIS_FIRST.md).
+
 # Bézier-Routing: activation-dependent routing
 
 The original geometric prototype calculated its full curve from the entry activation. It activated multiple expert groups, but intermediate processing could not change that curve. Its ordinary MoE comparator did make new non-geometric routing decisions from the updated hidden state. The new question is whether feeding intermediate state back into **geometric** routing helps.

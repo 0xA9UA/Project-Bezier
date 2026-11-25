@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Shared-core 7B pretrained experiment
 
 This experiment adapts **Mistral-7B-Instruct-v0.3** to a fixed central core containing **15% of the original model's parameters**. The first use case is selecting which of two small Python functions satisfies a supplied contract. Every label can be checked over the complete declared input domain without executing generated code.

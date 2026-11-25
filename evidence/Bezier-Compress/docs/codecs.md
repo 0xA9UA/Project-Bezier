@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../PUBLICATION_SCOPE.md) · [Reader guide](../../../READ_THIS_FIRST.md).
+
 # Exact compression methods
 
 All source matrices are taken from the pretrained checkpoint converted to float16. Fitting and reconstruction use float32; the reconstructed model uses float16. Compress every `torch.nn.Linear` weight inside `model.layers`, preserving all other parameters. Tied input/output embeddings are stored once. Every complete artifact includes those preserved parameters, codec metadata, model config, tokenizer and generic decoder sources. The shared Python, PyTorch, CUDA and Transformers installations are excluded, as with ordinary model-file size reporting.

@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # V5: shared-core controller with a Stay reference
 
 **Neither arm demonstrates useful learned steering on the fresh holdout.** Training, both evaluations, diagnostics, preservation audits, and runtime checks are complete. Absolute remains the preregistered primary; relative's selected fallback always stays. Exact shared storage and update scope passed independently of the accuracy result.

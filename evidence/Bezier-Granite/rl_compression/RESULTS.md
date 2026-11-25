@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../PUBLICATION_SCOPE.md) · [Reader guide](../../../READ_THIS_FIRST.md).
+
 # Reinforcement-learning compression results
 
 The frozen RL artifact uses **16.464 GiB**, **25.0% less** than the six-bit shared parent and 69.8% less than the original BF16 tensor payload.

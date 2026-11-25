@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../../../PUBLICATION_SCOPE.md) · [Reader guide](../../../../READ_THIS_FIRST.md).
+
 # Reinforcement learning and reward-gated parameter positions
 
 **Reinforcement learning and successful-path contraction are implemented and trained, but this pilot did not learn useful conditional routing.** Every held-out prompt followed `continue → continue → stop` and answered B. Learned, matched fixed and shuffled routing all scored 50% on the balanced task. The same trained weights under dense inference scored 61.72% on 128 test examples and 48.44% on 64 longer-program examples. The learned rule stopped after two turns, rather than exhausting the eight-turn cap, but its route and answer were constant across inputs.

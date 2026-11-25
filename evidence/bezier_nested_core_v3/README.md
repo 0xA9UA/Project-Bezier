@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Revision 3: larger models with a 5% shared core
 
 This revision scales the whole central core along with the outer model. The core stays at the origin inside radius 0.25. Its complete weights and biases are shared by outer computation, initial-curve control, redirect ranking, and direct reasoning. There is no additional hidden central expert or learned routing head.

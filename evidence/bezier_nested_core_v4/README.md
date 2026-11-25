@@ -1,3 +1,6 @@
+<!-- PUBLICATION-SCOPE -->
+> **Historical source in a curated publication.** This document describes the original workspace. Claims that all code, data or weights are available locally do not describe this public snapshot. Some original links, figures and reproduction commands refer to files not distributed here. [Publication scope](../PUBLICATION_SCOPE.md) · [Reader guide](../../READ_THIS_FIRST.md).
+
 # Revision 4: preserve input information while retaining the 5% shared core
 
 This is a separate, exploratory follow-up to the completed revision-3 scaling study. It preserves its architecture dimensions, training recipe, corpus, and learned parameter counts. The one intervention is a parameter-free syntax/input skip into the outer encoder activation.
