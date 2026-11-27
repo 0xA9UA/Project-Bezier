@@ -8,6 +8,7 @@ The strongest results are concrete: learned routes can change which computation 
 
 ## Start reading
 
+- [Visual research overview](research-overview.html): a self-contained, interactive guide to all published experiment groups, with measured charts, exact-value tables, all project findings, and source links. Download this HTML file and open it in a browser; no website hosting or installation is needed.
 - [What this research is useful for](READ_THIS_FIRST.md): practical lessons, evidence strength, and reproduction limits.
 - [Second-pass review](REVIEW.md): research-quality and privacy checks.
 
